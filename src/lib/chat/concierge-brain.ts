@@ -130,6 +130,12 @@ const VARIANTS: Partial<Record<Locale, VariantPools>> = {
     fallback: [
       "Μπορώ να σας βοηθήσω με κρατήσεις, στόλο και επικοινωνία. Παρακαλούμε δοκιμάστε μία από τις γρήγορες απαντήσεις ή περιγράψτε την ερώτησή σας.",
     ],
+    book: [
+      "Για διαθεσιμότητα, στείλτε ημερομηνία, αριθμό ατόμων και ώρες. Ελέγχουμε τον στόλο και επικοινωνούμε ({phone}). Δεν απαιτείται online πληρωμή.",
+    ],
+    fleet: [
+      "Διαθέτουμε {count} βάρκες με δική σας οδήγηση από {marina}: {fullFleet}. Ενημέρωση ασφαλείας, χωρίς άδεια έως 30HP.",
+    ],
     fuel: [
       "Τα καύσιμα δεν περιλαμβάνονται στο ναύλο και χρεώνονται ξεχωριστά. Εξηγούμε την κατανάλωση κατά την παραλαβή στη {marina}.",
     ],
@@ -617,13 +623,7 @@ export function respondToMessage(
 
   if (matches(input, [/availab|διαθεσιμ|disponib|verfüg|dostup|наличн|free today/i])) {
     return wrap({
-      text: fill(
-        pick([
-          "We run {count} boats at {marina} — send a booking request with your date and hours. We confirm by phone ({phone}).",
-          "Availability changes daily. Share your date via the booking form — we reply within the hour in season.",
-        ]),
-        vars,
-      ),
+      text: variantText(locale, s, "book", vars),
       suggestions: [s.suggestBook, s.suggestPricing, s.suggestFleet],
       link: { href: "/booking", label: s.linkBook },
     });
@@ -715,7 +715,7 @@ export function respondToMessage(
     });
   }
 
-  if (matches(input, [/match|recommend|which boat|help me choose|βρες|găsește|find.*boat|group/i])) {
+  if (matches(input, [/match|recommend|which boat|help me choose|βρες|ποια βάρκα|găsește|find.*boat|group/i])) {
     return wrap({
       text: variantText(locale, s, "matchmaker", vars),
       suggestions: [s.suggestFleet, s.suggestBook, s.suggestMatch],
@@ -723,13 +723,19 @@ export function respondToMessage(
     });
   }
 
-  if (matches(input, [/amenit|included|what.*include|icebox|bluetooth|tent/i])) {
+  if (matches(input, [/amenit|included|what.*include|icebox|bluetooth|tent|περιλαμβ|τι περιλαμβ/i])) {
     const sample = boats[0];
     const amenityList =
       sample?.amenities?.map((a) => a.label).join(", ") ??
-      "sun tent, Bluetooth, icebox, anchor, life jackets";
+      (locale === "el"
+        ? "τέντα, Bluetooth, ψυγείο, άγκυρα, σωσίβια"
+        : "sun tent, Bluetooth, icebox, anchor, life jackets");
+    const template =
+      locale === "el"
+        ? "Κάθε βάρκα περιλαμβάνει: {amenities}. Ενημέρωση ασφαλείας στη {marina} πριν την αναχώρηση."
+        : "Every boat includes: {amenities}. Safety briefing at {marina} before departure.";
     return wrap({
-      text: fill("Every boat includes: {amenities}. Safety briefing at {marina} before departure.", {
+      text: fill(template, {
         ...vars,
         amenities: amenityList,
       }),
@@ -765,7 +771,7 @@ export function respondToMessage(
     });
   }
 
-  if (matches(input, [/fleet|boat|βάρκ|σκάφ|barc|boot|brod|лодк/i])) {
+  if (matches(input, [/fleet|boat|βάρκ|σκάφ|στόλ|στολ|barc|boot|brod|лодк/i])) {
     return wrap({
       text: variantText(locale, s, "fleet", { ...vars, list: fleetList }),
       suggestions: [s.suggestBook, s.suggestMatch, s.suggestFleet],
@@ -780,7 +786,7 @@ export function respondToMessage(
     });
   }
 
-  if (matches(input, [/contact|phone|email|call|limenaria|τηλ|telefon|kontakt|hours|open|reach/i])) {
+  if (matches(input, [/contact|phone|email|call|limenaria|τηλ|telefon|kontakt|hours|open|reach|κλήση/i])) {
     return wrap({
       text: variantText(locale, s, "contact", vars),
       suggestions: [s.suggestBook, s.suggestPricing],

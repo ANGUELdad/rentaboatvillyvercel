@@ -4,6 +4,8 @@ import { useMemo } from "react";
 import { usePathname } from "next/navigation";
 import { ConciergeChat, extractChatMenuTree } from "./ConciergeChat";
 import type { HumanContactLabels } from "@/components/chat/HumanContactDialog";
+import { getEnglishDictionary } from "@/lib/i18n/dictionary";
+import type { ChatMenuTree } from "@/lib/chat/concierge-menu";
 import { useI18n } from "@/providers/LanguageProvider";
 import type { Boat, FAQ } from "@/types";
 import type { LocalizedFaqEntry } from "@/lib/chat/concierge-context";
@@ -62,6 +64,17 @@ function extractLocalizedFaq(faqSection: unknown): LocalizedFaqEntry[] {
     .map((item) => ({ q: String(item.q), a: String(item.a) }));
 }
 
+function buildLocalizedMenuTree(
+  chat: Record<string, unknown>,
+  linkLabels: Parameters<typeof extractChatMenuTree>[1],
+): ChatMenuTree {
+  const tree = extractChatMenuTree(chat, linkLabels);
+  if (tree.start?.options?.length) return tree;
+
+  const englishChat = getEnglishDictionary().chat as Record<string, unknown>;
+  return extractChatMenuTree(englishChat, linkLabels);
+}
+
 interface ConciergeChatWrapperProps {
   boats: Boat[];
   faq: FAQ[];
@@ -79,7 +92,7 @@ export function ConciergeChatWrapper({ boats, faq }: ConciergeChatWrapperProps) 
 
   const menuTree = useMemo(
     () =>
-      extractChatMenuTree(c as Record<string, unknown>, {
+      buildLocalizedMenuTree(c as Record<string, unknown>, {
         linkBook: asString(c.linkBook, "Open booking"),
         linkFleet: asString(c.linkFleet, "Browse fleet"),
         linkGuide: asString(c.linkGuide, "Island guide"),
@@ -115,6 +128,8 @@ export function ConciergeChatWrapper({ boats, faq }: ConciergeChatWrapperProps) 
         emptyTitle: asString(c.emptyTitle, "Hello, I am Villy"),
         emptyHint: asString(c.emptyHint, "Please choose a quick reply below"),
         pickTopic: asString(c.pickTopic, "Quick replies"),
+        moreTopics: asString(c.moreTopics, "More topics"),
+        fewerTopics: asString(c.fewerTopics, "Fewer topics"),
         menuGroups: asMenuGroupLabels(c.menuGroups),
         quickActionsAria: asString(c.quickActionsAria, "Topics"),
         minimize: asString(c.minimize, "Minimize"),

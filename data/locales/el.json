@@ -938,6 +938,8 @@
     "emptyTitle": "Γεια σας, είμαι η Villy",
     "emptyHint": "Επιλέξτε μια γρήγορη απάντηση παρακάτω",
     "pickTopic": "Γρήγορες απαντήσεις",
+    "moreTopics": "Περισσότερα θέματα",
+    "fewerTopics": "Λιγότερα θέματα",
     "menuGroups": {
       "bookBoat": "Κράτηση",
       "ourBoats": "Ο στόλος",

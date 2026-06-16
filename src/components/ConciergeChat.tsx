@@ -323,6 +323,7 @@ export function ConciergeChat({
   const pathnameOnOpen = useRef<string | null>(null);
   const notificationShown = useRef(false);
   const sendingRef = useRef(false);
+  const introTimerRef = useRef<number | null>(null);
 
   const context = useMemo(
     () => buildConciergeContext(boats, faq, localizedFaq),
@@ -346,7 +347,25 @@ export function ConciergeChat({
   const resetToStart = useCallback(() => {
     const nowLabel = labels.timestampNow ?? "Just now";
     const startNode = getMenuNode(menuTree, "start");
-    if (!startNode) return;
+
+    if (!startNode?.options?.length) {
+      setGreetingTypingDone(true);
+      setMessages([
+        {
+          id: "start-greeting",
+          role: "assistant",
+          text:
+            labels.emptyTitle ??
+            "Hello, I am Villy. Please type your question about boats, booking, or the marina.",
+          timestamp: nowLabel,
+        },
+      ]);
+      setCurrentNodeId("start");
+      setMenuOptions([]);
+      setSuggestions([]);
+      setThinking(false);
+      return;
+    }
 
     setGreetingTypingDone(reducedMotion === true);
     setMessages([
@@ -362,16 +381,22 @@ export function ConciergeChat({
     setMenuOptions(startNode.options ?? []);
     setSuggestions([]);
     setThinking(false);
-  }, [menuTree, locale, labels.timestampNow, reducedMotion]);
+  }, [menuTree, locale, labels.timestampNow, labels.emptyTitle, reducedMotion]);
 
   const openWithIntro = useCallback(() => {
+    if (introTimerRef.current !== null) {
+      window.clearTimeout(introTimerRef.current);
+      introTimerRef.current = null;
+    }
+
     setThinking(true);
     setMessages([]);
     setMenuOptions([]);
     setSuggestions([]);
     setInputValue("");
 
-    window.setTimeout(() => {
+    introTimerRef.current = window.setTimeout(() => {
+      introTimerRef.current = null;
       resetToStart();
     }, 850 + Math.floor(Math.random() * 350));
   }, [resetToStart]);
@@ -379,7 +404,10 @@ export function ConciergeChat({
   const pushAssistantNode = useCallback(
     (nodeId: string, resetHistory = false) => {
       const node = getMenuNode(menuTree, nodeId);
-      if (!node) return;
+      if (!node) {
+        setThinking(false);
+        return;
+      }
 
       const assistantMsg: Message = {
         id: `${Date.now()}-ai`,
@@ -483,7 +511,13 @@ export function ConciergeChat({
           return;
         }
 
-        if (nextNode && LINK_ONLY_NODES.has(option.next) && nextNode.link) {
+        if (!nextNode) {
+          setThinking(false);
+          sendingRef.current = false;
+          return;
+        }
+
+        if (LINK_ONLY_NODES.has(option.next) && nextNode.link) {
           pushAssistantNode(option.next, resetHistory);
           sendingRef.current = false;
           return;
@@ -532,7 +566,16 @@ export function ConciergeChat({
   useEffect(() => {
     if (mode !== "open") return;
     openWithIntro();
-  }, [mode, locale, menuTree, openWithIntro]);
+  }, [mode, locale, openWithIntro]);
+
+  useEffect(() => {
+    return () => {
+      if (introTimerRef.current !== null) {
+        window.clearTimeout(introTimerRef.current);
+        introTimerRef.current = null;
+      }
+    };
+  }, []);
 
   useEffect(() => {
     return onChatRequestOpen(openChat);
