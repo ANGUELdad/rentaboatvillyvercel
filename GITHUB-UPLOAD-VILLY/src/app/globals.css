@@ -8777,6 +8777,8 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
   }
 
   .booking-studio__layout {
+    position: relative;
+    isolation: isolate;
     display: grid;
     gap: 1rem;
     grid-template-columns: minmax(0, 1fr);
@@ -8796,6 +8798,8 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
   }
 
   .booking-studio__form {
+    position: relative;
+    z-index: 1;
     display: flex;
     min-width: 0;
     flex-direction: column;
@@ -8903,6 +8907,8 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
   }
 
   .booking-studio__aside {
+    position: relative;
+    z-index: 2;
     display: flex;
     min-width: 0;
     flex-direction: column;
@@ -8964,6 +8970,10 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
 
     .booking-studio__aside--desk {
       display: flex;
+      position: sticky;
+      top: calc(5.25rem + env(safe-area-inset-top, 0px));
+      align-self: start;
+      isolation: isolate;
     }
   }
 
@@ -9323,8 +9333,8 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
 
   @media (min-width: 1024px) {
     .booking-summary {
-      position: sticky;
-      top: 6rem;
+      position: relative;
+      top: auto;
     }
   }
 
