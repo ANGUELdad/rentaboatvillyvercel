@@ -10,15 +10,11 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { useIsMobile } from "@/hooks/useIsMobile";
-import type { Locale } from "@/lib/i18n";
+import { LANG_COOKIE, type Locale } from "@/lib/i18n";
 import { Z } from "@/lib/z-index";
 import { cn } from "@/lib/utils";
 import { playFeedback } from "@/lib/feedback";
-import {
-  captureScrollSnapshot,
-  type ScrollSnapshot,
-  useI18n,
-} from "@/providers/LanguageProvider";
+import { useI18n } from "@/providers/LanguageProvider";
 
 interface LanguagePickerProps {
   variant?: "header" | "footer";
@@ -67,44 +63,45 @@ function LanguageOptions({
   );
 }
 
+function reloadCurrentPageWithLocale(next: Locale) {
+  if (typeof window === "undefined") return;
+
+  const maxAge = 60 * 60 * 24 * 365;
+  const secure = window.location.protocol === "https:" ? ";Secure" : "";
+  document.cookie = `${LANG_COOKIE}=${next};path=/;max-age=${maxAge};SameSite=Lax${secure}`;
+
+  const url = new URL(window.location.href);
+  if (next === "en") {
+    url.searchParams.delete("lang");
+  } else {
+    url.searchParams.set("lang", next);
+  }
+
+  window.location.assign(`${url.pathname}${url.search}${url.hash}`);
+}
+
 export function LanguagePicker({
   variant = "header",
   compact = false,
   inDock = false,
 }: LanguagePickerProps) {
-  const { locale, setLocale, locales, t } = useI18n();
+  const { locale, locales, t } = useI18n();
   const [open, setOpen] = useState(false);
   const [menuPos, setMenuPos] = useState({ top: 0, right: 0 });
   const isMobile = useIsMobile();
   /** Compact header sits in lg:hidden row — use sheet there, not a floating portal */
   const useSheet = compact || isMobile;
   const triggerRef = useRef<HTMLButtonElement>(null);
-  const scrollBeforeOpenRef = useRef<ScrollSnapshot | null>(null);
   const current = locales.find((l) => l.code === locale)!;
   const label = t.common?.language ?? "Language";
   const ariaLabel = `${label}: ${current.label}`;
 
-  const rememberScroll = () => {
-    if (typeof window !== "undefined") {
-      scrollBeforeOpenRef.current = captureScrollSnapshot();
-    }
-  };
-
   const pick = (code: Locale) => {
-    if (code !== locale) playFeedback("select", "light");
-    const scrollSnapshot =
-      scrollBeforeOpenRef.current ??
-      (typeof window !== "undefined" ? captureScrollSnapshot() : undefined);
-    scrollBeforeOpenRef.current = null;
     setOpen(false);
+    if (code === locale) return;
 
-    const applyLocale = () => setLocale(code, scrollSnapshot);
-    if (useSheet) {
-      // Wait for sheet scroll-lock to release before swapping locale.
-      window.setTimeout(applyLocale, 300);
-    } else {
-      requestAnimationFrame(applyLocale);
-    }
+    playFeedback("select", "light");
+    window.setTimeout(() => reloadCurrentPageWithLocale(code), useSheet ? 180 : 40);
   };
 
   const updateMenuPos = () => {
@@ -119,7 +116,6 @@ export function LanguagePicker({
 
   const toggle = () => {
     if (!open) {
-      rememberScroll();
       updateMenuPos();
       playFeedback("open", "light");
     } else {
@@ -129,8 +125,10 @@ export function LanguagePicker({
   };
 
   useEffect(() => {
-    if (!useSheet) setOpen(false);
-  }, [useSheet]);
+    if (useSheet || !open) return;
+    const timer = window.setTimeout(() => setOpen(false), 0);
+    return () => window.clearTimeout(timer);
+  }, [open, useSheet]);
 
   useEffect(() => {
     if (!open || useSheet) return;
@@ -184,7 +182,6 @@ export function LanguagePicker({
       type="button"
       onClick={() => {
         if (useSheet) {
-          rememberScroll();
           playFeedback("open", "light");
           setOpen(true);
         } else {
