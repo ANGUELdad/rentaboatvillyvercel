@@ -64,6 +64,63 @@ function TypingBubble({ label }: { label: string }) {
   );
 }
 
+function useTypewriterText(text: string, enabled: boolean, speedMs = 22) {
+  const [displayed, setDisplayed] = useState(enabled ? "" : text);
+
+  useEffect(() => {
+    if (!enabled) {
+      const timer = window.setTimeout(() => setDisplayed(text), 0);
+      return () => window.clearTimeout(timer);
+    }
+
+    let index = 0;
+    let timer = 0;
+    const resetTimer = window.setTimeout(() => setDisplayed(""), 0);
+
+    const tick = () => {
+      index += 1;
+      setDisplayed(text.slice(0, index));
+      if (index < text.length) {
+        timer = window.setTimeout(tick, speedMs);
+      }
+    };
+
+    timer = window.setTimeout(tick, 140);
+    return () => {
+      window.clearTimeout(resetTimer);
+      window.clearTimeout(timer);
+    };
+  }, [enabled, speedMs, text]);
+
+  return displayed;
+}
+
+function TypewriterBubble({
+  text,
+  active,
+  soft = false,
+}: {
+  text: string;
+  active: boolean;
+  soft?: boolean;
+}) {
+  const displayed = useTypewriterText(text, active, soft ? 18 : 20);
+  const writing = active && displayed.length < text.length;
+
+  return (
+    <div
+      className={cn(
+        "chat-promo-banner__bubble chat-promo-banner__bubble--assistant chat-promo-banner__bubble--writing",
+        soft && "chat-promo-banner__bubble--soft",
+        writing && "is-writing",
+      )}
+    >
+      {displayed || "\u00a0"}
+      {writing ? <span className="chat-promo-banner__caret" aria-hidden /> : null}
+    </div>
+  );
+}
+
 export function ChatPromoBanner({ className }: { className?: string }) {
   const { t } = useI18n();
   const reducedMotion = useReducedMotion();
@@ -93,19 +150,31 @@ export function ChatPromoBanner({ className }: { className?: string }) {
 
   useEffect(() => {
     if (reducedMotion) {
-      setStep("done");
-      return;
+      const timer = window.setTimeout(() => setStep("done"), 0);
+      return () => window.clearTimeout(timer);
     }
 
-    const timers = [
-      window.setTimeout(() => setStep("user"), 350),
-      window.setTimeout(() => setStep("typing"), 1_200),
-      window.setTimeout(() => setStep("reply"), 2_400),
-      window.setTimeout(() => setStep("followUp"), 3_300),
-      window.setTimeout(() => setStep("done"), 4_100),
-    ];
+    let cycleTimer = 0;
+    let timers: number[] = [];
 
-    return () => timers.forEach((timer) => window.clearTimeout(timer));
+    const runCycle = () => {
+      setStep("idle");
+      timers = [
+        window.setTimeout(() => setStep("user"), 300),
+        window.setTimeout(() => setStep("typing"), 1_050),
+        window.setTimeout(() => setStep("reply"), 2_050),
+        window.setTimeout(() => setStep("followUp"), 4_850),
+        window.setTimeout(() => setStep("done"), 6_600),
+      ];
+      cycleTimer = window.setTimeout(runCycle, 9_200);
+    };
+
+    runCycle();
+
+    return () => {
+      timers.forEach((timer) => window.clearTimeout(timer));
+      window.clearTimeout(cycleTimer);
+    };
   }, [reducedMotion]);
 
   const openChat = useCallback(() => {
@@ -117,6 +186,8 @@ export function ChatPromoBanner({ className }: { className?: string }) {
   const showTyping = step === "typing";
   const showReply = step === "reply" || step === "followUp" || step === "done";
   const showFollowUp = step === "followUp" || step === "done";
+  const replyTyping = step === "reply";
+  const followUpTyping = step === "followUp";
 
   const Root = reducedMotion ? "aside" : motion.aside;
   const rootProps = reducedMotion
@@ -193,9 +264,7 @@ export function ChatPromoBanner({ className }: { className?: string }) {
               transition={{ ...appleSpringSnappy, delay: 0 }}
               className="chat-promo-banner__row chat-promo-banner__row--assistant"
             >
-              <div className="chat-promo-banner__bubble chat-promo-banner__bubble--assistant">
-                {reply}
-              </div>
+              <TypewriterBubble text={reply} active={replyTyping} />
             </motion.div>
           ) : null}
 
@@ -207,9 +276,7 @@ export function ChatPromoBanner({ className }: { className?: string }) {
               transition={{ ...appleSpringSnappy, delay: 0.06 }}
               className="chat-promo-banner__row chat-promo-banner__row--assistant"
             >
-              <div className="chat-promo-banner__bubble chat-promo-banner__bubble--assistant chat-promo-banner__bubble--soft">
-                {followUp}
-              </div>
+              <TypewriterBubble text={followUp} active={followUpTyping} soft />
             </motion.div>
           ) : null}
         </AnimatePresence>

@@ -12518,6 +12518,38 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
     color: var(--color-ds-text-secondary);
   }
 
+  .chat-promo-banner__bubble--writing {
+    min-height: 2.4rem;
+  }
+
+  .chat-promo-banner__bubble--writing.is-writing {
+    box-shadow:
+      0 4px 16px rgba(15, 45, 75, 0.08),
+      0 0 0 1px color-mix(in srgb, var(--color-brand-green) 16%, transparent);
+  }
+
+  .chat-promo-banner__caret {
+    display: inline-block;
+    width: 0.12rem;
+    height: 0.95em;
+    margin-left: 0.18rem;
+    translate: 0 0.12em;
+    border-radius: 9999px;
+    background: color-mix(in srgb, var(--color-brand-green) 70%, var(--color-ds-text));
+    animation: chat-promo-caret 0.85s steps(2, jump-none) infinite;
+  }
+
+  @keyframes chat-promo-caret {
+    0%,
+    45% {
+      opacity: 1;
+    }
+    46%,
+    100% {
+      opacity: 0.15;
+    }
+  }
+
   .chat-promo-banner__bubble--typing {
     display: inline-flex;
     align-items: center;
