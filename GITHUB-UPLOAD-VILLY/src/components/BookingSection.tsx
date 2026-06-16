@@ -61,6 +61,20 @@ interface FormState {
 
 type BookingStep = 1 | 2;
 
+const GOOGLE_ADS_BOOKING_CONVERSION_ID = "AW-18244174841/XXmjCI_N_r8cEPmHwPtD";
+
+type GoogleTagParams = {
+  send_to: string;
+  value: number;
+  currency: string;
+};
+
+type GoogleTagFunction = (
+  command: "event",
+  action: "conversion",
+  params: GoogleTagParams,
+) => void;
+
 const initialForm: FormState = {
   fullName: "",
   email: "",
@@ -145,11 +159,38 @@ function applySearchParamsToForm(
     }
   }
 
+  if (next.boatId) {
+    const cap = boats.find((b) => b.id === next.boatId)?.pax;
+    if (cap) {
+      next.guests = String(Math.min(Number(next.guests) || 1, cap));
+    }
+  }
+
   return next;
 }
 
 function isValidEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+function trackBookingConversion() {
+  const params: GoogleTagParams = {
+    send_to: GOOGLE_ADS_BOOKING_CONVERSION_ID,
+    value: 1.0,
+    currency: "EUR",
+  };
+  const win = window as Window & {
+    dataLayer?: unknown[];
+    gtag?: GoogleTagFunction;
+  };
+
+  if (typeof win.gtag === "function") {
+    win.gtag("event", "conversion", params);
+    return;
+  }
+
+  win.dataLayer = win.dataLayer || [];
+  win.dataLayer.push(["event", "conversion", params]);
 }
 
 export function BookingSection({
@@ -195,15 +236,6 @@ export function BookingSection({
     setErrorMsg("");
     setFieldErrors({});
   }, [searchParams, boats]);
-
-  useEffect(() => {
-    if (!selectedBoat) return;
-    setForm((prev) => {
-      const guestTotal = Number(prev.guests) || 1;
-      if (guestTotal <= selectedBoat.pax) return prev;
-      return { ...prev, guests: String(selectedBoat.pax) };
-    });
-  }, [selectedBoat?.id, selectedBoat?.pax]);
 
   const update = (field: keyof FormState, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -284,6 +316,7 @@ export function BookingSection({
       if (result.ok) {
         setConfirmedEmail(form.email);
         setStatus("success");
+        trackBookingConversion();
         playFeedback("success", "success");
         setForm(initialForm);
         setAcceptedTerms(false);
