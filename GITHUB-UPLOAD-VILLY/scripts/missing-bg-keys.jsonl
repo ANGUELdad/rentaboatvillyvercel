@@ -1,0 +1,446 @@
+{"key":"boatDetail.linkCopied","en":"Link copied"}
+{"key":"boatDetail.relatedSubtitle","en":"More boats from our Aegean fleet"}
+{"key":"boatDetail.swipeHint","en":"Swipe the gallery above or tap a thumbnail"}
+{"key":"booking.form.emailPlaceholder","en":"you@email.com"}
+{"key":"booking.form.idPlaceholder","en":"Required on arrival"}
+{"key":"booking.form.namePlaceholder","en":"John Smith"}
+{"key":"booking.form.notesPlaceholder","en":"Celebration, equipment needs, dietary notes..."}
+{"key":"booking.form.phonePlaceholder","en":"+30 690 000 0000"}
+{"key":"booking.form.routeOptional","en":"optional"}
+{"key":"booking.summaryBoatEmpty","en":"Pick a boat in step 2"}
+{"key":"booking.summaryTitle","en":"Your request"}
+{"key":"conversion.boatDetail.includedTitle","en":"What's included"}
+{"key":"conversion.booking.and","en":"and"}
+{"key":"conversion.booking.emptyFleet","en":"No boats available right now. Call us to arrange a rental."}
+{"key":"conversion.booking.legalNote","en":"By requesting, you agree to our"}
+{"key":"conversion.booking.privacyLink","en":"Privacy Policy"}
+{"key":"conversion.booking.successNext","en":"What happens next"}
+{"key":"conversion.booking.successShare","en":"Share with your group"}
+{"key":"conversion.booking.termsLink","en":"Terms"}
+{"key":"conversion.booking.validationBoat","en":"Please select a boat."}
+{"key":"conversion.booking.validationDate","en":"Please choose a rental date."}
+{"key":"conversion.booking.validationEmail","en":"Please enter a valid email."}
+{"key":"conversion.booking.validationName","en":"Please enter your full name."}
+{"key":"conversion.booking.validationPhone","en":"Please enter a phone number."}
+{"key":"conversion.bookingBadges.ariaLabel","en":"Secure booking"}
+{"key":"conversion.fleet.fuelIncluded","en":"Fuel not included"}
+{"key":"conversion.fleet.noLicense","en":"No licence ≤30HP"}
+{"key":"conversion.lossAversion","en":"Don't miss your perfect Thassos day on the water, rent a boat."}
+{"key":"conversion.package.excluded.0","en":"Food & drinks"}
+{"key":"conversion.package.excluded.1","en":"Skipper (optional add-on)"}
+{"key":"conversion.package.excluded.2","en":"Marina parking fees"}
+{"key":"conversion.package.excludedTitle","en":"Not included"}
+{"key":"conversion.package.fromPrice","en":"Contact for rates"}
+{"key":"conversion.package.included.0","en":"Licensed briefing"}
+{"key":"conversion.package.included.1","en":"Safety gear & VHF"}
+{"key":"conversion.package.includedTitle","en":"What's included"}
+{"key":"conversion.package.mobileSummary","en":"Your package"}
+{"key":"conversion.popularSeason","en":"Popular in summer, book early for peak dates."}
+{"key":"conversion.skipLink","en":"Skip to main content"}
+{"key":"errors.admin.notFound.dashboard","en":"Dashboard"}
+{"key":"errors.admin.notFound.description","en":"That panel route does not exist. Return to the dashboard or sign in again."}
+{"key":"errors.admin.notFound.eyebrow","en":"404"}
+{"key":"errors.admin.notFound.login","en":"Sign in"}
+{"key":"errors.admin.notFound.title","en":"Admin page not found"}
+{"key":"errors.admin.route.description","en":"Database or configuration issue. Check server logs and environment variables."}
+{"key":"errors.admin.route.eyebrow","en":"Admin error"}
+{"key":"errors.admin.route.login","en":"Back to login"}
+{"key":"errors.admin.route.retry","en":"Retry"}
+{"key":"errors.admin.route.title","en":"Panel failed to load"}
+{"key":"errors.global.description","en":"The application encountered an unrecoverable error. Please reload the page."}
+{"key":"errors.global.eyebrow","en":"Critical error"}
+{"key":"errors.global.home","en":"Home"}
+{"key":"errors.global.retry","en":"Try again"}
+{"key":"errors.global.title","en":"Something went seriously wrong"}
+{"key":"errors.notFound.book","en":"Check availability"}
+{"key":"errors.notFound.description","en":"This route may have moved, your Thassos day on the water is still one click away."}
+{"key":"errors.notFound.eyebrow","en":"404"}
+{"key":"errors.notFound.fleet","en":"Browse fleet"}
+{"key":"errors.notFound.home","en":"Back to home"}
+{"key":"errors.notFound.title","en":"Page not found"}
+{"key":"errors.route.description","en":"We hit a temporary issue. Please try again or return to the homepage."}
+{"key":"errors.route.eyebrow","en":"Error"}
+{"key":"errors.route.home","en":"Home"}
+{"key":"errors.route.retry","en":"Try again"}
+{"key":"errors.route.title","en":"Something went wrong"}
+{"key":"errors.unauthorized.description","en":"This area is restricted. Sign in with the right account or return to the public site."}
+{"key":"errors.unauthorized.eyebrow","en":"Access denied"}
+{"key":"errors.unauthorized.home","en":"Back to home"}
+{"key":"errors.unauthorized.login","en":"Admin login"}
+{"key":"errors.unauthorized.title","en":"You don't have permission"}
+{"key":"experiences.buildCta","en":"Estimate rental"}
+{"key":"experiences.customCta","en":"Book a boat"}
+{"key":"experiences.customDesc","en":"Pick any boat and how many hours you want, go wherever you like."}
+{"key":"experiences.customTitle","en":"Just rent a boat"}
+{"key":"experiences.estimateCta","en":"Estimate rental"}
+{"key":"faq.items.6.a","en":"A 30% deposit secures your booking. The balance is due on arrival at Limenaria Marina."}
+{"key":"faq.items.6.q","en":"Is a deposit required?"}
+{"key":"faq.items.7.a","en":"Yes, our 30HP speedboats are ideal for beginners. Every rental includes a safety briefing covering local hazards, anchoring, and VHF basics before you cast off."}
+{"key":"faq.items.7.q","en":"Can I rent a speedboat in Thassos without experience?"}
+{"key":"faq.page.allQuestions","en":"All questions"}
+{"key":"faq.page.carouselAria","en":"Thassos boat rental moments"}
+{"key":"faq.page.ctaBook","en":"Book"}
+{"key":"faq.page.ctaFleet","en":"Browse fleet"}
+{"key":"faq.page.ctaPrices","en":"Contact for rates"}
+{"key":"faq.page.highlights.0.desc","en":"Safety briefing before every departure"}
+{"key":"faq.page.highlights.0.image","en":"https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=800&q=80"}
+{"key":"faq.page.highlights.0.title","en":"No licence ≤30HP"}
+{"key":"faq.page.highlights.1.desc","en":"Standard Thassos cruising covered"}
+{"key":"faq.page.highlights.1.image","en":"https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80"}
+{"key":"faq.page.highlights.1.title","en":"safety briefing included"}
+{"key":"faq.page.highlights.2.desc","en":"Daily 08:00, 20:00, May through October"}
+{"key":"faq.page.highlights.2.image","en":"https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=800&q=80"}
+{"key":"faq.page.highlights.2.title","en":"Limenaria Marina"}
+{"key":"faq.page.highlightsTitle","en":"Good to know at a glance"}
+{"key":"faq.page.mostAskedTitle","en":"Most asked questions"}
+{"key":"faq.page.slides.0.caption","en":"Golden hour departure from Limenaria"}
+{"key":"faq.page.slides.0.src","en":"https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=1200&q=80"}
+{"key":"faq.page.slides.1.caption","en":"Crystal waters off Thassos"}
+{"key":"faq.page.slides.1.src","en":"https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80"}
+{"key":"faq.page.slides.2.caption","en":"Our Limenaria marina fleet"}
+{"key":"faq.page.slides.2.src","en":"https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1200&q=80"}
+{"key":"faq.page.slides.3.caption","en":"Secret lagoon anchorages"}
+{"key":"faq.page.slides.3.src","en":"https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80"}
+{"key":"faq.page.tips.0","en":"Hourly self-drive rental"}
+{"key":"faq.page.tips.1","en":"safety briefing included on every rental"}
+{"key":"faq.page.tips.2","en":"30% deposit secures your date"}
+{"key":"faq.page.tips.3","en":"Free reschedule if weather is unsafe"}
+{"key":"faq.page.tips.4","en":"Briefing before you cast off"}
+{"key":"faq.page.tips.5","en":"No licence needed up to 30HP"}
+{"key":"faq.page.tipsAria","en":"Rental quick facts"}
+{"key":"faq.page.viewAllFaq","en":"See all answers"}
+{"key":"fleet.empty","en":"Fleet coming soon."}
+{"key":"fleet.viewVessel","en":"Details"}
+{"key":"gallery.close","en":"Close gallery"}
+{"key":"gallery.counter","en":"{current} of {total}"}
+{"key":"gallery.expand","en":"Fullscreen"}
+{"key":"gallery.eyebrow","en":"What will I see?"}
+{"key":"gallery.filmstripHint","en":"Tap a thumbnail to jump"}
+{"key":"gallery.subtitle","en":"Golden hours, secret coves, and pure Thassos, from real rentals."}
+{"key":"gallery.swipeHint","en":"Swipe through rental moments"}
+{"key":"gallery.title","en":"Aegean moments"}
+{"key":"guide.heroBadge","en":"By sea"}
+{"key":"guide.heroStatBase","en":"Limenaria"}
+{"key":"guide.heroStatBaseLabel","en":"Departure marina"}
+{"key":"guide.heroStatRoutes","en":"{count} day plans"}
+{"key":"guide.heroStatRoutesLabel","en":"Suggested loops"}
+{"key":"guide.heroStatSpotsLabel","en":"Boat-accessible stops"}
+{"key":"guide.page.ctaBook","en":"Request a boat"}
+{"key":"guide.page.ctaMap","en":"Open interactive sea atlas"}
+{"key":"guide.page.filterAll","en":"All stops"}
+{"key":"guide.page.routes.0.desc","en":"Metalia → Tripiti → Pefkari → Potos, the classic half-day"}
+{"key":"guide.page.routes.0.hours","en":"4, 6 hrs"}
+{"key":"guide.page.routes.0.title","en":"South coast loop"}
+{"key":"guide.page.routes.1.desc","en":"Golden Beach & Aliki quarry, longer open-water stretch"}
+{"key":"guide.page.routes.1.hours","en":"6, 8 hrs"}
+{"key":"guide.page.routes.1.title","en":"East coast run"}
+{"key":"guide.page.routes.2.desc","en":"Marble Beach & Vathi Bay, calm morning seas recommended"}
+{"key":"guide.page.routes.2.hours","en":"Full day"}
+{"key":"guide.page.routes.2.title","en":"North shore day"}
+{"key":"guide.page.routesTitle","en":"Suggested day plans"}
+{"key":"guide.page.scrollHint","en":"Scroll the coast, spots unfold as you go"}
+{"key":"guide.page.spotCount","en":"{count} anchorages"}
+{"key":"guide.page.timelineTitle","en":"Coastal route from Limenaria"}
+{"key":"guide.spots.aliki-ruins.description","en":"Snorkel 2,000-year-old quarry blocks in crystal-clear water on the south-east coast."}
+{"key":"guide.spots.aliki-ruins.name","en":"Aliki Ancient Quarry"}
+{"key":"guide.spots.aliki-ruins.tagline","en":"Marble ruins underwater"}
+{"key":"guide.spots.golden-beach.description","en":"Anchor offshore at Chrisi Akti, Thassos' longest sandy stretch on the east coast."}
+{"key":"guide.spots.golden-beach.name","en":"Golden Beach"}
+{"key":"guide.spots.golden-beach.tagline","en":"Turquoise shallows & soft sand"}
+{"key":"guide.spots.kalogria-bay.description","en":"Pine-fringed Vathi Bay, quiet anchorage for golden-hour swims away from the main beach crowds."}
+{"key":"guide.spots.kalogria-bay.name","en":"Vathi Bay"}
+{"key":"guide.spots.kalogria-bay.tagline","en":"Secluded north-east anchorage"}
+{"key":"guide.spots.marble-beach.description","en":"North-shore highlight, approach early by boat before the afternoon breeze builds."}
+{"key":"guide.spots.marble-beach.name","en":"Marble Beach"}
+{"key":"guide.spots.marble-beach.tagline","en":"White cliffs & emerald sea"}
+{"key":"guide.spots.metalia-beach.description","en":"First stop south of Limenaria, calm iron-ore shallows ideal for a swim before heading to Tripiti."}
+{"key":"guide.spots.metalia-beach.name","en":"Metalia Beach"}
+{"key":"guide.spots.metalia-beach.tagline","en":"Rocky cove & snorkelling"}
+{"key":"guide.spots.pefkari-beach.description","en":"Shallow sand offshore, easy mooring for families on the classic southern loop."}
+{"key":"guide.spots.pefkari-beach.name","en":"Pefkari Beach"}
+{"key":"guide.spots.pefkari-beach.tagline","en":"Sandy family bay"}
+{"key":"guide.spots.potos-harbor.description","en":"Moor nearby for harbour tavernas and cafés, a natural lunch break on a full-day rental."}
+{"key":"guide.spots.potos-harbor.name","en":"Potos Harbor"}
+{"key":"guide.spots.potos-harbor.tagline","en":"Lunch ashore"}
+{"key":"guide.spots.tripiti-cave.description","en":"Signature south-west anchorage, turquoise water inside the cave, best visited before midday."}
+{"key":"guide.spots.tripiti-cave.name","en":"Tripiti Cave"}
+{"key":"guide.spots.tripiti-cave.tagline","en":"Sea cave & pebble beach"}
+{"key":"home.bento.ariaLabel","en":"Book with confidence"}
+{"key":"home.bento.calm","en":"Calm waters"}
+{"key":"home.bento.captainBody","en":"No licence up to 30HP. Free safety briefing before every departure."}
+{"key":"home.bento.captainTitle","en":"Be your own captain"}
+{"key":"home.bento.moderate","en":"Light breeze"}
+{"key":"home.bento.reviewsTitle","en":"Google reviews"}
+{"key":"home.bento.rough","en":"Choppy — check at briefing"}
+{"key":"home.bento.weatherTitle","en":"Thassos today"}
+{"key":"home.narrative.exploreQuestion","en":"About us"}
+{"key":"home.narrative.fleetQuestion","en":"What boats?"}
+{"key":"home.narrative.galleryQuestion","en":"What will I see?"}
+{"key":"home.narrative.matchmakerQuestion","en":"Not sure yet?"}
+{"key":"home.narrative.reviewsQuestion","en":"What our guests say"}
+{"key":"home.trustBar.ariaLabel","en":"Why book with Rent A Boat Villy"}
+{"key":"home.trustBar.briefing","en":"Free safety briefing"}
+{"key":"home.trustBar.deposit","en":"30% deposit to confirm"}
+{"key":"home.trustBar.licence","en":"No licence ≤30HP"}
+{"key":"home.whyChoose.items.amenities.desc","en":"Sun tent (canopy), Bluetooth speaker, icebox, anchor, and life jackets for adults and children."}
+{"key":"home.whyChoose.items.amenities.title","en":"Premium on-board amenities"}
+{"key":"home.whyChoose.items.celebrate.desc","en":"Birthdays, weddings, anniversaries, and parties — for kids and adults alike."}
+{"key":"home.whyChoose.items.celebrate.title","en":"Celebrate with us"}
+{"key":"home.whyChoose.items.earlyBooking.desc","en":"Book ahead for first choice of boat and date."}
+{"key":"home.whyChoose.items.earlyBooking.title","en":"Early booking priority"}
+{"key":"home.whyChoose.items.equipped.desc","en":"Every boat in our fleet is new, maintained, and ready for a comfortable day on the Aegean."}
+{"key":"home.whyChoose.items.equipped.title","en":"Brand new & fully equipped"}
+{"key":"home.whyChoose.items.languages.desc","en":"Customer service in English, French, Romanian, Bulgarian, Serbian, Russian, Arabic, and Greek."}
+{"key":"home.whyChoose.items.languages.title","en":"We speak your language"}
+{"key":"home.whyChoose.items.marina.desc","en":"Pick up on the south coast of Thassos — cast off in minutes and explore hidden gems by sea."}
+{"key":"home.whyChoose.items.marina.title","en":"Limenaria Marina"}
+{"key":"home.whyChoose.subtitle","en":"Brand-new boats, real on-board equipment, and a team that speaks your language — all from Limenaria Marina."}
+{"key":"home.whyChoose.title","en":"Why choose Villy Boats Thassos?"}
+{"key":"map.allSpots","en":"All"}
+{"key":"map.backToList","en":"All spots"}
+{"key":"map.bookSpot","en":"Book a boat here"}
+{"key":"map.byBoat","en":"by boat"}
+{"key":"map.discoverEyebrow","en":"Explore by sea"}
+{"key":"map.discoverTitle","en":"Boat-accessible destinations"}
+{"key":"map.fromMarina","en":"from marina"}
+{"key":"map.heroBadge","en":"Sea atlas"}
+{"key":"map.heroStatBase","en":"Limenaria"}
+{"key":"map.heroStatBaseLabel","en":"Departure marina"}
+{"key":"map.heroStatSpotsLabel","en":"On the chart"}
+{"key":"map.heroStatTracks","en":"GPS tracks"}
+{"key":"map.heroStatTracksLabel","en":"Marine routes"}
+{"key":"map.noResults","en":"No spots match your search."}
+{"key":"map.searchPlaceholder","en":"Search beaches, caves, harbors…"}
+{"key":"map.seoBlurb","en":"Every pin is reachable by rental boat from Limenaria Marina, tap a destination to see distance, cruise time, and rent a boat."}
+{"key":"map.spotsCount","en":"spots"}
+{"key":"matchmaker.fleetLink","en":"View all boats"}
+{"key":"matchmaker.fleetTitle","en":"From our fleet"}
+{"key":"matchmaker.statBoats","en":"{count} boats"}
+{"key":"matchmaker.statQuestions","en":"3 questions"}
+{"key":"matchmaker.statTime","en":"~2 minutes"}
+{"key":"matchmaker.statTimeLabel","en":"Takes only"}
+{"key":"matchmaker.step1Desc","en":"Couple, family, or party, tell us who's coming."}
+{"key":"matchmaker.step1Label","en":"Group size"}
+{"key":"matchmaker.step2Desc","en":"Romantic coves, family fun, or celebration energy."}
+{"key":"matchmaker.step2Label","en":"Your vibe"}
+{"key":"matchmaker.step3Desc","en":"We suggest the best boat from our Limenaria fleet."}
+{"key":"matchmaker.step3Label","en":"Your match"}
+{"key":"matchmaker.stepsTitle","en":"How it works"}
+{"key":"matchmaker.trustEyebrow","en":"Book with confidence"}
+{"key":"matchmaker.trustLocalDesc","en":"Family-run at the marina pier"}
+{"key":"matchmaker.trustLocalTitle","en":"Local Limenaria team"}
+{"key":"matchmaker.trustPriceDesc","en":"Safety briefing on every departure"}
+{"key":"matchmaker.trustPriceTitle","en":"safety briefing included"}
+{"key":"matchmaker.trustSecureDesc","en":"Secure request, you pay at the marina"}
+{"key":"matchmaker.trustSecureTitle","en":"No payment now"}
+{"key":"package.decreaseHours","en":"Decrease hours"}
+{"key":"package.emptyRoute","en":"You choose where to go"}
+{"key":"package.emptyVessel","en":"Pick a boat to start"}
+{"key":"package.fromPrefix","en":"From"}
+{"key":"package.fromTotal","en":"Contact for rates"}
+{"key":"package.fuelNote","en":"safety gear included"}
+{"key":"package.increaseHours","en":"Increase hours"}
+{"key":"package.maxGuestsNote","en":"Maximum {max} guests for this boat"}
+{"key":"package.stepConfigure","en":"Build rental"}
+{"key":"package.stepConfigureHint","en":"Pick a boat, set hours and guests — then send your request."}
+{"key":"package.stepSummaryHint","en":"Review your details, then send a booking request."}
+{"key":"package.stepsAria","en":"Package builder progress"}
+{"key":"package.total","en":"Contact for rates"}
+{"key":"package.validationRoute","en":"Optional, pick a day idea or skip"}
+{"key":"package.validationVessel","en":"Please select a boat to continue"}
+{"key":"packageBuilder.boardingPassLabel","en":"Rental request"}
+{"key":"packageBuilder.boardingPassTitle","en":"Your boarding pass"}
+{"key":"packageBuilder.emptyRoute","en":"You choose where to go"}
+{"key":"packageBuilder.emptyVessel","en":"Select a boat"}
+{"key":"packageBuilder.fromPrefix","en":"From"}
+{"key":"packageBuilder.fromTotal","en":"Contact for rates"}
+{"key":"packageBuilder.fuelNote","en":"safety gear included"}
+{"key":"packageBuilder.heroHeadline","en":"Plan your rental"}
+{"key":"packageBuilder.heroSubline","en":"Hourly boat rental from Limenaria Marina — pick your boat, set your hours, send a request. No tours, no skipper required up to 30HP."}
+{"key":"packageBuilder.journeyBoarding","en":"Boarding pass"}
+{"key":"packageBuilder.journeyExplore","en":"Explore"}
+{"key":"packageBuilder.journeyMapTitle","en":"Your voyage"}
+{"key":"packageBuilder.journeyMarina","en":"Limenaria"}
+{"key":"packageBuilder.journeyYourDay","en":"Your day"}
+{"key":"packageBuilder.mapInspirationLink","en":"Browse the sea atlas"}
+{"key":"packageBuilder.maxGuestsNote","en":"Maximum {max} guests for this boat"}
+{"key":"packageBuilder.optional","en":"optional"}
+{"key":"packageBuilder.preferredDate","en":"Preferred date"}
+{"key":"packageBuilder.promoCta","en":"Book now"}
+{"key":"packageBuilder.promoDesc","en":"Pick a date and boat — we'll confirm availability."}
+{"key":"packageBuilder.promoDismiss","en":"Dismiss"}
+{"key":"packageBuilder.promoTitle","en":"Plan your rental"}
+{"key":"packageBuilder.rentalFreedomNote","en":"No fixed tours, rent the boat and go where you like."}
+{"key":"packageBuilder.requestNote","en":"This is a rental request, not instant booking, Villy will confirm availability and reach out personally."}
+{"key":"packageBuilder.routeStops","en":"{count} coastal stops"}
+{"key":"packageBuilder.selected","en":"Selected"}
+{"key":"packageBuilder.storyDay","en":"How long do you need it?"}
+{"key":"packageBuilder.storyDayHint","en":"Pick your hours and guest count. No tours, sail wherever you like."}
+{"key":"packageBuilder.storyReview","en":"Your rental request"}
+{"key":"packageBuilder.storyVessel","en":"Choose your boat"}
+{"key":"packageBuilder.storyVesselHint","en":"Hourly rental, you drive it yourself from Limenaria Marina."}
+{"key":"packageBuilder.subtitle","en":"Pick a boat and how long you want it, safety briefing included. You drive, you choose where to go."}
+{"key":"packageBuilder.total","en":"Contact for rates"}
+{"key":"packageBuilder.validationRoute","en":"Optional, pick a day idea or skip"}
+{"key":"packageBuilder.validationVessel","en":"Please select a boat to continue"}
+{"key":"reviews.comingSoon","en":"Reviews coming soon."}
+{"key":"reviews.trustLine","en":"Verified guest rentals"}
+{"key":"reviews.verifiedGuests","en":"Verified guests"}
+{"key":"seo.blogArticle.titleSuffix","en":"| Thassos Boat Blog"}
+{"key":"seo.boat.description","en":"Rent a boat in Thassos: {name} at Limenaria Marina. Up to {pax} passengers. {desc} Safety briefing included. Contact us for rates."}
+{"key":"seo.boat.keywords","en":"rent a boat Thassos, {name} rental, Limenaria marina boat rental, private boat tour Thassos, small boat rental Greece Aegean"}
+{"key":"seo.boat.title","en":"Rent a Boat Thassos, {name}"}
+{"key":"seo.homeContent.eyebrow","en":"Boat rental guide"}
+{"key":"seo.homeContent.features.fleet.desc","en":"Ribs and day boats checked before every departure"}
+{"key":"seo.homeContent.features.fleet.title","en":"Speedboats & cruisers"}
+{"key":"seo.homeContent.features.marina.desc","en":"South-coast pickup, GPS coordinates and parking sent after booking"}
+{"key":"seo.homeContent.features.marina.title","en":"Limenaria Marina"}
+{"key":"seo.homeContent.features.routes.desc","en":"Tripiti Cave, Metalia, Marble Beach and hidden coves, you choose"}
+{"key":"seo.homeContent.features.routes.title","en":"Where to go"}
+{"key":"seo.homeContent.features.safety.desc","en":"15, 20 min walkthrough, life jackets and VHF basics"}
+{"key":"seo.homeContent.features.safety.title","en":"Safety briefing"}
+{"key":"seo.homeContent.intro","en":"Rent A Boat Villy is a local boat rental at Limenaria Marina on the south coast, you drive the boat yourself. Hourly rentals include safety briefings and optional tips on where to go."}
+{"key":"seo.homeContent.links.0.href","en":"/rent-a-boat-thassos"}
+{"key":"seo.homeContent.links.0.label","en":"Complete guide to rent a boat in Thassos"}
+{"key":"seo.homeContent.links.1.href","en":"/fleet"}
+{"key":"seo.homeContent.links.1.label","en":"Browse our Thassos boat fleet"}
+{"key":"seo.homeContent.links.2.href","en":"/map"}
+{"key":"seo.homeContent.links.2.label","en":"Sea atlas of boat-accessible spots"}
+{"key":"seo.homeContent.links.3.href","en":"/guide"}
+{"key":"seo.homeContent.links.3.label","en":"Thassos boat guide"}
+{"key":"seo.homeContent.links.4.href","en":"/booking"}
+{"key":"seo.homeContent.links.4.label","en":"Request a boat rental online"}
+{"key":"seo.homeContent.links.5.href","en":"/faq"}
+{"key":"seo.homeContent.links.5.label","en":"Rental FAQ"}
+{"key":"seo.homeContent.links.6.href","en":"/reviews"}
+{"key":"seo.homeContent.links.6.label","en":"Guest reviews"}
+{"key":"seo.homeContent.linksAria","en":"Related rental pages"}
+{"key":"seo.homeContent.linksTitle","en":"Explore & rent a boat"}
+{"key":"seo.homeContent.sections.0.items.0","en":"Meet at Limenaria Marina, GPS coordinates and parking details sent after booking"}
+{"key":"seo.homeContent.sections.0.items.1","en":"15, 20 minute safety briefing covering local hazards, anchoring, and VHF basics"}
+{"key":"seo.homeContent.sections.0.items.2","en":"Life jackets and briefing included, you drive the boat and pick your own stops"}
+{"key":"seo.homeContent.sections.0.items.3","en":"Departures daily 08:00, 20:00; peak season (July, August) fills 48 hours ahead"}
+{"key":"seo.homeContent.sections.0.title","en":"What to expect on rental day"}
+{"key":"seo.homeContent.sections.1.items.0","en":"Tripiti Cave, sea cave and turquoise shallows on the south-west coast"}
+{"key":"seo.homeContent.sections.1.items.1","en":"Metalia Beach, rocky cove with deep blue water ideal for snorkelling"}
+{"key":"seo.homeContent.sections.1.items.2","en":"Aliki Ancient Quarry, marble ruins visible from the water on the south-east shore"}
+{"key":"seo.homeContent.sections.1.items.3","en":"Golden Beach (Chrisi Akti), Thassos' longest sandy beach on the east coast"}
+{"key":"seo.homeContent.sections.1.items.4","en":"Marble Beach (Saliara), white cliffs and emerald water on the north shore"}
+{"key":"seo.homeContent.sections.1.title","en":"Top boat destinations from Limenaria"}
+{"key":"seo.homeContent.sections.2.items.0","en":"Dozens of beaches and coves best reached by private boat"}
+{"key":"seo.homeContent.sections.2.items.1","en":"No boating licence required for boats up to 30HP, ideal for beginners"}
+{"key":"seo.homeContent.sections.2.items.2","en":"Hourly rentals for sunset loops, snorkelling stops, or full-day exploring"}
+{"key":"seo.homeContent.sections.2.items.3","en":"Limenaria Marina is centrally located for south, west, and east-coast sailing"}
+{"key":"seo.homeContent.sections.2.title","en":"Why rent a boat in Thassos?"}
+{"key":"seo.homeContent.sections.3.paragraphs.0","en":"Rates depend on boat type and season, open speedboats, ribs, and day cruisers are all available from Limenaria Marina. Every rental includes safety gear."}
+{"key":"seo.homeContent.sections.3.paragraphs.1","en":"Compare boats on our fleet (/fleet) page — each listing shows rates on request. Peak season (July, August) fills fast, request 48 hours ahead for the best selection."}
+{"key":"seo.homeContent.sections.3.title","en":"How much does it cost to rent a boat in Thassos?"}
+{"key":"seo.homeContent.sections.4.paragraphs.0","en":"No licence is needed for boats up to 30HP, most of our fleet qualifies. We give a short safety briefing at Limenaria Marina before you depart. For larger boats, contact us and we can arrange a skipper."}
+{"key":"seo.homeContent.sections.4.title","en":"Do I need a licence to rent a boat in Thassos?"}
+{"key":"seo.homeContent.title","en":"Rent a Boat in Thassos, Limenaria Marina"}
+{"key":"seo.pages.blog.description","en":"Thassos boat rental news & guides from Limenaria, hire tips, Marble Beach, Tripiti Cave, Golden Beach routes & sea atlas updates."}
+{"key":"seo.pages.blog.keywords","en":"Thassos boat news, rent a boat Villy, Limenaria marina blog, Thassos boat rental guide, Marble Beach boat, hourly boat hire Thassos"}
+{"key":"seo.pages.blog.title","en":"Boat Rental Thassos Guides | Rent A Boat Villy"}
+{"key":"seo.pages.booking.description","en":"Request a Thassos boat rental online. Pick boat, date and hours from Limenaria Marina, we confirm availability by phone or message. safety briefing, no licence up to 30HP."}
+{"key":"seo.pages.booking.keywords","en":"rent a boat Thassos online, book boat Thassos, boat rental Thassos booking, Limenaria marina rental, speedboat rental Thassos"}
+{"key":"seo.pages.booking.title","en":"Rent a Boat in Thassos, Request Online | Limenaria Marina"}
+{"key":"seo.pages.cookies.description","en":"How Rent A Boat Villy uses cookies on our website, preferences, analytics, and your choices when browsing boat rental pages."}
+{"key":"seo.pages.cookies.keywords","en":"Thassos boat rental cookies, website cookie policy Greece"}
+{"key":"seo.pages.cookies.title","en":"Cookie Policy | Rent A Boat Villy"}
+{"key":"seo.pages.experiences.description","en":"Ideas for your Thassos boat rental, sunset hours, cove hopping, full-day exploring. You drive the boat from Limenaria Marina."}
+{"key":"seo.pages.experiences.keywords","en":"Thassos boat rental ideas, rent a boat Thassos, sunset boat rental, cove hopping Thassos, Limenaria marina"}
+{"key":"seo.pages.experiences.title","en":"Thassos Boat Rental Ideas | What Guests Do on the Water"}
+{"key":"seo.pages.faq.description","en":"Everything you need before you rent a boat in Thassos, licence rules, safety briefing included, deposits, weather policy & Limenaria Marina pickup times."}
+{"key":"seo.pages.faq.keywords","en":"rent a boat Thassos FAQ, Thassos boat rental licence, safety briefing included boat hire Thassos, Limenaria marina pickup"}
+{"key":"seo.pages.faq.title","en":"Rent a Boat Thassos FAQ | Licence, Fuel & Pricing"}
+{"key":"seo.pages.fleet.description","en":"Rent a boat in Thassos at Limenaria Marina. 8 boats — Kima (9 seats), premium 8-seaters, family 7-seaters. Brand new, fully equipped. Book online."}
+{"key":"seo.pages.fleet.keywords","en":"boat rental Thassos, rent a boat Thassos, Villy Boats Thassos, Limenaria marina boat hire, Thassos boat fleet"}
+{"key":"seo.pages.fleet.title","en":"Boat Rental Thassos Fleet | Speedboats from Limenaria Marina"}
+{"key":"seo.pages.gdpr.description","en":"Exercise your GDPR data rights with Rent A Boat Villy, access, deletion, and consent management for boat rental bookings."}
+{"key":"seo.pages.gdpr.keywords","en":"GDPR boat rental Greece, data rights Thassos boat rentals"}
+{"key":"seo.pages.gdpr.title","en":"GDPR & Data Rights | Rent A Boat Villy"}
+{"key":"seo.pages.guide.description","en":"Insider guide for renting a boat in Thassos, Marble Beach, Paradise Cove, Aliki Bay & hidden lagoons reachable only by sea. Plan your own day from Limenaria."}
+{"key":"seo.pages.guide.keywords","en":"Thassos boat rental guide, rent a boat Thassos beaches, Marble Beach boat, secret coves Thassos, Limenaria marina routes"}
+{"key":"seo.pages.guide.title","en":"Thassos Boat Rental Guide | Best Beaches by Rental Boat"}
+{"key":"seo.pages.home.description","en":"Rent a boat in Thassos from at Limenaria Marina. Speedboats & day cruisers for Marble Beach & secret coves. No licence up to 30HP, safety briefing included. Book today."}
+{"key":"seo.pages.home.keywords","en":"rent a boat Thassos, rent a boat in Thassos, boat rental Thassos, Thassos boat hire, Limenaria marina boat rental, speedboat rental Thassos, no license boat Thassos 30HP"}
+{"key":"seo.pages.home.title","en":"Rent a Boat in Thassos | Limenaria Marina | Rent A Boat Villy"}
+{"key":"seo.pages.map.description","en":"Interactive Thassos sea atlas for boat rentals, Tripiti Cave, Marble Beach, Golden Beach, Aliki & hidden coves from Limenaria Marina. Distances & cruise times."}
+{"key":"seo.pages.map.keywords","en":"Thassos boat map, boat rental Thassos routes, Limenaria marina spots, Tripiti cave by boat, Golden Beach Thassos boat"}
+{"key":"seo.pages.map.title","en":"Thassos Boat Map | Beaches & Coves from Limenaria Marina"}
+{"key":"seo.pages.matchmaker.description","en":"Answer a few quick questions and we'll suggest the ideal rental boat from Limenaria Marina. Self-drive speedboats for your group size and budget."}
+{"key":"seo.pages.matchmaker.keywords","en":"find rental boat Thassos, boat quiz Thassos, rent a boat Limenaria, choose boat Thassos"}
+{"key":"seo.pages.matchmaker.title","en":"Find Your Boat | Thassos Boat Quiz, Limenaria"}
+{"key":"seo.pages.package.description","en":"See live Thassos boat rental, pick your boat and duration from Limenaria Marina. Compare hourly costs before you send a request."}
+{"key":"seo.pages.package.keywords","en":"Thassos boat rental, rent a boat Thassos cost, boat hire Limenaria, speedboat rental Thassos"}
+{"key":"seo.pages.package.title","en":"Thassos boat rental | rates on request Calculator"}
+{"key":"seo.pages.privacy.description","en":"Privacy policy for Rent A Boat Villy, how we collect, use, and protect your personal data when you rent a boat in Thassos."}
+{"key":"seo.pages.privacy.keywords","en":"Thassos boat rental privacy policy, GDPR boat rental Greece"}
+{"key":"seo.pages.privacy.title","en":"Privacy Policy | Rent A Boat Villy"}
+{"key":"seo.pages.rentBoatThassos.description","en":"Rent a boat in Thassos from at Limenaria Marina. Self-drive speedboats & day cruisers, safety briefing, no licence up to 30HP. Stay on board, swim only while anchored."}
+{"key":"seo.pages.rentBoatThassos.keywords","en":"rent a boat thassos, rent a boat in thassos, boat rental thassos, thassos boat hire, limenaria marina boat rental, hourly boat rental thassos, no license boat thassos 30HP"}
+{"key":"seo.pages.rentBoatThassos.title","en":"Rent a Boat Thassos | Hourly Self-Drive from Limenaria Marina"}
+{"key":"seo.pages.reviews.description","en":"Reviews from guests who rented a boat in Thassos at Limenaria Marina. Read honest feedback on boats, routes, safety briefings and the booking experience."}
+{"key":"seo.pages.reviews.keywords","en":"rent a boat Thassos reviews, Thassos boat rental reviews, Limenaria boat rental ratings, boat hire Thassos Greece"}
+{"key":"seo.pages.reviews.title","en":"Rent a Boat Thassos Reviews | Guest Rentals at Limenaria"}
+{"key":"seo.pages.terms.description","en":"Terms and conditions for renting a boat in Thassos from Limenaria Marina, bookings, cancellations, liability and boat rental rules."}
+{"key":"seo.pages.terms.keywords","en":"Thassos boat rental terms, boat rental conditions Limenaria Marina"}
+{"key":"seo.pages.terms.title","en":"Terms of Service | Rent A Boat Villy"}
+{"key":"seo.rentBoatPillar.ctaPrimary","en":"Request a boat rental"}
+{"key":"seo.rentBoatPillar.ctaSecondary","en":"Browse our fleet"}
+{"key":"seo.rentBoatPillar.eyebrow","en":"Thassos boat rental guide"}
+{"key":"seo.rentBoatPillar.lead","en":"Rent A Boat Villy is a family-run hourly boat rental at Limenaria Marina on Thassos' south coast. You drive the boat yourself after a safety briefing, no guided tours, no large boats. Small open speedboats and day cruisers only, all ≤30HP so no licence is required. Safety briefing is included, and guests stay on board at every stop, swimming only while anchored."}
+{"key":"seo.rentBoatPillar.links.0.href","en":"/fleet"}
+{"key":"seo.rentBoatPillar.links.0.label","en":"Browse speedboats & day cruisers"}
+{"key":"seo.rentBoatPillar.links.1.href","en":"/booking"}
+{"key":"seo.rentBoatPillar.links.1.label","en":"Request a rental online"}
+{"key":"seo.rentBoatPillar.links.2.href","en":"/map"}
+{"key":"seo.rentBoatPillar.links.2.label","en":"Sea atlas, distances & routes"}
+{"key":"seo.rentBoatPillar.links.3.href","en":"/faq"}
+{"key":"seo.rentBoatPillar.links.3.label","en":"Boat rental FAQ"}
+{"key":"seo.rentBoatPillar.links.4.href","en":"/rent-a-boat-thassos"}
+{"key":"seo.rentBoatPillar.links.4.label","en":"Full rent-a-boat guide"}
+{"key":"seo.rentBoatPillar.linksAria","en":"Related boat rental pages"}
+{"key":"seo.rentBoatPillar.linksTitle","en":"Plan your Thassos boat day"}
+{"key":"seo.rentBoatPillar.sections.0.items.0","en":"Browse our fleet of speedboats and day cruisers, all ≤30HP, no licence needed"}
+{"key":"seo.rentBoatPillar.sections.0.items.1","en":"Pick your date and rental hours on our booking page"}
+{"key":"seo.rentBoatPillar.sections.0.items.2","en":"Arrive at Limenaria Marina 20 minutes early for ID check and 15, 20 min safety briefing"}
+{"key":"seo.rentBoatPillar.sections.0.items.3","en":"Drive yourself to Tripiti, Metalia, Marble Beach or any route within the briefing zone"}
+{"key":"seo.rentBoatPillar.sections.0.items.4","en":"Return to the marina by your booked end time, safety briefing included"}
+{"key":"seo.rentBoatPillar.sections.0.title","en":"How to rent a boat in Thassos"}
+{"key":"seo.rentBoatPillar.sections.1.items.0","en":"Central south-coast base, Metalia and Tripiti within 30 minutes"}
+{"key":"seo.rentBoatPillar.sections.1.items.1","en":"Full southern-coast loop to Aliki in six to seven hours"}
+{"key":"seo.rentBoatPillar.sections.1.items.2","en":"Golden Beach and north-shore Marble routes from the same marina"}
+{"key":"seo.rentBoatPillar.sections.1.items.3","en":"Daily departures 08:00, 20:00, May through October"}
+{"key":"seo.rentBoatPillar.sections.1.items.4","en":"Family-run operation with safety briefing on every departure from"}
+{"key":"seo.rentBoatPillar.sections.1.title","en":"Why rent from Limenaria Marina?"}
+{"key":"seo.rentBoatPillar.sections.2.items.0","en":"Safety gear for standard cruising around Thassos"}
+{"key":"seo.rentBoatPillar.sections.2.items.1","en":"15, 20 minute safety and navigation briefing every departure"}
+{"key":"seo.rentBoatPillar.sections.2.items.2","en":"Life jackets for all guests"}
+{"key":"seo.rentBoatPillar.sections.2.items.3","en":"Optional snorkel sets at the marina on request"}
+{"key":"seo.rentBoatPillar.sections.2.items.4","en":"GPS route tracks via our interactive sea atlas"}
+{"key":"seo.rentBoatPillar.sections.2.title","en":"What is included in your rental"}
+{"key":"seo.rentBoatPillar.sections.3.paragraphs.0","en":"Rent A Boat Villy is hourly self-drive rental, not a guided excursion and not a disembark-at-beaches service. Guests must remain on the boat at all anchor stops. Swimming and snorkelling only while anchored around your boat."}
+{"key":"seo.rentBoatPillar.sections.3.paragraphs.1","en":"Pack lunch, snacks and drinks in the on-board cooler. Enjoy meals on deck with harbour and coastline views, this keeps insurance simple and your day focused on the water."}
+{"key":"seo.rentBoatPillar.sections.3.title","en":"Stay-on-board policy"}
+{"key":"seo.rentBoatPillar.sections.4.paragraphs.0","en":"No licence is required for boats up to 30 horsepower under Greek law. Our entire fleet qualifies, open speedboats, ribs and day cruisers only. We never offer large boats or crewed boat rentals on standard hourly rentals."}
+{"key":"seo.rentBoatPillar.sections.4.paragraphs.1","en":"Bring a valid passport or ID. First-time skippers receive extra briefing time on controls, anchoring and local hazards before casting off from Limenaria."}
+{"key":"seo.rentBoatPillar.sections.4.title","en":"Do I need a boating licence in Thassos?"}
+{"key":"seo.rentBoatPillar.sections.5.paragraphs.0","en":"Rates depend on boat and season. Call +30 698 131 8393 or visit our office.. Each boat on our fleet page shows the current rates on request and guest capacity before you send a booking request."}
+{"key":"seo.rentBoatPillar.sections.5.paragraphs.1","en":"July and August fill 48 hours ahead, request early for the best boat selection. A 30% deposit secures your slot; balance due at the marina on arrival."}
+{"key":"seo.rentBoatPillar.sections.5.title","en":"How much does it cost to rent a boat in Thassos?"}
+{"key":"seo.rentBoatPillar.subtitle","en":"Hourly self-drive speedboats & day cruisers from Limenaria Marina, you steer, safety briefing included"}
+{"key":"seo.rentBoatPillar.title","en":"Rent a Boat in Thassos"}
+{"key":"showcase.counter","en":"{current} of {total}"}
+{"key":"showcase.expand","en":"Fullscreen"}
+{"key":"showcase.swipeHint","en":"Swipe for more moments"}
+{"key":"yachtUi.nearYou.seeAll","en":"See all"}
+{"key":"yachtUi.nearYou.title","en":"Near you"}
+{"key":"yachtUi.results.count","en":"{count} Results"}
+{"key":"yachtUi.results.sort","en":"Sort by relevance"}
+{"key":"yachtUi.search.cta","en":"Search boats"}
+{"key":"yachtUi.search.from","en":"From"}
+{"key":"yachtUi.search.location","en":"Location"}
+{"key":"yachtUi.search.locationValue","en":"Limenaria Marina, Thassos"}
+{"key":"yachtUi.search.title","en":"Search"}
+{"key":"yachtUi.search.to","en":"To"}

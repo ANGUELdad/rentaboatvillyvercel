@@ -1,0 +1,74 @@
+{
+  "privacy": {
+    "title": "Politika privatnosti",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Ko smo",
+        "body": "Rent A Boat Villy vodi thassosboats.gr i nudi satni najam čamaca sa samostalnim upravljanjem iz Marine Limenaria, Tasos. Pitanja: vilitrifonova245@gmail.com. Zaštita podataka: vilitrifonova245@gmail.com."
+      },
+      {
+        "heading": "Šta prikupljamo",
+        "body": "Kod zahteva za rezervaciju prikupljamo podatke iz forme: ime, email, telefon, lična karta/pasoš, datum, izbor čamca, gosti i napomene. Čuvamo i izbor kolačića i jezika."
+      },
+      {
+        "heading": "Zašto ih koristimo",
+        "body": "Da odgovorimo na zahtev, potvrdimo dostupnost, pripremimo iznajmljivanje broda i održavamo sajt. Čuvamo zapise koliko je potrebno za rad i zakonske obaveze."
+      },
+      {
+        "heading": "Vaša prava",
+        "body": "Možete zatražiti pristup, ispravku ili brisanje gde zakon dozvoljava. Forma na /gdpr ili vilitrifonova245@gmail.com."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Politika kolačića",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Kolačići",
+        "body": "Koristimo kolačiće za jezik i saglasnost. Analitika i marketing su isključeni dok ih ne uključite."
+      },
+      {
+        "heading": "Neophodni",
+        "body": "tbc-consent čuva izbor kolačića. tbc-lang čuva jezik."
+      },
+      {
+        "heading": "Vaš izbor",
+        "body": "Podešavanja kolačića u podnožju sajta u bilo kom trenutku."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Uslovi i rezervacija",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Kontakt",
+        "body": "Za cene, dostupnost, politiku goriva i sve detalje najma, pozovite +30 698 131 8393 ili +40 770 965 041, pišite na vilitrifonova245@gmail.com ili posetite našu kancelariju u Mari Limenaria, Tasos."
+      },
+      {
+        "heading": "Osnove",
+        "body": "Gorivo nije uključeno. Sigurnosni briefing u marini. Rezervacija u zavisnosti od dostupnosti."
+      },
+      {
+        "heading": "Zahtevi za rezervaciju",
+        "body": "Zahtev na ovom sajtu nije potvrđena rezervacija dok vas ne kontaktiramo."
+      }
+    ]
+  },
+  "gdpr": {
+    "title": "Vaša GDPR prava",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Vaša prava",
+        "body": "Možete zatražiti pristup, ispravku, brisanje ili ograničenje podataka, ili kopiju u prenosivom formatu, gde zakon dozvoljava."
+      },
+      {
+        "heading": "Kontakt",
+        "body": "Forma ispod ili vilitrifonova245@gmail.com. Odgovor u roku od oko 30 dana."
+      }
+    ]
+  }
+}

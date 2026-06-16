@@ -1,0 +1,415 @@
+[
+  {
+    "id": "vladimir-pakaski",
+    "name": "Vladimir Pakaski",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "en",
+    "text": "Amazing experience! Renting a boat with Villy Boat Rentals was an absolute pleasure — everything went smoothly from booking to returning the boat. The boat was clean, well maintained, and perfect for exploring Thassos.",
+    "textByLocale": {
+      "el": "Φανταστική εμπειρία! Η ενοικίαση βάρκας από την Villy Boat Rentals ήταν απόλυτη απόλαυση — όλα κύλησαν ομαλά, από την κράτηση μέχρι την επιστροφή. τη βάρκα ήταν καθαρό, καλά συντηρημένο και ιδανικό για εξερεύνηση της Θάσου.",
+      "de": "Tolles Erlebnis! Ein Boot bei Villy Boat Rentals zu mieten war ein absolutes Vergnügen — alles lief reibungslos von der Buchung bis zur Rückgabe. Das Boot war sauber, gut gewartet und perfekt, um Thassos zu erkunden.",
+      "bg": "Страхотно преживяване! Наемането на лодка от Villy Boat Rentals беше истинско удоволствие — всичко мина гладко от резервацията до връщането. Лодката беше чиста, добре поддържана и перфектна за разглеждане на Тасос.",
+      "ro": "Experiență minunată! Închirierea unei bărci de la Villy Boat Rentals a fost o plăcere absolută — totul a decurs fără probleme, de la rezervare până la returnare. Barca era curată, bine întreținută și perfectă pentru explorarea Thassosului.",
+      "sr": "Sjajno iskustvo! Iznajmljivanje čamca kod Villy Boat Rentals bilo je pravo zadovoljstvo — sve je teklo glatko od rezervacije do vraćanja. Čamac je bio čist, dobro održavan i savršen za istraživanje Tasosa."
+    },
+    "trip": "Thassos boat rental",
+    "date": "July 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "keset-joaca",
+    "name": "Keset Joaca",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "en",
+    "text": "Great experience, the boat had bluetooth and great speed. After 8 hours the fuel consumption was minimal, and the tutorials for the captains were on point and easy to understand.",
+    "textByLocale": {
+      "el": "Εξαιρετική εμπειρία, τη βάρκα είχε bluetooth και μεγάλη ταχύτητα. Μετά από 8 ώρες η κατανάλωση καυσίμου ήταν ελάχιστη και οι οδηγίες για τους καπετάνιους ήταν σωστές και εύκολες στην κατανόηση.",
+      "de": "Tolles Erlebnis, das Boot hatte Bluetooth und gute Geschwindigkeit. Nach 8 Stunden war der Kraftstoffverbrauch minimal, und die Einweisungen für die Kapitäne waren treffend und leicht verständlich.",
+      "bg": "Страхотно преживяване, лодката имаше bluetooth и добра скорост. След 8 часа разходът на гориво беше минимален, а инструкциите за капитаните бяха точни и лесни за разбиране.",
+      "ro": "Experiență grozavă, barca avea bluetooth și viteză bună. După 8 ore consumul de combustibil a fost minim, iar instrucțiunile pentru căpitani au fost la obiect și ușor de înțeles.",
+      "sr": "Odlično iskustvo, čamac je imao bluetooth i dobru brzinu. Posle 8 sati potrošnja goriva je bila minimalna, a uputstva za kapetane su bila jasna i laka za razumevanje."
+    },
+    "trip": "Thassos boat rental",
+    "date": "October 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "mila-marinova",
+    "name": "Mila Marinova",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "en",
+    "text": "Great way to see multiple beaches in one day. Good price, clean and safe boats, very friendly staff, and even a surprise birthday decoration for us. Thank you Villy!",
+    "textByLocale": {
+      "el": "Υπέροχος τρόπος να δεις πολλές παραλίες σε μία μέρα. Καλή τιμή, καθαρά και ασφαλή βάρκες, πολύ φιλικό προσωπικό και ακόμη και μια έκπληξη διακόσμηση για τα γενέθλιά μας. Ευχαριστούμε Villy!",
+      "de": "Toller Weg, mehrere Strände an einem Tag zu sehen. Guter Preis, saubere und sichere Boote, sehr freundliches Personal und sogar eine Überraschungs-Geburtstagsdekoration für uns. Danke, Villy!",
+      "bg": "Чудесен начин да видиш няколко плажа за един ден. Добра цена, чисти и безопасни лодки, много приятен персонал и дори изненадваща украса за рождения ни ден. Благодарим, Villy!",
+      "ro": "Modalitate grozavă de a vedea mai multe plaje într-o zi. Preț bun, bărci curate și sigure, personal foarte prietenos și chiar o decorație surpriză de ziua noastră. Mulțumim, Villy!",
+      "sr": "Odličan način da vidite više plaža za jedan dan. Dobra cena, čisti i sigurni čamci, veoma ljubazno osoblje i čak iznenađujuća rođendanska dekoracija za nas. Hvala, Villy!"
+    },
+    "trip": "Thassos boat rental",
+    "date": "August 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "margarita-mishineva",
+    "name": "Margarita Mishineva",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "en",
+    "text": "Very well maintained boats, Villy is a very friendly and well mannered woman! Best price and attitude from all of the rent-a-boat places in Limenaria.",
+    "textByLocale": {
+      "el": "Πολύ καλά συντηρημένα βάρκες, η Villy είναι πολύ φιλική και ευγενική! Καλύτερη τιμή και εξυπηρέτηση από όλα τα ενοικιάσεις βαρκών στη Λιμενάρια.",
+      "de": "Sehr gut gewartete Boote, Villy ist eine sehr freundliche und wohlerzogene Frau! Bester Preis und beste Einstellung von allen Bootsverleihen in Limenaria.",
+      "bg": "Много добре поддържани лодки, Вили е много приятна и учтива жена! Най-добра цена и отношение от всички места за наем на лодки в Лименария.",
+      "ro": "Bărci foarte bine întreținute, Villy este o femeie foarte prietenoasă și bine crescută! Cel mai bun preț și atitudine dintre toate locurile de închiriat bărci din Limenaria.",
+      "sr": "Veoma dobro održavani čamci, Villy je veoma ljubazna i fina žena! Najbolja cena i odnos od svih mesta za iznajmljivanje čamaca u Limenariji."
+    },
+    "trip": "New Port of Limenaria",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "vip-form",
+    "name": "Vip Form",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "ru",
+    "text": "Супер!!!! Рекомендую, брали два раза катер у этой хозяйки, всё прошло отлично, лодки чистые, в исправном состоянии. Сотрудники очень милые и приветливые.",
+    "textByLocale": {
+      "en": "Super!!!! I recommend it — we rented a boat from this owner twice, everything went great, the boats are clean and in good condition. The staff are very sweet and friendly.",
+      "el": "Υπέροχα!!!! Το συνιστώ — νοικιάσαμε βάρκα από την ιδιοκτήτρια δύο φορές, όλα πήγαν τέλεια, οι βάρκες είναι καθαρά και σε καλή κατάσταση. Το προσωπικό είναι πολύ ευγενικό και φιλικό.",
+      "de": "Super!!!! Ich empfehle es — wir haben zweimal ein Boot bei dieser Vermieterin gemietet, alles lief großartig, die Boote sind sauber und in gutem Zustand. Das Personal ist sehr nett und freundlich.",
+      "bg": "Супер!!!! Препоръчвам — наехме два пъти лодка от тази собственичка, всичко мина отлично, лодките са чисти и в изправно състояние. Персоналът е много мил и приветлив.",
+      "ro": "Super!!!! Recomand — am închiriat de două ori o barcă de la această proprietară, totul a mers excelent, bărcile sunt curate și în stare bună. Personalul este foarte drăguț și prietenos.",
+      "sr": "Super!!!! Preporučujem — iznajmili smo čamac kod ove vlasnice dva puta, sve je prošlo odlično, čamci su čisti i u ispravnom stanju. Osoblje je veoma ljubazno i prijatno."
+    },
+    "trip": "Thassos boat rental",
+    "date": "August 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "dima-batyr",
+    "name": "Dima Batyr",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "ru",
+    "text": "Отличные и не забываемые впечатления!!! Хозяйка Villy очень приветливая, разговаривает на русском. Брали катер на целый день, по итогу нам сделали еще и скидку.",
+    "textByLocale": {
+      "en": "Excellent and unforgettable impressions!!! Owner Villy is very friendly and speaks Russian. We rented a boat for the whole day, and they even gave us a discount.",
+      "el": "Εξαιρετικές και αξέχαστες εντυπώσεις!!! Η Villy είναι πολύ φιλική και μιλάει ρωσικά. Νοικιάσαμε βάρκα για όλη την ημέρα και μας έκαναν και έκπτωση.",
+      "de": "Ausgezeichnete und unvergessliche Eindrücke!!! Die Inhaberin Villy ist sehr freundlich und spricht Russisch. Wir haben ein Boot für den ganzen Tag gemietet und bekamen sogar einen Rabatt.",
+      "bg": "Отлични и незабравими впечатления!!! Собственичката Вили е много приветлива и говори руски. Наехме лодка за цял ден и ни направиха и отстъпка.",
+      "ro": "Impresii excelente și de neuitat!!! Proprietara Villy este foarte prietenoasă și vorbește rusă. Am închiriat o barcă pentru toată ziua și ne-au făcut chiar și o reducere.",
+      "sr": "Odlični i nezaboravni utisci!!! Vlasnica Villy je veoma ljubazna i govori ruski. Iznajmili smo čamac za ceo dan i dobili smo čak i popust."
+    },
+    "trip": "Thassos boat rental",
+    "date": "August 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "galina-koleva",
+    "name": "Galina Koleva",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "bg",
+    "text": "Наехме лодка от Вили и всичко беше прекрасно. За 4 часа цената беше 120 Евро. Лодките са чисти и комфортни. Вили беше много мила и отзивчива. Прекарахме страхотно и се надявам да се видим отново другото лято!",
+    "textByLocale": {
+      "en": "We rented a boat from Villy and everything was wonderful. For 4 hours the price was 120 euros. The boats are clean and comfortable. Villy was very kind and responsive. We had a great time and hope to see you again next summer!",
+      "el": "Νοικιάσαμε βάρκα από την Villy και όλα ήταν υπέροχα. Για 4 ώρες η τιμή ήταν 120 ευρώ. οι βάρκες είναι καθαρά και άνετα. Η Villy ήταν πολύ ευγενική και πρόθυμη. Περάσαμε υπέροχα και ελπίζουμε να τα ξαναπούμε το επόμενο καλοκαίρι!",
+      "de": "Wir haben ein Boot bei Villy gemietet und alles war wunderbar. Für 4 Stunden kostete es 120 Euro. Die Boote sind sauber und komfortabel. Villy war sehr freundlich und hilfsbereit. Wir hatten eine tolle Zeit und hoffen, euch nächsten Sommer wiederzusehen!",
+      "ro": "Am închiriat o barcă de la Villy și totul a fost minunat. Pentru 4 ore prețul a fost de 120 de euro. Bărcile sunt curate și confortabile. Villy a fost foarte amabilă și receptivă. Ne-am simțit grozav și sperăm să ne revedem vara viitoare!",
+      "sr": "Iznajmili smo čamac kod Villy i sve je bilo divno. Za 4 sata cena je bila 120 evra. Čamci su čisti i udobni. Villy je bila veoma ljubazna i susretljiva. Odlično smo se proveli i nadamo se da ćemo se videti sledećeg leta!"
+    },
+    "trip": "4-hour boat rental",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "pavel-minkov",
+    "name": "Pavel Minkov",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "en",
+    "text": "The best boats, Villy is super professional and kind. Low price and best service. Thank you, Villy!",
+    "textByLocale": {
+      "el": "οι καλύτερες βάρκες, η Villy είναι εξαιρετικά επαγγελματική και ευγενική. Χαμηλή τιμή και καλύτερη εξυπηρέτηση. Ευχαριστούμε, Villy!",
+      "de": "Die besten Boote, Villy ist super professionell und freundlich. Günstiger Preis und bester Service. Danke, Villy!",
+      "bg": "Най-добрите лодки, Вили е супер професионална и мила. Ниска цена и най-добро обслужване. Благодарим, Вили!",
+      "ro": "Cele mai bune bărci, Villy este super profesională și amabilă. Preț mic și cel mai bun serviciu. Mulțumim, Villy!",
+      "sr": "Najbolji čamci, Villy je super profesionalna i ljubazna. Niska cena i najbolja usluga. Hvala, Villy!"
+    },
+    "trip": "Thassos boat rental",
+    "date": "August 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "giulia",
+    "name": "GiuLIA",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "ro",
+    "text": "O experiență minunată!!! trebuie încercată neapărat !!",
+    "textByLocale": {
+      "en": "A wonderful experience!!! A must try!!",
+      "el": "Μια υπέροχη εμπειρία!!! Αξίζει οπωσδήποτε να τη δοκιμάσετε!!",
+      "de": "Ein wunderbares Erlebnis!!! Unbedingt ausprobieren!!",
+      "bg": "Чудесно преживяване!!! Задължително трябва да се опита!!",
+      "sr": "Divno iskustvo!!! Obavezno probajte!!"
+    },
+    "trip": "Thassos boat rental",
+    "date": "March 2026",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "aljosa-smalcelj",
+    "name": "Aljoša Šmalcelj",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "sr",
+    "text": "Svaka preporuka za iznajmljivanje brodova ovde. Jako ljubazna i predusretljiva žena.",
+    "textByLocale": {
+      "en": "Highly recommend renting boats here. A very kind and thoughtful woman.",
+      "el": "Σίγουρα συνιστώ την ενοικίαση βαρκών εδώ. Μια πολύ ευγενική και πρόθυμη γυναίκα.",
+      "de": "Sehr empfehlenswert, hier Boote zu mieten. Eine sehr freundliche und aufmerksame Frau.",
+      "bg": "Силно препоръчвам наемането на лодки тук. Много мила и отзивчива жена.",
+      "ro": "Recomand cu căldură închirierea bărcilor de aici. O femeie foarte amabilă și atentă."
+    },
+    "trip": "Thassos boat rental",
+    "date": "July 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "aleksandar-osenov",
+    "name": "Александър Осенов",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "en",
+    "text": "Villy is amazing and the boats are ok. Just for information you can't go beyond the designated points.",
+    "textByLocale": {
+      "el": "Η Villy είναι υπέροχη και οι βάρκες είναι εντάξει. Μόνο για πληροφορία, δεν μπορείτε να πάτε πέρα από τα καθορισμένα σημεία.",
+      "de": "Villy ist großartig und die Boote sind in Ordnung. Nur zur Info: Man kann nicht über die festgelegten Punkte hinausfahren.",
+      "bg": "Вили е страхотна и лодките са добре. Само за информация — не можете да отидете отвъд определените точки.",
+      "ro": "Villy este minunată și bărcile sunt ok. Doar pentru informare, nu puteți merge dincolo de punctele desemnate.",
+      "sr": "Villy je sjajna i čamci su u redu. Samo za informaciju, ne možete ići dalje od određenih tačaka."
+    },
+    "trip": "Thassos boat rental",
+    "date": "October 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "tania-sorina",
+    "name": "Tania Sorina",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "ro",
+    "text": "Am luat barca pe 4 ore, si am platit 120€ + 20€ combustibil (2€/litru). Totuși, nu poti înconjura insula, poti merge doar pana la anumite limite dar e ok.",
+    "textByLocale": {
+      "en": "We took the boat for 4 hours and paid 120€ + 20€ fuel (2€/liter). However, you can't go around the island, only to certain limits, but it's okay.",
+      "el": "Πήραμε τη βάρκα για 4 ώρες και πληρώσαμε 120€ + 20€ καύσιμα (2€/λίτρο). Ωστόσο, δεν μπορείτε να κάνετε τον γύρο του νησιού, μόνο μέχρι ορισμένα όρια, αλλά είναι εντάξει.",
+      "de": "Wir hatten das Boot 4 Stunden und zahlten 120€ + 20€ Kraftstoff (2€/Liter). Man kann jedoch nicht um die Insel fahren, nur bis zu bestimmten Grenzen, aber das ist in Ordnung.",
+      "bg": "Взехме лодката за 4 часа и платихме 120€ + 20€ гориво (2€/литър). Все пак не можете да обиколите острова, само до определени граници, но е добре.",
+      "sr": "Uzeli smo čamac na 4 sata i platili 120€ + 20€ goriva (2€/litar). Ipak, ne možete da zaobiđete ostrvo, samo do određenih granica, ali je u redu."
+    },
+    "trip": "4-hour boat rental",
+    "date": "September 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "corina-sava",
+    "name": "Corina Sava",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "ro",
+    "text": "Experiența cu bărcuța merită încercată și repetată! Doamna din București care se ocupă de comenzi este foarte simpatică.",
+    "textByLocale": {
+      "en": "The experience with the boat is worth trying and repeating! The lady from Bucharest who handles bookings is very nice.",
+      "el": "Η εμπειρία με τη βάρκα αξίζει να δοκιμαστεί και να επαναληφθεί! Η κυρία από το Βουκουρέστι που αναλαμβάνει τις κρατήσεις είναι πολύ ευγενική.",
+      "de": "Das Erlebnis mit dem Boot lohnt sich, es auszuprobieren und zu wiederholen! Die Dame aus Bukarest, die die Buchungen betreut, ist sehr nett.",
+      "bg": "Преживяването с лодката си заслужава да бъде опитано и повторено! Дамата от Букурещ, която се грижи за поръчките, е много мила.",
+      "sr": "Iskustvo sa čamcem vredi probati i ponoviti! Gospođa iz Bukurešta koja vodi rezervacije je veoma ljubazna."
+    },
+    "trip": "Thassos boat rental",
+    "date": "August 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "nadezhda-atanasova",
+    "name": "НАДЕЖДА АТАНАСОВА",
+    "location": "Google Review",
+    "rating": 5,
+    "locale": "bg",
+    "text": "Наехме лодка от Вили това лято за цял ден! Лодките са добре поддържани и чисти. Вили е много мила и отзивчива дама, беше така добра да ни упъти и към най-добрите плажове.",
+    "textByLocale": {
+      "en": "We rented a boat from Villy this summer for the whole day! The boats are well maintained and clean. Villy is a very kind and responsive lady, she was so good to guide us to the best beaches.",
+      "el": "Νοικιάσαμε βάρκα από την Villy αυτό το καλοκαίρι για όλη την ημέρα! οι βάρκες είναι καλά συντηρημένα και καθαρά. Η Villy είναι πολύ ευγενική και πρόθυμη, ήταν τόσο καλή που μας οδήγησε στις καλύτερες παραλίες.",
+      "de": "Wir haben diesen Sommer ein Boot bei Villy für den ganzen Tag gemietet! Die Boote sind gut gewartet und sauber. Villy ist eine sehr freundliche und hilfsbereite Dame, sie hat uns zu den besten Stränden geführt.",
+      "ro": "Am închiriat o barcă de la Villy vara aceasta pentru toată ziua! Bărcile sunt bine întreținute și curate. Villy este o doamnă foarte amabilă și receptivă, a fost atât de bună încât ne-a ghidat spre cele mai bune plaje.",
+      "sr": "Iznajmili smo čamac kod Villy ovog leta za ceo dan! Čamci su dobro održavani i čisti. Villy je veoma ljubazna i susretljiva dama, bila je tako dobra da nas je vodila do najboljih plaža."
+    },
+    "trip": "Full-day boat rental",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "sebastian-stefan",
+    "name": "Sebastian Stefan",
+    "location": "Google Review",
+    "rating": 4,
+    "locale": "ro",
+    "text": "Totul a fost bine. Am inchiriat barca pentru 8 ore, in regim propriu.",
+    "textByLocale": {
+      "en": "Everything was fine. We rented the boat for 8 hours, self-drive.",
+      "el": "Όλα ήταν καλά. Νοικιάσαμε τη βάρκα για 8 ώρες, με δική μας οδήγηση.",
+      "de": "Alles war in Ordnung. Wir haben das Boot 8 Stunden lang selbst gefahren.",
+      "bg": "Всичко беше наред. Наехме лодката за 8 часа, със собствено управление.",
+      "sr": "Sve je bilo u redu. Iznajmili smo čamac na 8 sati, sami smo vozili."
+    },
+    "trip": "8-hour boat rental",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "jordan-jordanov",
+    "name": "Jordan Jordanov",
+    "location": "Google Review",
+    "rating": 1,
+    "locale": "en",
+    "text": "The boat we rented was kinda old, the Bluetooth on it didn't work, and there was no fuel indicator at all. It was handed over to us unclean and completely unprepared.",
+    "trip": "Thassos boat rental",
+    "date": "October 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "rafail-tzelekos",
+    "name": "Ραφαηλ Τζελεκου",
+    "location": "Google Review",
+    "rating": 1,
+    "locale": "el",
+    "text": "Δεν προτείνω — κάνουμε κράτηση και μας το ακυρώνουν λέγοντας μας έχει κακό καιρό. Πολύ κακή επικοινωνία, δεν μας ενημέρωσαν καν για την ακύρωση της κράτησης.",
+    "textByLocale": {
+      "en": "I don't recommend — we made a booking and they cancelled on us saying the weather was bad. Very poor communication, they didn't even inform us about the cancellation."
+    },
+    "trip": "Thassos boat rental",
+    "date": "August 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "charitinh-tompoulidou",
+    "name": "Charitinh Tompoulidou",
+    "location": "Google Review",
+    "rating": 1,
+    "locale": "el",
+    "text": "Κλείσαμε βάρκα και δύο ώρες πριν πάμε την πήραμε εμείς τηλέφωνο για να επιβεβαιώσουμε και μας είπε ότι το είχε κλείσει αλλού τελικά και ότι δεν θα μπορέσουμε να πάμε. Απαράδεκτη.",
+    "textByLocale": {
+      "en": "We booked a boat and two hours before we were due to go we called to confirm and were told it had been booked elsewhere and we couldn't go. Unacceptable."
+    },
+    "trip": "Thassos boat rental",
+    "date": "August 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "eduard-m",
+    "name": "Eduard M",
+    "location": "Google Review",
+    "rating": 3,
+    "locale": "ro",
+    "text": "8 h 140 euro dar te arde la benzina — la sfârșit se uită în rezervor ochiometric și îți spune că ai de plătit încă 50 de euro benzină, deși rezervorul era plin când am plecat.",
+    "textByLocale": {
+      "en": "8 h 140 euro but they sting you on fuel — at the end they look in the tank by eye and tell you to pay another 50 euros for fuel, even though the tank was full when we left."
+    },
+    "trip": "8-hour boat rental",
+    "date": "July 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "ioana-zoicas",
+    "name": "Ioana Carlescu Zoicas",
+    "location": "Google Review",
+    "rating": 1,
+    "locale": "ro",
+    "text": "Am achitat avans cu 2 zile inainte, in ziua programata cand am ajuns, nu aveau barca. Eram si cu 4 copii dupa noi, doamna doar 'sorry' stia sa zica.",
+    "textByLocale": {
+      "en": "We paid a deposit 2 days in advance, on the scheduled day when we arrived, they didn't have the boat. We even had 4 children with us, the lady only knew how to say 'sorry'."
+    },
+    "trip": "Thassos boat rental",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "claudiu-laita",
+    "name": "Claudiu Laita",
+    "location": "Google Review",
+    "rating": 1,
+    "locale": "en",
+    "text": "We've rented boats from Limenaria every year in the last 3 years — this was the first and the last time from Villy.",
+    "trip": "Thassos boat rental",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "elena-zoicas",
+    "name": "Elena Zoicas",
+    "location": "Google Review",
+    "rating": 1,
+    "locale": "ro",
+    "text": "Am făcut rezervarea miercuri pentru joi, pentru 2 bărci, am achitat avansul cerut. Din cauza vremii s-a decalat rezervarea pentru vineri, apoi nu au avut bărci disponibile.",
+    "textByLocale": {
+      "en": "We made the reservation on Wednesday for Thursday, for 2 boats, we paid the requested deposit. Due to weather the reservation was moved to Friday, then they had no boats available."
+    },
+    "trip": "Thassos boat rental",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "ovidiu",
+    "name": "Ovidiu",
+    "location": "Google Review",
+    "rating": 1,
+    "locale": "ro",
+    "text": "Experiență profund dezamăgitoare. Am rezervat cu două zile în avans două bărci și am achitat un avans de 120€. La sosire, am rămas stupefiat să aflu că nu aveau bărci.",
+    "textByLocale": {
+      "en": "Deeply disappointing experience. We booked two boats two days in advance and paid a 120€ deposit. On arrival, we were stunned to find they had no boats."
+    },
+    "trip": "Thassos boat rental",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  },
+  {
+    "id": "tasnix",
+    "name": "TasNix",
+    "location": "Google Review",
+    "rating": 3,
+    "locale": "en",
+    "text": "Mixed experience — boat was fine but fuel charges were higher than expected.",
+    "trip": "Thassos boat rental",
+    "date": "June 2025",
+    "image": "",
+    "source": "google"
+  }
+]

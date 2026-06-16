@@ -1,0 +1,17 @@
+{
+  "offers": [
+    {
+      "id": "sunset-upgrade",
+      "enabled": false,
+      "title": "Free Sunset Upgrade",
+      "subtitle": "June boat rentals only",
+      "description": "Book a 4-hour boat rental and we'll extend your slot to golden hour at no extra cost.",
+      "badge": "FREE",
+      "cta": "View Fleet",
+      "ctaLink": "/fleet",
+      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=800&q=80",
+      "delaySeconds": 6,
+      "showOnce": true
+    }
+  ]
+}

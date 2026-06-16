@@ -1,0 +1,83 @@
+{
+  "policyVersion": "2026-06-08",
+  "company": {
+    "name": "Rent A Boat Villy",
+    "email": "vilitrifonova245@gmail.com",
+    "dpoEmail": "vilitrifonova245@gmail.com",
+    "address": "New Port of Limenaria, Thassos 640 02, Greece",
+    "phone": "+30 698 131 8393",
+    "phone2": "+40 770 965 041"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Who we are",
+        "body": "Rent A Boat Villy operates thassosboats.gr and provides hourly self-drive boat rental from New Port of Limenaria, Thassos, Greece. Questions: vilitrifonova245@gmail.com. Data protection: vilitrifonova245@gmail.com."
+      },
+      {
+        "heading": "What we collect",
+        "body": "When you send a booking request we collect the details you enter: name, email, phone, ID/passport number, date, boat preference, guests, and any notes. We also store your cookie consent choice and language preference."
+      },
+      {
+        "heading": "Why we use it",
+        "body": "We use this information to reply to your request, confirm availability, prepare your boat rental, and run the website. We keep booking records as long as needed for our operations and any legal requirements."
+      },
+      {
+        "heading": "Your rights",
+        "body": "You can ask to access, correct, or delete your data where the law allows. Use the form at /gdpr or email vilitrifonova245@gmail.com."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Cookies we use",
+        "body": "We use cookies and similar storage to remember your language and cookie choices. Analytics and marketing cookies are off unless you enable them."
+      },
+      {
+        "heading": "Necessary",
+        "body": "tbc-consent stores your cookie preferences. tbc-lang stores your language. These are required for the site to work as intended."
+      },
+      {
+        "heading": "Your choices",
+        "body": "Open Cookie Settings in the footer to change preferences at any time."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms & Booking",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Contact us",
+        "body": "For rates, availability, fuel policy, and all rental details, call +30 698 131 8393 or +40 770 965 041, email vilitrifonova245@gmail.com, or visit our office at New Port of Limenaria, Thassos."
+      },
+      {
+        "heading": "Basics",
+        "body": "Fuel not included. Safety briefing at the marina. Booking subject to availability."
+      },
+      {
+        "heading": "Booking requests",
+        "body": "A request on this website is not a confirmed booking until we contact you."
+      }
+    ]
+  },
+  "gdpr": {
+    "title": "Your GDPR Rights",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Your rights",
+        "body": "You may ask us to access, correct, delete, or restrict use of your personal data, or to receive a copy in a portable format, where applicable law allows."
+      },
+      {
+        "heading": "Contact us",
+        "body": "Use the form below or email vilitrifonova245@gmail.com. We aim to respond within 30 days."
+      }
+    ]
+  }
+}

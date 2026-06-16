@@ -1,0 +1,131 @@
+{
+  "items": [
+    {
+      "id": "villy-reel",
+      "type": "video",
+      "aspect": "16:9",
+      "src": "/videos/rent-a-boat-villy.mp4",
+      "poster": "/videos/posters/rent-a-boat-villy.jpg",
+      "alt": "Rent A Boat Villy on the Aegean",
+      "caption": "Your day on the water — Rent A Boat Villy"
+    },
+    {
+      "id": "villy-1",
+      "type": "video",
+      "aspect": "9:16",
+      "src": "/videos/gallery/villy-1.mp4",
+      "poster": "/videos/posters/vertical-1.jpg",
+      "alt": "Villy boats video one",
+      "caption": "Villy boats video 1"
+    },
+    {
+      "id": "villy-2",
+      "type": "video",
+      "aspect": "16:9",
+      "src": "/videos/gallery/villy-2.mp4",
+      "poster": "/videos/posters/cruise.jpg",
+      "alt": "Villy boats video two",
+      "caption": "Villy boats video 2"
+    },
+    {
+      "id": "villy-3",
+      "type": "video",
+      "aspect": "9:16",
+      "src": "/videos/gallery/villy-3.mp4",
+      "poster": "/videos/posters/vertical-2.jpg",
+      "alt": "Villy boats video three",
+      "caption": "Villy boats video 3"
+    },
+    {
+      "id": "villy-4",
+      "type": "video",
+      "aspect": "9:16",
+      "src": "/videos/gallery/villy-4.mp4",
+      "poster": "/videos/posters/vertical-3.jpg",
+      "alt": "Villy boats video four",
+      "caption": "Villy boats video 4"
+    },
+    {
+      "id": "villy-5",
+      "type": "video",
+      "aspect": "16:9",
+      "src": "/videos/gallery/villy-5.mp4",
+      "poster": "/videos/posters/hero.jpg",
+      "alt": "Villy boats video five",
+      "caption": "Villy boats video 5"
+    },
+    {
+      "id": "villy-6",
+      "type": "video",
+      "aspect": "16:9",
+      "src": "/videos/gallery/villy-6.mp4",
+      "poster": "/videos/posters/horizon.jpg",
+      "alt": "Villy boats video six",
+      "caption": "Villy boats video 6"
+    },
+    {
+      "id": "poseidon-palataki",
+      "type": "image",
+      "aspect": "16:9",
+      "src": "/images/boats/poseidon.jpg",
+      "alt": "Poseidon boat with Palataki, Limenaria",
+      "caption": "Poseidon departing Limenaria — Palataki in the background"
+    },
+    {
+      "id": "ag-nikolaos-marina",
+      "type": "image",
+      "aspect": "16:9",
+      "src": "/images/boats/ag-nikolaos.jpg",
+      "alt": "Ag. Nikolaos boat at New Port of Limenaria",
+      "caption": "Ag. Nikolaos at New Port of Limenaria"
+    },
+    {
+      "id": "basilios-coast",
+      "type": "image",
+      "aspect": "16:9",
+      "src": "/images/boats/basilios.jpg",
+      "alt": "Basilios boat off the Limenaria coast",
+      "caption": "Basilios — self-drive from Limenaria"
+    },
+    {
+      "id": "nikos-sea",
+      "type": "image",
+      "aspect": "16:9",
+      "src": "/images/boats/nikos.jpg",
+      "alt": "Nikos boat on the Aegean",
+      "caption": "Nikos — self-drive from Limenaria"
+    },
+    {
+      "id": "niki-explorer",
+      "type": "image",
+      "aspect": "16:9",
+      "src": "/images/boats/niki.jpg",
+      "alt": "Niki boat on calm water",
+      "caption": "Niki — south-coast cove runs"
+    },
+    {
+      "id": "kima-family",
+      "type": "image",
+      "aspect": "16:9",
+      "src": "/images/boats/kima.jpg",
+      "alt": "Kima nine-seat boat at New Port of Limenaria",
+      "caption": "Kima — our nine-seat boat"
+    },
+    {
+      "id": "nikoleta-marina",
+      "type": "image",
+      "aspect": "16:9",
+      "src": "/images/boats/nikoleta.jpg",
+      "alt": "Nikoleta boat at New Port of Limenaria",
+      "caption": "Nikoleta — eight-seat day boat"
+    },
+    {
+      "id": "ektoras-sea",
+      "type": "image",
+      "aspect": "16:9",
+      "src": "/images/boats/ektoras.jpg",
+      "alt": "Ektoras boat on the Aegean",
+      "caption": "Ektoras — south-coast cove runs"
+    }
+  ]
+}

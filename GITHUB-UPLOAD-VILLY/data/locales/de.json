@@ -1,0 +1,1577 @@
+{
+  "nav": {
+    "fleet": "Flotte",
+    "package": "Paket",
+    "routes": "Karte",
+    "guide": "Reiseführer",
+    "experiences": "Erlebnisse",
+    "reviews": "Bewertungen",
+    "booking": "Buchen",
+    "blog": "Blog",
+    "bookNow": "Buchen",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Rent A Boat Villy · Thassos · Griechenland",
+    "title": "Dein Thassos-Tag auf dem Wasser",
+    "hook": "Dein Thassos-Tag beginnt auf dem Wasser",
+    "hookLine": "Stundenweise Selbstfahrer-Bootsvermietung vom Neuen Hafen von Limenaria, Thassos",
+    "locationStrip": "Neuer Hafen von Limenaria, Thassos — Abfahrt an der Südküste",
+    "locationStripMobile": "Limenaria · Thassos",
+    "pillSelfDrive": "Selbstfahrer",
+    "pillHourly": "Stundenweise",
+    "pillMarina": "Neuer Hafen von Limenaria",
+    "marinaMapsLabel": "Route",
+    "marinaMapsAria": "Neuer Hafen von Limenaria in Google Maps öffnen",
+    "pillsAriaLabel": "Miet-Highlights",
+    "subtitle": "Selbstfahrer-Speedboats & Day Cruiser vom Neuen Hafen von Limenaria, Thassos",
+    "cta": "Buchen",
+    "bookingPreviewDateHint": "Tag wählen",
+    "bookingTitle": "Verfügbarkeit prüfen",
+    "scroll": "Scrollen",
+    "statBoats": "{count} Boote",
+    "statRoutes": "{count} Routen",
+    "statRating": "Gästebewertungen",
+    "statRatingLabel": "Bewertungen",
+    "ratingLabel": "{count}+ Gästebewertungen",
+    "ratingReviews": "{count}+ Google-Bewertungen"
+  },
+  "home": {
+    "trustBar": {
+      "ariaLabel": "Warum bei Rent A Boat Villy buchen",
+      "licence": "Kein Führerschein ≤30 PS",
+      "briefing": "Kostenlose Sicherheitseinweisung",
+      "deposit": "Keine Online-Zahlung"
+    },
+    "bento": {
+      "ariaLabel": "Mit Vertrauen buchen",
+      "weatherTitle": "Thassos heute",
+      "calm": "Ruhiges Wasser",
+      "moderate": "Leichte Brise",
+      "rough": "Wellig — beim Briefing nachfragen",
+      "captainTitle": "Sei dein eigener Kapitän",
+      "captainBody": "Kein Führerschein bis 30 PS. Kostenlose Sicherheitseinweisung vor jeder Abfahrt.",
+      "reviewsTitle": "Google reviews"
+    },
+    "quickNav": {
+      "label": "Springe zu",
+      "ariaLabel": "Schnellnavigation"
+    },
+    "seasonDock": {
+      "sceneBadge": "Selbstfahrer-Speedboats · Limenaria",
+      "eyebrow": "Thassos Sommersaison",
+      "headline": "Vermietung 2026 geöffnet",
+      "subline": "Juli & August sind schnell ausgebucht, Boot und Stunden online wählen.",
+      "highlight1": "Täglich 08:00, 20:00",
+      "highlight2": "Neuer Hafen von Limenaria",
+      "highlight3": "Früh buchen — beste Verfügbarkeit",
+      "cta": "Verfügbarkeit prüfen"
+    },
+    "narrative": {
+      "fleetQuestion": "Welche Boote?",
+      "reviewsQuestion": "Was unsere Gäste sagen",
+      "matchmakerQuestion": "Noch unsicher?",
+      "galleryQuestion": "Was werde ich sehen?",
+      "exploreQuestion": "Über uns"
+    },
+    "exploreEyebrow": "Über uns",
+    "exploreTitle": "Ihr Bootsverleih-Team in Limenaria",
+    "exploreSubtitle": "Rent A Boat Villy ist ein familiengeführter Bootsverleih in Neuer Hafen von Limenaria — Sicherheitseinweisung bei jeder Abfahrt, mit Routentipps von Villy und dem Team.",
+    "safetyRules": [
+      "15, 20 Min. Sicherheitseinweisung vor jeder Abfahrt",
+      "Schwimmwesten werden gestellt",
+      "Festgelegte Fahrgebiete ab Limenaria",
+      "Unsicheres Wetter? Kostenlose Umbuchung — ohne Kosten",
+      "Kein Führerschein bis 30 PS erforderlich"
+    ],
+    "whyChoose": {
+      "title": "Warum Villy Boats Thassos?",
+      "subtitle": "Brandneue Boote, echte Bordausstattung und ein Team, das Ihre Sprache spricht — alles vom Neuen Hafen von Limenaria.",
+      "items": {
+        "equipped": {
+          "title": "Brandneu & voll ausgestattet",
+          "desc": "Jedes Boot unserer Flotte ist neu, gepflegt und bereit für einen komfortablen Tag auf der Ägäis."
+        },
+        "amenities": {
+          "title": "Premium-Bordausstattung",
+          "desc": "Sonnendach, Bluetooth-Lautsprecher, Kühlbox, Anker und Schwimmwesten für Erwachsene und Kinder."
+        },
+        "languages": {
+          "title": "Wir sprechen Ihre Sprache",
+          "desc": "Kundenservice auf Englisch, Französisch, Rumänisch, Bulgarisch, Serbisch, Russisch, Arabisch und Griechisch."
+        },
+        "celebrate": {
+          "title": "Feiern Sie mit uns",
+          "desc": "Geburtstage, Hochzeiten, Jubiläen und Partys — für Kinder und Erwachsene."
+        },
+        "earlyBooking": {
+          "title": "Frühbucher-Vorrang",
+          "desc": "Früh buchen für die erste Wahl bei Boot und Datum."
+        },
+        "marina": {
+          "title": "Neuer Hafen von Limenaria",
+          "desc": "Abholung an Thassos' Südküste — in Minuten los und verborgene Schätze per Boot entdecken."
+        }
+      }
+    },
+    "cards": {
+      "marina": {
+        "title": "Basis Neuer Hafen von Limenaria",
+        "desc": "Abholung in unserer Heimatmarina an Thassos' Südküste"
+      },
+      "fleet": {
+        "title": "Gepflegte Flotte",
+        "desc": "Speedboote und Tageskreuzer, vor jeder Abfahrt geprüft"
+      },
+      "safety": {
+        "title": "Sicherheitseinweisung bei jeder Abfahrt",
+        "desc": "Vollständige Einweisung zu lokalen Gefahren, Schwimmwesten und UKW-Grundlagen, vor dem Ablegen."
+      },
+      "fuel": {
+        "title": "Kraftstoff nicht inklusive",
+        "desc": "Kraftstoff wird separat berechnet — typischer Verbrauch erklären wir im Briefing"
+      },
+      "routes": {
+        "title": "Lokale Routenberatung",
+        "desc": "Strand- und Bucht-Tipps von Villy und dem Team, das hier täglich segelt"
+      },
+      "booking": {
+        "title": "Einfache Anfrage",
+        "desc": "Daten online senden, wir prüfen die Flotte und melden uns"
+      }
+    }
+  },
+  "fleet": {
+    "eyebrow": "Unsere Flotte",
+    "title": "Boot mieten Thassos — Flotte",
+    "subtitle": "8 Boote nach Kapazität — 9-Sitzer Kima, Premium 8-Sitzer und Familien 7-Sitzer vom Neuen Hafen von Limenaria.",
+    "stat1": "8 Boote",
+    "stat2": "Kontaktieren Sie uns für Preise",
+    "stat3": "Neu & ausgestattet",
+    "viewVessel": "Details",
+    "empty": "Flotte folgt in Kürze.",
+    "vesselCount": "{count} Boote verfügbar"
+  },
+  "map": {
+    "eyebrow": "Entdecken",
+    "title": "Thassos Seekarte",
+    "subtitle": "Strände, Höhlen & Häfen, Entfernungen ab Limenaria.",
+    "heroBadge": "Seekarte",
+    "heroStatSpotsLabel": "Auf der Karte",
+    "heroStatTracks": "GPS-Routen",
+    "heroStatTracksLabel": "Meeresrouten",
+    "heroStatBase": "Limenaria",
+    "heroStatBaseLabel": "Abfahrtsmarina",
+    "openMaps": "In Maps",
+    "loading": "Karte lädt...",
+    "departure": "Abfahrtsmarina",
+    "discoverEyebrow": "Per Boot entdecken",
+    "discoverTitle": "Mit dem Boot erreichbare Ziele",
+    "allSpots": "All",
+    "spotsCount": "spots",
+    "searchPlaceholder": "Strände, Höhlen, Häfen suchen…",
+    "fromMarina": "ab Marina",
+    "byBoat": "mit dem Boot",
+    "bookSpot": "Boot hier buchen",
+    "noResults": "Keine Treffer für Ihre Suche.",
+    "backToList": "Alle Orte",
+    "seoBlurb": "Jeder Pin ist mit Mietboot vom Neuen Hafen von Limenaria erreichbar — tippen Sie für Entfernung, Fahrzeit und Buchung."
+  },
+  "common": {
+    "language": "Sprache",
+    "backHome": "Startseite",
+    "lastUpdated": "Aktualisiert",
+    "explore": "Entdecken",
+    "later": "Später",
+    "viewAll": "Alle",
+    "errorGeneric": "Fehler. Bitte erneut.",
+    "skipToMain": "Zum Inhalt",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "callPhone": "{phone} anrufen",
+    "phoneLabel": "Telefon",
+    "navMenu": "Navigationsmenü"
+  },
+  "matchmaker": {
+    "eyebrow": "Unsicher?",
+    "title": "Finde dein Boot",
+    "subtitle": "3 Fragen, wir empfehlen das passende Boot.",
+    "cta": "Boot finden",
+    "progress": "Frage {current}/{total}",
+    "resultEyebrow": "Dein Match",
+    "resultTitle": "Boot gefunden",
+    "bookNow": "Buchen",
+    "retry": "Nochmal",
+    "back": "Zurück",
+    "stepsTitle": "So funktioniert es",
+    "step1Label": "Gruppengröße",
+    "step1Desc": "Paar, Familie oder Party — sagen Sie uns, wer kommt.",
+    "step2Label": "Ihr Stil",
+    "step2Desc": "Romantische Buchten, Familienspaß oder Feierstimmung.",
+    "step3Label": "Ihr Match",
+    "step3Desc": "Wir empfehlen das passende Boot aus unserer Limenaria-Flotte.",
+    "fleetTitle": "Aus unserer Flotte",
+    "fleetLink": "Alle Boote ansehen",
+    "statBoats": "{count} Boote",
+    "statQuestions": "3 Fragen",
+    "statTime": "~2 Minuten",
+    "statTimeLabel": "Dauert nur",
+    "trustEyebrow": "Mit Vertrauen buchen",
+    "trustSecureTitle": "Keine Zahlung jetzt",
+    "trustSecureDesc": "Sichere Anfrage — Sie zahlen in der Marina",
+    "trustLocalTitle": "Lokales Limenaria-Team",
+    "trustLocalDesc": "Familienbetrieb am Marinasteg",
+    "trustPriceTitle": "Sicherheitseinweisung inklusive",
+    "trustPriceDesc": "Sicherheitseinweisung bei jeder Abfahrt"
+  },
+  "showcase": {
+    "eyebrow": "Was erwartet mich?",
+    "title": "Leben auf der Ägäis",
+    "subtitle": "Goldene Stunden, geheime Buchten, echte Bootsvermietung.",
+    "expand": "Vollbild",
+    "counter": "{current} von {total}",
+    "swipeHint": "Wischen für mehr Momente"
+  },
+  "gallery": {
+    "eyebrow": "Was werde ich sehen?",
+    "title": "Einzigartige Momente auf Thassos",
+    "subtitle": "Goldene Stunden, geheime Buchten und echtes Thassos — aus echten Vermietungen.",
+    "expand": "Vollbild",
+    "close": "Galerie schließen",
+    "counter": "{current} von {total}",
+    "swipeHint": "Durch Mietvideos wischen — tippen zum Abspielen",
+    "filmstripHint": "Miniatur antippen zum Springen",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "back": "Zurück"
+  },
+  "packageBuilder": {
+    "eyebrow": "Paket zusammenstellen",
+    "title": "Live-Vorschau",
+    "subtitle": "Boot und Dauer wählen — Sicherheitseinweisung inklusive. Sie fahren, Sie wählen die Route.",
+    "heroHeadline": "Miete planen",
+    "heroSubline": "Stundenweise Bootsvermietung vom Neuen Hafen von Limenaria — Boot wählen, Stunden setzen, Anfrage senden. Keine Touren, kein Skipper bis 30 PS.",
+    "journeyMarina": "Limenaria",
+    "journeyExplore": "Entdecken",
+    "journeyYourDay": "Ihr Tag",
+    "journeyBoarding": "Boarding Pass",
+    "journeyMapTitle": "Ihre Fahrt",
+    "storyVessel": "Boot wählen",
+    "storyVesselHint": "Stundenweise Miete — Sie fahren selbst vom Neuen Hafen von Limenaria.",
+    "storyDay": "Wie lange brauchen Sie es?",
+    "storyDayHint": "Stunden und Gäste wählen. Keine Touren — fahren Sie, wohin Sie möchten.",
+    "storyReview": "Ihre Mietanfrage",
+    "rentalFreedomNote": "Keine festen Touren — Boot mieten und fahren, wohin Sie möchten.",
+    "mapInspirationLink": "Seekarte ansehen",
+    "selected": "Ausgewählt",
+    "boardingPassTitle": "Ihr Boarding Pass",
+    "boardingPassLabel": "Mietanfrage",
+    "requestNote": "Dies ist eine Anfrage, keine Sofortbuchung — Villy bestätigt die Verfügbarkeit persönlich.",
+    "preferredDate": "Wunschdatum",
+    "optional": "optional",
+    "routeStops": "{count} Küstenstopps",
+    "vessel": "Boot",
+    "route": "Route",
+    "duration": "Dauer",
+    "guests": "Gäste",
+    "hours": "Std",
+    "total": "Kontaktieren Sie uns für Preise",
+    "fromTotal": "Kontaktieren Sie uns für Preise",
+    "fromPrefix": "From",
+    "fuelNote": "Sicherheitsausrüstung inklusive",
+    "cta": "Verfügbarkeit",
+    "ctaBook": "Buchen",
+    "requestCta": "Buchen",
+    "disclaimer": "Vorbehaltlich Verfügbarkeit, wir bestätigen vor der Fahrt",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "emptyVessel": "Boot auswählen",
+    "emptyRoute": "Sie wählen, wohin es geht",
+    "validationVessel": "Bitte Boot auswählen, um fortzufahren",
+    "validationRoute": "Optional — Tagesidee wählen oder überspringen",
+    "maxGuestsNote": "Maximal {max} Gäste für dieses Boot",
+    "teaserBadge": "Live",
+    "teaserTitle": "Tag planen",
+    "teaserDesc": "Boot und Stunden wählen — Buchungsanfrage.",
+    "teaserCta": "Paket öffnen",
+    "promoTitle": "Miete planen",
+    "promoDesc": "Datum und Boot wählen — wir bestätigen die Verfügbarkeit.",
+    "promoCta": "Jetzt buchen",
+    "promoDismiss": "Schließen"
+  },
+  "package": {
+    "eyebrow": "Bootsvermietung",
+    "title": "Mietanfrage",
+    "subtitle": "Boot und Dauer wählen — Verfügbarkeit und Preise bestätigen wir telefonisch oder im Büro.",
+    "loading": "Buchungsformular wird geladen…",
+    "stepConfigure": "Miete konfigurieren",
+    "stepConfigureHint": "Boot, Stunden und Gäste wählen — dann Anfrage senden.",
+    "stepSummaryHint": "Details prüfen, dann Buchungsanfrage senden.",
+    "stepVessel": "Boot",
+    "stepDurationGuests": "Dauer & Gäste",
+    "stepSummary": "Übersicht",
+    "decreaseHours": "Weniger Stunden",
+    "increaseHours": "Mehr Stunden",
+    "stepProgress": "Schritt {current}/{total}",
+    "stepsAria": "Fortschritt Mietplaner",
+    "vessel": "Boot",
+    "route": "Route",
+    "duration": "Dauer",
+    "guests": "Gäste",
+    "guestSingular": "Gast",
+    "guestPlural": "Gäste",
+    "hours": "Std",
+    "total": "Kontaktieren Sie uns für Preise",
+    "fromTotal": "Kontaktieren Sie uns für Preise",
+    "fromPrefix": "From",
+    "fuelNote": "Sicherheitsausrüstung inklusive",
+    "cta": "Verfügbarkeit",
+    "ctaBook": "Buchen",
+    "requestCta": "Buchen",
+    "disclaimer": "Vorbehaltlich Verfügbarkeit, wir bestätigen vor der Fahrt",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "emptyVessel": "Boot zum Start wählen",
+    "emptyRoute": "Sie wählen, wohin es geht",
+    "previewBadge": "Live",
+    "includedTitle": "Inklusive",
+    "excludedTitle": "Nicht inkl.",
+    "mobileSummary": "Dein Paket",
+    "decreaseGuests": "Weniger Gäste",
+    "increaseGuests": "Mehr Gäste",
+    "validationVessel": "Bitte Boot auswählen, um fortzufahren",
+    "validationRoute": "Optional — Tagesidee wählen oder überspringen",
+    "maxGuestsNote": "Maximal {max} Gäste für dieses Boot"
+  },
+  "fleetGrid": {
+    "allVessels": "Alle Boote",
+    "fullFleet": "Gesamte Flotte",
+    "moreVessels": "Mehr Boote",
+    "moreSubtitle": "Sammlung ansehen",
+    "viewFullFleet": "Flotte ansehen"
+  },
+  "yachtUi": {
+    "search": {
+      "title": "Suche",
+      "location": "Ort",
+      "locationValue": "Neuer Hafen von Limenaria, Thassos",
+      "from": "From",
+      "to": "To",
+      "cta": "Boote suchen"
+    },
+    "results": {
+      "count": "{count} Ergebnisse",
+      "sort": "Nach Relevanz sortieren"
+    },
+    "nearYou": {
+      "title": "In Ihrer Nähe",
+      "seeAll": "Alle ansehen"
+    },
+    "specs": {
+      "pax": "{count} Pers.",
+      "hp": "{count} PS",
+      "perHourShort": "Preise auf Anfrage"
+    }
+  },
+  "boatDetail": {
+    "pageTitle": "Details",
+    "back": "Flotte",
+    "share": "Teilen",
+    "linkCopied": "Link kopiert",
+    "save": "Speichern",
+    "location": "Limenaria, Thassos",
+    "descriptionTitle": "Beschreibung",
+    "showMore": "Mehr",
+    "showLess": "Weniger",
+    "specifications": "Specs",
+    "startingAt": "Preise",
+    "perHour": "Std",
+    "swipeHint": "Galerie oben wischen oder Miniatur antippen",
+    "gallery": "Galerie",
+    "features": "Ausstattung",
+    "relatedTitle": "Das könnte passen",
+    "relatedSubtitle": "Weitere Boote aus unserer Ägäis-Flotte",
+    "guests": "Gäste",
+    "power": "PS",
+    "length": "Länge"
+  },
+  "legal": {
+    "backHome": "Startseite",
+    "lastUpdated": "Aktualisiert"
+  },
+  "termsPage": {
+    "title": "Bedingungen & Buchung",
+    "intro": "Für Preise, Verfügbarkeit, Kraftstoffregelung und alle Mietdetails rufen Sie uns an oder besuchen Sie unser Büro im Neuen Hafen von Limenaria, Thassos.",
+    "phoneLabel": "Telefon",
+    "officeLabel": "Büro",
+    "office": "Neuer Hafen von Limenaria, Thassos",
+    "bullets": [
+      "Kraftstoff nicht inbegriffen",
+      "Sicherheitseinweisung in der Marina",
+      "Buchung je nach Verfügbarkeit"
+    ],
+    "bookingNote": "Eine Anfrage auf dieser Website ist keine bestätigte Buchung, bis wir Sie kontaktieren.",
+    "bookingCta": "Buchung anfragen"
+  },
+  "gdpr": {
+    "formTitle": "DSGVO-Anfrage",
+    "email": "E-Mail",
+    "requestType": "Typ",
+    "access": "Zugang",
+    "delete": "Löschung",
+    "portability": "Portabilität",
+    "rectification": "Datenberichtigung",
+    "restriction": "Einschränkung der Verarbeitung",
+    "objection": "Widerspruch gegen Verarbeitung",
+    "withdrawConsent": "Einwilligung widerrufen",
+    "details": "Details",
+    "detailsPlaceholder": "Optionale Angaben zu Ihrer Anfrage...",
+    "submit": "Senden",
+    "submitting": "Senden...",
+    "successTitle": "Anfrage gesendet.",
+    "successDesc": "Antwort in 30 Tagen.",
+    "successAgain": "Neue Anfrage",
+    "error": "Senden fehlgeschlagen."
+  },
+  "offers": {
+    "later": "Später"
+  },
+  "guide": {
+    "eyebrow": "Geheime Buchten",
+    "title": "Thassos Guide",
+    "subtitle": "Ankerplätze nur per Boot, GPS inklusive.",
+    "heroBadge": "Per Meer",
+    "heroStatSpotsLabel": "Mit Boot erreichbare Stopps",
+    "heroStatRoutes": "{count} Tagespläne",
+    "heroStatRoutesLabel": "Vorgeschlagene Routen",
+    "heroStatBase": "Limenaria",
+    "heroStatBaseLabel": "Abfahrtsmarina",
+    "page": {
+      "filterAll": "Alle Stopps",
+      "timelineTitle": "Küstenroute ab Limenaria",
+      "routesTitle": "Vorgeschlagene Tagespläne",
+      "scrollHint": "Küste scrollen — Stopps erscheinen unterwegs",
+      "spotCount": "{count} Ankerplätze",
+      "ctaMap": "Interaktive Seekarte öffnen",
+      "ctaBook": "Boot anfragen",
+      "routes": [
+        {
+          "title": "South coast loop",
+          "desc": "Metalia → Tripiti → Pefkari → Potos, the classic half-day",
+          "hours": "4, 6 hrs"
+        },
+        {
+          "title": "East coast run",
+          "desc": "Golden Beach & Aliki quarry, longer open-water stretch",
+          "hours": "6, 8 hrs"
+        },
+        {
+          "title": "North shore day",
+          "desc": "Marble Beach & Vathi Bay, calm morning seas recommended",
+          "hours": "Full day"
+        }
+      ]
+    },
+    "mapCta": "Entfernungen auf der Karte",
+    "categoryBeach": "Strand",
+    "categoryLagoon": "Bucht",
+    "categoryCulture": "Kultur",
+    "categoryHarbor": "Hafen",
+    "spots": {
+      "metalia-beach": {
+        "name": "Metalia Beach",
+        "tagline": "Felsbucht & Schnorcheln",
+        "description": "Erster Stopp südlich Limenaria — ruhige Flachwasser, ideal vor Tripiti."
+      },
+      "tripiti-cave": {
+        "name": "Tripiti Cave",
+        "tagline": "Meereshöhle & Kiesstrand",
+        "description": "Bekannter Südwest-Ankerplatz — türkisfarbenes Wasser in der Höhle, am besten vormittags."
+      },
+      "pefkari-beach": {
+        "name": "Strand Pefkari",
+        "tagline": "Sandbucht für Familien",
+        "description": "Flacher Sand — leichtes Anlegen für Familien auf der klassischen Südschleife."
+      },
+      "potos-harbor": {
+        "name": "Hafen Potos",
+        "tagline": "Mittagessen an Land",
+        "description": "In Hafennähe ankern — natürliche Mittagspause bei Ganztagesmiete."
+      },
+      "aliki-ruins": {
+        "name": "Antiker Steinbruch Aliki",
+        "tagline": "Marmorklippen unter Wasser",
+        "description": "Schnorcheln an 2000 Jahre alten Steinbruchblöcken an der Südostküste."
+      },
+      "marble-beach": {
+        "name": "Marble Beach",
+        "tagline": "Weiße Klippen & smaragdgrünes Meer",
+        "description": "Nordküsten-Highlight — früh mit dem Boot, bevor der Nachmittagswind kommt."
+      },
+      "golden-beach": {
+        "name": "Golden Beach",
+        "tagline": "Türkisfarbenes Flachwasser & feiner Sand",
+        "description": "Vor Chrisi Akti ankern — Thassos' längster Sandstrand an der Ostküste."
+      },
+      "kalogria-bay": {
+        "name": "Bucht Vathi",
+        "tagline": "Abgelegener Nordost-Ankerplatz",
+        "description": "Kiefernbewachene Vathi-Bucht — ruhiger Ankerplatz für Abendschwimmen."
+      }
+    }
+  },
+  "experiences": {
+    "eyebrow": "Kuratiert",
+    "title": "Erlebnisse",
+    "subtitle": "Abenteuer für Paare, Familien & Feiern.",
+    "buildCta": "Miete schätzen",
+    "estimateCta": "Miete schätzen",
+    "customTitle": "Einfach Boot mieten",
+    "customDesc": "Beliebiges Boot und Stunden wählen — fahren Sie, wohin Sie möchten.",
+    "customCta": "Boot buchen",
+    "items": [
+      {
+        "title": "Sonnenuntergang",
+        "desc": "Goldene Stunde auf der Ägäis."
+      },
+      {
+        "title": "Lagunen",
+        "desc": "Geheime Buchten. GPS-Routen inkl."
+      },
+      {
+        "title": "Ganztag",
+        "desc": "Morgens bis abends, ganze Küste."
+      },
+      {
+        "title": "Feiern",
+        "desc": "Geburtstage, Anträge, wir richten ein."
+      }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Google-Bewertungen",
+    "title": "Was unsere Gäste sagen",
+    "subtitle": "Ehrliches Feedback von Gästen, die im Neuen Hafen von Limenaria ein Boot gemietet haben.",
+    "verified": "verifiziert",
+    "verifiedGuests": "Verifizierte Gäste",
+    "trustLine": "Verifizierte Vermietungen",
+    "badge": "Was Gäste auf Google sagen",
+    "allReviews": "Alle",
+    "comingSoon": "Bewertungen folgen in Kürze.",
+    "googleLabel": "Google-Bewertungen",
+    "googleRated": "Google-Bewertungen",
+    "viewOnGoogle": "Auf Google ansehen",
+    "prevReview": "Vorherige Bewertung",
+    "nextReview": "Nächste Bewertung",
+    "reviewSlides": "Bewertungen",
+    "reviewOf": "Bewertung {current} von {total}",
+    "fiveStars": "5 Sterne"
+  },
+  "conversion": {
+    "trust": {
+      "ariaLabel": "Warum bei uns buchen",
+      "licensed": "Sicherheitseinweisung",
+      "marina": "Neuer Hafen von Limenaria",
+      "response": "Verfügbarkeit bestätigt",
+      "noFees": "Kraftstoff nicht inklusive"
+    },
+    "steps": {
+      "date": "Datum & Boot",
+      "contact": "Ihre Daten"
+    },
+    "stepsAria": "Buchungsfortschritt",
+    "social": {
+      "verified": "verifizierte Bewertungen",
+      "bookedThisWeek": "{count} Buchungen diese Woche"
+    },
+    "bookingBadges": {
+      "ariaLabel": "Sichere Buchung",
+      "secure": "Sicher, keine Zahlung",
+      "local": "Lokales Thassos-Team",
+      "transparent": "Sicherheitseinweisung vor jeder Abfahrt"
+    },
+    "funnel": {
+      "browse": "Flotte",
+      "build": "Paket",
+      "book": "Buchen"
+    },
+    "fleet": {
+      "mostPopular": "Beliebt",
+      "starRating": "{rating} Sterne",
+      "swipeHint": "Wischen zum Durchstöbern",
+      "prevVessel": "Vorheriges Boot",
+      "nextVessel": "Nächstes Boot",
+      "perHourSuffix": "",
+      "guestsCount": "{count} Gäste",
+      "seatsCount": "{count} Plätze",
+      "fuelIncluded": "Kraftstoff nicht inklusive",
+      "noLicense": "Kein Führerschein ≤30 PS",
+      "specLine": "{perHour} · {guests} · {hp}PS",
+      "specLineNoPrice": "{guests} · {hp}PS"
+    },
+    "lossAversion": "Verpassen Sie nicht Ihren perfekten Thassos-Tag — Boot mieten.",
+    "popularSeason": "Im Sommer beliebt — früh buchen für Spitzentermine.",
+    "package": {
+      "fromPrice": "Kontaktieren Sie uns für Preise",
+      "includedTitle": "Inklusive",
+      "included": [
+        "Licensed briefing",
+        "Safety gear & VHF"
+      ],
+      "excludedTitle": "Nicht inklusive",
+      "excluded": [
+        "Food & drinks",
+        "Skipper (optional add-on)",
+        "Marina parking fees"
+      ],
+      "mobileSummary": "Ihr Paket"
+    },
+    "booking": {
+      "continue": "Weiter",
+      "back": "Zurück",
+      "checkAvailability": "Verfügbarkeit prüfen",
+      "step1Title": "Wann & welches Boot?",
+      "step2Title": "Ihre Daten",
+      "legalNote": "Mit der Anfrage stimmen Sie unseren",
+      "termsLink": "AGB",
+      "privacyLink": "Datenschutzrichtlinie",
+      "and": "und",
+      "successShare": "Mit Ihrer Gruppe teilen",
+      "successNext": "Wie es weitergeht",
+      "successStep1": "Wir prüfen, welche Boote frei sind.",
+      "successStep2": "Wir rufen an oder schreiben, meist innerhalb weniger Stunden.",
+      "successStep3": "Nach Bestätigung: Ausweis zur Marina mitbringen.",
+      "emptyFleet": "Derzeit keine Boote frei. Rufen Sie uns an.",
+      "validationName": "Bitte vollständigen Namen eingeben.",
+      "validationEmail": "Bitte gültige E-Mail eingeben.",
+      "validationPhone": "Bitte Telefonnummer eingeben.",
+      "validationBoat": "Bitte Boot auswählen.",
+      "validationDate": "Bitte Mietdatum wählen."
+    },
+    "boatDetail": {
+      "faqTitle": "Gut zu wissen",
+      "checkAvailability": "Verfügbarkeit",
+      "includedTitle": "Inklusive"
+    },
+    "skipLink": "Zum Hauptinhalt springen"
+  },
+  "booking": {
+    "eyebrow": "Anfrage",
+    "title": "Boot anfragen",
+    "requestTitle": "Boot anfragen",
+    "subtitle": "Datum und Boot wählen — wir bestätigen die Verfügbarkeit.",
+    "expectTitle": "So geht es weiter",
+    "expect1": "Wir prüfen Ihre Anfrage und die Flottenverfügbarkeit.",
+    "expect2": "Wir kontaktieren Sie per Telefon oder Nachricht, meist innerhalb weniger Stunden.",
+    "expect3": "Nach Bestätigung: Ausweis oder Reisepass im Neuen Hafen von Limenaria vorlegen.",
+    "successTitle": "Anfrage erhalten",
+    "successMessage": "Danke! Wir melden uns innerhalb weniger Stunden zur Verfügbarkeit.",
+    "successDesc": "Wir melden uns innerhalb weniger Stunden zur Verfügbarkeit.",
+    "successEmailNote": "Eine Bestätigungs-E-Mail wurde an {email} gesendet.",
+    "successAgain": "Neue Anfrage",
+    "summaryTitle": "Ihre Anfrage",
+    "summaryBoatEmpty": "Noch kein Boot gewählt",
+    "submit": "Buchungsanfrage senden",
+    "submitting": "Senden…",
+    "consentCheckbox": "Ich stimme den Nutzungsbedingungen, der Datenschutzerklärung und der Verarbeitung meiner personenbezogenen Daten für diese Buchungsanfrage zu.",
+    "consentCheckboxError": "Bitte akzeptieren Sie die Bedingungen, um fortzufahren.",
+    "form": {
+      "fullName": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "idNumber": "Ausweis / Pass",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "vessel": "Bevorzugtes Boot",
+      "vesselOptional": "optional",
+      "route": "Route",
+      "routeOptional": "optional",
+      "guests": "Gäste",
+      "notes": "Wünsche & Anmerkungen",
+      "selectBoat": "Boot wählen",
+      "selectRoute": "Route wählen",
+      "guestCount": "Gast",
+      "guestCountPlural": "Gäste",
+      "namePlaceholder": "John Smith",
+      "emailPlaceholder": "you@email.com",
+      "phonePlaceholder": "+30 690 000 0000",
+      "idPlaceholder": "Bei Ankunft erforderlich",
+      "notesPlaceholder": "Feier, Ausrüstung, Ernährung…"
+    }
+  },
+  "faq": {
+    "eyebrow": "Wichtiges",
+    "title": "FAQ",
+    "subtitle": "Alles vor dem Ablegen.",
+    "page": {
+      "carouselAria": "Thassos boat rental moments",
+      "highlightsTitle": "Auf einen Blick",
+      "highlights": [
+        {
+          "title": "Kein Führerschein ≤30 PS",
+          "desc": "Sicherheitseinweisung vor jeder Abfahrt",
+          "image": "/images/boats/poseidon-sea.jpg"
+        },
+        {
+          "title": "Alle Infos in unserem Büro",
+          "desc": "Besuchen Sie uns im Neuen Hafen von Limenaria an der Südküste von Thassos",
+          "image": "/images/boats/limenaria-palataki.jpg"
+        },
+        {
+          "title": "Neuer Hafen von Limenaria",
+          "desc": "Südküste Thassos · Täglich 08:00–20:00, Mai–Oktober",
+          "image": "/images/boats/basilios-palataki.jpg"
+        }
+      ],
+      "tips": [
+        "Stündliche Selbstfahrer-Vermietung",
+        "Sicherheitseinweisung bei jeder Vermietung inklusive",
+        "Keine Online-Zahlung — nur Daten senden",
+        "Kostenlose Umbuchung bei schlechtem Wetter",
+        "Briefing vor der Abfahrt",
+        "Kein Führerschein bis 30 PS"
+      ],
+      "tipsAria": "Kurzinfos zur Miete",
+      "allQuestions": "Alle Fragen",
+      "mostAskedTitle": "Häufigste Fragen",
+      "viewAllFaq": "Alle Antworten",
+      "ctaBook": "Book",
+      "ctaPrices": "Kontaktieren Sie uns für Preise",
+      "ctaFleet": "Flotte ansehen",
+      "slides": [
+        {
+          "src": "/images/boats/poseidon-sea.jpg",
+          "caption": "Golden hour departure from Limenaria"
+        },
+        {
+          "src": "/images/boats/kima.jpg",
+          "caption": "Crystal waters off Thassos"
+        },
+        {
+          "src": "/images/boats/nikoleta.jpg",
+          "caption": "Our Neuer Hafen von Limenaria fleet"
+        },
+        {
+          "src": "/images/boats/niki.jpg",
+          "caption": "Secret lagoon anchorages"
+        }
+      ]
+    },
+    "items": [
+      {
+        "q": "Ist meine Buchung sofort bestätigt?",
+        "a": "Nein, Sie senden eine Anfrage mit Ihren Daten und Wünschen. Wir prüfen die Verfügbarkeit und kontaktieren Sie per Telefon oder Nachricht. Erst dann ist es verbindlich."
+      },
+      {
+        "q": "Bootsführerschein nötig?",
+        "a": "Bis 30 PS nein. Safety-Briefing vor Abfahrt."
+      },
+      {
+        "q": "Ist Treibstoff im Mietpreis enthalten?",
+        "a": "Nein. Treibstoff wird separat nach Verbrauch berechnet. Beim Briefing erklären wir den typischen Verbrauch — keine Überraschungen bei der Rückgabe."
+      },
+      {
+        "q": "Ist eine Online-Zahlung erforderlich?",
+        "a": "Keine Zahlung online erforderlich. Senden Sie Ihre Anfrage mit den Daten und wir bestätigen die Verfügbarkeit per Telefon. Sie zahlen erst bei Ankunft im Neuen Hafen von Limenaria."
+      },
+      {
+        "q": "Abfahrt?",
+        "a": "Neuer Hafen von Limenaria. GPS nach Bestätigung."
+      },
+      {
+        "q": "Is online payment required?",
+        "a": "No payment is needed online. Just fill in your details and we confirm availability by phone or message. You pay nothing until you arrive im Neuen Hafen von Limenaria."
+      },
+      {
+        "q": "Can I rent a speedboat in Thassos without experience?",
+        "a": "Yes, our 30HP speedboats are ideal for beginners. Every rental includes a safety briefing covering local hazards, anchoring, and VHF basics before you cast off."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Deine Privatsphäre",
+    "desc": "Notwendige Cookies für die Seite. Analyse optional.",
+    "policy": "Cookies",
+    "acceptAll": "Akzeptieren",
+    "reject": "Nur nötige",
+    "customize": "Anpassen",
+    "settingsTitle": "Cookies",
+    "necessary": "Notwendig",
+    "necessaryDesc": "Für Funktion",
+    "alwaysOn": "Immer an",
+    "analytics": "Analyse",
+    "analyticsDesc": "Anonym",
+    "marketing": "Marketing",
+    "marketingDesc": "Remarketing",
+    "save": "Speichern",
+    "footerSettings": "Cookies"
+  },
+  "footer": {
+    "tagline": "Rent A Boat Villy · Neuer Hafen von Limenaria, Thassos",
+    "explore": "Entdecken",
+    "company": "Firma",
+    "contact": "Kontakt",
+    "marina": "Neuer Hafen von Limenaria",
+    "hours": "08:00, 20:00",
+    "trustFuel": "Kraftstoff nicht inklusive",
+    "cta": "Boot buchen",
+    "fleet": "Flotte",
+    "rentBoatThassos": "Boot in Thassos mieten",
+    "map": "Karte",
+    "guide": "Reiseführer",
+    "experiences": "Erlebnisse",
+    "reviews": "Bewertungen",
+    "book": "Buchen",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "privacy": "Datenschutz",
+    "cookies": "Cookies",
+    "terms": "AGB",
+    "gdpr": "DSGVO",
+    "locationLine": "Neuer Hafen von Limenaria · Thassos · Griechenland"
+  },
+  "blog": {
+    "eyebrow": "Thassos Boot News",
+    "title": "Thassos Boot News",
+    "subtitle": "Stündliche Bootsvermietung, Strandberichte, Routen & Insel-Updates vom Neuen Hafen von Limenaria.",
+    "back": "Alle Artikel",
+    "backHome": "Startseite",
+    "featured": "Hauptstory",
+    "readArticle": "Ganzen Artikel lesen",
+    "readTime": "{minutes} Min. Lesezeit",
+    "empty": "Artikel folgen in Kürze.",
+    "articleCta": "Thassos per Boot entdecken? Wähle Boot und Stunden, Sicherheitsbriefing inklusive ab Limenaria.",
+    "newsKicker": "Thassos Boot News",
+    "newsTagline": "Stundenvermietung, Routen, Strandguides & Updates von Rent A Boat Villy.",
+    "categoryAll": "Alle News",
+    "categoryGuides": "Guides",
+    "categoryGuidesDesc": "Ratgeber zur Bootsvermietung auf Thassos, Sicherheit, Packliste, Familientage & Schnorcheln.",
+    "categoryBeaches": "Strände",
+    "categoryBeachesDesc": "Per Boot erreichbare Strände, Marble Beach, Tripiti, Golden Beach, Potos, Aliki & mehr.",
+    "categoryRoutes": "Routen",
+    "categoryRoutesDesc": "GPS-Meeresrouten, Südküste, Nordküste & Ganztages-Touren.",
+    "categoryRental": "Miet-Tipps",
+    "categoryRentalDesc": "Kontaktieren Sie uns für Preise, Scheine, Wetter & Buchungstipps für stündliche Vermietung in Limenaria.",
+    "categoryThassos": "Insel",
+    "categoryThassosDesc": "News vom Neuen Hafen von Limenaria, Flotten-Updates & Thassos-Geschichten vom Wasser.",
+    "categoriesAria": "Artikelkategorien",
+    "headlines": "Schlagzeilen",
+    "headlinesAria": "Top-Schlagzeilen",
+    "latest": "Neueste",
+    "latestAria": "Neueste Artikel",
+    "sidebarAria": "Neueste Updates",
+    "sidebarCta": "Buchung anfragen",
+    "viewAll": "Alle ansehen",
+    "relatedTitle": "Mehr aus Thassos Boot News",
+    "page": {
+      "trailAria": "Brotkrumen",
+      "trailHome": "Startseite",
+      "trailBlog": "Blog",
+      "quickLinksAria": "Schnelllinks",
+      "quickGuide": "Meeresguide",
+      "quickBooking": "Buchung anfragen",
+      "quickFaq": "FAQ"
+    }
+  },
+  "chat": {
+    "title": "Marina-Assistentin",
+    "subtitle": "Rent A Boat Villy",
+    "aiName": "Villy",
+    "aiTagline": "Bootsverleih · Neuer Hafen von Limenaria",
+    "aiStatus": "Verfügbar · Neuer Hafen von Limenaria",
+    "sessionRefLabel": "Ref",
+    "typingLabel": "Villy schreibt…",
+    "placeholder": "Fragen zu Booten, Stränden, Verfügbarkeit, Buchung…",
+    "notificationPreview": "Fragen zu Booten, Terminen oder Verfügbarkeit?",
+    "timestampNow": "jetzt",
+    "tapToReply": "Tippen zum Chatten",
+    "dismiss": "Schließen",
+    "emptyTitle": "Guten Tag, ich bin Villy",
+    "emptyHint": "Bitte wählen Sie unten eine Schnellantwort",
+    "pickTopic": "Schnellantworten",
+    "menuGroups": {
+      "bookBoat": "Boot buchen",
+      "ourBoats": "Unsere Boote",
+      "goodToKnow": "Gut zu wissen",
+      "contact": "Kontakt"
+    },
+    "backToMenu": "Hauptmenü",
+    "suggestedQuestions": [
+      "Verfügbarkeit anfragen",
+      "Preise auf Anfrage",
+      "Welches Boot für meine Gruppe?",
+      "Unsere Flotte",
+      "Treibstoffrichtlinie",
+      "Was ist inklusive?",
+      "Anfahrt Limenaria",
+      "Anrufen",
+      "Sicherheitsregeln",
+      "Ohne Führerschein?"
+    ],
+    "quickActions": [
+      "Verfügbarkeit anfragen",
+      "Unsere Flotte",
+      "Welches Boot für meine Gruppe?",
+      "Anfahrt Neuer Hafen von Limenaria",
+      "Treibstoffrichtlinie",
+      "Was ist inklusive",
+      "Preise auf Anfrage",
+      "Anrufen"
+    ],
+    "quickActionsAria": "Schnellfragen",
+    "linkBook": "Buchung öffnen",
+    "linkFleet": "Flotte ansehen",
+    "linkGuide": "Insel-Guide",
+    "linkMap": "Karte öffnen",
+    "linkPackage": "Flotte ansehen",
+    "minimize": "Minimieren",
+    "close": "Chat schließen",
+    "send": "Senden",
+    "enableSounds": "Ton an",
+    "muteSounds": "Stumm",
+    "openAssistant": "Mit Villy chatten",
+    "peekAction": "Tippen zum Chatten",
+    "notificationTitle": "Villy · Marina-Assistentin",
+    "tapToChat": "Chat öffnen",
+    "banner": {
+      "title": "Unsicher, welches Boot passt?",
+      "body": "Sofortige Hilfe beim Vergleich, zur Treibstoffpolitik und zu Routen ab Neuer Hafen von Limenaria.",
+      "badge": "KI-gestützt",
+      "userPrompt": "Welches Boot passt für 6 Gäste ab Limenaria?",
+      "reply": "Für 6 Gäste empfehle ich Nikos oder Nikoleta — 8 Sitze, Sicherheitsbriefing inklusive, ohne Führerschein bis 30 PS.",
+      "followUp": "Ich kann auch die Verfügbarkeit für Ihre Daten prüfen.",
+      "typing": "Villy schreibt…",
+      "cta": "Mit Villy chatten",
+      "dismiss": "Schließen"
+    },
+    "humanContact": {
+      "title": "Mit unserem Team sprechen",
+      "subtitle": "WhatsApp, Viber oder E-Mail — wir antworten während der Marina-Öffnungszeiten (08:00–20:00).",
+      "whatsapp": "WhatsApp",
+      "viber": "Viber",
+      "email": "E-Mail",
+      "close": "Schließen",
+      "prefill": "Guten Tag. Ich hätte eine Frage zur Bootsvermietung bei Rent A Boat Villy.",
+      "emailSubject": "Bootsanfrage — Rent A Boat Villy",
+      "optionLabel": "Mit einer Person sprechen"
+    },
+    "start": {
+      "message": "Guten Tag. Ich bin Villy im Neuen Hafen von Limenaria. Wir betreiben acht Self-drive-Boote — bitte wählen Sie eine Schnellantwort oder stellen Sie Ihre Frage.",
+      "options": [
+        {
+          "id": "book",
+          "label": "Verfügbarkeit anfragen",
+          "next": "booking"
+        },
+        {
+          "id": "fleet",
+          "label": "Unsere Flotte",
+          "next": "fleet"
+        },
+        {
+          "id": "group",
+          "label": "Welches Boot für meine Gruppe?",
+          "next": "group"
+        },
+        {
+          "id": "directions",
+          "label": "Anfahrt Neuer Hafen von Limenaria",
+          "next": "directions"
+        },
+        {
+          "id": "fuel",
+          "label": "Treibstoffrichtlinie",
+          "next": "fuel"
+        },
+        {
+          "id": "amenities",
+          "label": "Was ist inklusive",
+          "next": "amenities"
+        },
+        {
+          "id": "rates",
+          "label": "Preise auf Anfrage",
+          "next": "rates"
+        },
+        {
+          "id": "human",
+          "label": "Mit einer Person sprechen",
+          "next": "human"
+        },
+        {
+          "id": "contact",
+          "label": "Anrufen",
+          "next": "contact"
+        }
+      ]
+    },
+    "booking": {
+      "message": "Für eine Verfügbarkeitsanfrage teilen Sie uns bitte Datum, Gästezahl und Mietstunden mit. Wir prüfen die Flotte und melden uns telefonisch oder per E-Mail. Eine Online-Zahlung ist nicht erforderlich.",
+      "options": [
+        {
+          "id": "book-now",
+          "label": "Buchungsformular",
+          "next": "book-cta"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "fleet": {
+      "message": "8 Self-drive-Boote ab Limenaria: Kima (9 Plätze), Nikos, Nikoleta & Ag. Nikolaos (8), Niki, Poseidon, Ektoras & Basilios (7). Safety-Briefing. Kein Führerschein bis 30 PS.",
+      "options": [
+        {
+          "id": "fleet-open",
+          "label": "Flotte ansehen",
+          "next": "fleet-cta"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "group": {
+      "message": "Nenne uns deine Gruppengröße — Kima für bis zu 9, 8-Sitzer für mittlere Gruppen, 7-Sitzer für kleinere. +30 698 131 8393 oder Buchungsanfrage.",
+      "options": [
+        {
+          "id": "book-group",
+          "label": "Verfügbarkeit anfragen",
+          "next": "booking"
+        },
+        {
+          "id": "fleet-group",
+          "label": "Alle Boote",
+          "next": "fleet"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "directions": {
+      "message": "Neuer Hafen von Limenaria liegt an Thassos' Südküste. Kostenlose Parkplätze. GPS-Koordinaten nach Bestätigung. Täglich 08:00–20:00.",
+      "options": [
+        {
+          "id": "contact-dir",
+          "label": "Anrufen",
+          "next": "contact"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "fuel": {
+      "message": "Treibstoff ist nicht im Mietpreis enthalten und wird separat nach Ihrer Fahrt berechnet. Den typischen Verbrauch erklären wir bei der Übergabe.",
+      "options": [
+        {
+          "id": "rates-fuel",
+          "label": "Preise auf Anfrage",
+          "next": "rates"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "amenities": {
+      "message": "Jedes Boot hat: Sonnenzelt, Bluetooth, Kühlbox, Anker und Schwimmwesten. Safety-Briefing vor Abfahrt. Badekleidung, Sonnencreme, Wasser mitbringen.",
+      "options": [
+        {
+          "id": "fleet-amen",
+          "label": "Flotte ansehen",
+          "next": "fleet"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "rates": {
+      "message": "Kontaktieren Sie uns für Preise — rufen Sie +30 698 131 8393 an oder besuchen Sie unser Büro im Neuen Hafen von Limenaria.",
+      "options": [
+        {
+          "id": "contact-rates",
+          "label": "Anrufen",
+          "next": "contact"
+        },
+        {
+          "id": "book-rates",
+          "label": "Verfügbarkeit anfragen",
+          "next": "booking"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "spots": {
+      "message": "Mit dem Boot ab Limenaria: Marble Beach, Tripiti-Höhlen, Metalia und ruhige Südbuchten. Zu Ihrer Sicherheit bleiben Gäste während der Fahrt an Bord; Schwimmen ist nur bei verankertem Boot erlaubt.",
+      "options": [
+        {
+          "id": "guide",
+          "label": "Insel-Guide",
+          "next": "guide-cta"
+        },
+        {
+          "id": "map-open",
+          "label": "Seekarte",
+          "next": "map-cta"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "map": {
+      "message": "Unser See-Atlas zeigt GPS-Routen, Schwimmstopps und Entfernungen ab Neuer Hafen von Limenaria.",
+      "options": [
+        {
+          "id": "map-go",
+          "label": "Karte öffnen",
+          "next": "map-cta"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "safety": {
+      "message": "Zu Ihrer Sicherheit bleiben Gäste während der Fahrt an Bord. Schwimmen ist nur bei verankertem Boot erlaubt. Vor Abfahrt gibt es ein vollständiges Sicherheitsbriefing und Schwimmwesten.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "pricing": {
+      "message": "Kontaktieren Sie uns für Preise — rufen Sie +30 698 131 8393 an oder besuchen Sie unser Büro im Neuen Hafen von Limenaria.",
+      "options": [
+        {
+          "id": "contact-pricing",
+          "label": "Anrufen",
+          "next": "contact"
+        },
+        {
+          "id": "back",
+          "label": "Zurück",
+          "next": "start"
+        }
+      ]
+    },
+    "contact": {
+      "message": "Anruf +30 698 131 8393 oder +40 770 965 041 oder vilitrifonova245@gmail.com. Neuer Hafen von Limenaria, Südküste Thassos. Täglich 08:00–20:00.",
+      "options": [
+        {
+          "id": "human-contact",
+          "label": "Mit einer Person sprechen",
+          "next": "human"
+        },
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "human": {
+      "message": "Gerne verbinde ich Sie mit unserem Marina-Team. Wählen Sie WhatsApp, Viber oder E-Mail.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "book-cta": {
+      "message": "Tippe unten für das Buchungsformular — Datum, Gästezahl und Boot.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "fleet-cta": {
+      "message": "Vergleiche Fotos, Kapazität und Specs aller 8 Boote auf der Flottenseite.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "map-cta": {
+      "message": "Öffne den interaktiven See-Atlas mit Routen ab Limenaria.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    },
+    "package-cta": {
+      "message": "Stelle deine Miete zusammen und sieh den Gesamtpreis vor der Buchung.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Hauptmenü",
+          "next": "start"
+        }
+      ]
+    }
+  },
+  "errors": {
+    "notFound": {
+      "eyebrow": "404",
+      "title": "Seite nicht gefunden",
+      "description": "Diese Route wurde vielleicht verschoben — Ihr Thassos-Tag ist nur einen Klick entfernt.",
+      "home": "Zur Startseite",
+      "book": "Verfügbarkeit prüfen",
+      "fleet": "Flotte ansehen"
+    },
+    "route": {
+      "eyebrow": "Error",
+      "title": "Etwas ist schiefgelaufen",
+      "description": "Vorübergehendes Problem. Bitte erneut versuchen oder zur Startseite.",
+      "retry": "Erneut versuchen",
+      "home": "Home"
+    },
+    "global": {
+      "eyebrow": "Kritischer Fehler",
+      "title": "Etwas ist ernsthaft schiefgelaufen",
+      "description": "Die Anwendung ist auf einen nicht behebbaren Fehler gestoßen. Seite neu laden.",
+      "retry": "Erneut versuchen",
+      "home": "Home"
+    },
+    "unauthorized": {
+      "eyebrow": "Zugriff verweigert",
+      "title": "Keine Berechtigung",
+      "description": "Bereich eingeschränkt. Mit richtigem Konto anmelden oder zur Startseite.",
+      "home": "Zur Startseite",
+      "login": "Admin-Anmeldung"
+    },
+    "admin": {
+      "notFound": {
+        "eyebrow": "404",
+        "title": "Admin-Seite nicht gefunden",
+        "description": "Diese Panel-Route existiert nicht. Zum Dashboard oder erneut anmelden.",
+        "dashboard": "Dashboard",
+        "login": "Anmelden"
+      },
+      "route": {
+        "eyebrow": "Admin-Fehler",
+        "title": "Panel konnte nicht geladen werden",
+        "description": "Datenbank- oder Konfigurationsproblem. Server-Logs prüfen.",
+        "retry": "Retry",
+        "login": "Zurück zur Anmeldung"
+      }
+    }
+  },
+  "seo": {
+    "siteName": "Rent A Boat Villy",
+    "defaultTitle": "Boot mieten Thassos | Limenaria | Rent A Boat Villy",
+    "titleTemplate": "%s",
+    "description": "Boot mieten auf Thassos ab Limenaria. Speedboote, Buchten & Sonnenuntergänge. Safety-Briefing inkl.",
+    "keywords": "Boot mieten Thassos, Neuer Hafen von Limenaria, Ägäis Bootsverleih",
+    "ogTitle": "Boot mieten Thassos | Limenaria | Rent A Boat Villy",
+    "ogDescription": "Premium Bootsverleih. Geheime Buchten ab.",
+    "locale": "de_DE",
+    "boat": {
+      "title": "Rent a Boat Thassos, {name}",
+      "description": "Rent a boat in Thassos: {name} im Neuen Hafen von Limenaria. Up to {pax} passengers. {desc} Safety briefing included. Contact us for rates.",
+      "keywords": "rent a boat Thassos, {name} rental, Neuer Hafen von Limenaria boat rental, private boat tour Thassos, small boat rental Greece Aegean"
+    },
+    "blogArticle": {
+      "titleSuffix": "| Thassos Boot Blog"
+    },
+    "homeContent": {
+      "eyebrow": "Bootsvermietungs-Guide",
+      "title": "Rent a Boat in Thassos, Neuer Hafen von Limenaria",
+      "intro": "Kontaktieren Sie uns fuer Preise",
+      "features": {
+        "marina": {
+          "title": "Neuer Hafen von Limenaria",
+          "desc": "Abholung Südküste — GPS und Parken nach Buchung"
+        },
+        "fleet": {
+          "title": "Speedboats & Cruiser",
+          "desc": "RIBs und Tagesboote vor jeder Abfahrt geprüft"
+        },
+        "safety": {
+          "title": "Sicherheitseinweisung",
+          "desc": "15–20 Min. Einweisung, Schwimmwesten und UKW-Grundlagen"
+        },
+        "routes": {
+          "title": "Wohin fahren",
+          "desc": "Tripiti Cave, Metalia, Marble Beach and hidden coves, you choose"
+        }
+      },
+      "sections": [
+        {
+          "title": "What to expect on rental day",
+          "items": [
+            "Meet im Neuen Hafen von Limenaria, GPS coordinates and parking details sent after booking",
+            "15, 20 minute safety briefing covering local hazards, anchoring, and VHF basics",
+            "Life jackets and briefing included, you drive the boat and pick your own stops",
+            "Departures daily 08:00, 20:00; peak season (July, August) fills 48 hours ahead"
+          ]
+        },
+        {
+          "title": "Top boat destinations from Limenaria",
+          "items": [
+            "Tripiti Cave, sea cave and turquoise shallows on the south-west coast",
+            "Metalia Beach, rocky cove with deep blue water ideal for snorkelling",
+            "Aliki Ancient Quarry, marble ruins visible from the water on the south-east shore"
+          ]
+        },
+        {
+          "title": "Why rent a boat in Thassos?",
+          "items": [
+            "Dozens of beaches and coves best reached by private boat",
+            "No boating licence required for boats up to 30HP, ideal for beginners",
+            "Kontaktieren Sie uns fuer Preise",
+            "Der neue Hafen von Limenaria liegt zentral located for south, west, and east-coast sailing"
+          ]
+        },
+        {
+          "title": "Kontaktieren Sie uns fuer Preise",
+          "paragraphs": [
+            "Kontaktieren Sie uns fuer Preise",
+            "Kontaktieren Sie uns fuer Preise"
+          ]
+        },
+        {
+          "title": "Do I need a licence to rent a boat in Thassos?",
+          "paragraphs": [
+            "No licence is needed for boats up to 30HP, most of our fleet qualifies. We give a short safety briefing im Neuen Hafen von Limenaria before you depart. For larger boats, contact us and we can arrange a skipper."
+          ]
+        }
+      ],
+      "linksTitle": "Entdecken & Boot mieten",
+      "linksAria": "Verwandte Mietseiten",
+      "links": [
+        {
+          "href": "/rent-a-boat-thassos",
+          "label": "Complete guide to rent a boat in Thassos"
+        },
+        {
+          "href": "/fleet",
+          "label": "Browse our Thassos boat fleet"
+        },
+        {
+          "href": "/map",
+          "label": "Sea atlas of boat-accessible spots"
+        },
+        {
+          "href": "/guide",
+          "label": "Thassos boat guide"
+        },
+        {
+          "href": "/booking",
+          "label": "Request a boat rental online"
+        },
+        {
+          "href": "/faq",
+          "label": "Rental FAQ"
+        },
+        {
+          "href": "/reviews",
+          "label": "Guest reviews"
+        }
+      ]
+    },
+    "rentBoatPillar": {
+      "eyebrow": "Thassos boat rental guide",
+      "title": "Rent a Boat in Thassos",
+      "subtitle": "Stundenweise Selbstfahrer vom Neuen Hafen von Limenaria — Sie steuern, Einweisung inklusive",
+      "lead": "Kontaktieren Sie uns fuer Preise",
+      "sections": [
+        {
+          "title": "How to rent a boat in Thassos",
+          "items": [
+            "Browse our fleet of speedboats and day cruisers, all ≤30HP, no licence needed",
+            "Pick your date and rental hours on our booking page",
+            "Arrive im Neuen Hafen von Limenaria 20 minutes early for ID check and 15, 20 min safety briefing",
+            "Drive yourself to Tripiti, Metalia, Marble Beach or any route within the briefing zone",
+            "Return to the marina by your booked end time, safety briefing included"
+          ]
+        },
+        {
+          "title": "Why rent vom Neuen Hafen von Limenaria?",
+          "items": [
+            "Central south-coast base, Metalia and Tripiti within 30 minutes",
+            "Full southern-coast loop to Aliki in six to seven hours",
+            "Golden Beach and north-shore Marble routes from the same marina",
+            "Daily departures 08:00, 20:00, May through October",
+            "Family-run operation with safety briefing on every departure from"
+          ]
+        },
+        {
+          "title": "What is included in your rental",
+          "items": [
+            "Safety gear for standard cruising around Thassos",
+            "15, 20 minute safety and navigation briefing every departure",
+            "Life jackets for all guests",
+            "Optional snorkel sets at the marina on request",
+            "GPS route tracks via our interactive sea atlas"
+          ]
+        },
+        {
+          "title": "Stay-on-board policy",
+          "paragraphs": [
+            "Kontaktieren Sie uns fuer Preise",
+            "Pack lunch, snacks and drinks in the on-board cooler. Enjoy meals on deck with harbour and coastline views, this keeps insurance simple and your day focused on the water."
+          ]
+        },
+        {
+          "title": "Do I need a boating licence in Thassos?",
+          "paragraphs": [
+            "Kontaktieren Sie uns fuer Preise",
+            "Bring a valid passport or ID. First-time skippers receive extra briefing time on controls, anchoring and local hazards before casting off from Limenaria."
+          ]
+        },
+        {
+          "title": "How to request a boat rental in Thassos",
+          "paragraphs": [
+            "Start on [our fleet page](/fleet) to compare capacity and equipment, then send a [booking request](/booking) online — or besuchen Sie den Neuen Hafen von Limenaria and call +30 698 131 8393.",
+            "No online payment. We check availability and reply by phone or message. For July and August, request at least 48 hours ahead."
+          ]
+        }
+      ],
+      "ctaPrimary": "Boot mieten anfragen",
+      "ctaSecondary": "Unsere Flotte ansehen",
+      "linksTitle": "Thassos-Bootstag planen",
+      "linksAria": "Verwandte Bootsvermietungsseiten",
+      "links": [
+        {
+          "href": "/fleet",
+          "label": "Browse speedboats & day cruisers"
+        },
+        {
+          "href": "/booking",
+          "label": "Request a rental online"
+        },
+        {
+          "href": "/map",
+          "label": "Sea atlas, distances & routes"
+        },
+        {
+          "href": "/faq",
+          "label": "Boat rental FAQ"
+        },
+        {
+          "href": "/rent-a-boat-thassos",
+          "label": "Full rent-a-boat guide"
+        }
+      ]
+    },
+    "pages": {
+      "home": {
+        "title": "Rent a Boat in Thassos | Neuer Hafen von Limenaria | Rent A Boat Villy",
+        "description": "Rent a boat in Thassos from im Neuen Hafen von Limenaria. Speedboats & day cruisers for Marble Beach & secret coves. No licence up to 30HP, safety briefing included. Book today.",
+        "keywords": "rent a boat Thassos, rent a boat in Thassos, boat rental Thassos, Thassos boat hire, Neuer Hafen von Limenaria boat rental, speedboat rental Thassos, no license boat Thassos 30HP"
+      },
+      "fleet": {
+        "title": "Bootsvermietung Thassos Flotte | Speedboats vom Neuen Hafen von Limenaria",
+        "description": "Rent a boat in Thassos im Neuen Hafen von Limenaria. 8 boats — Kima (9 seats), premium 8-seaters, family 7-seaters. Brand new, fully equipped. Book online.",
+        "keywords": "Bootsvermietung Thassos, Boot mieten Thassos, Villy Boats Thassos, Neuer Hafen von Limenaria, Thassos Flotte"
+      },
+      "booking": {
+        "title": "Rent a Boat in Thassos, Request Online | Neuer Hafen von Limenaria",
+        "description": "Thassos-Boot online anfragen. Boot, Datum und Stunden vom Neuen Hafen von Limenaria — Bestätigung per Telefon. Einweisung inklusive, kein Führerschein bis 30 PS.",
+        "keywords": "rent a boat Thassos online, book boat Thassos, boat rental Thassos booking, Neuer Hafen von Limenaria rental, speedboat rental Thassos"
+      },
+      "package": {
+        "title": "Kontaktieren Sie uns fuer Preise",
+        "description": "Thassos-Miete planen — Boot und Dauer vom Neuen Hafen von Limenaria vor der Anfrage wählen.",
+        "keywords": "Kontaktieren Sie uns fuer Preise"
+      },
+      "map": {
+        "title": "Thassos Boat Map | Beaches & Coves vom Neuen Hafen von Limenaria",
+        "description": "Interaktive Thassos-Seekarte — Tripiti, Marble Beach, Golden Beach, Aliki und geheime Buchten vom Neuen Hafen von Limenaria.",
+        "keywords": "Thassos boat map, boat rental Thassos routes, Neuer Hafen von Limenaria spots, Tripiti cave by boat, Golden Beach Thassos boat"
+      },
+      "guide": {
+        "title": "Thassos Boat Rental Guide | Best Beaches by Rental Boat",
+        "description": "Insider-Guide Bootsvermietung Thassos — Marble Beach, Aliki und Lagunen nur per Boot. Tag ab Limenaria planen.",
+        "keywords": "Thassos boat rental guide, rent a boat Thassos beaches, Marble Beach boat, secret coves Thassos, Neuer Hafen von Limenaria routes"
+      },
+      "experiences": {
+        "title": "Thassos Boat Rental Ideas | What Guests Do on the Water",
+        "description": "Ideen für Ihre Miete — Sonnenuntergang, Buchten, Ganztag. Sie fahren vom Neuen Hafen von Limenaria.",
+        "keywords": "Thassos boat rental ideas, rent a boat Thassos, sunset boat rental, cove hopping Thassos, Neuer Hafen von Limenaria"
+      },
+      "reviews": {
+        "title": "Rent a Boat Thassos Reviews | Guest Rentals at Limenaria",
+        "description": "Bewertungen von Gästen in Neuer Hafen von Limenaria — Boote, Routen, Einweisung und Buchung.",
+        "keywords": "rent a boat Thassos reviews, Thassos boat rental reviews, Limenaria boat rental ratings, boat hire Thassos Greece"
+      },
+      "faq": {
+        "title": "Rent a Boat Thassos FAQ | Licence, Fuel & Pricing",
+        "description": "Alles vor der Miete — Führerschein, Einweisung, Wetter und Limenaria-Öffnungszeiten.",
+        "keywords": "rent a boat Thassos FAQ, Thassos boat rental licence, safety briefing included boat hire Thassos, Neuer Hafen von Limenaria pickup"
+      },
+      "blog": {
+        "title": "Bootsvermietung Thassos Guides | Rent A Boat Villy",
+        "description": "Thassos boat rental news & guides from Limenaria, hire tips, Marble Beach, Tripiti Cave, Golden Beach routes & sea atlas updates.",
+        "keywords": "Kontaktieren Sie uns fuer Preise"
+      },
+      "rentBoatThassos": {
+        "title": "Kontaktieren Sie uns fuer Preise",
+        "description": "Rent a boat in Thassos from im Neuen Hafen von Limenaria. Self-drive speedboats & day cruisers, safety briefing, no licence up to 30HP. Stay on board, swim only while anchored.",
+        "keywords": "Kontaktieren Sie uns fuer Preise"
+      },
+      "matchmaker": {
+        "title": "Boot finden | Thassos Boot-Quiz, Limenaria",
+        "description": "Kurze Fragen — wir empfehlen das passende Mietboot vom Neuen Hafen von Limenaria.",
+        "keywords": "Mietboot finden Thassos, Boot-Quiz, Limenaria, Boot wählen"
+      },
+      "privacy": {
+        "title": "Datenschutz | Rent A Boat Villy",
+        "description": "Datenschutz bei Rent A Boat Villy — wie wir Daten bei Bootsvermietung in Thassos schützen.",
+        "keywords": "Thassos boat rental privacy policy, GDPR boat rental Greece"
+      },
+      "terms": {
+        "title": "Nutzungsbedingungen | Rent A Boat Villy",
+        "description": "Bedingungen für Bootsvermietung in Thassos vom Neuen Hafen von Limenaria.",
+        "keywords": "Thassos boat rental terms, boat rental conditions Neuer Hafen von Limenaria"
+      },
+      "cookies": {
+        "title": "Cookie-Richtlinie | Rent A Boat Villy",
+        "description": "Wie Rent A Boat Villy Cookies nutzt — Einstellungen, Analyse und Ihre Wahl.",
+        "keywords": "Thassos boat rental cookies, website cookie policy Greece"
+      },
+      "gdpr": {
+        "title": "GDPR & Data Rights | Rent A Boat Villy",
+        "description": "GDPR-Rechte bei Rent A Boat Villy — Zugang, Löschung und Einwilligung.",
+        "keywords": "GDPR boat rental Greece, data rights Thassos boat rentals"
+      }
+    }
+  }
+}

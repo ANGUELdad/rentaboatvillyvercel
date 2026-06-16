@@ -1,0 +1,143 @@
+{
+  "start": "group",
+  "maxSteps": 3,
+  "nodes": {
+    "group": {
+      "id": "group",
+      "question": "How many guests are joining?",
+      "subtitle": "Pick your crew size — we'll narrow the fleet.",
+      "options": [
+        {
+          "id": "couple",
+          "label": "Just the two of us",
+          "icon": "heart",
+          "next": "couple-vibe"
+        },
+        {
+          "id": "family",
+          "label": "3–5 people",
+          "icon": "users",
+          "next": "family-vibe"
+        },
+        {
+          "id": "party",
+          "label": "6–10 guests",
+          "icon": "party-popper",
+          "next": "party-vibe"
+        }
+      ]
+    },
+    "couple-vibe": {
+      "id": "couple-vibe",
+      "question": "What's the mood?",
+      "subtitle": "Romance, adventure, or a relaxed day?",
+      "options": [
+        {
+          "id": "romance",
+          "label": "Romantic & intimate",
+          "icon": "heart",
+          "next": "couple-final"
+        },
+        {
+          "id": "adventure",
+          "label": "Coves & adventure",
+          "icon": "waves",
+          "boatId": "niki"
+        },
+        {
+          "id": "relaxed",
+          "label": "Relaxed cruising",
+          "icon": "sparkles",
+          "boatId": "basilios"
+        }
+      ]
+    },
+    "couple-final": {
+      "id": "couple-final",
+      "question": "Your perfect fit?",
+      "subtitle": "Almost there — one last pick.",
+      "options": [
+        {
+          "id": "compact",
+          "label": "Agile seven-seater",
+          "icon": "anchor",
+          "boatId": "poseidon"
+        },
+        {
+          "id": "premium",
+          "label": "Extra deck space",
+          "icon": "ship",
+          "boatId": "ag-nikolaos"
+        }
+      ]
+    },
+    "family-vibe": {
+      "id": "family-vibe",
+      "question": "Family day style?",
+      "subtitle": "Agile explorer or more deck room?",
+      "options": [
+        {
+          "id": "agile",
+          "label": "Agile & fun",
+          "icon": "waves",
+          "boatId": "ektoras"
+        },
+        {
+          "id": "spacious",
+          "label": "Spacious for everyone",
+          "icon": "users",
+          "boatId": "nikos"
+        },
+        {
+          "id": "balanced",
+          "label": "Best of both worlds",
+          "icon": "sun",
+          "next": "family-final"
+        }
+      ]
+    },
+    "family-final": {
+      "id": "family-final",
+      "question": "Half or full day?",
+      "options": [
+        {
+          "id": "half",
+          "label": "Half-day cove hop",
+          "icon": "map-pin",
+          "boatId": "niki"
+        },
+        {
+          "id": "full",
+          "label": "Full-day south coast",
+          "icon": "calendar",
+          "boatId": "ag-nikolaos"
+        }
+      ]
+    },
+    "party-vibe": {
+      "id": "party-vibe",
+      "question": "What's the occasion?",
+      "subtitle": "Big groups need the right boat.",
+      "options": [
+        {
+          "id": "celebration",
+          "label": "Group celebration",
+          "icon": "party-popper",
+          "boatId": "kima"
+        },
+        {
+          "id": "sunset",
+          "label": "Sunset cruise",
+          "icon": "sunset",
+          "boatId": "nikos"
+        },
+        {
+          "id": "max-capacity",
+          "label": "Maximum seats",
+          "icon": "crown",
+          "boatId": "kima"
+        }
+      ]
+    }
+  }
+}
