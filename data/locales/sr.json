@@ -1,0 +1,1608 @@
+{
+  "nav": {
+    "fleet": "Flota",
+    "package": "Paket",
+    "routes": "Mapa",
+    "guide": "Vodič",
+    "experiences": "Iskustva",
+    "reviews": "Recenzije",
+    "booking": "Rezerviši",
+    "blog": "Blog",
+    "bookNow": "Rezerviši",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Rent A Boat Villy · Tasos · Grčka",
+    "title": "Tvoj dan na vodi počinje ovde",
+    "hook": "Tvoj dan na Tasosu počinje na vodi",
+    "hookLine": "Iznajmljivanje na sat sa samovođenjem iz Novog porta Limenarija, Tasos",
+    "locationStrip": "Novi port Limenarija, Tasos — polazak sa južne obale",
+    "locationStripMobile": "Limenarija · Tasos",
+    "pillSelfDrive": "Samovođenje",
+    "pillHourly": "Na sat",
+    "pillMarina": "Novi port Limenarija",
+    "marinaMapsLabel": "Putanja",
+    "marinaMapsAria": "Otvori Novi port Limenarija na Google mapi",
+    "pillsAriaLabel": "Prednosti iznajmljivanja",
+    "subtitle": "Čamci sa samovođenjem iz Novog porta Limenarija, Tasos",
+    "cta": "Rezerviši",
+    "bookingPreviewDateHint": "Izaberi dan",
+    "bookingTitle": "Proveri dostupnost",
+    "scroll": "Skrol",
+    "statBoats": "{count} čamaca",
+    "statRoutes": "{count} ruta",
+    "statRating": "Recenzije gostiju",
+    "statRatingLabel": "recenzije",
+    "ratingLabel": "{count}+ recenzije gostiju",
+    "ratingReviews": "{count}+ Google recenzija"
+  },
+  "home": {
+    "trustBar": {
+      "ariaLabel": "Zašto rezervisati kod Rent A Boat Villy",
+      "licence": "Bez dozvole ≤30KS",
+      "briefing": "Besplatan sigurnosni brifing",
+      "deposit": "Bez online plaćanja"
+    },
+    "bento": {
+      "ariaLabel": "Rezervišite sa poverenjem",
+      "weatherTitle": "Thassos today",
+      "calm": "Mirno more",
+      "moderate": "Lagani povetarac",
+      "rough": "Nestabilno — proverite na brifingu",
+      "captainTitle": "Budite svoj kapetan",
+      "captainBody": "Bez dozvole do 30KS. Besplatan sigurnosni brifing pre svakog polaska.",
+      "reviewsTitle": "Google reviews"
+    },
+    "quickNav": {
+      "label": "Idi na",
+      "ariaLabel": "Brza navigacija"
+    },
+    "seasonDock": {
+      "sceneBadge": "Čamci sa samovođenjem · Limenarija",
+      "eyebrow": "Letnja sezona na Tasosu",
+      "headline": "Iznajmljivanje 2026 otvoreno",
+      "subline": "Jul i avgust se brzo popunjavaju, izaberi čamac i sate online.",
+      "highlight1": "Svaki dan 08:00, 20:00",
+      "highlight2": "Marina Limenarija",
+      "highlight3": "Rana rezervacija — bolja dostupnost",
+      "cta": "Proveri dostupnost"
+    },
+    "narrative": {
+      "fleetQuestion": "Koji čamci?",
+      "reviewsQuestion": "Šta kažu naši gosti",
+      "matchmakerQuestion": "Još niste sigurni?",
+      "galleryQuestion": "Šta ću videti?",
+      "exploreQuestion": "O nama"
+    },
+    "exploreEyebrow": "O nama",
+    "exploreTitle": "Vaš tim za čarter u Limenariji",
+    "exploreSubtitle": "Rent A Boat Villy je porodična firma u Marini Limenaria — vi upravljate, bez dozvole do 30KS. Sigurnosni brifing pri svakom polasku, uz savete za rute od Villyja i ekipe.",
+    "safetyRules": [
+      "15, 20 min bezbednosni brifing pre svakog polaska",
+      "Prsluci za spasavanje obezbeđeni",
+      "Određene zone plovidbe iz Limenarije",
+      "Opasno vreme? Besplatno pomeranje termina — bez dodatnih troškova",
+      "Bez dozvole do 30 KS"
+    ],
+    "whyChoose": {
+      "title": "Zašto Villy Boats Thassos?",
+      "subtitle": "Potpuno novi čamci, prava oprema na brodu i tim koji govori vaš jezik — sve iz Marine Limenaria.",
+      "items": {
+        "equipped": {
+          "title": "Novi i potpuno opremljeni",
+          "desc": "Svaki čamac u floti je nov, održavan i spreman za udoban dan na Egeju."
+        },
+        "amenities": {
+          "title": "Premium oprema na brodu",
+          "desc": "Suncobran, Bluetooth zvučnik, hladnjak, sidro i prsluci za odrasle i decu."
+        },
+        "languages": {
+          "title": "Govorimo vaš jezik",
+          "desc": "Podrška na engleskom, francuskom, rumunskom, bugarskom, srpskom, ruskom, arapskom i grčkom."
+        },
+        "celebrate": {
+          "title": "Slavite sa nama",
+          "desc": "Rođendani, venčanja, godišnjice i proslave — za decu i odrasle."
+        },
+        "earlyBooking": {
+          "title": "Prioritet rane rezervacije",
+          "desc": "Rezervišite unapred za prvi izbor čamca i datuma."
+        },
+        "marina": {
+          "title": "New Port of Limenaria",
+          "desc": "Preuzimanje na južnoj obali Tasosa — za nekoliko minuta istražujete skrivene dragulje morem."
+        }
+      }
+    },
+    "cards": {
+      "marina": {
+        "title": "Baza Novi port Limenarija",
+        "desc": "Preuzimanje u našoj marini na južnoj obali Tasosa"
+      },
+      "fleet": {
+        "title": "Održavana flota",
+        "desc": "Gliseri i day cruiser-i provereni pre svakog polaska"
+      },
+      "safety": {
+        "title": "Bezbednosni brifing pri svakom polasku",
+        "desc": "Potpun pregled lokalnih opasnosti, prsluka za spasavanje i VHF osnova, pre polaska."
+      },
+      "fuel": {
+        "title": "Gorivo nije uključeno",
+        "desc": "Gorivo se naplaćuje posebno — tipičnu potrošnju objašnjavamo na brifingu"
+      },
+      "routes": {
+        "title": "Saveti za lokalne rute",
+        "desc": "Predlozi plaža i uvala od Villyja i tima koji ovde svakodnevno plove"
+      },
+      "booking": {
+        "title": "Lak zahtev",
+        "desc": "Pošaljite podatke online, proveravamo flotu i javljamo vam se"
+      }
+    }
+  },
+  "fleet": {
+    "eyebrow": "Naša flota",
+    "title": "Iznajmljivanje čamca Thassos — Flota",
+    "subtitle": "8 pravih čamaca po kapacitetu — flagship 9 mesta, premium 8 mesta i porodični 7 mesta iz New Port of Limenaria.",
+    "stat1": "8 čamaca",
+    "stat2": "Kontaktirajte nas za cene na upit",
+    "stat3": "Novi & opremljeni",
+    "viewVessel": "Detalji",
+    "empty": "Flota uskoro.",
+    "vesselCount": "{count} čamaca dostupno"
+  },
+  "map": {
+    "eyebrow": "Otkrij",
+    "title": "Morska mapa",
+    "subtitle": "Plaže, pećine & luke, udaljenosti od Limenarije.",
+    "heroBadge": "Morski atlas",
+    "heroStatSpotsLabel": "Na karti",
+    "heroStatTracks": "GPS rute",
+    "heroStatTracksLabel": "Morske rute",
+    "heroStatBase": "Limenaria",
+    "heroStatBaseLabel": "Marina polaska",
+    "openMaps": "U Mapama",
+    "loading": "Učitavanje...",
+    "departure": "Marina",
+    "discoverEyebrow": "Istražite morem",
+    "discoverTitle": "Destinacije dostupne čamcem",
+    "allSpots": "All",
+    "spotsCount": "spots",
+    "searchPlaceholder": "Pretražite plaže, pećine, luke…",
+    "fromMarina": "od marine",
+    "byBoat": "čamcem",
+    "bookSpot": "Rezervišite čamac ovde",
+    "noResults": "Nema mesta koja odgovaraju pretrazi.",
+    "backToList": "Sva mesta",
+    "seoBlurb": "Svaka tačka dostupna je iznajmljenim čamcem iz Marine Limenaria — dodirnite destinaciju za rastojanje, vreme i rezervaciju."
+  },
+  "common": {
+    "language": "Jezik",
+    "backHome": "Početna",
+    "lastUpdated": "Ažurirano",
+    "explore": "Istraži",
+    "later": "Kasnije",
+    "viewAll": "Sve",
+    "errorGeneric": "Greška. Pokušaj ponovo.",
+    "skipToMain": "Na sadržaj",
+    "openMenu": "Otvori meni",
+    "closeMenu": "Zatvori meni",
+    "callPhone": "Pozovi {phone}",
+    "phoneLabel": "Telefon",
+    "navMenu": "Meni navigacije"
+  },
+  "matchmaker": {
+    "eyebrow": "Nisi siguran?",
+    "title": "Nađi čamac",
+    "subtitle": "3 pitanja, predložićemo čamac.",
+    "cta": "Nađi čamac",
+    "progress": "Pitanje {current}/{total}",
+    "resultEyebrow": "Tvoj izbor",
+    "resultTitle": "Našli smo čamac",
+    "bookNow": "Rezerviši",
+    "retry": "Ponovo",
+    "back": "Nazad",
+    "stepsTitle": "Kako radi",
+    "step1Label": "Veličina grupe",
+    "step1Desc": "Par, porodica ili proslava — recite ko dolazi.",
+    "step2Label": "Vaš stil",
+    "step2Desc": "Romantične uvale, porodična zabava ili proslava.",
+    "step3Label": "Vaš izbor",
+    "step3Desc": "Predlažemo najbolji čamac iz naše flote u Limenariji.",
+    "fleetTitle": "Iz naše flote",
+    "fleetLink": "Pogledajte svu flotu",
+    "statBoats": "{count} čamaca",
+    "statQuestions": "3 pitanja",
+    "statTime": "~2 minuta",
+    "statTimeLabel": "Traje samo",
+    "trustEyebrow": "Rezervišite sa poverenjem",
+    "trustSecureTitle": "Bez plaćanja sada",
+    "trustSecureDesc": "Siguran zahtev — plaćate u marini",
+    "trustLocalTitle": "Lokalni tim Limenaria",
+    "trustLocalDesc": "Porodična firma na molu",
+    "trustPriceTitle": "Sigurnosni brifing uključen",
+    "trustPriceDesc": "Sigurnosni brifing pri svakom polasku"
+  },
+  "showcase": {
+    "eyebrow": "Šta ću videti?",
+    "title": "Život na Egeju",
+    "subtitle": "Zlatni sati, tajne uvala, pravo iznajmljivanje brodova.",
+    "expand": "Ceo ekran",
+    "counter": "{current} od {total}",
+    "swipeHint": "Prevucite za više trenutaka"
+  },
+  "gallery": {
+    "eyebrow": "Šta ću videti?",
+    "title": "Jedinstveni trenuci na Tasosu",
+    "subtitle": "Zlatni sati, tajne uvale i pravi Tasos — iz stvarnih iznajmljivanja.",
+    "expand": "Ceo ekran",
+    "close": "Zatvori galeriju",
+    "counter": "{current} od {total}",
+    "swipeHint": "Prevucite kroz video snimke — dodirnite za reprodukciju",
+    "filmstripHint": "Dodirnite sličicu za skok",
+    "prev": "Prethodno",
+    "next": "Sledeće",
+    "back": "Nazad"
+  },
+  "packageBuilder": {
+    "eyebrow": "Napravi paket",
+    "title": "Live pregled",
+    "subtitle": "Izaberite čamac i trajanje — sigurnosni brifing uključen. Vi vozite, vi birate rutu.",
+    "heroHeadline": "Planirajte iznajmljivanje",
+    "heroSubline": "Iznajmljivanje po satu iz Marine Limenaria — izaberite čamac, sate, pošaljite zahtev. Bez tura, bez skipera do 30KS.",
+    "journeyMarina": "Limenaria",
+    "journeyExplore": "Istraži",
+    "journeyYourDay": "Vaš dan",
+    "journeyBoarding": "Boarding pass",
+    "journeyMapTitle": "Vaše putovanje",
+    "storyVessel": "Izaberite čamac",
+    "storyVesselHint": "Iznajmljivanje po satu — sami vozite iz Marine Limenaria.",
+    "storyDay": "Koliko vam treba?",
+    "storyDayHint": "Izaberite sate i broj gostiju. Bez tura — idite gde želite.",
+    "storyReview": "Vaš zahtev za iznajmljivanje",
+    "rentalFreedomNote": "Bez fiksnih tura — iznajmite čamac i idite gde želite.",
+    "mapInspirationLink": "Pogledajte morski atlas",
+    "selected": "Izabrano",
+    "boardingPassTitle": "Vaš boarding pass",
+    "boardingPassLabel": "Zahtev za iznajmljivanje",
+    "requestNote": "Ovo je zahtev, ne instant rezervacija — Villy potvrđuje dostupnost i kontaktira vas.",
+    "preferredDate": "Preferirani datum",
+    "optional": "opciono",
+    "routeStops": "{count} obalnih stanica",
+    "vessel": "Čamac",
+    "route": "Ruta",
+    "duration": "Trajanje",
+    "guests": "Gosti",
+    "hours": "h",
+    "total": "Kontaktirajte nas za cene",
+    "fromTotal": "Kontaktirajte nas za cene",
+    "fromPrefix": "From",
+    "fuelNote": "sigurnosna oprema uključena",
+    "cta": "Dostupnost",
+    "ctaBook": "Rezerviši",
+    "requestCta": "Rezerviši",
+    "disclaimer": "U zavisnosti od dostupnosti, potvrđujemo pre putovanja",
+    "continue": "Nastavi",
+    "back": "Nazad",
+    "emptyVessel": "Izaberite čamac",
+    "emptyRoute": "Vi birate gde idete",
+    "validationVessel": "Izaberite čamac da nastavite",
+    "validationRoute": "Opciono — izaberite plan dana ili preskočite",
+    "maxGuestsNote": "Maksimalno {max} gostiju za ovaj čamac",
+    "teaserBadge": "Live",
+    "teaserTitle": "Isplaniraj dan",
+    "teaserDesc": "Izaberite čamac i sate — zahtev za rezervaciju.",
+    "teaserCta": "Otvori builder",
+    "promoTitle": "Planirajte iznajmljivanje",
+    "promoDesc": "Izaberite datum i čamac — potvrđujemo dostupnost.",
+    "promoCta": "Rezervišite",
+    "promoDismiss": "Zatvori"
+  },
+  "package": {
+    "eyebrow": "cene na upit iznajmljivanja čamca",
+    "title": "Zahtev za rezervaciju",
+    "subtitle": "Izaberite čamac i trajanje — potvrđujemo dostupnost i cene telefonom ili u kancelariji.",
+    "loading": "Učitavanje formulara za rezervaciju…",
+    "stepConfigure": "Podesite iznajmljivanje",
+    "stepConfigureHint": "Izaberite čamac, sate i goste — zatim pošaljite zahtev.",
+    "stepSummaryHint": "Pregledajte detalje, zatim pošaljite zahtev.",
+    "stepVessel": "Čamac",
+    "stepDurationGuests": "Sati & gosti",
+    "stepSummary": "Pregled",
+    "decreaseHours": "Manje sati",
+    "increaseHours": "Više sati",
+    "stepProgress": "Korak {current}/{total}",
+    "stepsAria": "Napredak planera paketa",
+    "vessel": "Čamac",
+    "route": "Ruta",
+    "duration": "Trajanje",
+    "guests": "Gosti",
+    "guestSingular": "gost",
+    "guestPlural": "gosti",
+    "hours": "h",
+    "total": "Kontaktirajte nas za cene",
+    "fromTotal": "Kontaktirajte nas za cene",
+    "fromPrefix": "From",
+    "fuelNote": "sigurnosna oprema uključena",
+    "cta": "Dostupnost",
+    "ctaBook": "Rezerviši",
+    "requestCta": "Rezerviši",
+    "disclaimer": "U zavisnosti od dostupnosti, potvrđujemo pre putovanja",
+    "continue": "Nastavi",
+    "back": "Nazad",
+    "emptyVessel": "Izaberite čamac za početak",
+    "emptyRoute": "Vi birate gde idete",
+    "previewBadge": "Live",
+    "includedTitle": "Uključeno",
+    "excludedTitle": "Nije uklj.",
+    "mobileSummary": "Tvoj paket",
+    "decreaseGuests": "Manje gostiju",
+    "increaseGuests": "Više gostiju",
+    "validationVessel": "Izaberite čamac da nastavite",
+    "validationRoute": "Opciono — izaberite plan dana ili preskočite",
+    "maxGuestsNote": "Maksimalno {max} gostiju za ovaj čamac"
+  },
+  "fleetGrid": {
+    "allVessels": "Svi brodovi",
+    "fullFleet": "Cela flota",
+    "moreVessels": "Još",
+    "moreSubtitle": "Vidi kolekciju",
+    "viewFullFleet": "Vidi flotu"
+  },
+  "yachtUi": {
+    "search": {
+      "title": "Pretraga",
+      "location": "Lokacija",
+      "locationValue": "New Port of Limenaria, Thassos",
+      "from": "From",
+      "to": "To",
+      "cta": "Pretraži čamce"
+    },
+    "results": {
+      "count": "{count} rezultata",
+      "sort": "Sortiraj po relevantnosti"
+    },
+    "nearYou": {
+      "title": "Blizu vas",
+      "seeAll": "Vidi sve"
+    },
+    "specs": {
+      "pax": "{count} mesta",
+      "hp": "{count} KS",
+      "perHourShort": "Cene na upit"
+    }
+  },
+  "boatDetail": {
+    "pageTitle": "Detalji",
+    "back": "Flota",
+    "share": "Podeli",
+    "linkCopied": "Link kopiran",
+    "save": "Sačuvaj",
+    "location": "Limenaria, Tasos",
+    "descriptionTitle": "Opis",
+    "showMore": "Više",
+    "showLess": "Manje",
+    "specifications": "Specifikacije",
+    "startingAt": "cene na upit",
+    "perHour": "h",
+    "swipeHint": "Prevucite galeriju iznad ili dodirnite sličicu",
+    "gallery": "Galerija",
+    "features": "Oprema",
+    "relatedTitle": "Možda ti se svidi",
+    "relatedSubtitle": "Više čamaca iz naše egejske flote",
+    "guests": "Gosti",
+    "power": "Snaga",
+    "length": "Dužina"
+  },
+  "legal": {
+    "backHome": "Početna",
+    "lastUpdated": "Ažurirano"
+  },
+  "termsPage": {
+    "title": "Uslovi i rezervacija",
+    "intro": "Za cene, dostupnost, politiku goriva i sve detalje najma, pozovite nas ili posetite našu kancelariju u Mari Limenaria, Tasos.",
+    "phoneLabel": "Telefon",
+    "officeLabel": "Kancelarija",
+    "office": "Novi port Limenarija, Tasos",
+    "bullets": [
+      "Gorivo nije uključeno",
+      "Sigurnosni briefing u marini",
+      "Rezervacija u zavisnosti od dostupnosti"
+    ],
+    "bookingNote": "Zahtev na ovom sajtu nije potvrđena rezervacija dok vas ne kontaktiramo.",
+    "bookingCta": "Zatražite rezervaciju"
+  },
+  "gdpr": {
+    "formTitle": "GDPR zahtev",
+    "email": "Email",
+    "requestType": "Tip",
+    "access": "Pristup",
+    "delete": "Brisanje",
+    "portability": "Prenosivost",
+    "rectification": "Ispravka podataka",
+    "restriction": "Ograničenje obrade",
+    "objection": "Prigovor na obradu",
+    "withdrawConsent": "Povlačenje saglasnosti",
+    "details": "Detalji",
+    "detailsPlaceholder": "Opcioni detalji za vaš zahtev...",
+    "submit": "Pošalji",
+    "submitting": "Šalje se...",
+    "successTitle": "Zahtev poslat.",
+    "successDesc": "Odgovor za 30 dana.",
+    "successAgain": "Novi zahtev",
+    "error": "Neuspešno."
+  },
+  "offers": {
+    "later": "Kasnije"
+  },
+  "guide": {
+    "eyebrow": "Tajne lagune",
+    "title": "Vodič Tasos",
+    "subtitle": "Skrivene uvala, samo morem.",
+    "heroBadge": "Morem",
+    "heroStatSpotsLabel": "Stanice dostupne čamcem",
+    "heroStatRoutes": "{count} planova dana",
+    "heroStatRoutesLabel": "Predložene petlje",
+    "heroStatBase": "Limenaria",
+    "heroStatBaseLabel": "Marina polaska",
+    "page": {
+      "filterAll": "Sve stanice",
+      "timelineTitle": "Obalna ruta od Limenarije",
+      "routesTitle": "Predloženi planovi dana",
+      "scrollHint": "Skrolujte obalu — stanice se otvaraju dok idete",
+      "spotCount": "{count} sidrišta",
+      "ctaMap": "Otvorite interaktivni morski atlas",
+      "ctaBook": "Zatražite čamac",
+      "routes": [
+        {
+          "title": "South coast loop",
+          "desc": "Metalia → Tripiti → Pefkari → Potos, the classic half-day",
+          "hours": "4, 6 hrs"
+        },
+        {
+          "title": "East coast run",
+          "desc": "Golden Beach & Aliki quarry, longer open-water stretch",
+          "hours": "6, 8 hrs"
+        },
+        {
+          "title": "North shore day",
+          "desc": "Marble Beach & Vathi Bay, calm morning seas recommended",
+          "hours": "Full day"
+        }
+      ]
+    },
+    "mapCta": "Pogledaj udaljenosti na mapi",
+    "categoryBeach": "Plaža",
+    "categoryLagoon": "Skrivena uvala",
+    "categoryCulture": "Kultura",
+    "categoryHarbor": "Luka",
+    "spots": {
+      "metalia-beach": {
+        "name": "Metalia Beach",
+        "tagline": "Stena uvala i ronjenje",
+        "description": "Prva stanica južno od Limenarije — mirne plićake idealne za plivanje pre Tripitija."
+      },
+      "tripiti-cave": {
+        "name": "Tripiti Cave",
+        "tagline": "Morska pećina i šljunčana plaža",
+        "description": "Poznato sidrište jugozapada — tirkizna voda u pećini, najbolje pre podne."
+      },
+      "pefkari-beach": {
+        "name": "Plaža Pefkari",
+        "tagline": "Peskovita porodična uvala",
+        "description": "Plići pesak — lako sidrenje za porodice na klasičnoj južnoj petlji."
+      },
+      "potos-harbor": {
+        "name": "Luka Potos",
+        "tagline": "Ručak na obali",
+        "description": "Sidrenje blizu taverni u luci — prirodna pauza za ručak tokom celog dana."
+      },
+      "aliki-ruins": {
+        "name": "Antički kamenolom Aliki",
+        "tagline": "Mermerni ruševini pod vodom",
+        "description": "Ronjenje kraj kamenolomskih blokova starih 2000 godina u kristalno cistoj vodi na jugoistocnoj obali."
+      },
+      "marble-beach": {
+        "name": "Marble Beach",
+        "tagline": "Beli litici i smaragdno more",
+        "description": "Istaknuto mesto severne obale — rano jutro čamcem pre popodnevnog vetra."
+      },
+      "golden-beach": {
+        "name": "Golden Beach",
+        "tagline": "Tirkizna plićak i fin pesak",
+        "description": "Sidrenje kod Chrisi Akti — najduža peščana plaža Tasosa na istočnoj obali."
+      },
+      "kalogria-bay": {
+        "name": "Uvala Vathi",
+        "tagline": "Užurno sidrište severoistoka",
+        "description": "Uvala Vathi sa borovima — mirno sidrište za plivanje u zlatnom satu."
+      }
+    }
+  },
+  "experiences": {
+    "eyebrow": "Kurirano",
+    "title": "Iskustva",
+    "subtitle": "Avanture za parove, porodice & proslave.",
+    "buildCta": "Procena iznajmljivanja",
+    "estimateCta": "Procena iznajmljivanja",
+    "customTitle": "Samo iznajmite čamac",
+    "customDesc": "Izaberite bilo koji čamac i sate — idite gde želite.",
+    "customCta": "Rezervišite čamac",
+    "items": [
+      {
+        "title": "Zalasci",
+        "desc": "Zlatni sat na Egeju."
+      },
+      {
+        "title": "Lagune",
+        "desc": "Tajne uvala. GPS rute uklj."
+      },
+      {
+        "title": "Ceo dan",
+        "desc": "Od zore do sumraka."
+      },
+      {
+        "title": "Proslave",
+        "desc": "Rođendani, prosidbe, pripremamo."
+      }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Google recenzije",
+    "title": "Šta kažu naši gosti",
+    "subtitle": "Iskreni utisci gostiju koji su iznajmili čamac u Marini Limenaria.",
+    "verified": "verifikovano",
+    "verifiedGuests": "Verifikovani gosti",
+    "trustLine": "Verifikovana iznajmljivanja",
+    "badge": "Šta gosti kažu na Google-u",
+    "allReviews": "Sve",
+    "comingSoon": "Recenzije uskoro.",
+    "googleLabel": "Google recenzije",
+    "googleRated": "Google recenzije",
+    "viewOnGoogle": "Pogledaj na Google-u",
+    "prevReview": "Prethodna recenzija",
+    "nextReview": "Sledeća recenzija",
+    "reviewSlides": "Recenzije",
+    "reviewOf": "Recenzija {current} od {total}",
+    "fiveStars": "5 zvezda"
+  },
+  "conversion": {
+    "trust": {
+      "ariaLabel": "Zašto rezervisati kod nas",
+      "licensed": "Bezbednosni brifing",
+      "marina": "New Port of Limenaria",
+      "response": "Potvrđena dostupnost",
+      "noFees": "Gorivo nije uključeno"
+    },
+    "steps": {
+      "date": "Datum & čamac",
+      "contact": "Vaši podaci"
+    },
+    "stepsAria": "Progres rezervacije",
+    "social": {
+      "verified": "verifikovane recenzije",
+      "bookedThisWeek": "{count} rezervacija ove nedelje"
+    },
+    "bookingBadges": {
+      "ariaLabel": "Sigurna rezervacija",
+      "secure": "Sigurno, bez plaćanja",
+      "local": "Lokalni tim",
+      "transparent": "Sigurnosni brifing"
+    },
+    "funnel": {
+      "browse": "Flota",
+      "build": "Paket",
+      "book": "Rezerviši"
+    },
+    "fleet": {
+      "mostPopular": "Popularno",
+      "starRating": "{rating} zvezda",
+      "swipeHint": "Prevucite za brodove",
+      "prevVessel": "Prethodni brod",
+      "nextVessel": "Sledeći brod",
+      "perHourSuffix": "",
+      "guestsCount": "{count} gostiju",
+      "seatsCount": "{count} mesta",
+      "fuelIncluded": "Gorivo nije uključeno",
+      "noLicense": "Bez dozvole ≤30KS",
+      "specLine": "{perHour} · {guests} · {hp}KS",
+      "specLineNoPrice": "{guests} · {hp}KS"
+    },
+    "lossAversion": "Ne propustite savršen dan na Tasosu — iznajmite čamac.",
+    "popularSeason": "Popularno leti — rezervišite rano za vrhunac sezone.",
+    "package": {
+      "fromPrice": "Kontaktirajte nas za cene",
+      "includedTitle": "Šta je uključeno",
+      "included": [
+        "Licensed briefing",
+        "Safety gear & VHF"
+      ],
+      "excludedTitle": "Nije uključeno",
+      "excluded": [
+        "Food & drinks",
+        "Skipper (optional add-on)",
+        "Marina parking fees"
+      ],
+      "mobileSummary": "Vaš paket"
+    },
+    "booking": {
+      "continue": "Nastavi",
+      "back": "Nazad",
+      "checkAvailability": "Proveri dostupnost",
+      "step1Title": "Kada & koji čamac?",
+      "step2Title": "Vaši podaci",
+      "legalNote": "Slanjem zahteva prihvatate naše",
+      "termsLink": "Terms",
+      "privacyLink": "Politiku privatnosti",
+      "and": "and",
+      "successShare": "Podelite sa grupom",
+      "successNext": "Šta sledi",
+      "successStep1": "Proveravamo koja brodovi su slobodna.",
+      "successStep2": "Zovemo ili pišemo, obično u roku od nekoliko sati.",
+      "successStep3": "Nakon potvrde: donesite ličnu kartu u marinu.",
+      "emptyFleet": "Trenutno nema slobodnih čamaca. Pozovite nas.",
+      "validationName": "Unesite puno ime.",
+      "validationEmail": "Unesite ispravan email.",
+      "validationPhone": "Unesite broj telefona.",
+      "validationBoat": "Izaberite čamac.",
+      "validationDate": "Izaberite datum iznajmljivanja."
+    },
+    "boatDetail": {
+      "faqTitle": "Korisno",
+      "checkAvailability": "Dostupnost",
+      "includedTitle": "Šta je uključeno"
+    },
+    "skipLink": "Preskoči na glavni sadržaj"
+  },
+  "booking": {
+    "eyebrow": "Zahtev",
+    "title": "Zatraži iznajmljivanje broda",
+    "requestTitle": "Zatraži iznajmljivanje broda",
+    "subtitle": "Izaberi datum i čamac — potvrđujemo dostupnost.",
+    "expectTitle": "Šta sledi",
+    "expect1": "Pregledamo zahtev i dostupnost flote.",
+    "expect2": "Javljamo se telefonom ili porukom, obično u roku od nekoliko sati.",
+    "expect3": "Nakon potvrde: donesite LK/pasoš u Limenariju.",
+    "successTitle": "Zahtev primljen",
+    "successMessage": "Hvala! Javićemo vam se u roku od nekoliko sati da potvrdimo dostupnost.",
+    "successDesc": "Javićemo vam se u roku od nekoliko sati za potvrdu.",
+    "successEmailNote": "Poslali smo e-mail potvrde na {email}.",
+    "successAgain": "Novi zahtev",
+    "summaryTitle": "Vaš zahtev",
+    "summaryBoatEmpty": "Izaberite čamac",
+    "submit": "Pošalji zahtev za rezervaciju",
+    "submitting": "Šalje se…",
+    "consentCheckbox": "Slažem se sa Uslovima korišćenja, Politikom privatnosti i obradom mojih ličnih podataka za ovaj zahtev za rezervaciju.",
+    "consentCheckboxError": "Molimo prihvatite uslove da biste nastavili.",
+    "form": {
+      "fullName": "Ime",
+      "email": "Email",
+      "phone": "Telefon",
+      "idNumber": "LK / Pasoš",
+      "date": "Datum",
+      "time": "Vreme",
+      "vessel": "Preferirani brod",
+      "vesselOptional": "opciono",
+      "route": "Ruta",
+      "routeOptional": "opciono",
+      "guests": "Gosti",
+      "notes": "Preferencije & napomene",
+      "selectBoat": "Izaberi čamac",
+      "selectRoute": "Izaberi rutu",
+      "guestCount": "gost",
+      "guestCountPlural": "gosti",
+      "namePlaceholder": "John Smith",
+      "emailPlaceholder": "you@email.com",
+      "phonePlaceholder": "+30 690 000 0000",
+      "idPlaceholder": "Potrebno po dolasku",
+      "notesPlaceholder": "Proslava, oprema, dijetalne napomene..."
+    }
+  },
+  "faq": {
+    "eyebrow": "Osnovno",
+    "title": "FAQ",
+    "subtitle": "Sve pre polaska.",
+    "page": {
+      "carouselAria": "Thassos boat rental moments",
+      "highlightsTitle": "Dobro znati na prvi pogled",
+      "highlights": [
+        {
+          "title": "No licence ≤30HP",
+          "desc": "Safety briefing before every departure",
+          "image": "/images/boats/poseidon-sea.jpg"
+        },
+        {
+          "title": "Sve informacije u našoj kancelariji",
+          "desc": "Posetite nas u Marini Limenaria na južnoj obali Tasosa",
+          "image": "/images/boats/limenaria-palataki.jpg"
+        },
+        {
+          "title": "Novi port Limenarija",
+          "desc": "Južna obala Tasosa · Svaki dan 08:00–20:00, maj–oktobar",
+          "image": "/images/boats/basilios-palataki.jpg"
+        }
+      ],
+      "tips": [
+        "Iznajmljivanje po satu, sami upravljate",
+        "Sigurnosni brifing uključen pri svakom iznajmljivanju",
+        "Bez online plaćanja — pošaljite podatke",
+        "Besplatno pomeranje termina pri lošem vremenu",
+        "Brifing pre polaska",
+        "Bez dozvole do 30KS"
+      ],
+      "tipsAria": "Brze činjenice o iznajmljivanju",
+      "allQuestions": "Sva pitanja",
+      "mostAskedTitle": "Najčešća pitanja",
+      "viewAllFaq": "Vidi sve odgovore",
+      "ctaBook": "Book",
+      "ctaPrices": "Kontaktirajte nas za cene",
+      "ctaFleet": "Pogledajte flotu",
+      "slides": [
+        {
+          "src": "/images/boats/poseidon-sea.jpg",
+          "caption": "Golden hour departure from Limenaria"
+        },
+        {
+          "src": "/images/boats/kima.jpg",
+          "caption": "Crystal waters off Thassos"
+        },
+        {
+          "src": "/images/boats/nikoleta.jpg",
+          "caption": "Our New Port of Limenaria fleet"
+        },
+        {
+          "src": "/images/boats/niki.jpg",
+          "caption": "Secret lagoon anchorages"
+        }
+      ]
+    },
+    "items": [
+      {
+        "q": "Da li se rezervacija potvrđuje odmah?",
+        "a": "Ne, šaljete zahtev sa podacima i željama. Proveravamo dostupnost i javljamo vam se. Ništa nije konačno dok ne potvrdimo."
+      },
+      {
+        "q": "Dozvola za brod?",
+        "a": "Do 30KS, ne. Safety briefing pre polaska."
+      },
+      {
+        "q": "Da li je gorivo uključeno?",
+        "a": "Da, za standardno krstarenje."
+      },
+      {
+        "q": "Da li je potrebno plaćanje unapred?",
+        "a": "Nije potrebno nikakvo plaćanje unapred. Pošaljite zahtev sa vašim podacima i potvrđujemo dostupnost telefonom. Plaćate po dolasku u Marinu Limenaria."
+      },
+      {
+        "q": "Odakle?",
+        "a": "Novi port Limenarija. GPS po potvrdi."
+      },
+      {
+        "q": "Is online payment required?",
+        "a": "No payment is needed online. Just fill in your details and we confirm availability by phone or message. You pay nothing until you arrive at New Port of Limenaria."
+      },
+      {
+        "q": "Can I rent a speedboat in Thassos without experience?",
+        "a": "Yes, our 30HP speedboats are ideal for beginners. Every rental includes a safety briefing covering local hazards, anchoring, and VHF basics before you cast off."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Privatnost",
+    "desc": "Neophodni kolačići. Analitika opciona.",
+    "policy": "Kolačići",
+    "acceptAll": "Prihvati",
+    "reject": "Samo neophodno",
+    "customize": "Podešavanja",
+    "settingsTitle": "Kolačići",
+    "necessary": "Neophodni",
+    "necessaryDesc": "Za rad sajta",
+    "alwaysOn": "Uvek uključeno",
+    "analytics": "Analitika",
+    "analyticsDesc": "Anonimno",
+    "marketing": "Marketing",
+    "marketingDesc": "Remarketing",
+    "save": "Sačuvaj",
+    "footerSettings": "Kolačići"
+  },
+  "footer": {
+    "tagline": "Rent A Boat Villy · Novi port Limenarija, Tasos",
+    "explore": "Istraži",
+    "company": "Kompanija",
+    "contact": "Kontakt",
+    "marina": "Novi port Limenarija",
+    "hours": "08:00, 20:00",
+    "trustFuel": "Gorivo nije uključeno",
+    "cta": "Rezerviši",
+    "fleet": "Flota",
+    "rentBoatThassos": "Iznajmljivanje čamca Tasos",
+    "map": "Mapa",
+    "guide": "Vodič",
+    "experiences": "Iskustva",
+    "reviews": "Recenzije",
+    "book": "Rezerviši",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "privacy": "Privatnost",
+    "cookies": "Kolačići",
+    "terms": "Uslovi",
+    "gdpr": "GDPR",
+    "locationLine": "Novi port Limenarija · Tasos · Grčka"
+  },
+  "blog": {
+    "eyebrow": "Vesti čamaca Tasos",
+    "title": "Vesti čamaca Tasos",
+    "subtitle": "Vodiči za satni najam, plaže, pomorske rute & vesti iz Limenaria Marine.",
+    "back": "Svi članci",
+    "backHome": "Početna",
+    "featured": "Glavna vest",
+    "readArticle": "Pročitaj ceo članak",
+    "readTime": "{minutes} min čitanja",
+    "empty": "Članci uskoro.",
+    "articleCta": "Spreman da istražiš Tasos čamcem? Izaberi čamac i sate, sigurnosni brifing uključen iz Limenarije.",
+    "newsKicker": "Vesti čamaca Tasos",
+    "newsTagline": "Satni najam, rute, vodiči za plaže & vesti od Rent A Boat Villy.",
+    "categoryAll": "Sve vesti",
+    "categoryGuides": "Vodiči",
+    "categoryGuidesDesc": "Vodiči za iznajmljivanje čamca na Tasosu, bezbednost, oprema, porodični dani & ronjenje.",
+    "categoryBeaches": "Plaže",
+    "categoryBeachesDesc": "Plaže dostupne čamcem, Marble Beach, Tripiti, Golden Beach, Potos, Aliki & više.",
+    "categoryRoutes": "Rute",
+    "categoryRoutesDesc": "GPS pomorske rute, južna obala, severna obala & celodnevne ture.",
+    "categoryRental": "Saveti za najam",
+    "categoryRentalDesc": "cene na upit, dozvole, vreme & saveti za rezervaciju satnog najama u Limenariji.",
+    "categoryThassos": "Ostrvo",
+    "categoryThassosDesc": "Vesti iz Limenaria Marine, ažuriranja flote & priče o Tasosu sa mora.",
+    "categoriesAria": "Kategorije članaka",
+    "headlines": "Naslovi",
+    "headlinesAria": "Glavni naslovi",
+    "latest": "Najnovije",
+    "latestAria": "Najnoviji članci",
+    "sidebarAria": "Najnovija ažuriranja",
+    "sidebarCta": "Zatraži rezervaciju",
+    "viewAll": "Pogledaj sve",
+    "relatedTitle": "Još iz Vesti čamaca Tasos",
+    "page": {
+      "trailAria": "Navigacija",
+      "trailHome": "Početna",
+      "trailBlog": "Blog",
+      "quickLinksAria": "Brzi linkovi",
+      "quickGuide": "Morski vodič",
+      "quickBooking": "Zatraži rezervaciju",
+      "quickFaq": "FAQ"
+    }
+  },
+  "chat": {
+    "title": "Marinski asistent",
+    "subtitle": "Rent A Boat Villy",
+    "aiName": "Villy",
+    "aiTagline": "Iznajmljivanje brodova · Novi port Limenarija",
+    "aiStatus": "Dostupna · Novi port Limenarija",
+    "sessionRefLabel": "Ref",
+    "typingLabel": "Villy kuca…",
+    "placeholder": "Čamci, plaže, cene na upit…",
+    "notificationPreview": "Pitanja o brodovima, datumima ili dostupnosti?",
+    "timestampNow": "sada",
+    "tapToReply": "Dodirni za chat",
+    "dismiss": "Zatvori",
+    "emptyTitle": "Dobar dan, ja sam Villy",
+    "emptyHint": "Izaberite brzi odgovor ispod",
+    "pickTopic": "Brzi odgovori",
+    "menuGroups": {
+      "bookBoat": "Rezerviši brod",
+      "ourBoats": "Naši brodovi",
+      "goodToKnow": "Korisno znati",
+      "contact": "Kontakt"
+    },
+    "backToMenu": "Glavni meni",
+    "suggestedQuestions": [
+      "Najjeftiniji čamac?",
+      "Najbolje plaže?",
+      "Dozvola potrebna?",
+      "Brod za 4 osobe",
+      "sigurnosni brifing uključen?",
+      "Ruta Tripiti",
+      "Marble Beach",
+      "Porodica od 6",
+      "Proveri dostupnost",
+      "Pronađi brod",
+      "Recenzije gostiju",
+      "Zalazak sunca"
+    ],
+    "quickActions": [
+      "Rezerviši čamac",
+      "cene na upit po satu",
+      "Najbolje plaže",
+      "Pogledaj flotu",
+      "Mapa ostrva",
+      "Pravila bezbednosti",
+      "Proveri dostupnost",
+      "sigurnosni brifing uključen?",
+      "Ruta Tripiti",
+      "Marble Beach",
+      "Pronađi brod",
+      "Recenzije gostiju"
+    ],
+    "quickActionsAria": "Brza pitanja",
+    "linkBook": "Otvori rezervaciju",
+    "linkFleet": "Pogledaj flotu",
+    "linkGuide": "Vodič ostrva",
+    "linkMap": "Otvori mapu",
+    "linkPackage": "Pogledaj flotu",
+    "minimize": "Smanji",
+    "close": "Zatvori chat",
+    "send": "Pošalji",
+    "enableSounds": "Zvuk uklj.",
+    "muteSounds": "Utišaj",
+    "openAssistant": "Ćaskaj sa Villy",
+    "peekAction": "Dodirni za chat",
+    "notificationTitle": "Villy · Marinski asistent",
+    "tapToChat": "Chat",
+    "banner": {
+      "title": "Niste sigurni koju lađu da izaberete?",
+      "body": "Trenutna pomoć pri poređenju lađa, politici goriva i rutama iz Nove luke Limenaria.",
+      "badge": "AI asistent",
+      "userPrompt": "Koja lađa odgovara za 6 gostiju iz Limenarije?",
+      "reply": "Za 6 gostiju preporučujem Nikos ili Nikoleta — 8 mesta, bezbednosni brifing uključen, bez dozvole do 30KS.",
+      "followUp": "Mogu i da proverim dostupnost za vaše datume.",
+      "typing": "Villy piše…",
+      "cta": "Ćaskaj sa Villy",
+      "dismiss": "Zatvori"
+    },
+    "humanContact": {
+      "title": "Razgovor sa timom",
+      "subtitle": "Izaberi WhatsApp, Viber ili email — odgovaramo u radnom vremenu marine (08:00–20:00).",
+      "whatsapp": "WhatsApp",
+      "viber": "Viber",
+      "email": "Email",
+      "close": "Zatvori",
+      "prefill": "Dobar dan. Želeo bih informacije o iznajmljivanju čamca kod Rent A Boat Villy.",
+      "emailSubject": "Upit za iznajmljivanje čamca — Rent A Boat Villy",
+      "optionLabel": "Razgovor sa osobom"
+    },
+    "start": {
+      "message": "Dobar dan. Ja sam Villy u Novom portu Limenarija. Upravljamo osam brodova self-drive — izaberite brzi odgovor ili unesite pitanje.",
+      "options": [
+        {
+          "id": "book",
+          "label": "Proveri dostupnost",
+          "next": "booking"
+        },
+        {
+          "id": "fleet",
+          "label": "Naša flota",
+          "next": "fleet"
+        },
+        {
+          "id": "group",
+          "label": "Koji brod za moju grupu?",
+          "next": "group"
+        },
+        {
+          "id": "directions",
+          "label": "Kako do Marine Limenaria",
+          "next": "directions"
+        },
+        {
+          "id": "fuel",
+          "label": "Politika goriva",
+          "next": "fuel"
+        },
+        {
+          "id": "amenities",
+          "label": "Šta je uključeno",
+          "next": "amenities"
+        },
+        {
+          "id": "rates",
+          "label": "Cene na upit",
+          "next": "rates"
+        },
+        {
+          "id": "human",
+          "label": "Razgovor sa osobom",
+          "next": "human"
+        },
+        {
+          "id": "contact",
+          "label": "Pozovi nas",
+          "next": "contact"
+        }
+      ]
+    },
+    "booking": {
+      "message": "Za proveru dostupnosti, molimo pošaljite datum, broj gostiju i sate iznajmljivanja. Proveravamo flotu i kontaktiramo vas telefonom ili emailom. Online plaćanje nije potrebno.",
+      "options": [
+        {
+          "id": "book-now",
+          "label": "Formular rezervacije",
+          "next": "book-cta"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "fleet": {
+      "message": "Self-drive gliseri i day cruiser-i od. Safety briefing uključen. Bez dozvole do 30KS.",
+      "options": [
+        {
+          "id": "fleet-open",
+          "label": "Pogledaj flotu",
+          "next": "fleet-cta"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "group": {
+      "message": "Reci nam koliko vas je — Kima za do 9, 8-sedista za srednje grupe, 7-sedista za manje. +30 698 131 8393 ili zahtev za rezervaciju.",
+      "options": [
+        {
+          "id": "book-group",
+          "label": "Proveri dostupnost",
+          "next": "booking"
+        },
+        {
+          "id": "fleet-group",
+          "label": "Svi brodovi",
+          "next": "fleet"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "directions": {
+      "message": "Novi port Limenarija je na južnoj obali Tasosa. Besplatan parking. GPS šaljemo nakon potvrde. Svaki dan 08:00–20:00.",
+      "options": [
+        {
+          "id": "contact-dir",
+          "label": "Pozovi nas",
+          "next": "contact"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "fuel": {
+      "message": "Gorivo nije uključeno u cenu iznajmljivanja i naplaćuje se posebno prema vožnji. Tipičnu potrošnju objašnjavamo pri predaji broda.",
+      "options": [
+        {
+          "id": "rates-fuel",
+          "label": "Cene na upit",
+          "next": "rates"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "amenities": {
+      "message": "Svaki brod ima: suncobran, Bluetooth, frižider, sidro i prsluke. Safety briefing pre polaska. Ponesi kupaće, kremu, vodu.",
+      "options": [
+        {
+          "id": "fleet-amen",
+          "label": "Pogledaj flotu",
+          "next": "fleet"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "rates": {
+      "message": "Kontaktirajte nas za cene — pozovite +30 698 131 8393 ili posetite kancelariju u marini Limenaria.",
+      "options": [
+        {
+          "id": "contact-rates",
+          "label": "Pozovi nas",
+          "next": "contact"
+        },
+        {
+          "id": "book-rates",
+          "label": "Proveri dostupnost",
+          "next": "booking"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "spots": {
+      "message": "Brodom iz Limenarije: Marble Beach, pećina Tripiti, Metalia i tihe južne uvale. Radi bezbednosti svih, gosti ostaju na brodu tokom kretanja; plivanje je dozvoljeno samo dok je brod na sidru.",
+      "options": [
+        {
+          "id": "guide",
+          "label": "Vodič ostrva",
+          "next": "guide-cta"
+        },
+        {
+          "id": "map-open",
+          "label": "Morska mapa",
+          "next": "map-cta"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "map": {
+      "message": "Naš morski atlas prikazuje GPS rute, stajališta za plivanje i udaljenosti od Marine Limenaria.",
+      "options": [
+        {
+          "id": "map-go",
+          "label": "Otvori mapu",
+          "next": "map-cta"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "safety": {
+      "message": "Radi bezbednosti svih, gosti ostaju na brodu tokom kretanja. Plivanje je dozvoljeno samo dok je brod na sidru. Potpun safety briefing i prsluci pre polaska.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "pricing": {
+      "message": "Kontaktirajte nas za cene — pozovite +30 698 131 8393 ili posetite kancelariju u marini Limenaria.",
+      "options": [
+        {
+          "id": "contact-pricing",
+          "label": "Pozovi nas",
+          "next": "contact"
+        },
+        {
+          "id": "back",
+          "label": "Nazad",
+          "next": "start"
+        }
+      ]
+    },
+    "contact": {
+      "message": "+30 698 131 8393 · +40 770 965 041 · vilitrifonova245@gmail.com · Novi port Limenarija, svaki dan 08:00–20:00 u sezoni.",
+      "options": [
+        {
+          "id": "human-contact",
+          "label": "Razgovor sa osobom",
+          "next": "human"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "human": {
+      "message": "Rado ću vas povezati sa timom marine. Izaberite WhatsApp, Viber ili email.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "book-cta": {
+      "message": "Dodirni ispod da otvoriš formular sa izabranim brodom i datumom.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "fleet-cta": {
+      "message": "Uporedi fotografije, kapacitet i specifikacije svih 8 brodova na stranici flote.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "package": {
+      "message": "Cene na upit — u zavisnosti od broda i sezone. Svaki brod na stranici flote prikazuje kapacitet.",
+      "options": [
+        {
+          "id": "package-open",
+          "label": "Pogledaj flotu",
+          "next": "fleet-cta"
+        },
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "guide-cta": {
+      "message": "Vodič navodi omiljena sidrišta sa savetima za svaku obalu.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "map-cta": {
+      "message": "Otvori interaktivni morski atlas sa rutama iz Limenarije.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    },
+    "package-cta": {
+      "message": "Sastavi iznajmljivanje i vidi ukupan iznos pre rezervacije.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Glavni meni",
+          "next": "start"
+        }
+      ]
+    }
+  },
+  "errors": {
+    "notFound": {
+      "eyebrow": "404",
+      "title": "Stranica nije pronađena",
+      "description": "Ova ruta je možda pomerena — vaš dan na Tasosu je na klik.",
+      "home": "Početna",
+      "book": "Proverite dostupnost",
+      "fleet": "Pogledajte flotu"
+    },
+    "route": {
+      "eyebrow": "Error",
+      "title": "Nešto nije u redu",
+      "description": "Privremeni problem. Pokušajte ponovo ili se vratite na početnu.",
+      "retry": "Pokušaj ponovo",
+      "home": "Home"
+    },
+    "global": {
+      "eyebrow": "Kritična greška",
+      "title": "Nešto je ozbiljno pošlo naopako",
+      "description": "Aplikacija je naišla na nepopravljivu grešku. Osvežite stranicu.",
+      "retry": "Pokušaj ponovo",
+      "home": "Home"
+    },
+    "unauthorized": {
+      "eyebrow": "Pristup odbijen",
+      "title": "Nemate dozvolu",
+      "description": "Oblast je ograničena. Prijavite se ili se vratite na sajt.",
+      "home": "Početna",
+      "login": "Admin prijava"
+    },
+    "admin": {
+      "notFound": {
+        "eyebrow": "404",
+        "title": "Admin stranica nije pronađena",
+        "description": "Ta ruta ne postoji. Vratite se na kontrolnu tablu.",
+        "dashboard": "Dashboard",
+        "login": "Prijava"
+      },
+      "route": {
+        "eyebrow": "Admin greška",
+        "title": "Panel se nije učitao",
+        "description": "Problem sa bazom ili konfiguracijom. Proverite logove servera.",
+        "retry": "Retry",
+        "login": "Nazad na prijavu"
+      }
+    }
+  },
+  "seo": {
+    "siteName": "Rent A Boat Villy",
+    "defaultTitle": "Iznajmljivanje čamaca Tasos | Limenaria | Rent A Boat Villy",
+    "titleTemplate": "%s",
+    "description": "Iznajmi čamac na Tasosu iz Marine Limenaria. Gliseri i day cruiseri za plaže i uvale. Sigurnosni brifing uključen, bez dozvole do 30KS.",
+    "keywords": "iznajmljivanje čamaca Tasos, marina Limenaria",
+    "ogTitle": "Iznajmljivanje čamaca Tasos | Limenaria | Rent A Boat Villy",
+    "ogDescription": "Premium iznajmljivanje čamaca na Tasosu — self-drive gliseri iz Marine Limenaria. Tajne uvale, pećine i plaže. Bez online plaćanja.",
+    "locale": "sr_RS",
+    "boat": {
+      "title": "Rent a Boat Thassos, {name}",
+      "description": "Rent a boat in Thassos: {name} at New Port of Limenaria. Up to {pax} passengers. {desc} Safety briefing included. Contact us for rates.",
+      "keywords": "rent a boat Thassos, {name} rental, New Port of Limenaria boat rental, private boat tour Thassos, small boat rental Greece Aegean"
+    },
+    "blogArticle": {
+      "titleSuffix": "| Blog čamaca Tasos"
+    },
+    "homeContent": {
+      "eyebrow": "Vodič za iznajmljivanje čamaca",
+      "title": "Rent a Boat in Thassos, New Port of Limenaria",
+      "intro": "Rent A Boat Villy is a local boat rental at New Port of Limenaria on the south coast, you drive the boat yourself. Hourly rentals include safety briefings and optional tips on where to go.",
+      "features": {
+        "marina": {
+          "title": "New Port of Limenaria",
+          "desc": "Preuzimanje na južnoj obali — GPS i parking posle rezervacije"
+        },
+        "fleet": {
+          "title": "Gliseri i day cruiser-i",
+          "desc": "RIB i day boat provereni pre svakog polaska"
+        },
+        "safety": {
+          "title": "Sigurnosni brifing",
+          "desc": "15–20 min obilazak, prsluci i osnovno VHF"
+        },
+        "routes": {
+          "title": "Kuda ići",
+          "desc": "Tripiti Cave, Metalia, Marble Beach and hidden coves, you choose"
+        }
+      },
+      "sections": [
+        {
+          "title": "What to expect on rental day",
+          "items": [
+            "Meet at New Port of Limenaria, GPS coordinates and parking details sent after booking",
+            "15, 20 minute safety briefing covering local hazards, anchoring, and VHF basics",
+            "Life jackets and briefing included, you drive the boat and pick your own stops",
+            "Departures daily 08:00, 20:00; peak season (July, August) fills 48 hours ahead"
+          ]
+        },
+        {
+          "title": "Top boat destinations from Limenaria",
+          "items": [
+            "Tripiti Cave, sea cave and turquoise shallows on the south-west coast",
+            "Metalia Beach, rocky cove with deep blue water ideal for snorkelling",
+            "Aliki Ancient Quarry, marble ruins visible from the water on the south-east shore"
+          ]
+        },
+        {
+          "title": "Why rent a boat in Thassos?",
+          "items": [
+            "Dozens of beaches and coves best reached by private boat",
+            "No boating licence required for boats up to 30HP, ideal for beginners",
+            "Hourly rentals for sunset loops, snorkelling stops, or full-day exploring",
+            "New Port of Limenaria is centrally located for south, west, and east-coast sailing"
+          ]
+        },
+        {
+          "title": "How much does it cost to rent a boat in Thassos?",
+          "paragraphs": [
+            "Rates depend on boat type and season, open speedboats, ribs, and day cruisers are all available from New Port of Limenaria. Every rental includes safety gear.",
+            "Compare boats on [our fleet page](/fleet) — each listing shows rates on request. Peak season (July, August) fills fast, request 48 hours ahead for the best selection."
+          ]
+        },
+        {
+          "title": "Do I need a licence to rent a boat in Thassos?",
+          "paragraphs": [
+            "No licence is needed for boats up to 30HP, most of our fleet qualifies. We give a short safety briefing at New Port of Limenaria before you depart. For larger boats, contact us and we can arrange a skipper."
+          ]
+        }
+      ],
+      "linksTitle": "Istražite i iznajmite čamac",
+      "linksAria": "Povezane stranice iznajmljivanja",
+      "links": [
+        {
+          "href": "/rent-a-boat-thassos",
+          "label": "Complete guide to rent a boat in Thassos"
+        },
+        {
+          "href": "/fleet",
+          "label": "Browse our Thassos boat fleet"
+        },
+        {
+          "href": "/map",
+          "label": "Sea atlas of boat-accessible spots"
+        },
+        {
+          "href": "/guide",
+          "label": "Thassos boat guide"
+        },
+        {
+          "href": "/booking",
+          "label": "Request a boat rental online"
+        },
+        {
+          "href": "/faq",
+          "label": "Rental FAQ"
+        },
+        {
+          "href": "/reviews",
+          "label": "Guest reviews"
+        }
+      ]
+    },
+    "rentBoatPillar": {
+      "eyebrow": "Thassos boat rental guide",
+      "title": "Rent a Boat in Thassos",
+      "subtitle": "Gliseri i day cruiser-i po satu iz Marine Limenaria — vi vozite, brifing uključen",
+      "lead": "Rent A Boat Villy is a family-run hourly boat rental at New Port of Limenaria on Thassos' south coast. You drive the boat yourself after a safety briefing, no guided tours, no large boats. Small open speedboats and day cruisers only, all ≤30HP so no licence is required. Safety briefing is included, and guests stay on board at every stop, swimming only while anchored.",
+      "sections": [
+        {
+          "title": "How to rent a boat in Thassos",
+          "items": [
+            "Browse our fleet of speedboats and day cruisers, all ≤30HP, no licence needed",
+            "Pick your date and rental hours on our booking page",
+            "Arrive at New Port of Limenaria 20 minutes early for ID check and 15, 20 min safety briefing",
+            "Drive yourself to Tripiti, Metalia, Marble Beach or any route within the briefing zone",
+            "Return to the marina by your booked end time, safety briefing included"
+          ]
+        },
+        {
+          "title": "Why rent from New Port of Limenaria?",
+          "items": [
+            "Central south-coast base, Metalia and Tripiti within 30 minutes",
+            "Full southern-coast loop to Aliki in six to seven hours",
+            "Golden Beach and north-shore Marble routes from the same marina",
+            "Daily departures 08:00, 20:00, May through October",
+            "Family-run operation with safety briefing on every departure from"
+          ]
+        },
+        {
+          "title": "What is included in your rental",
+          "items": [
+            "Safety gear for standard cruising around Thassos",
+            "15, 20 minute safety and navigation briefing every departure",
+            "Life jackets for all guests",
+            "Optional snorkel sets at the marina on request",
+            "GPS route tracks via our interactive sea atlas"
+          ]
+        },
+        {
+          "title": "Stay-on-board policy",
+          "paragraphs": [
+            "Rent A Boat Villy is hourly self-drive rental, not a guided excursion and not a disembark-at-beaches service. Guests must remain on the boat at all anchor stops. Swimming and snorkelling only while anchored around your boat.",
+            "Pack lunch, snacks and drinks in the on-board cooler. Enjoy meals on deck with harbour and coastline views, this keeps insurance simple and your day focused on the water."
+          ]
+        },
+        {
+          "title": "Do I need a boating licence in Thassos?",
+          "paragraphs": [
+            "No licence is required for boats up to 30 horsepower under Greek law. Our entire fleet qualifies, open speedboats, ribs and day cruisers only. We never offer large boats or crewed boat rentals on standard hourly rentals.",
+            "Bring a valid passport or ID. First-time skippers receive extra briefing time on controls, anchoring and local hazards before casting off from Limenaria."
+          ]
+        },
+        {
+          "title": "How to request a boat rental in Thassos",
+          "paragraphs": [
+            "Start on [our fleet page](/fleet) to compare capacity and equipment, then send a [booking request](/booking) online — or visit New Port of Limenaria and call +30 698 131 8393.",
+            "No online payment. We check availability and reply by phone or message. For July and August, request at least 48 hours ahead."
+          ]
+        }
+      ],
+      "ctaPrimary": "Zatražite iznajmljivanje čamca",
+      "ctaSecondary": "Pogledajte flotu",
+      "linksTitle": "Planirajte dan na vodi na Tasosu",
+      "linksAria": "Povezane stranice iznajmljivanja",
+      "links": [
+        {
+          "href": "/fleet",
+          "label": "Browse speedboats & day cruisers"
+        },
+        {
+          "href": "/booking",
+          "label": "Request a rental online"
+        },
+        {
+          "href": "/map",
+          "label": "Sea atlas, distances & routes"
+        },
+        {
+          "href": "/faq",
+          "label": "Boat rental FAQ"
+        },
+        {
+          "href": "/rent-a-boat-thassos",
+          "label": "Full rent-a-boat guide"
+        }
+      ]
+    },
+    "pages": {
+      "home": {
+        "title": "Rent a Boat in Thassos | New Port of Limenaria | Rent A Boat Villy",
+        "description": "Rent a boat in Thassos from at New Port of Limenaria. Speedboats & day cruisers for Marble Beach & secret coves. No licence up to 30HP, safety briefing included. Book today.",
+        "keywords": "rent a boat Thassos, rent a boat in Thassos, boat rental Thassos, Thassos boat hire, New Port of Limenaria boat rental, speedboat rental Thassos, no license boat Thassos 30HP"
+      },
+      "fleet": {
+        "title": "Flota iznajmljivanja Tasos | Gliseri iz Marine Limenaria",
+        "description": "Rent a boat in Thassos at New Port of Limenaria. 8 boats — Kima (9 seats), premium 8-seaters, family 7-seaters. Brand new, fully equipped. Book online.",
+        "keywords": "iznajmljivanje čamaca Tasos, čamac Tasos, Villy Boats, marina Limenaria, flota Tasos"
+      },
+      "booking": {
+        "title": "Rent a Boat in Thassos, Request Online | New Port of Limenaria",
+        "description": "Zatražite online iznajmljivanje na Tasosu. Izaberite čamac, datum i sate iz Marine Limenaria — potvrđujemo telefonom. Brifing uključen, bez dozvole do 30KS.",
+        "keywords": "rent a boat Thassos online, book boat Thassos, boat rental Thassos booking, New Port of Limenaria rental, speedboat rental Thassos"
+      },
+      "package": {
+        "title": "Thassos boat rental | rates on request Calculator",
+        "description": "Planirajte iznajmljivanje — izaberite čamac i trajanje iz Marine Limenaria pre slanja zahteva.",
+        "keywords": "Thassos boat rental, rent a boat Thassos cost, boat hire Limenaria, speedboat rental Thassos"
+      },
+      "map": {
+        "title": "Thassos Boat Map | Beaches & Coves from New Port of Limenaria",
+        "description": "Interaktivni morski atlas Tasosa — Tripiti, Marble Beach, Golden Beach, Aliki i tajne uvale od Marine Limenaria.",
+        "keywords": "Thassos boat map, boat rental Thassos routes, New Port of Limenaria spots, Tripiti cave by boat, Golden Beach Thassos boat"
+      },
+      "guide": {
+        "title": "Thassos Boat Rental Guide | Best Beaches by Rental Boat",
+        "description": "Vodič za iznajmljivanje na Tasosu — Marble Beach, Aliki i lagune dostupne samo morem. Planirajte dan iz Limenarije.",
+        "keywords": "Thassos boat rental guide, rent a boat Thassos beaches, Marble Beach boat, secret coves Thassos, New Port of Limenaria routes"
+      },
+      "experiences": {
+        "title": "Thassos Boat Rental Ideas | What Guests Do on the Water",
+        "description": "Ideje za iznajmljivanje — zalazak sunca, uvale, ceo dan. Vi vozite iz Marine Limenaria.",
+        "keywords": "Thassos boat rental ideas, rent a boat Thassos, sunset boat rental, cove hopping Thassos, New Port of Limenaria"
+      },
+      "reviews": {
+        "title": "Rent a Boat Thassos Reviews | Guest Rentals at Limenaria",
+        "description": "Recenzije gostiju koji su iznajmili čamac u Marini Limenaria — čamci, rute, brifing i rezervacija.",
+        "keywords": "rent a boat Thassos reviews, Thassos boat rental reviews, Limenaria boat rental ratings, boat hire Thassos Greece"
+      },
+      "faq": {
+        "title": "Rent a Boat Thassos FAQ | Licence, Fuel & Pricing",
+        "description": "Sve pre iznajmljivanja — dozvola, brifing, plaćanje, vreme i radno vreme Marine Limenaria.",
+        "keywords": "rent a boat Thassos FAQ, Thassos boat rental licence, safety briefing included boat hire Thassos, New Port of Limenaria pickup"
+      },
+      "blog": {
+        "title": "Vodiči iznajmljivanja Tasos | Rent A Boat Villy",
+        "description": "Thassos boat rental news & guides from Limenaria, hire tips, Marble Beach, Tripiti Cave, Golden Beach routes & sea atlas updates.",
+        "keywords": "Thassos boat news, rent a boat Villy, New Port of Limenaria blog, Thassos boat rental guide, Marble Beach boat, hourly boat hire Thassos"
+      },
+      "rentBoatThassos": {
+        "title": "Rent a Boat Thassos | Hourly Self-Drive from New Port of Limenaria",
+        "description": "Rent a boat in Thassos from at New Port of Limenaria. Self-drive speedboats & day cruisers, safety briefing, no licence up to 30HP. Stay on board, swim only while anchored.",
+        "keywords": "rent a boat thassos, rent a boat in thassos, boat rental thassos, thassos boat hire, limenaria marina boat rental, hourly boat rental thassos, no license boat thassos 30HP"
+      },
+      "matchmaker": {
+        "title": "Pronađite čamac | Kviz Tasos, Limenaria",
+        "description": "Odgovorite na pitanja — predlažemo idealan čamac iz Marine Limenaria za vašu grupu.",
+        "keywords": "iznajmljivanje čamaca Tasos, kviz čamaca, Limenaria, izbor čamca"
+      },
+      "privacy": {
+        "title": "Politika privatnosti | Rent A Boat Villy",
+        "description": "Politika privatnosti Rent A Boat Villy — kako prikupljamo i štitimo podatke pri iznajmljivanju čamaca.",
+        "keywords": "Thassos boat rental privacy policy, GDPR boat rental Greece"
+      },
+      "terms": {
+        "title": "Uslovi korišćenja | Rent A Boat Villy",
+        "description": "Uslovi iznajmljivanja čamaca na Tasosu iz Marine Limenaria — rezervacije, otkazivanje, odgovornost.",
+        "keywords": "Thassos boat rental terms, boat rental conditions New Port of Limenaria"
+      },
+      "cookies": {
+        "title": "Politika kolačića | Rent A Boat Villy",
+        "description": "Kako Rent A Boat Villy koristi kolačiće — preference, analitika i vaše izbore.",
+        "keywords": "Thassos boat rental cookies, website cookie policy Greece"
+      },
+      "gdpr": {
+        "title": "GDPR & Data Rights | Rent A Boat Villy",
+        "description": " Ostvarite GDPR prava kod Rent A Boat Villy — pristup, brisanje i upravljanje saglasnošću.",
+        "keywords": "GDPR boat rental Greece, data rights Thassos boat rentals"
+      }
+    }
+  }
+}

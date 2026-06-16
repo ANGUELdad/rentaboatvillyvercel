@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": "fleet", "href": "/fleet", "labelKey": "fleet", "icon": "fleet", "enabled": true },
+    { "id": "map", "href": "/map", "labelKey": "routes", "icon": "map", "enabled": true },
+    { "id": "guide", "href": "/guide", "labelKey": "guide", "icon": "guide", "enabled": true },
+    { "id": "experiences", "href": "/experiences", "labelKey": "experiences", "icon": "experiences", "enabled": false },
+    { "id": "reviews", "href": "/reviews", "labelKey": "reviews", "icon": "reviews", "enabled": true },
+    { "id": "blog", "href": "/blog", "labelKey": "blog", "icon": "blog", "enabled": false }
+  ]
+}

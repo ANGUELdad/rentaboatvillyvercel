@@ -1,0 +1,74 @@
+[
+  {
+    "id": "metalia-beach",
+    "name": "Metalia Beach",
+    "tagline": "Rocky cove & deep blue water",
+    "description": "A calm rocky inlet south of Limenaria — ideal first swim stop with excellent snorkelling over iron-ore formations.",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+    "coordinates": { "lat": 40.6237, "lng": 24.5826 },
+    "category": "beach"
+  },
+  {
+    "id": "tripiti-cave",
+    "name": "Tripiti Cave",
+    "tagline": "Sea cave & hidden pebble beach",
+    "description": "One of Thassos' signature boat stops — a dramatic sea cave and turquoise shallows on the south-west coast.",
+    "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=800&q=80",
+    "coordinates": { "lat": 40.6235, "lng": 24.543 },
+    "category": "lagoon"
+  },
+  {
+    "id": "pefkari-beach",
+    "name": "Pefkari Beach",
+    "tagline": "Sandy bay for families",
+    "description": "Shallow sandy water perfect for families — moor offshore and swim into a relaxed south-coast beach.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "coordinates": { "lat": 40.616, "lng": 24.6001 },
+    "category": "beach"
+  },
+  {
+    "id": "potos-harbor",
+    "name": "Potos Harbor",
+    "tagline": "Island life & tavernas",
+    "description": "Moor nearby and stroll ashore for fresh seafood, cafés, and the lively south-coast village atmosphere.",
+    "image": "https://images.unsplash.com/photo-1544551763-77ef2d0cfcb0?auto=format&fit=crop&w=800&q=80",
+    "coordinates": { "lat": 40.6107, "lng": 24.6065 },
+    "category": "harbor"
+  },
+  {
+    "id": "aliki-ruins",
+    "name": "Aliki Ancient Quarry",
+    "tagline": "History from the water",
+    "description": "Circle 2,000-year-old marble workings and snorkel submerged ruins in crystal-clear south-east water.",
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
+    "coordinates": { "lat": 40.6034, "lng": 24.7377 },
+    "category": "culture"
+  },
+  {
+    "id": "golden-beach",
+    "name": "Golden Beach",
+    "tagline": "Turquoise shallows & soft sand",
+    "description": "Thassos' most iconic stretch — anchor offshore at Chrisi Akti and swim into paradise on the east coast.",
+    "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80",
+    "coordinates": { "lat": 40.7217, "lng": 24.7576 },
+    "category": "beach"
+  },
+  {
+    "id": "marble-beach",
+    "name": "Marble Beach",
+    "tagline": "White cliffs & emerald sea",
+    "description": "Dramatic marble scree meets deep Aegean blue on the north shore — best approached early before the breeze picks up.",
+    "image": "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=800&q=80",
+    "coordinates": { "lat": 40.7505, "lng": 24.7481 },
+    "category": "beach"
+  },
+  {
+    "id": "kalogria-bay",
+    "name": "Vathi Bay",
+    "tagline": "Secluded north-east anchorage",
+    "description": "A quiet pine-fringed bay on the north-east coast — drop anchor for golden-hour swims away from the main beach crowds.",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80&sat=-20",
+    "coordinates": { "lat": 40.7443, "lng": 24.7675 },
+    "category": "lagoon"
+  }
+]

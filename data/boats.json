@@ -1,0 +1,329 @@
+[
+  {
+    "id": "kima",
+    "name": "KIMA",
+    "pax": 9,
+    "pricePerHour": 30,
+    "currency": "€",
+    "image": "/images/boats/kima.jpg",
+    "description": "Our largest boat — seats nine with sun tent, icebox, and Bluetooth audio.",
+    "longDescription": "Kima is the go-to when you need maximum deck space from New Port of Limenaria. Self-drive with a full safety briefing before every departure. Ideal for two families or a full-day south-coast run.",
+    "featured": true,
+    "tagline": "9 seats · Family",
+    "gallery": [
+      "/images/boats/kima.jpg",
+      "/images/boats/limenaria-palataki.jpg",
+      "/images/boats/ag-nikolaos.jpg"
+    ],
+    "amenities": [
+      {
+        "id": "bimini",
+        "label": "Sun tent"
+      },
+      {
+        "id": "bluetooth",
+        "label": "Bluetooth audio"
+      },
+      {
+        "id": "cooler",
+        "label": "Icebox"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor gear"
+      },
+      {
+        "id": "life-jackets",
+        "label": "Life jackets"
+      },
+      {
+        "id": "no-license",
+        "label": "No licence required"
+      }
+    ]
+  },
+  {
+    "id": "nikos",
+    "name": "NIKOS",
+    "pax": 8,
+    "pricePerHour": 25,
+    "currency": "€",
+    "image": "/images/boats/nikos.jpg",
+    "description": "Eight-seat open boat with sun tent — easy to handle from Limenaria.",
+    "longDescription": "Nikos carries eight guests comfortably for half-day cove hops or a full Thassos coastline loop. Safety briefing included on every rental.",
+    "featured": true,
+    "tagline": "8 seats · Open boat",
+    "gallery": [
+      "/images/boats/nikos-1.jpg",
+      "/images/boats/nikos-2.jpg"
+    ],
+    "amenities": [
+      {
+        "id": "bimini",
+        "label": "Sun tent"
+      },
+      {
+        "id": "bluetooth",
+        "label": "Bluetooth audio"
+      },
+      {
+        "id": "cooler",
+        "label": "Icebox"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor gear"
+      },
+      {
+        "id": "life-jackets",
+        "label": "Life jackets"
+      },
+      {
+        "id": "no-license",
+        "label": "No licence required"
+      }
+    ]
+  },
+  {
+    "id": "nikoleta",
+    "name": "NIKOLETA",
+    "pax": 8,
+    "pricePerHour": 25,
+    "currency": "€",
+    "image": "/images/boats/nikoleta.jpg",
+    "description": "Eight-seat day boat — shaded console and icebox for cove days.",
+    "longDescription": "Nikoleta is a practical eight-seater for families and friend groups leaving New Port of Limenaria. Self-drive with a full safety walkthrough before you cast off.",
+    "featured": false,
+    "tagline": "8 seats · Family",
+    "gallery": [
+      "/images/boats/nikoleta-1.jpg"
+    ],
+    "amenities": [
+      {
+        "id": "bimini",
+        "label": "Sun tent"
+      },
+      {
+        "id": "cooler",
+        "label": "Icebox"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor gear"
+      },
+      {
+        "id": "life-jackets",
+        "label": "Life jackets"
+      },
+      {
+        "id": "no-license",
+        "label": "No licence required"
+      }
+    ]
+  },
+  {
+    "id": "ag-nikolaos",
+    "name": "AG. NIKOLAOS",
+    "pax": 8,
+    "pricePerHour": 25,
+    "currency": "€",
+    "image": "/images/boats/ag-nikolaos.jpg",
+    "description": "Named for the saint — eight seats, sun tent, and Bluetooth for coastal exploring.",
+    "longDescription": "Ag. Nikolaos is one of our eight-seat boats at New Port of Limenaria. Comfortable for mixed groups, with shade and icebox for beach-and-cove days around Thassos.",
+    "featured": true,
+    "tagline": "8 seats · Day cruiser",
+    "gallery": [
+      "/images/boats/ag-nikolaos-1.jpg",
+      "/images/boats/ag-nikolaos-2.jpg",
+      "/images/boats/ag-nikolaos-3.jpg",
+      "/images/boats/ag-nikolaos-4.jpg"
+    ],
+    "amenities": [
+      {
+        "id": "bimini",
+        "label": "Sun tent"
+      },
+      {
+        "id": "bluetooth",
+        "label": "Bluetooth audio"
+      },
+      {
+        "id": "cooler",
+        "label": "Icebox"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor gear"
+      },
+      {
+        "id": "life-jackets",
+        "label": "Life jackets"
+      },
+      {
+        "id": "no-license",
+        "label": "No licence required"
+      }
+    ]
+  },
+  {
+    "id": "niki",
+    "name": "NIKI",
+    "pax": 7,
+    "pricePerHour": 20,
+    "currency": "€",
+    "image": "/images/boats/niki.jpg",
+    "description": "Seven-seat open boat — agile for Metalia, Tripiti, and south-coast coves.",
+    "longDescription": "Niki seats seven and handles easily for first-time skippers. Safety briefing at the marina wall and a sun tent for shade on longer runs.",
+    "featured": false,
+    "tagline": "7 seats · Explorer",
+    "gallery": [
+      "/images/boats/niki-1.jpg",
+      "/images/boats/niki-2.jpg",
+      "/images/boats/niki-3.jpg"
+    ],
+    "amenities": [
+      {
+        "id": "bimini",
+        "label": "Sun tent"
+      },
+      {
+        "id": "cooler",
+        "label": "Icebox"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor gear"
+      },
+      {
+        "id": "life-jackets",
+        "label": "Life jackets"
+      },
+      {
+        "id": "no-license",
+        "label": "No licence required"
+      }
+    ]
+  },
+  {
+    "id": "poseidon",
+    "name": "POSEIDON",
+    "pax": 7,
+    "pricePerHour": 20,
+    "currency": "€",
+    "image": "/images/boats/poseidon.jpg",
+    "description": "Seven-seat boat with Palataki views from the water — sun tent, Bluetooth, and icebox.",
+    "longDescription": "Poseidon is a seven-seater from our Limenaria fleet. Popular for sunset loops and half-day south-coast runs. Self-drive with briefing before departure.",
+    "featured": true,
+    "tagline": "7 seats · Day boat",
+    "gallery": [
+      "/images/boats/poseidon-1.jpg",
+      "/images/boats/poseidon-2.jpg",
+      "/images/boats/poseidon-3.jpg"
+    ],
+    "amenities": [
+      {
+        "id": "bimini",
+        "label": "Sun tent"
+      },
+      {
+        "id": "bluetooth",
+        "label": "Bluetooth audio"
+      },
+      {
+        "id": "cooler",
+        "label": "Icebox"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor gear"
+      },
+      {
+        "id": "life-jackets",
+        "label": "Life jackets"
+      },
+      {
+        "id": "no-license",
+        "label": "No licence required"
+      }
+    ]
+  },
+  {
+    "id": "ektoras",
+    "name": "EKTORAS",
+    "pax": 7,
+    "pricePerHour": 20,
+    "currency": "€",
+    "image": "/images/boats/ektoras.jpg",
+    "description": "Seven-seat rental with sun tent and icebox — ready at New Port of Limenaria.",
+    "longDescription": "Ektoras seats seven for couples and small groups who want a straightforward self-drive day on the Aegean. Safety briefing included.",
+    "featured": false,
+    "tagline": "7 seats · Open boat",
+    "gallery": [
+      "/images/boats/ektoras.jpg",
+      "/images/boats/basilios-palataki.jpg",
+      "/images/boats/poseidon-sea.jpg"
+    ],
+    "amenities": [
+      {
+        "id": "bimini",
+        "label": "Sun tent"
+      },
+      {
+        "id": "cooler",
+        "label": "Icebox"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor gear"
+      },
+      {
+        "id": "life-jackets",
+        "label": "Life jackets"
+      },
+      {
+        "id": "no-license",
+        "label": "No licence required"
+      }
+    ]
+  },
+  {
+    "id": "basilios",
+    "name": "BASILIOS",
+    "pax": 7,
+    "pricePerHour": 20,
+    "currency": "€",
+    "image": "/images/boats/basilios.jpg",
+    "description": "Seven-seat boat named Basilios — sun tent and icebox for cove days.",
+    "longDescription": "Basilios is a seven-seat self-drive boat from Rent A Boat Villy at New Port of Limenaria. Full safety briefing and easy handling for south-coast routes.",
+    "featured": false,
+    "tagline": "7 seats · Day boat",
+    "gallery": [
+      "/images/boats/basilios-1.jpg",
+      "/images/boats/basilios-2.jpg",
+      "/images/boats/basilios-3.jpg",
+      "/images/boats/basilios-4.jpg"
+    ],
+    "amenities": [
+      {
+        "id": "bimini",
+        "label": "Sun tent"
+      },
+      {
+        "id": "cooler",
+        "label": "Icebox"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor gear"
+      },
+      {
+        "id": "life-jackets",
+        "label": "Life jackets"
+      },
+      {
+        "id": "no-license",
+        "label": "No licence required"
+      }
+    ]
+  }
+]

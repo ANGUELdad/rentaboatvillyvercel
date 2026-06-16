@@ -1,0 +1,118 @@
+{
+  "marina": {
+    "id": "marina",
+    "name": "New Port of Limenaria",
+    "coordinates": { "lat": 40.62575, "lng": 24.57506 }
+  },
+  "routes": [
+    {
+      "id": "southern-coast",
+      "name": "Southern Coast Discovery",
+      "description": "Limenaria → Metalia → Tripiti Cave → Pefkari → Potos → Aliki. The classic south-coast day route locals recommend.",
+      "duration": "6 hours",
+      "color": "#22d3ee",
+      "waypointIds": ["marina", "metalia-beach", "tripiti-cave", "pefkari-beach", "potos-harbor", "aliki-ruins", "marina"],
+      "marinePath": [
+        { "lat": 40.62575, "lng": 24.57506 },
+        { "lat": 40.622, "lng": 24.578 },
+        { "lat": 40.6237, "lng": 24.5826 },
+        { "lat": 40.621, "lng": 24.565 },
+        { "lat": 40.6235, "lng": 24.543 },
+        { "lat": 40.618, "lng": 24.555 },
+        { "lat": 40.616, "lng": 24.6001 },
+        { "lat": 40.6107, "lng": 24.6065 },
+        { "lat": 40.608, "lng": 24.655 },
+        { "lat": 40.6034, "lng": 24.7377 },
+        { "lat": 40.615, "lng": 24.68 },
+        { "lat": 40.62575, "lng": 24.57506 }
+      ]
+    },
+    {
+      "id": "west-coves",
+      "name": "West Coves & Tripiti",
+      "description": "Half-day loop along Limenaria's west shore — Metalia, hidden coves, and the Tripiti sea cave.",
+      "duration": "4 hours",
+      "color": "#34d399",
+      "waypointIds": ["marina", "metalia-beach", "tripiti-cave", "marina"],
+      "marinePath": [
+        { "lat": 40.62575, "lng": 24.57506 },
+        { "lat": 40.6237, "lng": 24.5826 },
+        { "lat": 40.621, "lng": 24.568 },
+        { "lat": 40.6235, "lng": 24.543 },
+        { "lat": 40.621, "lng": 24.558 },
+        { "lat": 40.62575, "lng": 24.57506 }
+      ]
+    },
+    {
+      "id": "golden-beach-run",
+      "name": "Golden Beach Run",
+      "description": "East-coast run from Limenaria to Chrisi Akti (Golden Beach) — long turquoise shallows and soft sand.",
+      "duration": "5 hours",
+      "color": "#fbbf24",
+      "waypointIds": ["marina", "potos-harbor", "golden-beach", "marina"],
+      "marinePath": [
+        { "lat": 40.62575, "lng": 24.57506 },
+        { "lat": 40.618, "lng": 24.59 },
+        { "lat": 40.6107, "lng": 24.6065 },
+        { "lat": 40.64, "lng": 24.64 },
+        { "lat": 40.68, "lng": 24.7 },
+        { "lat": 40.705, "lng": 24.735 },
+        { "lat": 40.7217, "lng": 24.7576 },
+        { "lat": 40.68, "lng": 24.72 },
+        { "lat": 40.62575, "lng": 24.57506 }
+      ]
+    },
+    {
+      "id": "marble-cliffs",
+      "name": "Marble Cliffs & North Shore",
+      "description": "North-coast adventure to Marble Beach (Saliara) and Vathi Bay — white cliffs and emerald water.",
+      "duration": "5 hours",
+      "color": "#a78bfa",
+      "waypointIds": ["marina", "marble-beach", "kalogria-bay", "marina"],
+      "marinePath": [
+        { "lat": 40.62575, "lng": 24.57506 },
+        { "lat": 40.64, "lng": 24.58 },
+        { "lat": 40.68, "lng": 24.6 },
+        { "lat": 40.72, "lng": 24.65 },
+        { "lat": 40.745, "lng": 24.72 },
+        { "lat": 40.7505, "lng": 24.7481 },
+        { "lat": 40.7443, "lng": 24.7675 },
+        { "lat": 40.72, "lng": 24.72 },
+        { "lat": 40.66, "lng": 24.62 },
+        { "lat": 40.62575, "lng": 24.57506 }
+      ]
+    },
+    {
+      "id": "full-island",
+      "name": "Full Island Circuit",
+      "description": "Complete Thassos coastline — south coves, Aliki ruins, Golden Beach, and the marble north shore.",
+      "duration": "8 hours",
+      "color": "#f472b6",
+      "waypointIds": [
+        "marina",
+        "metalia-beach",
+        "tripiti-cave",
+        "pefkari-beach",
+        "potos-harbor",
+        "aliki-ruins",
+        "golden-beach",
+        "marble-beach",
+        "kalogria-bay",
+        "marina"
+      ],
+      "marinePath": [
+        { "lat": 40.62575, "lng": 24.57506 },
+        { "lat": 40.6237, "lng": 24.5826 },
+        { "lat": 40.6235, "lng": 24.543 },
+        { "lat": 40.616, "lng": 24.6001 },
+        { "lat": 40.6107, "lng": 24.6065 },
+        { "lat": 40.6034, "lng": 24.7377 },
+        { "lat": 40.7217, "lng": 24.7576 },
+        { "lat": 40.7505, "lng": 24.7481 },
+        { "lat": 40.7443, "lng": 24.7675 },
+        { "lat": 40.68, "lng": 24.65 },
+        { "lat": 40.62575, "lng": 24.57506 }
+      ]
+    }
+  ]
+}

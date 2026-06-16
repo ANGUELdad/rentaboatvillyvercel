@@ -1,0 +1,74 @@
+{
+  "privacy": {
+    "title": "Politica de confidențialitate",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Cine suntem",
+        "body": "Rent A Boat Villy operează thassosboats.gr și oferă închiriere orară cu autopilot de la Noul Port Limenaria, Thassos. Întrebări: vilitrifonova245@gmail.com. Protecția datelor: vilitrifonova245@gmail.com."
+      },
+      {
+        "heading": "Ce colectăm",
+        "body": "La o cerere de rezervare colectăm datele din formular: nume, email, telefon, act identitate/pașaport, dată, preferință barcă, oaspeți și note. Stocăm și preferințele cookie și limba."
+      },
+      {
+        "heading": "De ce le folosim",
+        "body": "Pentru a răspunde cererii, confirma disponibilitatea, pregăti închiriere bărciul și opera site-ul. Păstrăm înregistrările cât este necesar pentru operare și obligații legale."
+      },
+      {
+        "heading": "Drepturile dvs.",
+        "body": "Puteți solicita acces, corectare sau ștergere unde legea permite. Formular la /gdpr sau vilitrifonova245@gmail.com."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Politica cookie",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Cookie-uri",
+        "body": "Folosim cookie-uri pentru limbă și consimțământ. Analytics și marketing sunt dezactivate până le activați."
+      },
+      {
+        "heading": "Necesare",
+        "body": "tbc-consent stochează preferințele cookie. tbc-lang stochează limba."
+      },
+      {
+        "heading": "Alegerile dvs.",
+        "body": "Setări cookie în footer, oricând."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Termeni & Rezervare",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Contact",
+        "body": "Pentru tarife, disponibilitate, politica de combustibil și toate detaliile de închiriere, sunați la +30 698 131 8393 sau +40 770 965 041, email vilitrifonova245@gmail.com sau vizitați biroul nostru la Noul Port Limenaria, Thassos."
+      },
+      {
+        "heading": "Elemente de bază",
+        "body": "Combustibilul nu este inclus. Briefing de siguranță la marină. Rezervare în funcție de disponibilitate."
+      },
+      {
+        "heading": "Cereri de rezervare",
+        "body": "O cerere pe acest site nu este o rezervare confirmată până vă contactăm."
+      }
+    ]
+  },
+  "gdpr": {
+    "title": "Drepturile GDPR",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Drepturile dvs.",
+        "body": "Puteți solicita acces, corectare, ștergere sau restricționare a datelor, sau o copie portabilă, unde legea permite."
+      },
+      {
+        "heading": "Contact",
+        "body": "Formularul de mai jos sau vilitrifonova245@gmail.com. Răspuns în circa 30 de zile."
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+Contact: mailto:vilitrifonova245@gmail.com
+Expires: 2027-06-08T00:00:00.000Z
+Preferred-Languages: en, el
+Canonical: https://thassosboats.gr/.well-known/security.txt
+
+# Rent A Boat Villy — security contact
+# Report vulnerabilities responsibly; allow reasonable time to remediate.

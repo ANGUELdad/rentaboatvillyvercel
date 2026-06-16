@@ -1,0 +1,84 @@
+{
+  "start": {
+    "message": "Hello. I am Villy from Rent A Boat Villy at New Port of Limenaria on the south coast of Thassos. We operate eight self-drive boats — please choose a topic and I will be glad to assist you.",
+    "options": [
+      { "id": "book", "label": "Request availability", "next": "booking" },
+      { "id": "group", "label": "Which boat for my group?", "next": "group" },
+      { "id": "fleet", "label": "Our fleet", "next": "fleet" },
+      { "id": "amenities", "label": "What's included on boats", "next": "amenities" },
+      { "id": "fuel", "label": "Fuel policy", "next": "fuel" },
+      { "id": "directions", "label": "How to get to New Port of Limenaria", "next": "directions" },
+      { "id": "rates", "label": "Contact for rates", "next": "rates" },
+      { "id": "contact", "label": "Call us", "next": "contact" }
+    ]
+  },
+  "booking": {
+    "message": "To request availability, please share your preferred date, guest count, and rental hours. We will check the fleet and contact you by phone (+30 698 131 8393) or email. No online payment is required.",
+    "options": [
+      { "id": "book-now", "label": "Open booking form", "next": "book-cta" },
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "fleet": {
+    "message": "Eight self-drive boats from New Port of Limenaria: Kima (9 seats), Nikos, Nikoleta and Ag. Nikolaos (8 seats), and Niki, Poseidon, Ektoras and Basilios (7 seats). A safety briefing is included. No licence is required up to 30HP.",
+    "options": [
+      { "id": "fleet-open", "label": "Browse fleet", "next": "fleet-cta" },
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "group": {
+    "message": "Please share your group size when you book — Kima accommodates up to 9 guests, our 8-seat boats suit medium groups, and our 7-seat boats are ideal for smaller parties. We will recommend the most suitable boat once we have your details.",
+    "options": [
+      { "id": "book-group", "label": "Request availability", "next": "booking" },
+      { "id": "fleet-group", "label": "See all boats", "next": "fleet" },
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "directions": {
+    "message": "New Port of Limenaria is on the south coast of Thassos, with free parking nearby. GPS coordinates and berth details are sent with your booking confirmation. We are open daily 08:00–20:00 in season.",
+    "options": [
+      { "id": "contact-dir", "label": "Call us", "next": "contact" },
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "fuel": {
+    "message": "Fuel is not included in the rental rate and is charged separately according to your trip. We explain typical usage during check-in.",
+    "options": [
+      { "id": "rates-fuel", "label": "Contact for rates", "next": "rates" },
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "amenities": {
+    "message": "Every boat includes a sun tent, Bluetooth speaker, icebox, anchor, and life jackets. A safety briefing is provided before departure. We recommend swimwear, sunscreen, water, and light snacks.",
+    "options": [
+      { "id": "fleet-amen", "label": "Browse fleet", "next": "fleet" },
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "rates": {
+    "message": "Rates are provided on request. Please call +30 698 131 8393 or visit our office at New Port of Limenaria.",
+    "options": [
+      { "id": "contact-rates", "label": "Call us", "next": "contact" },
+      { "id": "book-rates", "label": "Request availability", "next": "booking" },
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "contact": {
+    "message": "Telephone: +30 698 131 8393 or +40 770 965 041 · Email: vilitrifonova245@gmail.com · New Port of Limenaria, south coast of Thassos · Open daily 08:00–20:00 in season.",
+    "options": [
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "book-cta": {
+    "message": "Please use the booking form below to share your date, guest count, and preferred boat.",
+    "options": [
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  },
+  "fleet-cta": {
+    "message": "You may compare photos, capacity, and specifications for all eight boats on the fleet page.",
+    "options": [
+      { "id": "back", "label": "Main menu", "next": "start" }
+    ]
+  }
+}

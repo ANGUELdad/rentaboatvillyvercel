@@ -1,0 +1,74 @@
+{
+  "privacy": {
+    "title": "Datenschutz",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Wer wir sind",
+        "body": "Rent A Boat Villy betreibt thassosboats.gr und bietet stundenweise Bootsvermietung zur Selbststeuerung ab Neuer Hafen von Limenaria, Thassos. Fragen: vilitrifonova245@gmail.com. Datenschutz: vilitrifonova245@gmail.com."
+      },
+      {
+        "heading": "Was wir erfassen",
+        "body": "Bei einer Buchungsanfrage erfassen wir Ihre Angaben: Name, E-Mail, Telefon, Ausweis/Reisepass, Datum, Bootswunsch, Gäste und Notizen. Wir speichern auch Cookie- und Spracheinstellungen."
+      },
+      {
+        "heading": "Wofür wir sie nutzen",
+        "body": "Zur Beantwortung Ihrer Anfrage, Verfügbarkeitsprüfung, Bootsverleih-Vorbereitung und zum Betrieb der Website. Aufbewahrung so lange wie für den Betrieb und gesetzliche Pflichten nötig."
+      },
+      {
+        "heading": "Ihre Rechte",
+        "body": "Sie können Auskunft, Berichtigung oder Löschung verlangen, soweit das Gesetz es erlaubt. Formular unter /gdpr oder vilitrifonova245@gmail.com."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Cookies",
+        "body": "Wir nutzen Cookies für Sprache und Einwilligungen. Analytics und Marketing sind aus, bis Sie sie aktivieren."
+      },
+      {
+        "heading": "Erforderlich",
+        "body": "tbc-consent speichert Cookie-Einstellungen. tbc-lang speichert die Sprache."
+      },
+      {
+        "heading": "Ihre Wahl",
+        "body": "Cookie-Einstellungen im Footer jederzeit ändern."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Bedingungen & Buchung",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Kontakt",
+        "body": "Für Preise, Verfügbarkeit, Kraftstoffregelung und alle Mietdetails rufen Sie +30 698 131 8393 oder +40 770 965 041 an, E-Mail vilitrifonova245@gmail.com oder besuchen Sie unser Büro im Neuen Hafen von Limenaria, Thassos."
+      },
+      {
+        "heading": "Grundlagen",
+        "body": "Kraftstoff nicht inbegriffen. Sicherheitseinweisung in der Marina. Buchung je nach Verfügbarkeit."
+      },
+      {
+        "heading": "Buchungsanfragen",
+        "body": "Eine Anfrage auf dieser Website ist keine bestätigte Buchung, bis wir Sie kontaktieren."
+      }
+    ]
+  },
+  "gdpr": {
+    "title": "Ihre GDPR-Rechte",
+    "lastUpdated": "2026-06-08",
+    "sections": [
+      {
+        "heading": "Ihre Rechte",
+        "body": "Sie können Zugang, Berichtigung, Löschung oder Einschränkung Ihrer Daten verlangen oder eine Kopie erhalten, soweit das Gesetz es erlaubt."
+      },
+      {
+        "heading": "Kontakt",
+        "body": "Formular unten oder vilitrifonova245@gmail.com. Antwort in der Regel innerhalb von 30 Tagen."
+      }
+    ]
+  }
+}

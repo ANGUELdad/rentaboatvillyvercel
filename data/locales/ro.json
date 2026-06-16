@@ -1,0 +1,1593 @@
+{
+  "nav": {
+    "fleet": "Flotă",
+    "package": "Pachet",
+    "routes": "Hartă",
+    "guide": "Ghid",
+    "experiences": "Experiențe",
+    "reviews": "Recenzii",
+    "booking": "Rezervă",
+    "blog": "Blog",
+    "bookNow": "Rezervă",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Rent A Boat Villy · Thassos · Grecia",
+    "title": "Ziua ta pe apă începe aici",
+    "hook": "Ziua ta în Thassos începe pe apă",
+    "hookLine": "Închiriere pe oră cu autopilotare din Noul Port Limenaria, Thassos",
+    "locationStrip": "Noul Port Limenaria, Thassos — plecare de pe coasta de sud",
+    "locationStripMobile": "Limenaria · Thassos",
+    "pillSelfDrive": "Autopilotare",
+    "pillHourly": "Pe oră",
+    "pillMarina": "Noul Port Limenaria",
+    "marinaMapsLabel": "Indicații",
+    "marinaMapsAria": "Deschide Noul Port Limenaria în Google Maps",
+    "pillsAriaLabel": "Avantaje închiriere",
+    "subtitle": "Bărci cu autopilotare pe oră din Noul Port Limenaria, Thassos",
+    "cta": "Rezervă",
+    "bookingPreviewDateHint": "Alege ziua",
+    "bookingTitle": "Verifică disponibilitatea",
+    "scroll": "Scroll",
+    "statBoats": "{count} bărci",
+    "statRoutes": "{count} rute",
+    "statRating": "Recenzii oaspeți",
+    "statRatingLabel": "recenzii",
+    "ratingLabel": "{count}+ recenzii oaspeți",
+    "ratingReviews": "{count}+ recenzii Google"
+  },
+  "home": {
+    "trustBar": {
+      "ariaLabel": "De ce să rezervi cu Rent A Boat Villy",
+      "licence": "Fără permis ≤30CP",
+      "briefing": "Briefing de siguranță gratuit",
+      "deposit": "Fără plată online"
+    },
+    "bento": {
+      "ariaLabel": "Rezervă cu încredere",
+      "weatherTitle": "Thassos today",
+      "calm": "Apă liniștită",
+      "moderate": "Briză ușoară",
+      "rough": "Mare agitată — verifică la briefing",
+      "captainTitle": "Fii propriul tău căpitan",
+      "captainBody": "Fără permis până la 30CP. Briefing de siguranță gratuit înainte de fiecare plecare.",
+      "reviewsTitle": "Google reviews"
+    },
+    "quickNav": {
+      "label": "Salt la",
+      "ariaLabel": "Navigare rapidă"
+    },
+    "seasonDock": {
+      "sceneBadge": "Speedboat-uri cu autopilotare · Limenaria",
+      "eyebrow": "Sezonul de vară Thassos",
+      "headline": "Închirieri 2026 deschise",
+      "subline": "Iulie și august se ocupă repede, alege barca și orele online.",
+      "highlight1": "Zilnic 08:00, 20:00",
+      "highlight2": "Noul Port Limenaria",
+      "highlight3": "Rezervare timpurie — disponibilitate mai bună",
+      "cta": "Verifică disponibilitatea"
+    },
+    "narrative": {
+      "fleetQuestion": "Ce bărci?",
+      "reviewsQuestion": "Ce spun oaspeții noștri",
+      "matchmakerQuestion": "Încă nu ești sigur?",
+      "galleryQuestion": "Ce voi vedea?",
+      "exploreQuestion": "Despre noi"
+    },
+    "exploreEyebrow": "Despre noi",
+    "exploreTitle": "echipa ta de închiriere bărci din Limenaria",
+    "exploreSubtitle": "Rent A Boat Villy este o afacere de familie în Noul Port Limenaria — condus de tine, fără permis până la 30CP. Briefing de siguranță inclus la fiecare plecare, cu sfaturi de traseu de la Villy și echipă.",
+    "safetyRules": [
+      "Briefing de siguranță 15, 20 min înainte de fiecare plecare",
+      "Veste de salvare furnizate",
+      "Zone de croazieră desemnate din Limenaria",
+      "Vreme nesigură? Reprogramare gratuită, fără costuri",
+      "Fără permis până la 30 CP"
+    ],
+    "whyChoose": {
+      "title": "De ce Villy Boats Thassos?",
+      "subtitle": "Bărci noi, echipament real la bord și o echipă care vorbește limba ta — totul de la Noul Port Limenaria.",
+      "items": {
+        "equipped": {
+          "title": "Noi & complet echipate",
+          "desc": "Fiecare barcă din flota noastră este nouă, întreținută și pregătită pentru o zi confortabilă pe Aegean."
+        },
+        "amenities": {
+          "title": "Dotări premium la bord",
+          "desc": "Copertină, boxă Bluetooth, lada frigorifică, ancoră și veste de salvare pentru adulți și copii."
+        },
+        "languages": {
+          "title": "Vorbim limba ta",
+          "desc": "Serviciu clienți în engleză, franceză, română, bulgară, sârbă, rusă, arabă și greacă."
+        },
+        "celebrate": {
+          "title": "Sărbătorește cu noi",
+          "desc": "Zile de naștere, nunți, aniversări și petreceri — pentru copii și adulți."
+        },
+        "earlyBooking": {
+          "title": "Prioritate rezervare timpurie",
+          "desc": "Rezervă din timp pentru prima alegere de barcă și dată."
+        },
+        "marina": {
+          "title": "New Port of Limenaria",
+          "desc": "Ridicare pe coasta de sud a Thassos — pleci în câteva minute și explorezi comori ascunse pe mare."
+        }
+      }
+    },
+    "cards": {
+      "marina": {
+        "title": "Baza Noul Port Limenaria",
+        "desc": "Ridicare la marina noastră de pe coasta de sud a Thassos"
+      },
+      "fleet": {
+        "title": "Flotă întreținută",
+        "desc": "Viteze și cruisere verificate înainte de fiecare plecare"
+      },
+      "safety": {
+        "title": "Briefing de siguranță la fiecare plecare",
+        "desc": "Prezentare completă despre pericole locale, veste de salvare și elemente VHF, înainte de a pleca."
+      },
+      "fuel": {
+        "title": "Combustibilul nu este inclus",
+        "desc": "Combustibilul se plătește separat — explicăm consumul tipic la briefing"
+      },
+      "routes": {
+        "title": "Sfaturi pentru rute locale",
+        "desc": "Sugestii de plaje și golfuri de la Villy și echipa care navighează aici zilnic"
+      },
+      "booking": {
+        "title": "Cerere ușoară",
+        "desc": "Trimite datele online, verificăm flota și revenim la tine"
+      }
+    }
+  },
+  "fleet": {
+    "eyebrow": "Flota noastră",
+    "title": "Închiriere barcă Thassos — Flota",
+    "subtitle": "8 bărci reale după capacitate — flagship 9 locuri, premium 8 locuri și familie 7 locuri din New Port of Limenaria.",
+    "stat1": "8 bărci",
+    "stat2": "Contactați-ne pentru tarife",
+    "stat3": "Noi & echipate",
+    "viewVessel": "Detalii",
+    "empty": "Flota în curând.",
+    "vesselCount": "{count} bărci disponibile"
+  },
+  "map": {
+    "eyebrow": "Descoperă",
+    "title": "Atlas Thassos",
+    "subtitle": "Plaje, peșteri & porturi, distanțe din Limenaria.",
+    "heroBadge": "Atlas marin",
+    "heroStatSpotsLabel": "Pe hartă",
+    "heroStatTracks": "Trasee GPS",
+    "heroStatTracksLabel": "Rute marine",
+    "heroStatBase": "Limenaria",
+    "heroStatBaseLabel": "Marina de plecare",
+    "openMaps": "În Maps",
+    "loading": "Se încarcă...",
+    "departure": "Marina",
+    "discoverEyebrow": "Explorează pe mare",
+    "discoverTitle": "Destinații accesibile cu barca",
+    "allSpots": "All",
+    "spotsCount": "spots",
+    "searchPlaceholder": "Caută plaje, peșteri, porturi…",
+    "fromMarina": "de la marina",
+    "byBoat": "cu barca",
+    "bookSpot": "Rezervă o barcă aici",
+    "noResults": "Niciun loc nu corespunde căutării.",
+    "backToList": "Toate locurile",
+    "seoBlurb": "Fiecare pin este accesibil cu barca de închiriat de la Noul Port Limenaria — atinge o destinație pentru distanță, timp de croazieră și rezervare."
+  },
+  "common": {
+    "language": "Limbă",
+    "backHome": "Acasă",
+    "lastUpdated": "Actualizat",
+    "explore": "Explorează",
+    "later": "Mai târziu",
+    "viewAll": "Toate",
+    "errorGeneric": "Eroare. Încearcă din nou.",
+    "skipToMain": "La conținut",
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
+    "callPhone": "Sună {phone}",
+    "phoneLabel": "Telefon",
+    "navMenu": "Meniul de navigare"
+  },
+  "matchmaker": {
+    "eyebrow": "Nesigur?",
+    "title": "Găsește barca",
+    "subtitle": "3 întrebări, îți recomandăm barca.",
+    "cta": "Găsește barca",
+    "progress": "Întrebare {current}/{total}",
+    "resultEyebrow": "Potrivirea ta",
+    "resultTitle": "Am găsit barca",
+    "bookNow": "Rezervă",
+    "retry": "Din nou",
+    "back": "Înapoi",
+    "stepsTitle": "Cum funcționează",
+    "step1Label": "Mărimea grupului",
+    "step1Desc": "Cuplu, familie sau petrecere — spune-ne cine vine.",
+    "step2Label": "Stilul tău",
+    "step2Desc": "Golfuri romantice, distracție în familie sau energie de sărbătoare.",
+    "step3Label": "Potrivirea ta",
+    "step3Desc": "Îți sugerăm cea mai bună barcă din flota noastră Limenaria.",
+    "fleetTitle": "Din flota noastră",
+    "fleetLink": "Vezi toate bărcile",
+    "statBoats": "{count} bărci",
+    "statQuestions": "3 întrebări",
+    "statTime": "~2 minute",
+    "statTimeLabel": "Durează doar",
+    "trustEyebrow": "Rezervă cu încredere",
+    "trustSecureTitle": "Fără plată acum",
+    "trustSecureDesc": "Cerere sigură — plătești la marina",
+    "trustLocalTitle": "Echipă locală Limenaria",
+    "trustLocalDesc": "Afaceri de familie la cheiul marinei",
+    "trustPriceTitle": "Briefing de siguranță inclus",
+    "trustPriceDesc": "Briefing de siguranță la fiecare plecare"
+  },
+  "showcase": {
+    "eyebrow": "Ce voi vedea?",
+    "title": "Viață pe Aegean",
+    "subtitle": "Ore de aur, golfuri secrete, închirieri reale.",
+    "expand": "Ecran complet",
+    "counter": "{current} din {total}",
+    "swipeHint": "Glisează pentru mai multe momente"
+  },
+  "gallery": {
+    "eyebrow": "Ce voi vedea?",
+    "title": "Momente unice în Thassos",
+    "subtitle": "Ore de aur, golfuri secrete și Thassos autentic — din închirieri reale.",
+    "expand": "Ecran complet",
+    "close": "Închide galeria",
+    "counter": "{current} din {total}",
+    "swipeHint": "Glisează prin videoclipurile de închiriere — atinge pentru redare",
+    "filmstripHint": "Atinge o miniatură pentru a sari",
+    "prev": "Anterior",
+    "next": "Următor",
+    "back": "Înapoi"
+  },
+  "packageBuilder": {
+    "eyebrow": "Creează pachet",
+    "title": "Previzualizare live",
+    "subtitle": "Alege o barcă și cât timp o vrei — briefing de siguranță inclus. Tu conduci, tu alegi unde mergi.",
+    "heroHeadline": "Planifică închirierea",
+    "heroSubline": "Închiriere orară de la Noul Port Limenaria — alege barca, setează orele, trimite cererea. Fără tururi, fără skipper până la 30CP.",
+    "journeyMarina": "Limenaria",
+    "journeyExplore": "Explorează",
+    "journeyYourDay": "Ziua ta",
+    "journeyBoarding": "Boarding pass",
+    "journeyMapTitle": "Croaziera ta",
+    "storyVessel": "Alege barca",
+    "storyVesselHint": "Închiriere orară — o conduci tu de la Noul Port Limenaria.",
+    "storyDay": "Cât timp ai nevoie?",
+    "storyDayHint": "Alege orele și numărul de oaspeți. Fără tururi — mergi unde vrei.",
+    "storyReview": "Cererea ta de închiriere",
+    "rentalFreedomNote": "Fără tururi fixe — închiriază barca și mergi unde vrei.",
+    "mapInspirationLink": "Vezi atlasul marin",
+    "selected": "Selectat",
+    "boardingPassTitle": "Boarding pass-ul tău",
+    "boardingPassLabel": "Cerere de închiriere",
+    "requestNote": "Aceasta este o cerere, nu rezervare instant — Villy confirmă disponibilitatea și te contactează personal.",
+    "preferredDate": "Data preferată",
+    "optional": "opțional",
+    "routeStops": "{count} opriri pe coastă",
+    "vessel": "Barcă",
+    "route": "Rută",
+    "duration": "Durată",
+    "guests": "Oaspeți",
+    "hours": "ore",
+    "total": "Contactați-ne pentru tarife",
+    "fromTotal": "Contactați-ne pentru tarife",
+    "fromPrefix": "From",
+    "fuelNote": "echipament de siguranță inclus",
+    "cta": "Disponibilitate",
+    "ctaBook": "Rezervă",
+    "requestCta": "Rezervă",
+    "disclaimer": "Sub rezerva disponibilității, confirmăm înainte de excursie",
+    "continue": "Continuă",
+    "back": "Înapoi",
+    "emptyVessel": "Selectează o barcă",
+    "emptyRoute": "Tu alegi unde mergi",
+    "validationVessel": "Selectează o barcă pentru a continua",
+    "validationRoute": "Opțional — alege o idee de zi sau sari peste",
+    "maxGuestsNote": "Maximum {max} oaspeți pentru această barcă",
+    "teaserBadge": "Live",
+    "teaserTitle": "Planifică ziua",
+    "teaserDesc": "Alege o barcă și orele — estimare de tarife la cerere instant.",
+    "teaserCta": "Deschide builder",
+    "promoTitle": "Planifică închirierea",
+    "promoDesc": "Alege data și barca — confirmăm disponibilitatea.",
+    "promoCta": "Rezervă acum",
+    "promoDismiss": "Închide"
+  },
+  "package": {
+    "eyebrow": "Închiriere barcă",
+    "title": "Cerere de închiriere",
+    "subtitle": "Alege barca și durata — confirmăm disponibilitatea și tarifele telefonic sau la birou.",
+    "loading": "Se încarcă formularul de rezervare…",
+    "stepConfigure": "Configurează închirierea",
+    "stepConfigureHint": "Alege barca, setează orele și oaspeții — apoi trimite cererea.",
+    "stepSummaryHint": "Verifică detaliile, apoi trimite cererea de rezervare.",
+    "stepVessel": "Barcă",
+    "stepDurationGuests": "Durată & oaspeți",
+    "stepSummary": "Rezumat",
+    "decreaseHours": "Mai puține ore",
+    "increaseHours": "Mai multe ore",
+    "stepProgress": "Pasul {current}/{total}",
+    "stepsAria": "Progres configurare pachet",
+    "vessel": "Barcă",
+    "route": "Rută",
+    "duration": "Durată",
+    "guests": "Oaspeți",
+    "guestSingular": "oaspete",
+    "guestPlural": "oaspeți",
+    "hours": "ore",
+    "total": "Contactați-ne pentru tarife",
+    "fromTotal": "Contactați-ne pentru tarife",
+    "fromPrefix": "From",
+    "fuelNote": "echipament de siguranță inclus",
+    "cta": "Disponibilitate",
+    "ctaBook": "Rezervă",
+    "requestCta": "Rezervă",
+    "disclaimer": "Sub rezerva disponibilității, confirmăm înainte de excursie",
+    "continue": "Continuă",
+    "back": "Înapoi",
+    "emptyVessel": "Alege o barcă pentru a începe",
+    "emptyRoute": "Tu alegi unde mergi",
+    "previewBadge": "Live",
+    "includedTitle": "Inclus",
+    "excludedTitle": "Neinclus",
+    "mobileSummary": "Pachetul tău",
+    "decreaseGuests": "Mai puțini",
+    "increaseGuests": "Mai mulți",
+    "validationVessel": "Selectează o barcă pentru a continua",
+    "validationRoute": "Opțional — alege o idee de zi sau sari peste",
+    "maxGuestsNote": "Maximum {max} oaspeți pentru această barcă"
+  },
+  "fleetGrid": {
+    "allVessels": "Toate",
+    "fullFleet": "Flotă completă",
+    "moreVessels": "Mai multe",
+    "moreSubtitle": "Vezi colecția",
+    "viewFullFleet": "Vezi flota"
+  },
+  "yachtUi": {
+    "search": {
+      "title": "Căutare",
+      "location": "Locație",
+      "locationValue": "New Port of Limenaria, Thassos",
+      "from": "From",
+      "to": "To",
+      "cta": "Caută bărci"
+    },
+    "results": {
+      "count": "{count} rezultate",
+      "sort": "Sortează după relevanță"
+    },
+    "nearYou": {
+      "title": "Lângă tine",
+      "seeAll": "Vezi tot"
+    },
+    "specs": {
+      "pax": "{count} locuri",
+      "hp": "{count} CP",
+      "perHourShort": "Tarife la cerere"
+    }
+  },
+  "boatDetail": {
+    "pageTitle": "Detalii",
+    "back": "Flotă",
+    "share": "Distribuie",
+    "linkCopied": "Link copiat",
+    "save": "Salvează",
+    "location": "Limenaria, Thassos",
+    "descriptionTitle": "Descriere",
+    "showMore": "Mai mult",
+    "showLess": "Mai puțin",
+    "specifications": "Specificații",
+    "startingAt": "Tarife",
+    "perHour": "oră",
+    "swipeHint": "Glisează galeria de sus sau atinge o miniatură",
+    "gallery": "Galerie",
+    "features": "Dotări",
+    "relatedTitle": "Ți-ar plăcea",
+    "relatedSubtitle": "Mai multe bărci din flota noastră pe Aegean",
+    "guests": "Oaspeți",
+    "power": "Putere",
+    "length": "Lungime"
+  },
+  "legal": {
+    "backHome": "Acasă",
+    "lastUpdated": "Actualizat"
+  },
+  "termsPage": {
+    "title": "Termeni & Rezervare",
+    "intro": "Pentru tarife, disponibilitate, politica de combustibil și toate detaliile de închiriere, sunați-ne sau vizitați biroul nostru la Noul Port Limenaria, Thassos.",
+    "phoneLabel": "Telefon",
+    "officeLabel": "Birou",
+    "office": "Noul Port Limenaria, Thassos",
+    "bullets": [
+      "Combustibilul nu este inclus",
+      "Briefing de siguranță la marină",
+      "Rezervare în funcție de disponibilitate"
+    ],
+    "bookingNote": "O cerere pe acest site nu este o rezervare confirmată până vă contactăm.",
+    "bookingCta": "Cereți o rezervare"
+  },
+  "gdpr": {
+    "formTitle": "Cerere GDPR",
+    "email": "Email",
+    "requestType": "Tip",
+    "access": "Acces",
+    "delete": "Ștergere",
+    "portability": "Portabilitate",
+    "rectification": "Rectificarea datelor",
+    "restriction": "Restricționarea prelucrării",
+    "objection": "Opoziție la prelucrare",
+    "withdrawConsent": "Retragerea consimțământului",
+    "details": "Detalii",
+    "detailsPlaceholder": "Detalii opționale pentru cererea dvs...",
+    "submit": "Trimite",
+    "submitting": "Se trimite...",
+    "successTitle": "Cerere trimisă.",
+    "successDesc": "Răspundem în 30 zile.",
+    "successAgain": "Altă cerere",
+    "error": "Eșuat."
+  },
+  "offers": {
+    "later": "Mai târziu"
+  },
+  "guide": {
+    "eyebrow": "Lagune secrete",
+    "title": "Ghid Thassos",
+    "subtitle": "Golfuri ascunse, doar pe mare.",
+    "heroBadge": "Pe mare",
+    "heroStatSpotsLabel": "Opriri accesibile cu barca",
+    "heroStatRoutes": "{count} planuri de zi",
+    "heroStatRoutesLabel": "Bucle sugerate",
+    "heroStatBase": "Limenaria",
+    "heroStatBaseLabel": "Marina de plecare",
+    "page": {
+      "filterAll": "Toate opririle",
+      "timelineTitle": "Ruta de coastă de la Limenaria",
+      "routesTitle": "Planuri de zi sugerate",
+      "scrollHint": "Derulează coasta — opririle apar pe măsură ce avansezi",
+      "spotCount": "{count} ancoraje",
+      "ctaMap": "Deschide atlasul marin interactiv",
+      "ctaBook": "Solicită o barcă",
+      "routes": [
+        {
+          "title": "South coast loop",
+          "desc": "Metalia → Tripiti → Pefkari → Potos, the classic half-day",
+          "hours": "4, 6 hrs"
+        },
+        {
+          "title": "East coast run",
+          "desc": "Golden Beach & Aliki quarry, longer open-water stretch",
+          "hours": "6, 8 hrs"
+        },
+        {
+          "title": "North shore day",
+          "desc": "Marble Beach & Vathi Bay, calm morning seas recommended",
+          "hours": "Full day"
+        }
+      ]
+    },
+    "mapCta": "Vezi distanțele pe hartă",
+    "categoryBeach": "Plajă",
+    "categoryLagoon": "Golf ascuns",
+    "categoryCulture": "Cultură",
+    "categoryHarbor": "Port",
+    "spots": {
+      "metalia-beach": {
+        "name": "Metalia Beach",
+        "tagline": "Golf stâncos & snorkeling",
+        "description": "Prima oprire la sud de Limenaria — ape liniștite ideale pentru o înot înainte de Tripiti."
+      },
+      "tripiti-cave": {
+        "name": "Tripiti Cave",
+        "tagline": "Peșteră marină & plajă de pietriș",
+        "description": "Ancoraj emblematic sud-vest — apă turcoaz în peșteră, cel mai bine dimineața."
+      },
+      "pefkari-beach": {
+        "name": "Plaja Pefkari",
+        "tagline": "Golf nisipos pentru familii",
+        "description": "Nisip puțin adânc — acostare ușoară pentru familii pe bucla sudică clasică."
+      },
+      "potos-harbor": {
+        "name": "Portul Potos",
+        "tagline": "Prânz pe uscat",
+        "description": "Ancorează aproape de tavernele din port — pauză naturală de prânz într-o zi întreagă."
+      },
+      "aliki-ruins": {
+        "name": "Cariera antică Aliki",
+        "tagline": "Ruine de marmură sub apă",
+        "description": "Snorkeling printre blocuri de carieră de 2000 de ani pe coasta sud-estică."
+      },
+      "marble-beach": {
+        "name": "Marble Beach",
+        "tagline": "Stânci albe & mare smarald",
+        "description": "Highlight pe coasta de nord — sosire devreme cu barca înainte de după-amiază."
+      },
+      "golden-beach": {
+        "name": "Golden Beach",
+        "tagline": "Apă turcoaz & nisip fin",
+        "description": "Ancorare la Chrisi Akti — cea mai lungă plajă nisipoasă a Thassos pe coasta de est."
+      },
+      "kalogria-bay": {
+        "name": "Golful Vathi",
+        "tagline": "Ancoraj retras nord-est",
+        "description": "Golful Vathi cu pini — ancoraj liniștit pentru înot la golden hour."
+      }
+    }
+  },
+  "experiences": {
+    "eyebrow": "Curate",
+    "title": "Experiențe",
+    "subtitle": "Aventuri pentru cupluri, familii & sărbători.",
+    "buildCta": "Estimează închirierea",
+    "estimateCta": "Estimează închirierea",
+    "customTitle": "Doar închiriază o barcă",
+    "customDesc": "Alege orice barcă și câte ore vrei — mergi unde îți place.",
+    "customCta": "Rezervă o barcă",
+    "items": [
+      {
+        "title": "Apusuri",
+        "desc": "Ora de aur pe Aegean."
+      },
+      {
+        "title": "Lagune",
+        "desc": "Golfuri secrete. GPS incl."
+      },
+      {
+        "title": "O zi întreagă",
+        "desc": "De la răsărit la apus."
+      },
+      {
+        "title": "Sărbători",
+        "desc": "Zile de naștere, cereri, pregătim."
+      }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Recenzii Google",
+    "title": "Ce spun oaspeții noștri",
+    "subtitle": "Feedback sincer de la oaspeți care au închiriat o barcă la Noul Port Limenaria.",
+    "verified": "verificate",
+    "verifiedGuests": "Oaspeți verificați",
+    "trustLine": "Închirieri verificate",
+    "badge": "Ce spun oaspeții pe Google",
+    "allReviews": "Toate",
+    "comingSoon": "Recenzii în curând.",
+    "googleLabel": "Recenzii Google",
+    "googleRated": "recenzii Google",
+    "viewOnGoogle": "Vezi pe Google",
+    "prevReview": "Recenzie anterioară",
+    "nextReview": "Recenzie următoare",
+    "reviewSlides": "Recenzii",
+    "reviewOf": "Recenzie {current} din {total}",
+    "fiveStars": "5 stele"
+  },
+  "conversion": {
+    "trust": {
+      "ariaLabel": "De ce să rezervi la noi",
+      "licensed": "Briefing de siguranță",
+      "marina": "New Port of Limenaria",
+      "response": "Disponibilitate confirmată",
+      "noFees": "Combustibilul nu este inclus"
+    },
+    "steps": {
+      "date": "Dată & barcă",
+      "contact": "Datele tale"
+    },
+    "stepsAria": "Progres rezervare",
+    "social": {
+      "verified": "recenzii verificate",
+      "bookedThisWeek": "{count} rezervări săptămâna aceasta"
+    },
+    "bookingBadges": {
+      "ariaLabel": "Rezervare sigură",
+      "secure": "Sigur, fără plată",
+      "local": "Echipă locală",
+      "transparent": "Briefing de siguranță la fiecare plecare"
+    },
+    "funnel": {
+      "browse": "Flotă",
+      "build": "Pachet",
+      "book": "Rezervă"
+    },
+    "fleet": {
+      "mostPopular": "Popular",
+      "starRating": "{rating} stele",
+      "swipeHint": "Glisează pentru bărci",
+      "prevVessel": "Barca anterioară",
+      "nextVessel": "Barca următoare",
+      "perHourSuffix": "/oră",
+      "guestsCount": "{count} oaspeți",
+      "seatsCount": "{count} locuri",
+      "fuelIncluded": "Combustibilul nu este inclus",
+      "noLicense": "Fără permis ≤30CP",
+      "specLine": "{perHour} · {guests} · {hp}CP",
+      "specLineNoPrice": "{guests} · {hp}CP"
+    },
+    "lossAversion": "Nu rata ziua perfectă pe Thassos — închiriază o barcă.",
+    "popularSeason": "Popular vara — rezervă devreme pentru datele de vârf.",
+    "package": {
+      "fromPrice": "Contactați-ne pentru tarife",
+      "includedTitle": "Ce este inclus",
+      "included": [
+        "Licensed briefing",
+        "Safety gear & VHF"
+      ],
+      "excludedTitle": "Ce nu este inclus",
+      "excluded": [
+        "Food & drinks",
+        "Skipper (optional add-on)",
+        "Marina parking fees"
+      ],
+      "mobileSummary": "Pachetul tău"
+    },
+    "booking": {
+      "continue": "Continuă",
+      "back": "Înapoi",
+      "checkAvailability": "Verifică disponibilitatea",
+      "step1Title": "Când & ce barcă?",
+      "step2Title": "Datele tale",
+      "legalNote": "Prin cerere, ești de acord cu",
+      "termsLink": "Terms",
+      "privacyLink": "Politica de confidențialitate",
+      "and": "and",
+      "successShare": "Distribuie grupului tău",
+      "successNext": "Ce urmează",
+      "successStep1": "Verificăm ce bărci sunt libere.",
+      "successStep2": "Te sunăm sau trimitem mesaj, de obicei în câteva ore.",
+      "successStep3": "După confirmare: aduceți CI la marină.",
+      "emptyFleet": "Nicio barcă disponibilă acum. Sună-ne pentru o închiriere.",
+      "validationName": "Introdu numele complet.",
+      "validationEmail": "Introdu un email valid.",
+      "validationPhone": "Introdu un număr de telefon.",
+      "validationBoat": "Selectează o barcă.",
+      "validationDate": "Alege o dată de închiriere."
+    },
+    "boatDetail": {
+      "faqTitle": "De știut",
+      "checkAvailability": "Disponibilitate",
+      "includedTitle": "Ce este inclus"
+    },
+    "skipLink": "Sari la conținutul principal"
+  },
+  "booking": {
+    "eyebrow": "Cerere",
+    "title": "Solicită închiriere",
+    "requestTitle": "Solicită închiriere",
+    "subtitle": "Alege data și barca — confirmăm disponibilitatea.",
+    "expectTitle": "Ce urmează",
+    "expect1": "Verificăm cererea și disponibilitatea flotei.",
+    "expect2": "Te contactăm telefonic sau prin mesaj, de obicei în câteva ore.",
+    "expect3": "După confirmare: aduceți CI/pașaport la Limenaria.",
+    "successTitle": "Cerere primită",
+    "successMessage": "Mulțumim! Te contactăm în câteva ore pentru a confirma disponibilitatea.",
+    "successDesc": "Te contactăm în câteva ore pentru a confirma disponibilitatea.",
+    "successEmailNote": "Am trimis un e-mail de confirmare la {email}.",
+    "successAgain": "Altă cerere",
+    "summaryTitle": "Cererea ta",
+    "summaryBoatEmpty": "Alege o barcă",
+    "submit": "Trimite cererea de rezervare",
+    "submitting": "Se trimite…",
+    "consentCheckbox": "Sunt de acord cu Termenii, Politica de confidențialitate și prelucrarea datelor mele personale pentru această cerere de rezervare.",
+    "consentCheckboxError": "Vă rugăm să acceptați termenii pentru a continua.",
+    "form": {
+      "fullName": "Nume",
+      "email": "Email",
+      "phone": "Telefon",
+      "idNumber": "CI / Pașaport",
+      "date": "Data",
+      "time": "Ora",
+      "vessel": "Barcă preferată",
+      "vesselOptional": "opțional",
+      "route": "Rută",
+      "routeOptional": "opțional",
+      "guests": "Oaspeți",
+      "notes": "Preferințe & note",
+      "selectBoat": "Alege barca",
+      "selectRoute": "Alege ruta",
+      "guestCount": "oaspete",
+      "guestCountPlural": "oaspeți",
+      "namePlaceholder": "John Smith",
+      "emailPlaceholder": "you@email.com",
+      "phonePlaceholder": "+30 690 000 0000",
+      "idPlaceholder": "Necesar la sosire",
+      "notesPlaceholder": "Sărbătoare, echipament, preferințe alimentare..."
+    }
+  },
+  "faq": {
+    "eyebrow": "Esențiale",
+    "title": "FAQ",
+    "subtitle": "Tot înainte de a pleca la apă.",
+    "page": {
+      "carouselAria": "Thassos boat rental moments",
+      "highlightsTitle": "De știut dintr-o privire",
+      "highlights": [
+        {
+          "title": "No licence ≤30HP",
+          "desc": "Safety briefing before every departure",
+          "image": "/images/boats/poseidon-sea.jpg"
+        },
+        {
+          "title": "Toate detaliile la biroul nostru",
+          "desc": "Vizitați-ne la Noul Port Limenaria, coasta de sud a Thasosului",
+          "image": "/images/boats/limenaria-palataki.jpg"
+        },
+        {
+          "title": "Noul Port Limenaria",
+          "desc": "Coasta de sud a Thasosului · Zilnic 08:00–20:00, mai–octombrie",
+          "image": "/images/boats/basilios-palataki.jpg"
+        }
+      ],
+      "tips": [
+        "Închiriere cu ora, auto-condus",
+        "Briefing de siguranță inclus la fiecare închiriere",
+        "Fără plată online — trimiteți detaliile",
+        "Reprogramare gratuită în caz de vreme rea",
+        "Briefing înainte de plecare",
+        "Fără permis până la 30CP"
+      ],
+      "tipsAria": "Fapte rapide despre închiriere",
+      "allQuestions": "Toate întrebările",
+      "mostAskedTitle": "Cele mai frecvente întrebări",
+      "viewAllFaq": "Vezi toate răspunsurile",
+      "ctaBook": "Book",
+      "ctaPrices": "Contactați-ne pentru tarife",
+      "ctaFleet": "Vezi flota",
+      "slides": [
+        {
+          "src": "/images/boats/poseidon-sea.jpg",
+          "caption": "Golden hour departure from Limenaria"
+        },
+        {
+          "src": "/images/boats/kima.jpg",
+          "caption": "Crystal waters off Thassos"
+        },
+        {
+          "src": "/images/boats/nikoleta.jpg",
+          "caption": "Our New Port of Limenaria fleet"
+        },
+        {
+          "src": "/images/boats/niki.jpg",
+          "caption": "Secret lagoon anchorages"
+        }
+      ]
+    },
+    "items": [
+      {
+        "q": "Rezervarea mea este confirmată imediat?",
+        "a": "Nu, trimiți o cerere cu datele și preferințele tale. Verificăm disponibilitatea și te contactăm telefonic sau prin mesaj. Nimic nu este final până nu revenim."
+      },
+      {
+        "q": "Permis de barcă?",
+        "a": "Până la 30CP, nu. Briefing înainte de plecare."
+      },
+      {
+        "q": "briefing incl.?",
+        "a": "Da, pentru croazieră standard."
+      },
+      {
+        "q": "Este necesară plata online?",
+        "a": "Nu este necesară nicio plată online. Trimiteți cererea cu detaliile voastre și vă confirmăm disponibilitatea prin telefon sau mesaj. Plătiți la sosire în Noul Port Limenaria."
+      },
+      {
+        "q": "De unde?",
+        "a": "Noul Port Limenaria. GPS la confirmare."
+      },
+      {
+        "q": "Este necesară plata online?",
+        "a": "Nu este necesară nicio plată online. Completați detaliile și confirmăm disponibilitatea prin telefon sau mesaj. Nu plătiți nimic până la sosirea în Noul Port Limenaria."
+      },
+      {
+        "q": "Can I rent a speedboat in Thassos without experience?",
+        "a": "Yes, our 30HP speedboats are ideal for beginners. Every rental includes a safety briefing covering local hazards, anchoring, and VHF basics before you cast off."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Confidențialitate",
+    "desc": "Cookie-uri necesare. Analiză opțională.",
+    "policy": "Cookie-uri",
+    "acceptAll": "Acceptă",
+    "reject": "Doar esențiale",
+    "customize": "Setări",
+    "settingsTitle": "Cookie-uri",
+    "necessary": "Necesare",
+    "necessaryDesc": "Pentru funcționare",
+    "alwaysOn": "Mereu active",
+    "analytics": "Analiză",
+    "analyticsDesc": "Anonim",
+    "marketing": "Marketing",
+    "marketingDesc": "Remarketing",
+    "save": "Salvează",
+    "footerSettings": "Cookie-uri"
+  },
+  "footer": {
+    "tagline": "Rent A Boat Villy · Noul Port Limenaria, Thassos",
+    "explore": "Explorează",
+    "company": "Companie",
+    "contact": "Contacte",
+    "marina": "Noul Port Limenaria",
+    "hours": "08:00, 20:00",
+    "trustFuel": "Combustibilul nu este inclus",
+    "cta": "Rezervă",
+    "fleet": "Flotă",
+    "rentBoatThassos": "Închiriere barcă Thassos",
+    "map": "Hartă",
+    "guide": "Ghid",
+    "experiences": "Experiențe",
+    "reviews": "Recenzii",
+    "book": "Rezervă",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "privacy": "Confidențialitate",
+    "cookies": "Cookie-uri",
+    "terms": "Termeni",
+    "gdpr": "GDPR",
+    "locationLine": "Noul Port Limenaria · Thassos · Grecia"
+  },
+  "blog": {
+    "eyebrow": "Știri bărci Thassos",
+    "title": "Știri bărci Thassos",
+    "subtitle": "Ghiduri închiriere pe oră, plaje, rute marine & noutăți din New Port of Limenaria.",
+    "back": "Toate articolele",
+    "backHome": "Acasă",
+    "featured": "Articol principal",
+    "readArticle": "Citește articolul complet",
+    "readTime": "{minutes} min citire",
+    "empty": "Articole în curând.",
+    "articleCta": "Gata să explorezi Thassos cu barca? Alege vasul și orele, briefing de siguranță inclus din Limenaria.",
+    "newsKicker": "Știri bărci Thassos",
+    "newsTagline": "Închirieri pe oră, rute, ghiduri plaje & noutăți de la Rent A Boat Villy.",
+    "categoryAll": "Toate știrile",
+    "categoryGuides": "Ghiduri",
+    "categoryGuidesDesc": "Ghiduri închiriere bărci în Thassos, siguranță, bagaje, zile în familie & snorkeling.",
+    "categoryBeaches": "Plaje",
+    "categoryBeachesDesc": "Plaje accesibile cu barca, Marble Beach, Tripiti, Golden Beach, Potos, Aliki & altele.",
+    "categoryRoutes": "Rute",
+    "categoryRoutesDesc": "Itinerarii marine GPS, coasta de sud, nord & tururi de o zi.",
+    "categoryRental": "Sfaturi închiriere",
+    "categoryRentalDesc": "tarife, permise, vreme & sfaturi rezervare pentru închiriere pe oră în Limenaria.",
+    "categoryThassos": "Insulă",
+    "categoryThassosDesc": "Noutăți New Port of Limenaria, actualizări flotă & povești Thassos de pe apă.",
+    "categoriesAria": "Categorii articole",
+    "headlines": "Titluri",
+    "headlinesAria": "Titluri principale",
+    "latest": "Recente",
+    "latestAria": "Articole recente",
+    "sidebarAria": "Ultimele noutăți",
+    "sidebarCta": "Solicită rezervare",
+    "viewAll": "Vezi toate",
+    "relatedTitle": "Mai multe din Știri bărci Thassos",
+    "page": {
+      "trailAria": "Fir de navigare",
+      "trailHome": "Acasă",
+      "trailBlog": "Blog",
+      "quickLinksAria": "Linkuri rapide",
+      "quickGuide": "Ghid marin",
+      "quickBooking": "Solicită rezervare",
+      "quickFaq": "FAQ"
+    }
+  },
+  "chat": {
+    "title": "Asistent marina",
+    "subtitle": "Rent A Boat Villy",
+    "aiName": "Villy",
+    "aiTagline": "Închirieri bărci · Noul Port Limenaria",
+    "aiStatus": "Disponibilă · Noul Port Limenaria",
+    "sessionRefLabel": "Ref",
+    "typingLabel": "Villy scrie…",
+    "placeholder": "Întreabă despre bărci, plaje, disponibilitate, rezervare…",
+    "notificationPreview": "Întrebări despre bărci, date sau disponibilitate?",
+    "timestampNow": "acum",
+    "tapToReply": "Atinge pentru chat",
+    "dismiss": "Închide",
+    "emptyTitle": "Bună ziua, sunt Villy",
+    "emptyHint": "Alegeți mai jos un răspuns rapid",
+    "pickTopic": "Răspunsuri rapide",
+    "menuGroups": {
+      "bookBoat": "Rezervă o barcă",
+      "ourBoats": "Bărcile noastre",
+      "goodToKnow": "De știut",
+      "contact": "Contact"
+    },
+    "backToMenu": "Meniu principal",
+    "suggestedQuestions": [
+      "Cea mai ieftină barcă?",
+      "Cele mai bune plaje?",
+      "Permis necesar?",
+      "Barcă pentru 4 persoane",
+      "briefing de siguranță inclus?",
+      "Ruta Tripiti",
+      "Marble Beach",
+      "Familie de 6",
+      "Verifică disponibilitatea",
+      "Găsește barca",
+      "Recenzii oaspeți",
+      "Apus de soare"
+    ],
+    "quickActions": [
+      "Rezervă barcă",
+      "Tarife la cerere",
+      "Cele mai bune plaje",
+      "Vezi flota",
+      "Harta insulei",
+      "Reguli de siguranță",
+      "Verifică disponibilitatea",
+      "briefing de siguranță inclus?",
+      "Ruta Tripiti",
+      "Marble Beach",
+      "Găsește barca",
+      "Recenzii oaspeți"
+    ],
+    "quickActionsAria": "Întrebări rapide",
+    "linkBook": "Deschide rezervarea",
+    "linkFleet": "Vezi flota",
+    "linkGuide": "Ghid insulă",
+    "linkMap": "Deschide harta",
+    "linkPackage": "Vezi flota",
+    "minimize": "Minimizează",
+    "close": "Închide chat",
+    "send": "Trimite",
+    "enableSounds": "Sunet on",
+    "muteSounds": "Mut",
+    "openAssistant": "Vorbește cu Villy",
+    "peekAction": "Atinge pentru chat",
+    "notificationTitle": "Villy · Asistent marina",
+    "tapToChat": "Chat",
+    "banner": {
+      "title": "Nu știi ce barcă să alegi?",
+      "body": "Ajutor instant la compararea bărcilor, politica de combustibil și rutele din Noul Port Limenaria.",
+      "badge": "Asistent AI",
+      "userPrompt": "Ce barcă e potrivită pentru 6 oaspeți din Limenaria?",
+      "reply": "Pentru 6 oaspeți recomand Nikos sau Nikoleta — 8 locuri, briefing de siguranță inclus, fără permis până la 30CP.",
+      "followUp": "Pot verifica și disponibilitatea pentru datele tale.",
+      "typing": "Villy scrie…",
+      "cta": "Vorbește cu Villy",
+      "dismiss": "Închide"
+    },
+    "humanContact": {
+      "title": "Vorbește cu echipa noastră",
+      "subtitle": "Alege WhatsApp, Viber sau email — răspundem în programul marinei (08:00–20:00).",
+      "whatsapp": "WhatsApp",
+      "viber": "Viber",
+      "email": "Email",
+      "close": "Închide",
+      "prefill": "Bună! Aș dori informații despre închirierea unei bărci la Rent A Boat Villy.",
+      "emailSubject": "Întrebare închiriere barcă — Rent A Boat Villy",
+      "optionLabel": "Vorbește cu o persoană"
+    },
+    "start": {
+      "message": "Bună ziua. Sunt Villy la Noul Port Limenaria. Operăm opt bărci self-drive — alegeți un răspuns rapid sau scrieți întrebarea dvs.",
+      "options": [
+        {
+          "id": "book",
+          "label": "Verifică disponibilitatea",
+          "next": "booking"
+        },
+        {
+          "id": "fleet",
+          "label": "Flota noastră",
+          "next": "fleet"
+        },
+        {
+          "id": "group",
+          "label": "Ce barcă pentru grupul meu?",
+          "next": "group"
+        },
+        {
+          "id": "directions",
+          "label": "Cum ajung la Noul Port Limenaria",
+          "next": "directions"
+        },
+        {
+          "id": "fuel",
+          "label": "Politica combustibil",
+          "next": "fuel"
+        },
+        {
+          "id": "amenities",
+          "label": "Ce este inclus",
+          "next": "amenities"
+        },
+        {
+          "id": "rates",
+          "label": "Tarife la cerere",
+          "next": "rates"
+        },
+        {
+          "id": "human",
+          "label": "Vorbește cu o persoană",
+          "next": "human"
+        },
+        {
+          "id": "contact",
+          "label": "Sună-ne",
+          "next": "contact"
+        }
+      ]
+    },
+    "booking": {
+      "message": "Pentru a solicita disponibilitatea, vă rugăm să ne transmiteți data, numărul de oaspeți și orele de închiriere. Verificăm flota și vă contactăm telefonic sau prin email. Nu este necesară plata online.",
+      "options": [
+        {
+          "id": "book-now",
+          "label": "Formular rezervare",
+          "next": "book-cta"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "fleet": {
+      "message": "8 bărci self-drive din Limenaria: Kima (9 locuri), Nikos, Nikoleta & Ag. Nikolaos (8), Niki, Poseidon, Ektoras & Basilios (7). Briefing de siguranță. Fără permis până la 30CP.",
+      "options": [
+        {
+          "id": "fleet-open",
+          "label": "Vezi flota",
+          "next": "fleet-cta"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "group": {
+      "message": "Spune-ne câți sunteți — Kima pentru până la 9, 8 locuri pentru grupuri medii, 7 locuri pentru grupuri mici. +30 698 131 8393 sau cerere de rezervare.",
+      "options": [
+        {
+          "id": "book-group",
+          "label": "Verifică disponibilitatea",
+          "next": "booking"
+        },
+        {
+          "id": "fleet-group",
+          "label": "Toate bărcile",
+          "next": "fleet"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "directions": {
+      "message": "Noul Port Limenaria este pe coasta de sud a Thassos. Parcare gratuită. Trimitem GPS la confirmare. Zilnic 08:00–20:00.",
+      "options": [
+        {
+          "id": "contact-dir",
+          "label": "Sună-ne",
+          "next": "contact"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "fuel": {
+      "message": "Combustibilul nu este inclus în tariful de închiriere și se facturează separat în funcție de cursă. Explicăm consumul tipic la predarea bărcii.",
+      "options": [
+        {
+          "id": "rates-fuel",
+          "label": "Tarife la cerere",
+          "next": "rates"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "amenities": {
+      "message": "Fiecare barcă include: cort solar, Bluetooth, lada frigorifică, ancoră și veste de salvare. Briefing înainte de plecare. Adu costum de baie, protecție solară, apă.",
+      "options": [
+        {
+          "id": "fleet-amen",
+          "label": "Vezi flota",
+          "next": "fleet"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "rates": {
+      "message": "Contactați-ne pentru tarife — sunați +30 698 131 8393 sau vizitați biroul din Noul Port Limenaria.",
+      "options": [
+        {
+          "id": "contact-rates",
+          "label": "Sună-ne",
+          "next": "contact"
+        },
+        {
+          "id": "book-rates",
+          "label": "Verifică disponibilitatea",
+          "next": "booking"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "spots": {
+      "message": "Cu barca din Limenaria: Marble Beach, peștera Tripiti, Metalia și golfuri liniștite pe coasta de sud. Pentru siguranța tuturor, oaspeții rămân la bord în timpul deplasării; înotul este permis doar cu barca ancorată.",
+      "options": [
+        {
+          "id": "guide",
+          "label": "Ghid insulă",
+          "next": "guide-cta"
+        },
+        {
+          "id": "map-open",
+          "label": "Hartă marină",
+          "next": "map-cta"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "map": {
+      "message": "Atlasul nostru marin arată rute GPS, opriri de înot și distanțe de la Noul Port Limenaria.",
+      "options": [
+        {
+          "id": "map-go",
+          "label": "Deschide harta",
+          "next": "map-cta"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "safety": {
+      "message": "Pentru siguranța tuturor, oaspeții rămân la bord în timpul deplasării. Înotul este permis doar cu barca ancorată. Briefing complet de siguranță și veste de salvare înainte de plecare.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "pricing": {
+      "message": "Contactați-ne pentru tarife — sunați +30 698 131 8393 sau vizitați biroul din Noul Port Limenaria.",
+      "options": [
+        {
+          "id": "contact-pricing",
+          "label": "Sună-ne",
+          "next": "contact"
+        },
+        {
+          "id": "back",
+          "label": "Înapoi",
+          "next": "start"
+        }
+      ]
+    },
+    "contact": {
+      "message": "+30 698 131 8393 · +40 770 965 041 · vilitrifonova245@gmail.com · Noul Port Limenaria, zilnic 08:00–20:00 în sezon.",
+      "options": [
+        {
+          "id": "human-contact",
+          "label": "Vorbește cu o persoană",
+          "next": "human"
+        },
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "human": {
+      "message": "Cu plăcere vă conectez cu echipa marinei. Alegeți WhatsApp, Viber sau email.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "book-cta": {
+      "message": "Apasă mai jos pentru formularul de rezervare cu barca și data alese.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "fleet-cta": {
+      "message": "Compară poze, capacitate și specificații pentru toate cele 8 bărci pe pagina flotei.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "guide-cta": {
+      "message": "Ghidul listează ancoraje favorite cu sfaturi pentru fiecare coastă.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "map-cta": {
+      "message": "Deschide atlasul marin interactiv cu rute din Limenaria.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    },
+    "package-cta": {
+      "message": "Construiește închirierea și vezi totalul înainte de rezervare.",
+      "options": [
+        {
+          "id": "back",
+          "label": "Meniu principal",
+          "next": "start"
+        }
+      ]
+    }
+  },
+  "errors": {
+    "notFound": {
+      "eyebrow": "404",
+      "title": "Pagina nu a fost găsită",
+      "description": "Această rută s-a mutat poate — ziua ta pe Thassos e la un click distanță.",
+      "home": "Acasă",
+      "book": "Verifică disponibilitatea",
+      "fleet": "Vezi flota"
+    },
+    "route": {
+      "eyebrow": "Error",
+      "title": "Ceva nu a mers bine",
+      "description": "Problemă temporară. Încearcă din nou sau revino acasă.",
+      "retry": "Încearcă din nou",
+      "home": "Home"
+    },
+    "global": {
+      "eyebrow": "Eroare critică",
+      "title": "Ceva a mers foarte rău",
+      "description": "Aplicația a întâmpinat o eroare nerecuperabilă. Reîncarcă pagina.",
+      "retry": "Încearcă din nou",
+      "home": "Home"
+    },
+    "unauthorized": {
+      "eyebrow": "Acces refuzat",
+      "title": "Nu ai permisiune",
+      "description": "Zona restricționată. Autentifică-te sau revino pe site.",
+      "home": "Acasă",
+      "login": "Autentificare admin"
+    },
+    "admin": {
+      "notFound": {
+        "eyebrow": "404",
+        "title": "Pagina admin negăsită",
+        "description": "Această rută nu există. Revino la dashboard sau autentifică-te.",
+        "dashboard": "Dashboard",
+        "login": "Autentificare"
+      },
+      "route": {
+        "eyebrow": "Eroare admin",
+        "title": "Panoul nu s-a încărcat",
+        "description": "Problemă de bază de date sau configurare. Verifică logurile serverului.",
+        "retry": "Retry",
+        "login": "Înapoi la autentificare"
+      }
+    }
+  },
+  "seo": {
+    "siteName": "Rent A Boat Villy",
+    "defaultTitle": "Închiriere bărci Thassos | Limenaria | Rent A Boat Villy",
+    "titleTemplate": "%s",
+    "description": "Închiriază barcă în Thassos din Noul Port Limenaria. Speedboat-uri self-drive, golfuri secrete & apusuri. Briefing de siguranță inclus, fără permis până la 30CP.",
+    "keywords": "închiriere bărci Thassos, marina Limenaria",
+    "ogTitle": "Închiriere bărci Thassos | Limenaria | Rent A Boat Villy",
+    "ogDescription": "Închiriere barcă premium în Thassos. Golfuri secrete, apusuri și coastă neexplorată din Noul Port Limenaria.",
+    "locale": "ro_RO",
+    "boat": {
+      "title": "Rent a Boat Thassos, {name}",
+      "description": "Rent a boat in Thassos: {name} at New Port of Limenaria. Up to {pax} passengers. {desc} Safety briefing included. Contact us for rates.",
+      "keywords": "rent a boat Thassos, {name} rental, New Port of Limenaria boat rental, private boat tour Thassos, small boat rental Greece Aegean"
+    },
+    "blogArticle": {
+      "titleSuffix": "| Blog bărci Thassos"
+    },
+    "homeContent": {
+      "eyebrow": "Ghid închiriere bărci",
+      "title": "Rent a Boat in Thassos, New Port of Limenaria",
+      "intro": "Rent A Boat Villy is a local boat rental at New Port of Limenaria on the south coast, you drive the boat yourself. Hourly rentals include safety briefings and optional tips on where to go.",
+      "features": {
+        "marina": {
+          "title": "New Port of Limenaria",
+          "desc": "Ridicare pe coasta de sud — coordonate GPS și parcare după rezervare"
+        },
+        "fleet": {
+          "title": "Speedboat-uri & cruiser-e",
+          "desc": "RIB-uri și bărci de zi verificate înainte de fiecare plecare"
+        },
+        "safety": {
+          "title": "Briefing de siguranță",
+          "desc": "Walkthrough 15–20 min, veste de salvare și bază VHF"
+        },
+        "routes": {
+          "title": "Unde să mergi",
+          "desc": "Tripiti Cave, Metalia, Marble Beach and hidden coves, you choose"
+        }
+      },
+      "sections": [
+        {
+          "title": "What to expect on rental day",
+          "items": [
+            "Meet at New Port of Limenaria, GPS coordinates and parking details sent after booking",
+            "15, 20 minute safety briefing covering local hazards, anchoring, and VHF basics",
+            "Life jackets and briefing included, you drive the boat and pick your own stops",
+            "Departures daily 08:00, 20:00; peak season (July, August) fills 48 hours ahead"
+          ]
+        },
+        {
+          "title": "Top boat destinations from Limenaria",
+          "items": [
+            "Tripiti Cave, sea cave and turquoise shallows on the south-west coast",
+            "Metalia Beach, rocky cove with deep blue water ideal for snorkelling",
+            "Aliki Ancient Quarry, marble ruins visible from the water on the south-east shore"
+          ]
+        },
+        {
+          "title": "Why rent a boat in Thassos?",
+          "items": [
+            "Dozens of beaches and coves best reached by private boat",
+            "No boating licence required for boats up to 30HP, ideal for beginners",
+            "Hourly rentals for sunset loops, snorkelling stops, or full-day exploring",
+            "New Port of Limenaria is centrally located for south, west, and east-coast sailing"
+          ]
+        },
+        {
+          "title": "How much does it cost to rent a boat in Thassos?",
+          "paragraphs": [
+            "Rates depend on boat type and season, open speedboats, ribs, and day cruisers are all available from New Port of Limenaria. Every rental includes safety gear.",
+            "Compare boats on [our fleet page](/fleet) — each listing shows rates on request. Peak season (July, August) fills fast, request 48 hours ahead for the best selection."
+          ]
+        },
+        {
+          "title": "Do I need a licence to rent a boat in Thassos?",
+          "paragraphs": [
+            "No licence is needed for boats up to 30HP, most of our fleet qualifies. We give a short safety briefing at New Port of Limenaria before you depart. For larger boats, contact us and we can arrange a skipper."
+          ]
+        }
+      ],
+      "linksTitle": "Explorează & închiriază o barcă",
+      "linksAria": "Pagini de închiriere conexe",
+      "links": [
+        {
+          "href": "/rent-a-boat-thassos",
+          "label": "Complete guide to rent a boat in Thassos"
+        },
+        {
+          "href": "/fleet",
+          "label": "Browse our Thassos boat fleet"
+        },
+        {
+          "href": "/map",
+          "label": "Sea atlas of boat-accessible spots"
+        },
+        {
+          "href": "/guide",
+          "label": "Thassos boat guide"
+        },
+        {
+          "href": "/booking",
+          "label": "Request a boat rental online"
+        },
+        {
+          "href": "/faq",
+          "label": "Rental FAQ"
+        },
+        {
+          "href": "/reviews",
+          "label": "Guest reviews"
+        }
+      ]
+    },
+    "rentBoatPillar": {
+      "eyebrow": "Thassos boat rental guide",
+      "title": "Rent a Boat in Thassos",
+      "subtitle": "Speedboat-uri & cruiser-e orare de la Noul Port Limenaria — tu conduci, briefing inclus",
+      "lead": "Rent A Boat Villy is a family-run hourly boat rental at New Port of Limenaria on Thassos' south coast. You drive the boat yourself after a safety briefing, no guided tours, no large boats. Small open speedboats and day cruisers only, all ≤30HP so no licence is required. Safety briefing is included, and guests stay on board at every stop, swimming only while anchored.",
+      "sections": [
+        {
+          "title": "How to rent a boat in Thassos",
+          "items": [
+            "Browse our fleet of speedboats and day cruisers, all ≤30HP, no licence needed",
+            "Pick your date and rental hours on our booking page",
+            "Arrive at New Port of Limenaria 20 minutes early for ID check and 15, 20 min safety briefing",
+            "Drive yourself to Tripiti, Metalia, Marble Beach or any route within the briefing zone",
+            "Return to the marina by your booked end time, safety briefing included"
+          ]
+        },
+        {
+          "title": "Why rent from New Port of Limenaria?",
+          "items": [
+            "Central south-coast base, Metalia and Tripiti within 30 minutes",
+            "Full southern-coast loop to Aliki in six to seven hours",
+            "Golden Beach and north-shore Marble routes from the same marina",
+            "Daily departures 08:00, 20:00, May through October",
+            "Family-run operation with safety briefing on every departure from"
+          ]
+        },
+        {
+          "title": "What is included in your rental",
+          "items": [
+            "Safety gear for standard cruising around Thassos",
+            "15, 20 minute safety and navigation briefing every departure",
+            "Life jackets for all guests",
+            "Optional snorkel sets at the marina on request",
+            "GPS route tracks via our interactive sea atlas"
+          ]
+        },
+        {
+          "title": "Stay-on-board policy",
+          "paragraphs": [
+            "Rent A Boat Villy is hourly self-drive rental, not a guided excursion and not a disembark-at-beaches service. Guests must remain on the boat at all anchor stops. Swimming and snorkelling only while anchored around your boat.",
+            "Pack lunch, snacks and drinks in the on-board cooler. Enjoy meals on deck with harbour and coastline views, this keeps insurance simple and your day focused on the water."
+          ]
+        },
+        {
+          "title": "Do I need a boating licence in Thassos?",
+          "paragraphs": [
+            "No licence is required for boats up to 30 horsepower under Greek law. Our entire fleet qualifies, open speedboats, ribs and day cruisers only. We never offer large boats or crewed boat rentals on standard hourly rentals.",
+            "Bring a valid passport or ID. First-time skippers receive extra briefing time on controls, anchoring and local hazards before casting off from Limenaria."
+          ]
+        },
+        {
+          "title": "How to request a boat rental in Thassos",
+          "paragraphs": [
+            "Start on [our fleet page](/fleet) to compare capacity and equipment, then send a [booking request](/booking) online — or visit New Port of Limenaria and call +30 698 131 8393.",
+            "No online payment. We check availability and reply by phone or message. For July and August, request at least 48 hours ahead."
+          ]
+        }
+      ],
+      "ctaPrimary": "Solicită închiriere barcă",
+      "ctaSecondary": "Vezi flota",
+      "linksTitle": "Planifică ziua pe apă în Thassos",
+      "linksAria": "Pagini conexe de închiriere",
+      "links": [
+        {
+          "href": "/fleet",
+          "label": "Browse speedboats & day cruisers"
+        },
+        {
+          "href": "/booking",
+          "label": "Request a rental online"
+        },
+        {
+          "href": "/map",
+          "label": "Sea atlas, distances & routes"
+        },
+        {
+          "href": "/faq",
+          "label": "Boat rental FAQ"
+        },
+        {
+          "href": "/rent-a-boat-thassos",
+          "label": "Full rent-a-boat guide"
+        }
+      ]
+    },
+    "pages": {
+      "home": {
+        "title": "Rent a Boat in Thassos | New Port of Limenaria | Rent A Boat Villy",
+        "description": "Rent a boat in Thassos from at New Port of Limenaria. Speedboats & day cruisers for Marble Beach & secret coves. No licence up to 30HP, safety briefing included. Book today.",
+        "keywords": "rent a boat Thassos, rent a boat in Thassos, boat rental Thassos, Thassos boat hire, New Port of Limenaria boat rental, speedboat rental Thassos, no license boat Thassos 30HP"
+      },
+      "fleet": {
+        "title": "Flotă închiriere bărci Thassos | Speedboat-uri din Noul Port Limenaria",
+        "description": "Rent a boat in Thassos at New Port of Limenaria. 8 boats — Kima (9 seats), premium 8-seaters, family 7-seaters. Brand new, fully equipped. Book online.",
+        "keywords": "închiriere bărci Thassos, barcă Thassos, Villy Boats Thassos, marina Limenaria, flotă Thassos"
+      },
+      "booking": {
+        "title": "Rent a Boat in Thassos, Request Online | New Port of Limenaria",
+        "description": "Solicită online închiriere barcă Thassos. Alege barca, data și orele de la Noul Port Limenaria — confirmăm prin telefon. Briefing inclus, fără permis până la 30CP.",
+        "keywords": "rent a boat Thassos online, book boat Thassos, boat rental Thassos booking, New Port of Limenaria rental, speedboat rental Thassos"
+      },
+      "package": {
+        "title": "Thassos boat rental | rates on request Calculator",
+        "description": "Planifică închirierea Thassos — alege barca și durata de la Noul Port Limenaria înainte de a trimite cererea.",
+        "keywords": "Thassos boat rental, rent a boat Thassos cost, boat hire Limenaria, speedboat rental Thassos"
+      },
+      "map": {
+        "title": "Thassos Boat Map | Beaches & Coves from New Port of Limenaria",
+        "description": "Atlas marin interactiv Thassos — Tripiti, Marble Beach, Golden Beach, Aliki și golfuri secrete de la Noul Port Limenaria.",
+        "keywords": "Thassos boat map, boat rental Thassos routes, New Port of Limenaria spots, Tripiti cave by boat, Golden Beach Thassos boat"
+      },
+      "guide": {
+        "title": "Thassos Boat Rental Guide | Best Beaches by Rental Boat",
+        "description": "Ghid pentru închiriere barcă în Thassos — Marble Beach, Aliki și lagune accesibile doar pe mare. Planifică ziua de la Limenaria.",
+        "keywords": "Thassos boat rental guide, rent a boat Thassos beaches, Marble Beach boat, secret coves Thassos, New Port of Limenaria routes"
+      },
+      "experiences": {
+        "title": "Thassos Boat Rental Ideas | What Guests Do on the Water",
+        "description": "Idei pentru închirierea ta — apus, golfuri, explorare toată ziua. Tu conduci barca de la Noul Port Limenaria.",
+        "keywords": "Thassos boat rental ideas, rent a boat Thassos, sunset boat rental, cove hopping Thassos, New Port of Limenaria"
+      },
+      "reviews": {
+        "title": "Rent a Boat Thassos Reviews | Guest Rentals at Limenaria",
+        "description": "Recenzii de la oaspeți care au închiriat o barcă la Noul Port Limenaria — bărci, rute, briefing și rezervare.",
+        "keywords": "rent a boat Thassos reviews, Thassos boat rental reviews, Limenaria boat rental ratings, boat hire Thassos Greece"
+      },
+      "faq": {
+        "title": "Rent a Boat Thassos FAQ | Licence, Fuel & Pricing",
+        "description": "Tot ce trebuie să știi înainte de închiriere — permis, briefing de siguranță, vreme și program Noul Port Limenaria.",
+        "keywords": "rent a boat Thassos FAQ, Thassos boat rental licence, safety briefing included boat hire Thassos, New Port of Limenaria pickup"
+      },
+      "blog": {
+        "title": "Ghiduri închiriere bărci Thassos | Rent A Boat Villy",
+        "description": "Thassos boat rental news & guides from Limenaria, hire tips, Marble Beach, Tripiti Cave, Golden Beach routes & sea atlas updates.",
+        "keywords": "Thassos boat news, rent a boat Villy, New Port of Limenaria blog, Thassos boat rental guide, Marble Beach boat, hourly boat hire Thassos"
+      },
+      "rentBoatThassos": {
+        "title": "Rent a Boat Thassos | Hourly Self-Drive from New Port of Limenaria",
+        "description": "Rent a boat in Thassos from at New Port of Limenaria. Self-drive speedboats & day cruisers, safety briefing, no licence up to 30HP. Stay on board, swim only while anchored.",
+        "keywords": "rent a boat thassos, rent a boat in thassos, boat rental thassos, thassos boat hire, limenaria marina boat rental, hourly boat rental thassos, no license boat thassos 30HP"
+      },
+      "matchmaker": {
+        "title": "Găsește barca | Quiz Thassos, Limenaria",
+        "description": "Răspunde la câteva întrebări — sugerăm barca ideală din Noul Port Limenaria pentru grupul tău.",
+        "keywords": "barcă închiriere Thassos, quiz barcă, Limenaria, alege barcă Thassos"
+      },
+      "privacy": {
+        "title": "Politica de confidențialitate | Rent A Boat Villy",
+        "description": "Politica de confidențialitate Rent A Boat Villy — cum colectăm și protejăm datele la închirierea de bărci în Thassos.",
+        "keywords": "Thassos boat rental privacy policy, GDPR boat rental Greece"
+      },
+      "terms": {
+        "title": "Termeni de utilizare | Rent A Boat Villy",
+        "description": "Termeni pentru închirierea de bărci în Thassos de la Noul Port Limenaria — rezervări, anulări, răspundere.",
+        "keywords": "Thassos boat rental terms, boat rental conditions New Port of Limenaria"
+      },
+      "cookies": {
+        "title": "Politica cookie | Rent A Boat Villy",
+        "description": "Cum folosește Rent A Boat Villy cookie-urile — preferințe, analiză și alegerile tale.",
+        "keywords": "Thassos boat rental cookies, website cookie policy Greece"
+      },
+      "gdpr": {
+        "title": "GDPR & Data Rights | Rent A Boat Villy",
+        "description": "Exercită drepturile GDPR cu Rent A Boat Villy — acces, ștergere și gestionarea consimțământului.",
+        "keywords": "GDPR boat rental Greece, data rights Thassos boat rentals"
+      }
+    }
+  }
+}

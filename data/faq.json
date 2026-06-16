@@ -1,0 +1,32 @@
+[
+  {
+    "id": "license",
+    "question": "Do I need a licence to rent a boat in Thassos?",
+    "answer": "No licence is needed for boats up to 30HP — most of our speedboat fleet qualifies. We provide a 15–20 minute safety briefing at New Port of Limenaria before every departure."
+  },
+  {
+    "id": "pricing",
+    "question": "How much does it cost to rent a boat in Thassos?",
+    "answer": "It depends on boat and season. Call +30 698 131 8393 or visit us at New Port of Limenaria. Browse [our fleet](/fleet) or send a [booking request](/booking) — we'll confirm availability by phone or message."
+  },
+  {
+    "id": "fuel",
+    "question": "Is fuel included in the boat rental?",
+    "answer": "No. Fuel is charged separately based on usage. We explain typical consumption at briefing so there are no surprises at return."
+  },
+  {
+    "id": "marina",
+    "question": "Where is New Port of Limenaria and what are your hours?",
+    "answer": "Rent A Boat Villy departs from New Port of Limenaria on Thassos' south coast. GPS coordinates and parking details are sent upon booking. Open daily 08:00–20:00, May through October."
+  },
+  {
+    "id": "deposit",
+    "question": "Is online payment required?",
+    "answer": "No payment is needed online. Just fill in your details and we confirm availability by phone or message. You pay nothing until you arrive at New Port of Limenaria."
+  },
+  {
+    "id": "speedboat",
+    "question": "Can I rent a speedboat in Thassos without experience?",
+    "answer": "Yes — our 30HP speedboats are ideal for beginners. Every rental includes a safety briefing covering local hazards, anchoring, and VHF basics before you cast off."
+  }
+]
