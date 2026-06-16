@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useCallback, type MouseEvent } from "react";
 import { VillyMarkIcon } from "@/components/brand/VillyMarkIcon";
+import { LANG_COOKIE } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 export const LOGO_SRC = "/brand/villy-logo.png";
@@ -25,13 +27,24 @@ const sizeClasses = {
   header: "site-logo site-logo--header",
 } as const;
 
-function homeHref(): string {
-  if (typeof window === "undefined") return "/";
-  const lang = new URLSearchParams(window.location.search).get("lang");
+function buildHomeHref(lang: string | null): string {
   return lang && lang !== "en" ? `/?lang=${lang}` : "/";
 }
 
-/** Clear scroll locks / overlays so home loads at the true top. */
+function readLangCookie(): string | null {
+  if (typeof document === "undefined") return null;
+  const match = document.cookie
+    .split("; ")
+    .find((entry) => entry.startsWith(`${LANG_COOKIE}=`));
+  return match?.split("=")[1] ?? null;
+}
+
+function homeHrefFromBrowser(): string {
+  const fromUrl = new URLSearchParams(window.location.search).get("lang");
+  return buildHomeHref(fromUrl ?? readLangCookie());
+}
+
+/** Clear scroll locks / overlays so home can scroll to the true top. */
 function clearPageLocks() {
   const root = document.documentElement;
   const body = document.body;
@@ -46,23 +59,11 @@ function clearPageLocks() {
   body.style.width = "";
 }
 
-function reinitializeHome() {
-  clearPageLocks();
-  const target = homeHref();
-  const current = `${window.location.pathname}${window.location.search}`;
-
-  if (current === target) {
-    if (window.location.hash) {
-      window.history.replaceState(window.history.state, "", target);
-    }
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-    window.location.reload();
-    return;
-  }
-
-  window.location.assign(target);
+function scrollToPageTop() {
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.getElementById("main-content")?.scrollTo({ top: 0, left: 0, behavior: "auto" });
 }
 
 export function Logo({
@@ -70,10 +71,29 @@ export function Logo({
   linked = true,
   size = "md",
 }: LogoProps) {
-  const handleLogoClick = useCallback((event: MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault();
-    reinitializeHome();
-  }, []);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleLogoClick = useCallback(
+    (event: MouseEvent<HTMLAnchorElement>) => {
+      event.preventDefault();
+      clearPageLocks();
+
+      const target = homeHrefFromBrowser();
+      const onHome = pathname === "/" || pathname === "";
+
+      if (onHome) {
+        if (window.location.hash) {
+          window.history.replaceState(window.history.state, "", target);
+        }
+        scrollToPageTop();
+        return;
+      }
+
+      router.push(target, { scroll: true });
+    },
+    [pathname, router],
+  );
 
   const image = (
     // eslint-disable-next-line @next/next/no-img-element -- transparent brand PNG
