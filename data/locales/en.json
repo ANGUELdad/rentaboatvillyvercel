@@ -510,6 +510,10 @@
       "routesTitle": "Suggested day plans",
       "scrollHint": "Scroll the coast, spots unfold as you go",
       "spotCount": "{count} anchorages",
+      "statMarina": "New Port of Limenaria",
+      "statReach": "Up to ~{minutes} min reach",
+      "filterAriaLabel": "Filter destinations",
+      "ctaNavAria": "Guide next steps",
       "ctaMap": "Open interactive sea atlas",
       "ctaBook": "Request a boat",
       "routes": [

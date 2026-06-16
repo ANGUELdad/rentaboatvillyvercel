@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { ThassosDiscoverMap } from "@/components/map/ThassosDiscoverMap";
 import { PageShell } from "@/components/layout/PageShell";
+import { useGuideLocalizedLocations } from "@/hooks/useGuideLocalizedLocations";
 import { useI18n } from "@/providers/LanguageProvider";
 import type { Location } from "@/types";
 
@@ -16,6 +17,7 @@ interface MapPageClientProps {
 
 export function MapPageClient({ locations }: MapPageClientProps) {
   const { t } = useI18n();
+  const localizedLocations = useGuideLocalizedLocations(locations);
   const map = t.map as typeof t.map & {
     heroBadge?: string;
     heroStatSpotsLabel?: string;
@@ -45,7 +47,7 @@ export function MapPageClient({ locations }: MapPageClientProps) {
       visualBadgeIcon={MapPin}
       stats={[
         {
-          value: `${locations.length} ${t.map.spotsCount ?? "spots"}`,
+          value: `${localizedLocations.length} ${t.map.spotsCount ?? "spots"}`,
           label: map.heroStatSpotsLabel ?? "On the chart",
           icon: Anchor,
         },
@@ -67,7 +69,7 @@ export function MapPageClient({ locations }: MapPageClientProps) {
         transition={{ duration: 0.5 }}
         className="mt-1 sm:mt-2"
       >
-        <ThassosDiscoverMap locations={locations} />
+        <ThassosDiscoverMap locations={localizedLocations} />
       </motion.div>
 
       <p className="mt-5 text-center text-xs leading-relaxed text-ds-text-secondary">

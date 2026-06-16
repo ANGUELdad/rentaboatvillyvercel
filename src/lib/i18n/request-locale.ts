@@ -1,12 +1,7 @@
 import { cookies } from "next/headers";
-import { LANG_COOKIE, LOCALES, type Locale } from "./types";
+import { LANG_COOKIE, parseLocale, type Locale } from "./types";
 
-const VALID_LOCALES = new Set<string>(LOCALES.map((l) => l.code));
-
-export function parseLocale(value: string | null | undefined): Locale | null {
-  if (!value || !VALID_LOCALES.has(value)) return null;
-  return value as Locale;
-}
+export { parseLocale } from "./types";
 
 /** Server-side locale: ?lang= param, then cookie, default English. */
 export async function getRequestLocale(

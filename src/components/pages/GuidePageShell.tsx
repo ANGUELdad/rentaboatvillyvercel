@@ -4,6 +4,7 @@ import { Anchor, Compass, MapPin } from "lucide-react";
 import { useMemo } from "react";
 import { GuidePageExperience } from "@/components/guide/GuidePageExperience";
 import { PageShell } from "@/components/layout/PageShell";
+import { useGuideLocalizedLocations } from "@/hooks/useGuideLocalizedLocations";
 import { useI18n } from "@/providers/LanguageProvider";
 import type { Location } from "@/types";
 
@@ -11,6 +12,7 @@ const HERO_SPOT_IDS = ["tripiti-cave", "metalia-beach", "pefkari-beach"] as cons
 
 export function GuidePageShell({ locations }: { locations: Location[] }) {
   const { t } = useI18n();
+  const localizedLocations = useGuideLocalizedLocations(locations);
   const guide = t.guide as typeof t.guide & {
     heroBadge?: string;
     heroStatSpotsLabel?: string;
@@ -42,8 +44,8 @@ export function GuidePageShell({ locations }: { locations: Location[] }) {
       stats={[
         {
           value:
-            page?.spotCount?.replace("{count}", String(locations.length)) ??
-            `${locations.length} stops`,
+            page?.spotCount?.replace("{count}", String(localizedLocations.length)) ??
+            `${localizedLocations.length} stops`,
           label: guide.heroStatSpotsLabel ?? "Boat-accessible stops",
           icon: Anchor,
         },
@@ -54,7 +56,7 @@ export function GuidePageShell({ locations }: { locations: Location[] }) {
         },
       ]}
     >
-      <GuidePageExperience locations={locations} />
+      <GuidePageExperience locations={localizedLocations} />
     </PageShell>
   );
 }

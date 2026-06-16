@@ -829,7 +829,7 @@ export function ConciergeChat({
                       transition={{ ...appleSpringSnappy, delay: i * staggerStep }}
                       className="message-row message-row--user flex w-full justify-end"
                     >
-                      <div className="message-row__content message-row__content--user min-w-0 space-y-1">
+                      <div className="message-row__content message-row__content--user shrink-0 space-y-1">
                         <div className="chat-bubble bubble-user ai-bubble-user">
                           {msg.text}
                         </div>

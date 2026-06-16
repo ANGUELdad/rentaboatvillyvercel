@@ -10,9 +10,9 @@ import {
   useRef,
   useState,
 } from "react";
+import { useRouter } from "next/navigation";
 import {
   getChatTreeFromDictionary,
-  getEnglishDictionary,
   LANG_COOKIE,
   LOCALES,
   type Locale,
@@ -109,8 +109,6 @@ function syncLangSearchParam(next: Locale) {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-const english = getEnglishDictionary();
-
 function dictionaryFor(locale: Locale): LocaleStrings {
   return getLocaleDictionary(locale);
 }
@@ -129,11 +127,20 @@ function readStoredLocale(): Locale {
   return "en";
 }
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("en");
+export function LanguageProvider({
+  children,
+  initialLocale = "en",
+}: {
+  children: React.ReactNode;
+  initialLocale?: Locale;
+}) {
+  const router = useRouter();
+  const [locale, setLocaleState] = useState<Locale>(initialLocale);
   const [ready, setReady] = useState(false);
-  const [t, setT] = useState<LocaleStrings>(() => english);
-  const [chatTree, setChatTree] = useState<ChatTree>(() => chatFor("en"));
+  const [t, setT] = useState<LocaleStrings>(() => dictionaryFor(initialLocale));
+  const [chatTree, setChatTree] = useState<ChatTree>(() =>
+    chatFor(initialLocale),
+  );
   const wasTranslating = useRef(false);
 
   useEffect(() => {
@@ -145,12 +152,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     if (urlValid) {
       document.cookie = `${LANG_COOKIE}=${urlValid};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
     }
-    setT(dictionaryFor(stored));
-    setChatTree(chatFor(stored));
-    setLocaleState(stored);
+    if (stored !== initialLocale) {
+      setT(dictionaryFor(stored));
+      setChatTree(chatFor(stored));
+      setLocaleState(stored);
+    }
     document.documentElement.lang = stored;
     setReady(true);
-  }, []);
+  }, [initialLocale]);
 
   useEffect(() => {
     if (!ready) return;
@@ -176,19 +185,22 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       setChatTree(chatFor(next));
       document.cookie = `${LANG_COOKIE}=${next};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
       document.documentElement.lang = next;
-      startTransition(() => setLocaleState(next));
+      startTransition(() => {
+        setLocaleState(next);
+        router.refresh();
+      });
     },
-    [],
+    [router],
   );
 
   const value = useMemo(
     () => ({
-      locale: ready ? locale : "en",
+      locale,
       setLocale,
       t,
       chatTree,
       locales: LOCALES,
-      translating: false,
+      translating: !ready,
     }),
     [locale, setLocale, ready, t, chatTree],
   );

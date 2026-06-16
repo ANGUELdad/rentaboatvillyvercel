@@ -30,6 +30,7 @@ import {
   scrollRevealFromRightReduced,
   staggerStep,
 } from "@/lib/motion";
+import { localizedHref } from "@/lib/i18n/routing";
 import { trimToEvenGrid } from "@/lib/even-grid";
 import { cn } from "@/lib/utils";
 import { useI18n } from "@/providers/LanguageProvider";
@@ -64,6 +65,10 @@ type GuidePageCopy = {
   timelineTitle?: string;
   scrollHint?: string;
   spotCount?: string;
+  statMarina?: string;
+  statReach?: string;
+  filterAriaLabel?: string;
+  ctaNavAria?: string;
   ctaMap?: string;
   ctaBook?: string;
 };
@@ -72,10 +77,12 @@ function GuideSpotCard({
   location,
   index,
   total,
+  mapHref,
 }: {
   location: Location;
   index: number;
   total: number;
+  mapHref: (spotId: string) => string;
 }) {
   const { t } = useI18n();
   const g = t.guide;
@@ -153,7 +160,7 @@ function GuideSpotCard({
           </span>
         </div>
         <Link
-          href={`/map?spot=${location.id}`}
+          href={mapHref(location.id)}
           className="guide-page__spot-link tap-target"
         >
           {m.openMaps ?? "View on sea atlas"}
@@ -165,9 +172,9 @@ function GuideSpotCard({
 }
 
 export function GuidePageExperience({ locations }: { locations: Location[] }) {
-  const { t } = useI18n();
+  const { locale, t } = useI18n();
   const g = t.guide;
-  const page = (g as { page?: GuidePageCopy }).page ?? {};
+  const page = g.page ?? {};
   const reduceMotion = useReducedMotion();
   const [category, setCategory] = useState<GuideCategory>("all");
   const timelineRef = useRef<HTMLDivElement>(null);
@@ -203,6 +210,8 @@ export function GuidePageExperience({ locations }: { locations: Location[] }) {
   ];
 
   const maxMinutes = Math.max(...sorted.map((l) => spotDistanceFromMarina(l).minutes));
+  const mapSpotHref = (spotId: string) =>
+    localizedHref(`/map?spot=${spotId}`, locale);
 
   return (
     <div className="guide-page">
@@ -223,15 +232,26 @@ export function GuidePageExperience({ locations }: { locations: Location[] }) {
         </div>
         <div className="guide-page__stat">
           <Anchor className="size-5 text-ds-brand" aria-hidden />
-          <p className="guide-page__stat-value">New Port of Limenaria</p>
+          <p className="guide-page__stat-value">
+            {page.statMarina ?? "New Port of Limenaria"}
+          </p>
         </div>
         <div className="guide-page__stat">
           <Clock className="size-5 text-ds-brand" aria-hidden />
-          <p className="guide-page__stat-value">Up to ~{maxMinutes} min reach</p>
+          <p className="guide-page__stat-value">
+            {(page.statReach ?? "Up to ~{minutes} min reach").replace(
+              "{minutes}",
+              String(maxMinutes),
+            )}
+          </p>
         </div>
       </motion.div>
 
-      <div className="guide-page__filters" role="tablist" aria-label="Filter destinations">
+      <div
+        className="guide-page__filters"
+        role="tablist"
+        aria-label={page.filterAriaLabel ?? "Filter destinations"}
+      >
         {categories.map((cat) => (
           <button
             key={cat.id}
@@ -337,6 +357,7 @@ export function GuidePageExperience({ locations }: { locations: Location[] }) {
                 location={location}
                 index={index}
                 total={gridSpots.length}
+                mapHref={mapSpotHref}
               />
             ))}
           </motion.div>
@@ -349,14 +370,20 @@ export function GuidePageExperience({ locations }: { locations: Location[] }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={appleSpringSoft}
-        aria-label="Guide next steps"
+        aria-label={page.ctaNavAria ?? "Guide next steps"}
       >
-        <Link href="/map" className="guide-page__cta-btn glass-elevated tap-target">
+        <Link
+          href={localizedHref("/map", locale)}
+          className="guide-page__cta-btn glass-elevated tap-target"
+        >
           <MapPin className="size-5 text-ds-brand" aria-hidden />
           <span>{page.ctaMap ?? g.mapCta ?? "Open interactive sea atlas"}</span>
           <ArrowRight className="size-4" aria-hidden />
         </Link>
-        <Link href="/booking" className="guide-page__cta-btn guide-page__cta-btn--primary tap-target">
+        <Link
+          href={localizedHref("/booking", locale)}
+          className="guide-page__cta-btn guide-page__cta-btn--primary tap-target"
+        >
           <Sparkles className="size-5" aria-hidden />
           <span>{page.ctaBook ?? "Request a boat"}</span>
           <ArrowRight className="size-4" aria-hidden />

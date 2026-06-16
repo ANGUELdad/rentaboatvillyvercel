@@ -9,6 +9,13 @@ export const LOCALES: { code: Locale; label: string; flag: string }[] = [
 
 export const LANG_COOKIE = "tbc-lang";
 
+const VALID_LOCALES = new Set<string>(LOCALES.map((l) => l.code));
+
+export function parseLocale(value: string | null | undefined): Locale | null {
+  if (!value || !VALID_LOCALES.has(value)) return null;
+  return value as Locale;
+}
+
 /** Bump when snapshot shape or merge rules change to invalidate cached translations. */
 export const LOCALE_SNAPSHOT_CACHE_VERSION = 10;
 
@@ -134,6 +141,10 @@ export interface GuideStrings {
     spotCount?: string;
     ctaMap?: string;
     ctaBook?: string;
+    statMarina?: string;
+    statReach?: string;
+    filterAriaLabel?: string;
+    ctaNavAria?: string;
     routes?: { title: string; desc: string; hours: string }[];
   };
 }

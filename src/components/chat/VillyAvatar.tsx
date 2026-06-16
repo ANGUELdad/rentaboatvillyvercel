@@ -1,14 +1,14 @@
 "use client";
 
-import { MessageCircle } from "lucide-react";
-import { VillyMarkIcon } from "@/components/brand/VillyMarkIcon";
 import { cn } from "@/lib/utils";
 
+const LOGO_SRC = "/brand/villy-logo.svg";
+
 const SIZES = {
-  sm: { outer: "size-8", icon: "size-3.5", dot: "size-2.5 border-[1.5px]", img: 32, boat: "size-2" },
-  md: { outer: "size-10", icon: "size-4", dot: "size-3 border-2", img: 40, boat: "size-2.5" },
-  lg: { outer: "size-12", icon: "size-5", dot: "size-3 border-2", img: 48, boat: "size-3" },
-  fab: { outer: "size-11 sm:size-12", icon: "size-5 sm:size-[22px]", dot: "size-2.5 border-[1.5px]", img: 44, boat: "size-2.5" },
+  sm: { outer: "size-8", logo: "size-[62%]", dot: "size-2.5 border-[1.5px]", img: 32 },
+  md: { outer: "size-10", logo: "size-[62%]", dot: "size-3 border-2", img: 40 },
+  lg: { outer: "size-12", logo: "size-[62%]", dot: "size-3 border-2", img: 48 },
+  fab: { outer: "size-11 sm:size-12", logo: "size-[62%]", dot: "size-2.5 border-[1.5px]", img: 44 },
 } as const;
 
 type VillyAvatarSize = keyof typeof SIZES;
@@ -32,22 +32,23 @@ export function VillyAvatar({
     <span
       aria-hidden
       className={cn(
-        "relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full",
+        "relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm",
         variant === "chat"
-          ? "bg-white shadow-sm ring-1 ring-brand-green/35"
-          : "bg-gradient-to-br from-brand-green/30 to-brand-green/10 text-brand-green ring-1 ring-brand-green/25",
+          ? "ring-1 ring-brand-green/35"
+          : "ring-1 ring-brand-green/25",
         s.outer,
         className,
       )}
     >
-      {variant === "chat" ? (
-        <MessageCircle
-          className={cn("fill-brand-green/15 text-brand-green", s.icon)}
-          strokeWidth={2.25}
-        />
-      ) : (
-        <VillyMarkIcon className="villy-avatar__mark" />
-      )}
+      {/* eslint-disable-next-line @next/next/no-img-element -- inline SVG brand mark */}
+      <img
+        src={LOGO_SRC}
+        alt=""
+        width={s.img}
+        height={s.img}
+        className={cn("villy-avatar__mark object-contain", s.logo)}
+        decoding="async"
+      />
       {showOnline && (
         <span
           className={cn(

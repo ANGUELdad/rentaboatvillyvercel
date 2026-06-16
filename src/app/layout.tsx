@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getTestimonials } from "@/lib/data";
 import { fontApp, fontVariables } from "@/lib/fonts";
+import { getRequestLocale } from "@/lib/i18n/request-locale";
 import { AppProviders } from "@/providers/AppProviders";
 import { SITE_BRAND, SITE_URL } from "@/lib/seo/config";
 import {
@@ -76,14 +77,16 @@ export const metadata: Metadata = {
     : {}),
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialLocale = await getRequestLocale();
+
   return (
     <html
-      lang="en"
+      lang={initialLocale}
       className={`${fontVariables} min-h-full antialiased`}
     >
       <body
@@ -92,7 +95,7 @@ export default function RootLayout({
         <JsonLd data={organizationSchema()} />
         <JsonLd data={localBusinessSchema(getTestimonials())} />
         <JsonLd data={websiteSchema()} />
-        <AppProviders>{children}</AppProviders>
+        <AppProviders initialLocale={initialLocale}>{children}</AppProviders>
       </body>
     </html>
   );

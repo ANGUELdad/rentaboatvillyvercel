@@ -2855,8 +2855,8 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
 
   .message-row__content {
     align-self: flex-start;
-    min-width: 0;
     max-width: 85%;
+    min-width: 0;
   }
 
   .message-row__content--user {
@@ -2864,7 +2864,10 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
     align-items: flex-end;
     display: flex;
     flex-direction: column;
+    width: fit-content;
     max-width: 85%;
+    min-width: min-content;
+    flex-shrink: 0;
   }
 
   .chat-bubble-timestamp {
@@ -2918,9 +2921,10 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
   }
 
   .chat-bubble {
-    width: fit-content;
+    display: block;
+    width: auto;
     max-width: 100%;
-    min-width: 0;
+    min-width: min-content;
     padding: 1rem 1.2rem;
     border-radius: 18px;
     font-size: 0.8125rem;
@@ -2928,6 +2932,7 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
     white-space: pre-wrap;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    word-break: normal;
     hyphens: none;
     -webkit-hyphens: none;
     box-sizing: border-box;
@@ -12153,6 +12158,8 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
     white-space: pre-wrap;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    word-break: normal;
+    min-width: min-content;
   }
 
   .ai-input-wrap {
@@ -22393,6 +22400,22 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
   .ai-chat-panel .ai-chat-input-bar {
     min-width: 0 !important;
     max-width: 100% !important;
+  }
+
+  .ai-chat-panel .message-row__content--user {
+    width: fit-content !important;
+    max-width: 85% !important;
+    min-width: min-content !important;
+    flex-shrink: 0 !important;
+  }
+
+  .ai-chat-panel .chat-bubble.bubble-user,
+  .ai-chat-panel .chat-bubble.bubble-ai {
+    width: auto !important;
+    min-width: min-content !important;
+    max-width: 100% !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
   }
 
   .ai-chat-panel .ai-chat-prompts__grid,

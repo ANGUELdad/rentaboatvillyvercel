@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { LANG_COOKIE, parseLocale } from "@/lib/i18n/types";
 import {
   ADMIN_COOKIE,
   verifyAdminSessionToken,
@@ -47,6 +48,18 @@ function applyApiSecurityHeaders(response: NextResponse): NextResponse {
   response.headers.set("X-Content-Type-Options", "nosniff");
   response.headers.set("X-Robots-Tag", "noindex");
   response.headers.set("Cache-Control", "no-store");
+  return response;
+}
+
+function withLangCookie(request: NextRequest, response: NextResponse): NextResponse {
+  const langFromUrl = parseLocale(request.nextUrl.searchParams.get("lang"));
+  if (langFromUrl) {
+    response.cookies.set(LANG_COOKIE, langFromUrl, {
+      path: "/",
+      maxAge: 60 * 60 * 24 * 365,
+      sameSite: "lax",
+    });
+  }
   return response;
 }
 
@@ -225,7 +238,7 @@ export async function middleware(request: NextRequest) {
     return applyAdminSecurityHeaders(NextResponse.next());
   }
 
-  return NextResponse.next();
+  return withLangCookie(request, NextResponse.next());
 }
 
 export const config = {
