@@ -125,12 +125,6 @@ export function LanguagePicker({
   };
 
   useEffect(() => {
-    if (useSheet || !open) return;
-    const timer = window.setTimeout(() => setOpen(false), 0);
-    return () => window.clearTimeout(timer);
-  }, [open, useSheet]);
-
-  useEffect(() => {
     if (!open || useSheet) return;
     updateMenuPos();
     const onPointer = (e: PointerEvent) => {
