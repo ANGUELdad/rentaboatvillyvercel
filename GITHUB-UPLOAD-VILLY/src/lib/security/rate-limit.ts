@@ -47,6 +47,7 @@ export const RATE_LIMITS = {
   gdprRequest: { limit: 3, windowMs: 60 * 60 * 1000 },
   gdprRequestEmail: { limit: 2, windowMs: 24 * 60 * 60 * 1000 },
   gdprConsent: { limit: 30, windowMs: 60 * 60 * 1000 },
+  chat: { limit: 20, windowMs: 60 * 1000 },
   i18nDictionary: { limit: 60, windowMs: 60 * 1000 },
   i18nTranslate: { limit: 24, windowMs: 60 * 1000 },
   health: { limit: 30, windowMs: 60 * 1000 },

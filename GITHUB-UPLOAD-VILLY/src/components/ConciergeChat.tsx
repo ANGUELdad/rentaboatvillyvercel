@@ -34,6 +34,7 @@ import { generateSessionRef, pickMenuMessage } from "@/lib/chat/concierge-dynami
 import { useMobileViewport } from "@/hooks/useMobileViewport";
 import { useConsentResolved } from "@/hooks/useConsentResolved";
 import { useSfx } from "@/hooks/useSfx";
+import { postJson } from "@/lib/client-api";
 import { playFeedback } from "@/lib/feedback";
 import {
   onChatRequestOpen,
@@ -65,6 +66,13 @@ interface Message {
   link?: { href: string; label: string };
   links?: { href: string; label: string }[];
   simulateTypewriter?: boolean;
+}
+
+interface ChatApiReply {
+  text: string;
+  suggestions?: string[];
+  link?: { href: string; label: string };
+  links?: { href: string; label: string }[];
 }
 
 interface ConciergeChatProps {
@@ -412,6 +420,10 @@ export function ConciergeChat({
       if (thinking || sendingRef.current) return;
       sendingRef.current = true;
       const nowLabel = labels.timestampNow ?? "Just now";
+      const history = messages
+        .filter((msg) => msg.id !== "start-greeting")
+        .slice(-8)
+        .map((msg) => ({ role: msg.role, text: msg.text }));
 
       setMessages((prev) => [
         ...prev,
@@ -422,7 +434,36 @@ export function ConciergeChat({
       setThinking(true);
       playFeedback("tap", "light");
 
-      window.setTimeout(() => {
+      const startedAt = Date.now();
+      void (async () => {
+        const apiReply = await postJson<ChatApiReply>("/api/chat", {
+          message: text,
+          locale,
+          history,
+          localizedFaq,
+        });
+        const reply = apiReply.ok
+          ? apiReply.data
+          : respondToMessage(text, locale, context);
+        const waitMs = Math.max(0, thinkingDelayMs() - (Date.now() - startedAt));
+        window.setTimeout(() => {
+          setMessages((prev) => [
+            ...prev,
+            replyToMessage(
+              {
+                role: "assistant",
+                text: reply.text,
+                link: reply.link,
+                links: reply.links,
+              },
+              nowLabel,
+            ),
+          ]);
+          setSuggestions(reply.suggestions ?? []);
+          setThinking(false);
+          sendingRef.current = false;
+        }, waitMs);
+      })().catch(() => {
         const reply = respondToMessage(text, locale, context);
         setMessages((prev) => [
           ...prev,
@@ -439,9 +480,9 @@ export function ConciergeChat({
         setSuggestions(reply.suggestions ?? []);
         setThinking(false);
         sendingRef.current = false;
-      }, thinkingDelayMs());
+      });
     },
-    [thinking, locale, context, labels.timestampNow],
+    [thinking, messages, locale, localizedFaq, context, labels.timestampNow],
   );
 
   const selectOption = useCallback(
