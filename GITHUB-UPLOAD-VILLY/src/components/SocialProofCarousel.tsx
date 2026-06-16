@@ -62,6 +62,19 @@ function getMobileLayoutServerSnapshot() {
   return true;
 }
 
+function anonymizeReviewName(name: string): string {
+  const parts = name
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+
+  if (parts.length < 2) return name;
+
+  const [first, ...rest] = parts;
+  const firstInitial = first ? `${Array.from(first)[0]}.` : "";
+  return [firstInitial, rest.join(" ")].filter(Boolean).join(" ");
+}
+
 interface SocialProofCarouselProps {
   testimonials: Testimonial[];
   variant?: "home" | "page";
@@ -80,9 +93,9 @@ export function SocialProofCarousel({
   const reducedMotion = useReducedMotion();
   const sectionRef = useRef<HTMLElement>(null);
   const inView = useInView(sectionRef, { margin: "-8% 0px" });
-  const starsPrimedRef = useRef<string | null>(null);
   const [starsInView, setStarsInView] = useState(false);
   const [starsAnimating, setStarsAnimating] = useState(false);
+  const [primedStarsId, setPrimedStarsId] = useState<string | null>(null);
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [direction, setDirection] = useState(1);
@@ -113,15 +126,17 @@ export function SocialProofCarousel({
     [localizedTestimonials],
   );
   const total = featured.length;
+  const current = featured[index] ?? featured[0] ?? null;
 
   useEffect(() => {
-    setIndex(0);
+    const timer = window.setTimeout(() => setIndex(0), 0);
+    return () => window.clearTimeout(timer);
   }, [locale, localizedReviewCount]);
 
   useEffect(() => {
-    if (inView && !starsInView) {
-      setStarsInView(true);
-    }
+    if (!inView || starsInView) return;
+    const timer = window.setTimeout(() => setStarsInView(true), 0);
+    return () => window.clearTimeout(timer);
   }, [inView, starsInView]);
 
   useEffect(() => {
@@ -129,6 +144,12 @@ export function SocialProofCarousel({
     const timer = setTimeout(() => setStarsAnimating(true), STARS_STATIC_HOLD_MS);
     return () => clearTimeout(timer);
   }, [starsInView, reducedMotion]);
+
+  useEffect(() => {
+    if (!starsAnimating || primedStarsId !== null || !current) return;
+    const timer = window.setTimeout(() => setPrimedStarsId(current.id), 0);
+    return () => window.clearTimeout(timer);
+  }, [current, primedStarsId, starsAnimating]);
 
   const goTo = useCallback((next: number, dir: number, fromAuto = false) => {
     autoAdvanceRef.current = fromAuto;
@@ -173,10 +194,8 @@ export function SocialProofCarousel({
     );
   }
 
-  const current = featured[index]!;
-  if (starsAnimating && starsPrimedRef.current === null) {
-    starsPrimedRef.current = current.id;
-  }
+  if (!current) return null;
+
   const variants = reducedMotion ? carouselSlideReduced : carouselSlide;
   const slideVariants = reducedMotion
     ? variants
@@ -189,7 +208,7 @@ export function SocialProofCarousel({
         },
       };
   const starsPopEntrance =
-    starsAnimating && starsPrimedRef.current === current.id && !reducedMotion;
+    starsAnimating && primedStarsId === current.id && !reducedMotion;
   const starsEffectsLive = starsAnimating && !reducedMotion;
 
   return (
@@ -369,7 +388,7 @@ export function SocialProofCarousel({
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="truncate text-sm font-semibold text-ds-text">
-                      {current.name}
+                      {anonymizeReviewName(current.name)}
                     </p>
                     <p className="truncate text-xs text-ds-text-muted">
                       {current.location}
