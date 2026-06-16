@@ -1102,7 +1102,14 @@ export function ConciergeChat({
           }
         >
           <VillyAvatar size="fab" variant="chat" showOnline />
-          {showFabBadge && <span className="ai-fab-badge" aria-hidden />}
+          {showFabBadge && (
+            <>
+              <span className="ai-fab-notification" aria-hidden>
+                {labels.peekAction ?? labels.tapToReply ?? labels.openAssistant}
+              </span>
+              <span className="ai-fab-badge" aria-hidden />
+            </>
+          )}
         </motion.button>
       )}
     </>
