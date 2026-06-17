@@ -136,7 +136,7 @@ function buildOwnerPlainText(
 
   return [
     "NEW BOOKING REQUEST",
-    "Rent A Boat Villy · thassosboats.gr",
+    "Rent A Boat Villy",
     "",
     plainSection("Contact", [
       `Name:     ${booking.fullName}`,
@@ -281,7 +281,7 @@ function buildGuestPlainText(
 
   return [
     copy.heading,
-    "Rent A Boat Villy · thassosboats.gr",
+    "Rent A Boat Villy",
     "",
     copy.intro,
     "",
