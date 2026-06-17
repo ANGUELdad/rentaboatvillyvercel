@@ -120,7 +120,7 @@ function emailShell(params: {
                     <a href="mailto:${SITE_CONTACT.email}" style="color:${BRAND.greenDark};text-decoration:none;font-weight:600;">${escapeHtml(SITE_CONTACT.email)}</a>
                   </p>
                   <p style="margin:12px 0 0;font-size:12px;color:${BRAND.muted};">
-                    <a href="${siteUrl}" style="color:${BRAND.muted};text-decoration:underline;">Visit our website</a>
+                    <a href="${siteUrl}" style="color:${BRAND.muted};text-decoration:underline;">rentaboatvilly.com</a>
                     &nbsp;·&nbsp;© ${year} Rent A Boat Villy
                   </p>
                 </td></tr>

@@ -1,7 +1,7 @@
 import { MARINA_LOCATION } from "@/lib/site";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://thassosboats.gr";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://rentaboatvilly.com";
 
 export const SITE_NAME = "Rent A Boat Villy";
 export const SITE_BRAND = "Rent A Boat Villy";

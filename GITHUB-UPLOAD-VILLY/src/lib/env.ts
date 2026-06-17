@@ -52,7 +52,7 @@ export function getGdprSalt(): string {
 }
 
 export function getSiteUrl(): string {
-  return process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://thassosboats.gr";
+  return process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://rentaboatvilly.com";
 }
 
 /** Server-only booking notification inbox(es) — never expose in client or locale data.
