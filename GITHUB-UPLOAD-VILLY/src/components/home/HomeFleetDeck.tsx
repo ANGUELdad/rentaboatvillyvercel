@@ -163,9 +163,9 @@ function FleetDeckCard({
             {labels.viewVessel}
           </Link>
           <Link
-            href={`/booking?boat=${boat.id}`}
-            className="btn-app-primary ui-btn-label tap-target fleet-deck-2026__btn hero-cta-shimmer"
-          >
+          href={`/package?boat=${boat.id}`}
+          className="btn-app-primary ui-btn-label tap-target fleet-deck-2026__btn hero-cta-shimmer"
+        >
             {labels.bookCta}
             <ArrowRight className="size-4" aria-hidden />
           </Link>
@@ -188,7 +188,7 @@ export function HomeFleetDeck({
       noLicense: c.noLicense ?? "No licence ≤30HP",
       mostPopular: c.mostPopular ?? "Popular",
       viewVessel: t.fleet.viewVessel ?? "Details",
-      bookCta: t.hero.cta,
+      bookCta: t.packageBuilder?.requestCta ?? t.package?.cta ?? "Request pricing",
       guestsCount:
         c.seatsCount ?? c.guestsCount ?? "{count} guests",
     }),
@@ -252,7 +252,7 @@ export function HomeFleetDeck({
       </div>
 
       <p className="fleet-deck-2026__from text-center text-sm text-ds-text-muted lg:text-left">
-        {t.fleet.stat2 ?? "Contact us for rates — call +30 698 131 8393"}
+        {t.fleet.stat2 ?? "Request pricing — call +30 698 131 8393"}
       </p>
     </section>
   );

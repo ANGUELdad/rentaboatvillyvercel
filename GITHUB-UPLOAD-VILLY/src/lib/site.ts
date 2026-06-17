@@ -8,8 +8,12 @@ export const MARINA_LOCATION = {
 
 export const GOOGLE_REVIEWS = {
   url: MARINA_LOCATION.googleMapsUrl,
-  /** SEO-only aggregate rating (not shown on site). */
-  rating: 4.7,
+  /**
+   * Aggregate guest rating. Displayed on the site (hero, reviews, footer) AND
+   * emitted in LocalBusiness JSON-LD — the two MUST match, and both must match
+   * the live Google Business Profile, or Google may flag the rich result.
+   */
+  rating: 4.9,
   count: 32,
 } as const;
 
@@ -21,9 +25,11 @@ export const SITE_CONTACT = {
   phone2: "+40 770 965 041",
   phone2Tel: "+40770965041",
   phone2Schema: "+40-770-965-041",
-  email: "vilitrifonova245@gmail.com",
-  privacyEmail: "vilitrifonova245@gmail.com",
-  dpoEmail: "vilitrifonova245@gmail.com",
+  // Public-facing address. Inbound is forwarded to the owner's inbox; lead
+  // notifications also fan out via BOOKING_NOTIFICATION_EMAIL (see .env.example).
+  email: "info@rentaboatvilly.com",
+  privacyEmail: "info@rentaboatvilly.com",
+  dpoEmail: "info@rentaboatvilly.com",
   marina: "New Port of Limenaria, Thassos, Greece",
   hours: "Daily 08:00 – 20:00",
 } as const;

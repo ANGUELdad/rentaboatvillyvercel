@@ -299,7 +299,7 @@ export function buildOwnerBookingEmailHtml(params: {
   const body = `
     <p style="margin:0 0 12px;">${badge("New request", "green")}</p>
     <h1 style="margin:0 0 8px;font-size:24px;line-height:1.3;color:${BRAND.navy};font-weight:700;">${escapeHtml(booking.fullName)} wants to book</h1>
-    <p style="margin:0 0 24px;font-size:15px;line-height:1.55;color:${BRAND.muted};">Review the details below and reply to confirm availability, pricing, and marina meeting point.</p>
+    <p style="margin:0 0 24px;font-size:15px;line-height:1.55;color:${BRAND.muted};">Review the details below and reply to confirm availability and marina meeting point.</p>
 
     ${tripSummaryCard({
       date: booking.date,

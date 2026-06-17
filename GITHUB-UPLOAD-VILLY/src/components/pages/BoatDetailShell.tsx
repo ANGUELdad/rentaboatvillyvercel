@@ -124,7 +124,7 @@ export function BoatDetailShell({
             <div className="boat-detail-page__price">
               <p className="boat-detail-page__price-label ui-text-fit">
                 {d.contactForRates ??
-                  "Contact us for rates — call +30 698 131 8393 or visit our office at New Port of Limenaria."}
+                  "Request pricing — call +30 698 131 8393 or visit our office at New Port of Limenaria."}
               </p>
               {boat.tagline && (
                 <p className="boat-detail-page__price-meta">{boat.tagline}</p>
@@ -144,10 +144,10 @@ export function BoatDetailShell({
                 </ul>
               )}
               <Link
-                href={`/booking?boat=${boat.id}`}
+                href={`/package?boat=${boat.id}`}
                 className="btn-app-primary boat-detail-page__price-cta tap-target flex h-12 min-h-[48px] w-full items-center justify-center rounded-full text-sm font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:scale-[0.98]"
               >
-                {cv?.boatDetail?.checkAvailability ?? t.nav.bookNow}
+                {cv?.boatDetail?.checkAvailability ?? t.packageBuilder?.requestCta ?? t.package?.cta ?? t.nav.bookNow}
               </Link>
             </div>
           </motion.section>

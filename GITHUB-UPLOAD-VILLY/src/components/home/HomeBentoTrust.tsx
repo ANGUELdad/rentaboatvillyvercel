@@ -17,7 +17,7 @@ export function HomeBentoTrust({ testimonials }: HomeBentoTrustProps) {
     ariaLabel: "Why book today",
     captainTitle: "Be your own captain",
     captainBody: "Zero experience needed. Free safety briefing before every departure.",
-    reviewsTitle: "What guests say",
+    reviewsTitle: "Confirmed reviews",
   };
   const reduceMotion = useReducedMotion();
 

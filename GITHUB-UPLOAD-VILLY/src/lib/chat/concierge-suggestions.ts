@@ -5,7 +5,7 @@ const normalize = (s: string) => s.toLowerCase().trim().replace(/\s+/g, " ");
 /** Maps common brain / locale suggestion phrases to start-menu option ids. */
 const SUGGESTION_OPTION_IDS: Record<string, string> = {
   "request availability": "book",
-  "contact for rates": "rates",
+  "request pricing": "rates",
   "which boat for my group?": "group",
   "our fleet": "fleet",
   "fuel policy": "fuel",
@@ -18,7 +18,7 @@ const SUGGESTION_OPTION_IDS: Record<string, string> = {
   "safety rules": "safety",
   "no licence needed?": "group",
   διαθεσιμότητα: "book",
-  "τιμές κατόπιν συνεννόησης": "rates",
+  "αίτημα προσφοράς": "rates",
   "ποια βάρκα για την ομάδα μου;": "group",
   στόλος: "fleet",
   "πολιτική καυσίμων": "fuel",

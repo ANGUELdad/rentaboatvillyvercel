@@ -83,10 +83,10 @@ export function VesselCard({
       </Link>
 
       <Link
-        href={`/booking?boat=${boat.id}`}
+        href={`/package?boat=${boat.id}`}
         className="vessel-card__book btn-app-primary ui-btn-label tap-target"
       >
-        {t.hero.cta}
+        {t.packageBuilder?.requestCta ?? t.package?.cta ?? t.hero.cta}
         <ArrowRight className="size-3.5" aria-hidden />
       </Link>
     </article>

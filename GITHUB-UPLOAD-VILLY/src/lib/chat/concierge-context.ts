@@ -151,7 +151,7 @@ export function getBoatDetails(boat: Boat): string {
   const amenities =
     boat.amenities?.slice(0, 4).map((a) => a.label).join(", ") ??
     "sun tent, Bluetooth, icebox, anchor, life jackets";
-  return `${boat.name}: up to ${boat.pax} seats. ${boat.tagline ?? boat.description} Includes ${amenities}. Self-drive from ${MARINA_NAME} — please call ${MARINA_PHONE} for rates (${MARINA_HOURS}). Fuel is not included in the rental rate.`;
+  return `${boat.name}: up to ${boat.pax} seats. ${boat.tagline ?? boat.description} Includes ${amenities}. Self-drive from ${MARINA_NAME} — please call ${MARINA_PHONE} for request pricing (${MARINA_HOURS}). Fuel is not included.`;
 }
 
 export function recommendBoatForPax(boats: Boat[], pax: number): Boat[] {

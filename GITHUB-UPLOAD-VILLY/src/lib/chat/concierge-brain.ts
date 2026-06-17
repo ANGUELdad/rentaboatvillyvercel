@@ -32,7 +32,7 @@ export {
   type LocalizedFaqEntry,
 } from "@/lib/chat/concierge-context";
 
-const CONTACT_RATES = `Contact us for rates — call ${MARINA_PHONE} or visit our office at ${MARINA_NAME}.`;
+const CONTACT_RATES = `Request pricing — call ${MARINA_PHONE} or visit our office at ${MARINA_NAME}.`;
 
 export interface ConciergeReply {
   text: string;
@@ -105,7 +105,7 @@ const VARIANTS: Partial<Record<Locale, VariantPools>> = {
     safety: [
       "For everyone's safety, guests remain on board while the boat is in motion. Swimming is permitted only while anchored. A briefing and life jackets are provided at {marina}, daily {hours}.",
     ],
-    pricing: [CONTACT_RATES, `Rates are available on request. ${CONTACT_RATES}`],
+    pricing: [CONTACT_RATES, `Request pricing is available on request. ${CONTACT_RATES}`],
     book: [
       "To request availability, please share your date, hours, and group size. We will confirm by phone ({phone}) or email. No online payment is required.",
     ],
@@ -142,7 +142,7 @@ const VARIANTS: Partial<Record<Locale, VariantPools>> = {
 const PROMPT_POOLS: Record<Locale, string[]> = {
   en: [
     "Request availability",
-    "Contact for rates",
+    "Request pricing",
     "Which boat for my group?",
     "Our fleet",
     "Fuel policy",
@@ -229,7 +229,7 @@ const STRINGS: Record<Locale, BrainStrings> = {
     thanks: "You are most welcome. We wish you a pleasant day on the water.",
     suggestBook: "Request availability",
     suggestBeaches: "South-coast routes",
-    suggestPricing: "Contact for rates",
+    suggestPricing: "Request pricing",
     suggestFleet: "Our fleet",
     suggestMap: "How to find us",
     suggestExperiences: "What's included",
@@ -240,7 +240,7 @@ const STRINGS: Record<Locale, BrainStrings> = {
     linkGuide: "Island guide",
     linkMap: "View map",
     linkExperiences: "What's included",
-    linkReviews: "Google reviews",
+    linkReviews: "Confirmed reviews",
     fuel: "Fuel is not included in the rental rate and is charged separately. We explain typical usage during check-in.",
     weather: "If conditions are unsafe, we will reschedule at no cost or offer a full refund. Morning departures are usually the calmest in summer.",
     deposit: "No online payment is required — please send your details and we will confirm by phone. Payment is made at {marina}.",
@@ -261,7 +261,7 @@ const STRINGS: Record<Locale, BrainStrings> = {
     greeting: "Γεια σας. Είμαι η Villy, η βοηθός σας στη Rent A Boat Villy, {marina}. Μπορώ να σας ενημερώσω για στόλο, διαθεσιμότητα ή κράτηση.",
     fallback: "Μπορώ να σας βοηθήσω με κρατήσεις, στόλο και επικοινωνία. Παρακαλούμε δοκιμάστε μία από τις γρήγορες απαντήσεις ή περιγράψτε την ερώτησή σας.",
     book: "{count} βάρκες στη {marina}. Στείλτε αίτημα — ελέγχουμε διαθεσιμότητα και επικοινωνούμε.",
-    pricing: `Επικοινωνήστε για τιμές — ${MARINA_PHONE}, {marina}.`,
+    pricing: `Αίτημα προσφοράς — ${MARINA_PHONE}, {marina}.`,
     beaches: "Marble Beach, Paradise Cove, Αλυκή — GPS διαδρομές από {marina}.",
     fleet: "Στόλος ({count} βάρκες): {list}.",
     licence: "Χωρίς άδεια έως 30HP. Ενημέρωση ασφαλείας στη {marina}.",
@@ -269,7 +269,7 @@ const STRINGS: Record<Locale, BrainStrings> = {
     thanks: "Στη διάθεσή σας. Σας ευχόμαστε μια όμορφη ημέρα στη θάλασσα.",
     suggestBook: "Κράτηση",
     suggestBeaches: "Παραλίες",
-    suggestPricing: "Επικοινωνία για τιμές",
+    suggestPricing: "Αίτημα προσφοράς",
     suggestFleet: "Στόλος",
     suggestMap: "Χάρτης",
     suggestExperiences: "Εμπειρίες",
@@ -293,7 +293,7 @@ const STRINGS: Record<Locale, BrainStrings> = {
     luxury: "Περισσότερος χώρος: {boat}, έως {pax} άτομα.",
     experiences: "Τέντα, Bluetooth, ψυγείο, άγκυρα, σωσίβια σε κάθε βάρκα.",
     map: "Διαδραστικός χάρτης με κρυφά κολπάκια.",
-    reviews: "Κριτικές Google — Rent A Boat Villy Limenaria.",
+    reviews: "Επιβεβαιωμένες κριτικές — Rent A Boat Villy Limenaria.",
     matchmaker: "Πες μας πόσα άτομα — θα προτείνουμε βάρκα από {count} σκάφη.",
   },
   ro: {

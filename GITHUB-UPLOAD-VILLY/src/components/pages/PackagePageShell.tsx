@@ -37,7 +37,7 @@ export function PackagePageShell({ boats }: { boats: PublicBoat[] }) {
     <PageShell
       accent="gold"
       eyebrow={pkg.eyebrow ?? builder.eyebrow ?? "Boat rental"}
-      title={pkg.title ?? builder.title ?? "Estimate your rental"}
+      title={pkg.title ?? builder.title ?? "Request pricing"}
       subtitle={pkg.subtitle ?? builder.subtitle}
     >
       <Suspense fallback={<PackageLoading />}>

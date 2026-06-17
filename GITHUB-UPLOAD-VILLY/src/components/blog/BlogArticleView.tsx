@@ -79,11 +79,11 @@ export function BlogArticleView({
         <footer className="blog-article__footer blog-article__footer--full">
           <p className="blog-article__footer-text">
             {blog.articleCta ??
-              "Ready to explore Thassos by boat? Pick your boat and hours — contact us for rates at New Port of Limenaria."}
+              "Ready to explore Thassos by boat? Pick your boat and hours — request pricing at New Port of Limenaria."}
           </p>
           <div className="blog-article__footer-actions">
-            <Link href="/booking" className="btn-app-primary ui-btn-label blog-article__cta">
-              {t.nav.bookNow ?? "Request booking"}
+            <Link href="/package" className="btn-app-primary ui-btn-label blog-article__cta">
+              {t.packageBuilder?.requestCta ?? t.package?.cta ?? "Request pricing"}
               <ArrowRight className="size-4" aria-hidden />
             </Link>
             <Link href="/fleet" className="blog-article__cta-secondary tap-target">

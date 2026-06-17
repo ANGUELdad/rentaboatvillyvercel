@@ -1,14 +1,14 @@
 {
   "nav": {
     "fleet": "Fleet",
-    "package": "Booking",
+    "package": "Request pricing",
     "routes": "Map",
     "guide": "Guide",
     "experiences": "Experiences",
     "reviews": "Reviews",
-    "booking": "Book",
+    "booking": "Request pricing",
     "blog": "Blog",
-    "bookNow": "Book now",
+    "bookNow": "Request pricing",
     "faq": "FAQ"
   },
   "hero": {
@@ -25,7 +25,7 @@
     "marinaMapsAria": "Open New Port of Limenaria on Google Maps",
     "pillsAriaLabel": "Rental highlights",
     "subtitle": "Boats without a licence from New Port of Limenaria — brand new, fully equipped, ready for the Aegean",
-    "cta": "Book now",
+    "cta": "Request pricing",
     "bookingPreviewDateHint": "Pick a date",
     "bookingTitle": "Check availability",
     "scroll": "Scroll to explore",
@@ -34,7 +34,7 @@
     "statRating": "Guest reviews",
     "statRatingLabel": "guest reviews",
     "ratingLabel": "{count}+ guest reviews",
-    "ratingReviews": "{count}+ Google reviews"
+    "ratingReviews": "{count}+ confirmed reviews"
   },
   "home": {
     "trustBar": {
@@ -51,7 +51,7 @@
       "rough": "Choppy — check at briefing",
       "captainTitle": "Be your own captain",
       "captainBody": "No licence up to 30HP. Free safety briefing before every departure.",
-      "reviewsTitle": "Google reviews"
+      "reviewsTitle": "Confirmed reviews"
     },
     "quickNav": {
       "label": "Jump to",
@@ -163,7 +163,7 @@
     "title": "Boat Rental Thassos — Our Fleet",
     "subtitle": "8 real boats by capacity — 9-seater flagship, premium 8-seaters, and family 7-seaters from New Port of Limenaria.",
     "stat1": "8 boats",
-    "stat2": "Contact us for rates",
+    "stat2": "Request pricing",
     "stat3": "Brand new & equipped",
     "viewVessel": "Details",
     "empty": "Fleet coming soon.",
@@ -258,7 +258,7 @@
     "progress": "Question {current} of {total}",
     "resultEyebrow": "Your match",
     "resultTitle": "We found your boat",
-    "bookNow": "Book",
+    "bookNow": "Request pricing",
     "retry": "Try again",
     "back": "Back",
     "stepsTitle": "How it works",
@@ -305,10 +305,10 @@
   },
   "packageBuilder": {
     "eyebrow": "Boat rental · New Port of Limenaria",
-    "title": "Plan your rental",
+    "title": "Request pricing",
     "subtitle": "Pick a boat and how long you want it, safety briefing included. You drive, you choose where to go.",
-    "heroHeadline": "Plan your rental",
-    "heroSubline": "Hourly boat rental from New Port of Limenaria — pick your boat, set your hours, send a request. No tours, no skipper required up to 30HP.",
+    "heroHeadline": "Request pricing",
+    "heroSubline": "Hourly boat request from New Port of Limenaria — pick your boat, set your hours, send your request. No tours, no skipper required up to 30HP.",
     "journeyMarina": "Limenaria",
     "journeyExplore": "Explore",
     "journeyYourDay": "Your day",
@@ -333,13 +333,13 @@
     "duration": "Duration",
     "guests": "Guests",
     "hours": "hours",
-    "total": "Contact for rates",
-    "fromTotal": "Contact for rates",
+    "total": "Request pricing",
+    "fromTotal": "Request pricing",
     "fromPrefix": "From",
     "fuelNote": "safety gear included",
-    "cta": "Check availability",
-    "ctaBook": "Book",
-    "requestCta": "Book",
+    "cta": "Request pricing",
+    "ctaBook": "Request pricing",
+    "requestCta": "Request pricing",
     "disclaimer": "Subject to availability, we'll confirm before your trip",
     "continue": "Continue",
     "back": "Back",
@@ -349,22 +349,22 @@
     "validationRoute": "Optional, pick a day idea or skip",
     "maxGuestsNote": "Maximum {max} guests for this boat",
     "teaserBadge": "Live preview",
-    "teaserTitle": "Request a rental",
+    "teaserTitle": "Request pricing",
     "teaserDesc": "Pick a boat and hours — we'll confirm availability by phone.",
-    "teaserCta": "Check availability",
-    "promoTitle": "Plan your rental",
+    "teaserCta": "Request pricing",
+    "promoTitle": "Request pricing",
     "promoDesc": "Pick a date and boat — we'll confirm availability.",
-    "promoCta": "Book now",
+    "promoCta": "Request pricing",
     "promoDismiss": "Dismiss"
   },
   "package": {
     "eyebrow": "Boat rental",
-    "title": "Request a rental",
-    "subtitle": "Pick a boat and duration — we'll confirm availability and rates by phone or at the office.",
-    "loading": "Loading booking form…",
+    "title": "Request pricing",
+    "subtitle": "Pick a boat and duration — we'll confirm availability by phone or at the office.",
+    "loading": "Loading request form…",
     "stepConfigure": "Build rental",
     "stepConfigureHint": "Pick a boat, set hours and guests — then send your request.",
-    "stepSummaryHint": "Review your details, then send a booking request.",
+    "stepSummaryHint": "Review your details, then send your request.",
     "stepVessel": "Boat",
     "stepDurationGuests": "Hours & guests",
     "stepSummary": "Review",
@@ -379,13 +379,13 @@
     "guestSingular": "guest",
     "guestPlural": "guests",
     "hours": "hours",
-    "total": "Contact for rates",
-    "fromTotal": "Contact for rates",
+    "total": "Request pricing",
+    "fromTotal": "Request pricing",
     "fromPrefix": "From",
     "fuelNote": "safety gear included",
-    "cta": "Check availability",
-    "ctaBook": "Book",
-    "requestCta": "Book",
+    "cta": "Request pricing",
+    "ctaBook": "Request pricing",
+    "requestCta": "Request pricing",
     "disclaimer": "Subject to availability, we'll confirm before your trip",
     "continue": "Continue",
     "back": "Back",
@@ -428,7 +428,7 @@
     "specs": {
       "pax": "{count} pax",
       "hp": "{count} HP",
-      "perHourShort": "Contact for rates"
+    "perHourShort": "Request pricing"
     }
   },
   "boatDetail": {
@@ -442,7 +442,7 @@
     "showMore": "Show more",
     "showLess": "Show less",
     "specifications": "Specifications",
-    "startingAt": "Rates",
+    "startingAt": "Request pricing",
     "perHour": "hour",
     "swipeHint": "Swipe the gallery above or tap a thumbnail",
     "gallery": "Gallery",
@@ -458,8 +458,8 @@
     "lastUpdated": "Last updated"
   },
   "termsPage": {
-    "title": "Terms & Booking",
-    "intro": "For rates, availability, fuel policy, and all rental details, please call us or visit our office at New Port of Limenaria, Thassos.",
+    "title": "Terms & Request Pricing",
+    "intro": "For availability, fuel policy, and all rental details, please call us or visit our office at New Port of Limenaria, Thassos.",
     "phoneLabel": "Phone",
     "officeLabel": "Office",
     "office": "New Port of Limenaria, Thassos",
@@ -607,7 +607,7 @@
     ]
   },
   "reviews": {
-    "eyebrow": "Google reviews",
+    "eyebrow": "Confirmed reviews",
     "title": "What our guests say",
     "subtitle": "Honest feedback from guests who rented a boat at New Port of Limenaria.",
     "verified": "verified rentals",
@@ -617,7 +617,7 @@
     "allReviews": "All reviews",
     "comingSoon": "Reviews coming soon.",
     "googleLabel": "Google Reviews",
-    "googleRated": "Google reviews",
+    "googleRated": "Confirmed reviews",
     "viewOnGoogle": "View on Google",
     "prevReview": "Previous review",
     "nextReview": "Next review",
@@ -670,7 +670,7 @@
     "lossAversion": "Don't miss your perfect Thassos day on the water, rent a boat.",
     "popularSeason": "Popular in summer, book early for peak dates.",
     "package": {
-      "fromPrice": "Contact for rates",
+      "fromPrice": "Request pricing",
       "includedTitle": "What's included",
       "included": [
         "Licensed briefing",
@@ -799,8 +799,8 @@
       "allQuestions": "All questions",
       "mostAskedTitle": "Most asked questions",
       "viewAllFaq": "See all answers",
-      "ctaBook": "Book",
-      "ctaPrices": "Contact for rates",
+      "ctaBook": "Request pricing",
+      "ctaPrices": "Request pricing",
       "ctaFleet": "Browse fleet",
       "slides": [
         {
@@ -832,7 +832,7 @@
       },
       {
         "q": "How much does it cost to rent a boat in Thassos?",
-        "a": "It depends on boat and season. Call +30 698 131 8393 or visit us at New Port of Limenaria. Browse [our fleet](/fleet) or send a [booking request](/booking) — we'll confirm availability and rates by phone or message."
+        "a": "It depends on boat and season. Call +30 698 131 8393 or visit us at New Port of Limenaria. Browse [our fleet](/fleet) or send a [request](/booking) — we'll confirm availability by phone or message."
       },
       {
         "q": "Is fuel included in the boat rental?",
@@ -962,7 +962,7 @@
     "backToMenu": "Main menu",
     "suggestedQuestions": [
       "Request availability",
-      "Contact for rates",
+      "Request pricing",
       "Which boat for my group?",
       "Our fleet",
       "Fuel policy",
@@ -979,11 +979,11 @@
       "How to get to New Port of Limenaria",
       "Fuel policy",
       "What's included on boats",
-      "Contact for rates",
+      "Request pricing",
       "Call us"
     ],
     "quickActionsAria": "Quick replies",
-    "linkBook": "Open booking",
+    "linkBook": "Open request form",
     "linkFleet": "Browse fleet",
     "linkGuide": "Island guide",
     "linkMap": "Open map",
@@ -1028,7 +1028,7 @@
         { "id": "amenities", "label": "What's included on boats", "next": "amenities" },
         { "id": "fuel", "label": "Fuel policy", "next": "fuel" },
         { "id": "directions", "label": "How to get to New Port of Limenaria", "next": "directions" },
-        { "id": "rates", "label": "Contact for rates", "next": "rates" },
+        { "id": "rates", "label": "Request pricing", "next": "rates" },
         { "id": "human", "label": "Talk to a real person", "next": "human" },
         { "id": "contact", "label": "Call us", "next": "contact" }
       ]
@@ -1065,7 +1065,7 @@
     "fuel": {
       "message": "Fuel is not included in the rental rate and is charged separately according to your trip. We explain typical usage during check-in.",
       "options": [
-        { "id": "rates-fuel", "label": "Contact for rates", "next": "rates" },
+        { "id": "rates-fuel", "label": "Request pricing", "next": "rates" },
         { "id": "back", "label": "Main menu", "next": "start" }
       ]
     },
@@ -1077,7 +1077,7 @@
       ]
     },
     "rates": {
-      "message": "Contact us for rates — call +30 698 131 8393 or visit our office at New Port of Limenaria.",
+      "message": "Request pricing — call +30 698 131 8393 or visit our office at New Port of Limenaria.",
       "options": [
         { "id": "contact-rates", "label": "Call us", "next": "contact" },
         { "id": "book-rates", "label": "Request availability", "next": "booking" },
@@ -1130,7 +1130,7 @@
       ]
     },
     "pricing": {
-      "message": "Contact us for rates — call +30 698 131 8393 or visit our office at New Port of Limenaria.",
+      "message": "Request pricing — call +30 698 131 8393 or visit our office at New Port of Limenaria.",
       "options": [
         {
           "id": "contact-pricing",
@@ -1228,7 +1228,7 @@
     "locale": "en_GB",
     "boat": {
       "title": "Rent a Boat Thassos, {name}",
-      "description": "Rent a boat in Thassos: {name} at New Port of Limenaria. Up to {pax} passengers. {desc} Safety briefing included. Contact us for rates.",
+      "description": "Rent a boat in Thassos: {name} at New Port of Limenaria. Up to {pax} passengers. {desc} Safety briefing included. Request pricing.",
       "keywords": "rent a boat Thassos, {name} rental, New Port of Limenaria boat rental, private boat tour Thassos, small boat rental Greece Aegean"
     },
     "blogArticle": {
@@ -1457,7 +1457,7 @@
         "keywords": "rent a boat Thassos reviews, Thassos boat rental reviews, Limenaria boat rental ratings, boat hire Thassos Greece"
       },
       "faq": {
-        "title": "Rent a Boat Thassos FAQ | Licence, Fuel & Pricing",
+      "title": "Rent a Boat Thassos FAQ | Licence, Fuel & Request Pricing",
         "description": "Everything you need before you rent a boat in Thassos, licence rules, safety briefing included, weather policy & New Port of Limenaria pickup times.",
         "keywords": "rent a boat Thassos FAQ, Thassos boat rental licence, safety briefing included boat hire Thassos, New Port of Limenaria pickup"
       },
@@ -1483,7 +1483,7 @@
       },
       "terms": {
         "title": "Terms & Booking | Rent A Boat Villy",
-        "description": "Boat rental terms at Rent A Boat Villy — call or visit New Port of Limenaria for rates, availability, and booking details.",
+        "description": "Boat rental terms at Rent A Boat Villy — call or visit New Port of Limenaria for availability and request details.",
         "keywords": "Thassos boat rental terms, boat rental conditions New Port of Limenaria"
       },
       "cookies": {

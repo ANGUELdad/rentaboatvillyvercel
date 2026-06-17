@@ -36,7 +36,7 @@ const FALLBACK = {
   },
   pickerAria: "Choose a boat",
   exploreFleet: "Explore full fleet",
-  bookSelected: "Book this boat",
+  bookSelected: "Request pricing",
   viewDetails: "View details",
   seatsShort: "{count} seats",
   requestOnly: "Hourly rental · request for pricing",
@@ -89,7 +89,7 @@ export function FleetShowcase({
         : (fleetCopy.subtitle ?? FALLBACK.subtitle),
     pickerLead: FALLBACK.pickerLead,
     exploreFleet: homeCopy.cta ?? FALLBACK.exploreFleet,
-    bookSelected: t.hero?.cta ?? FALLBACK.bookSelected,
+    bookSelected: t.packageBuilder?.requestCta ?? t.package?.cta ?? FALLBACK.bookSelected,
   };
 
   const maxPax = useMemo(() => Math.max(...boats.map((b) => b.pax), 0), [boats]);
@@ -248,10 +248,10 @@ export function FleetShowcase({
                   </Link>
                 ) : null}
                 <Link
-                  href={`/booking?boat=${selected.id}`}
-                  className="fleet-showcase__cta-primary btn-app-primary ui-btn-label tap-target"
-                >
-                  {copy.bookSelected}
+                href={`/package?boat=${selected.id}`}
+                className="fleet-showcase__cta-primary btn-app-primary ui-btn-label tap-target"
+              >
+                {copy.bookSelected}
                   <ArrowRight className="size-4" aria-hidden />
                 </Link>
               </div>

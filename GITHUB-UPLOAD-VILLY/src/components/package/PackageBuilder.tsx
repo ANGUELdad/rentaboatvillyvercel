@@ -64,8 +64,8 @@ function todayIso() {
   return new Date().toISOString().slice(0, 10);
 }
 
-const RATES_CONTACT =
-  "Contact us for rates — call +30 698 131 8393 or visit our office at New Port of Limenaria.";
+const REQUEST_PRICING_CONTACT =
+  "Request pricing — call +30 698 131 8393 or visit our office at New Port of Limenaria.";
 
 interface PackageBuilderProps {
   boats: PublicBoat[];
@@ -80,13 +80,13 @@ export function PackageBuilder({ boats, className }: PackageBuilderProps) {
   const reducedMotion = useReducedMotion();
 
   const stepLabels = [
-    pb.stepConfigure ?? pb.mobileSummary ?? "Your rental",
+    pb.stepConfigure ?? pb.mobileSummary ?? "Your request",
     pb.stepSummary ?? "Review",
   ];
   const stepHints = [
     pb.stepConfigureHint ??
       `${pb.stepVessel ?? "Boat"} · ${pb.stepDurationGuests ?? "Hours & guests"}`,
-    pb.stepSummaryHint ?? pb.storyReview ?? "Check your estimate",
+    pb.stepSummaryHint ?? pb.storyReview ?? "Check your request",
   ];
 
   const [step, setStep] = useState<Step>(1);
@@ -318,7 +318,7 @@ export function PackageBuilder({ boats, className }: PackageBuilderProps) {
                     onClick={() => playFeedback("success", "success")}
                     className="btn-app-primary ui-btn-label hero-cta-shimmer inline-flex min-h-[48px] items-center gap-2 rounded-xl px-6 text-sm font-semibold"
                   >
-                    {pb.requestCta ?? pb.ctaBook ?? "Send request"}
+                    {pb.requestCta ?? pb.ctaBook ?? "Request pricing"}
                     <ChevronRight className="size-4" />
                   </Link>
                 )}
@@ -349,12 +349,12 @@ export function PackageBuilder({ boats, className }: PackageBuilderProps) {
           )}
           <div className="rental-mobile-bar__price min-w-0">
             <p className="rental-mobile-bar__label">
-              {boat?.name ?? (pb.total ?? "Contact for rates")}
+              {boat?.name ?? (pb.total ?? "Request pricing")}
             </p>
             <p className="rental-mobile-bar__value">
               {boat ? (
                 <>
-                  <span className="text-sm">{RATES_CONTACT}</span>
+                  <span className="text-sm">{REQUEST_PRICING_CONTACT}</span>
                   <span className="rental-mobile-bar__meta">
                     · {hours} {pb.hours ?? "h"} · {guests} {guestLabel}
                   </span>
@@ -380,7 +380,7 @@ export function PackageBuilder({ boats, className }: PackageBuilderProps) {
               onClick={() => playFeedback("success", "success")}
               className="rental-mobile-bar__cta btn-app-primary ui-btn-label hero-cta-shimmer tap-target"
             >
-              {pb.requestCta ?? "Send request"}
+              {pb.requestCta ?? "Request pricing"}
               <ArrowRight className="size-4 shrink-0" />
             </Link>
           )}
@@ -458,8 +458,8 @@ function RentalSummaryAside({
       </dl>
 
       <div className="rental-summary__total">
-        <p>{pb.total ?? "Contact for rates"}</p>
-        <p className="rental-summary__amount text-sm">{RATES_CONTACT}</p>
+        <p>{pb.total ?? "Request pricing"}</p>
+        <p className="rental-summary__amount text-sm">{REQUEST_PRICING_CONTACT}</p>
         <p className="rental-summary__note">{pb.fuelNote}</p>
       </div>
 
@@ -469,7 +469,7 @@ function RentalSummaryAside({
           onClick={() => playFeedback("success", "success")}
           className="btn-app-primary ui-btn-label hidden min-h-[48px] w-full items-center justify-center gap-2 rounded-xl text-sm font-semibold lg:inline-flex"
         >
-          {pb.requestCta ?? "Send request"}
+          {pb.requestCta ?? "Request pricing"}
           <ArrowRight className="size-4" />
         </Link>
       )}
@@ -667,8 +667,8 @@ function ConfigureStep({
 
         {boat && (
           <div className="rental-configure__live">
-            <p className="rental-configure__live-label">{pb.total ?? "Contact for rates"}</p>
-            <p className="rental-configure__live-value text-sm">{RATES_CONTACT}</p>
+            <p className="rental-configure__live-label">{pb.total ?? "Request pricing"}</p>
+            <p className="rental-configure__live-value text-sm">{REQUEST_PRICING_CONTACT}</p>
             <p className="rental-configure__live-note">{pb.fuelNote}</p>
           </div>
         )}
@@ -802,7 +802,7 @@ function SummaryPanel({
 }) {
   return (
     <div className="min-w-0 space-y-5">
-      <StepHeading title={pb.storyReview ?? "Your rental estimate"} />
+      <StepHeading title={pb.storyReview ?? "Your request"} />
 
       <div className="rental-estimate-card glass-card glass-2026-card ui-2026-surface">
         {boat && (
@@ -815,7 +815,7 @@ function SummaryPanel({
               className="object-cover"
             />
             <div className="rental-estimate-card__hero-copy">
-              <p>{pb.boardingPassLabel ?? "Rental estimate"}</p>
+              <p>{pb.boardingPassLabel ?? "Request pricing"}</p>
               <h3>{boat.name}</h3>
             </div>
           </div>
@@ -834,8 +834,8 @@ function SummaryPanel({
             </div>
           )}
           <div className="rental-estimate-card__total">
-            <dt>{pb.total ?? "Contact for rates"}</dt>
-            <dd className="text-sm">{RATES_CONTACT}</dd>
+            <dt>{pb.total ?? "Request pricing"}</dt>
+            <dd className="text-sm">{REQUEST_PRICING_CONTACT}</dd>
             <p>{pb.fuelNote}</p>
           </div>
         </dl>

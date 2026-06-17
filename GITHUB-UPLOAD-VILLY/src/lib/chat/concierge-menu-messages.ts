@@ -91,8 +91,8 @@ export const MENU_MESSAGE_VARIANTS: Record<Locale, MenuNodeMessages> = {
       "Sun tent, Bluetooth, icebox, anchor, and life jackets are included on every boat, along with a full safety briefing at New Port of Limenaria.",
     ],
     rates: [
-      "Rates are provided on request. Please call +30 698 131 8393 or visit our office at New Port of Limenaria.",
-      "Pricing depends on boat and season. For July and August, we recommend contacting us early to secure availability.",
+      "Request pricing is available on request. Please call +30 698 131 8393 or visit our office at New Port of Limenaria.",
+      "Request pricing depends on boat and season. For July and August, we recommend contacting us early to secure availability.",
       "We would be pleased to provide a quote by phone or in person at New Port of Limenaria.",
     ],
     contact: [
@@ -140,8 +140,8 @@ export const MENU_MESSAGE_VARIANTS: Record<Locale, MenuNodeMessages> = {
       "Σε όλες τις βάρκες: τέντα, Bluetooth, ψυγείο, άγκυρα, σωσίβια. Φέρτε μαγιό και αντηλιακό.",
     ],
     rates: [
-      "Δεν δημοσιεύουμε τιμές online. Καλέστε +30 698 131 8393 ή επισκεφθείτε το γραφείο στη Λιμενάρια.",
-      "Οι τιμές εξαρτώνται από βάρκα και season. Καλέστε ή περάστε από τη μαρίνα.",
+      "Δεν δημοσιεύουμε προσφορές online. Καλέστε +30 698 131 8393 ή επισκεφθείτε το γραφείο στη Λιμενάρια.",
+      "Η προσφορά εξαρτάται από βάρκα και season. Καλέστε ή περάστε από τη μαρίνα.",
     ],
     contact: [
       "Κλήση +30 698 131 8393 ή +40 770 965 041 ή vilitrifonova245@gmail.com. Νέο Λιμάνι Λιμεναρίων. 08:00–20:00.",

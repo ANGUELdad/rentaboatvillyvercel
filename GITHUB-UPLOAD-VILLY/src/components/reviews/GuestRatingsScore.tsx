@@ -31,16 +31,26 @@ export function GuestRatingsScore({
       viewport={homeScrollViewport}
       transition={appleSpringSoft}
       className={`guest-ratings-score ${className}`.trim()}
-      aria-label={r.googleRated ?? "Google reviews"}
+      aria-label={`${GOOGLE_REVIEWS.rating.toFixed(1)} out of 5 — ${reviewCount}+ ${
+        r.googleRated ?? "confirmed reviews"
+      }`}
     >
       <div className="guest-ratings-score__body">
+        <p className="guest-ratings-score__score">
+          <span className="guest-ratings-score__score-value font-semibold text-ds-text">
+            {GOOGLE_REVIEWS.rating.toFixed(1)}
+          </span>
+          <span className="guest-ratings-score__stars" aria-hidden>
+            ★★★★★
+          </span>
+        </p>
         <p className="guest-ratings-score__count">
           <CountUp
             value={reviewCount}
             suffix="+"
             className="font-semibold text-ds-text"
           />{" "}
-          {r.googleRated ?? "Google reviews"}
+          {r.googleRated ?? "Confirmed reviews"}
         </p>
         <p className="guest-ratings-score__trust">
           {r.trustLine ?? r.verifiedGuests ?? "Verified guest boat rentals"}

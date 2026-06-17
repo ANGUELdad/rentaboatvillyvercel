@@ -5,6 +5,7 @@ import Link from "next/link";
 import { CountUp } from "@/components/ui/CountUp";
 import { playFeedback } from "@/lib/feedback";
 import { appleSpringSoft } from "@/lib/motion";
+import { GOOGLE_REVIEWS } from "@/lib/site";
 import { useI18n } from "@/providers/LanguageProvider";
 
 interface HeroRatingPanelProps {
@@ -18,9 +19,11 @@ export function HeroRatingPanel({
 }: HeroRatingPanelProps) {
   const { t } = useI18n();
   const reduceMotion = useReducedMotion();
-  const label =
-    t.hero.ratingLabel?.replace("{count}", String(reviewCount)) ??
-    `${reviewCount}+ guest reviews`;
+  const rating = GOOGLE_REVIEWS.rating.toFixed(1);
+  const reviewsWord = t.reviews?.googleRated ?? "Confirmed reviews";
+  // Visible rating value backs the AggregateRating JSON-LD (Google requires the
+  // marked-up rating to be shown to users).
+  const label = `${rating} out of 5 — ${reviewCount}+ ${reviewsWord}`;
 
   const Wrap = animate && !reduceMotion ? motion.div : "div";
   const motionProps =
@@ -44,9 +47,12 @@ export function HeroRatingPanel({
         aria-label={label}
       >
         <span className="hero-rating-panel__meta min-w-0 truncate">
+          <span className="hero-rating-panel__score font-semibold" aria-hidden>
+            ★ {rating}
+          </span>{" "}
           <CountUp value={reviewCount} startOnView={false} duration={0.7} />
-          {t.hero.ratingReviews?.replace("{count}", "") ??
-            "+ Google reviews"}
+          {" "}
+          {reviewsWord}
         </span>
       </Link>
     </Wrap>

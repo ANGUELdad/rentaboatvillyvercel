@@ -93,7 +93,7 @@ export function localBusinessSchema(testimonials: Testimonial[] = []) {
       "Villy Boat Rentals",
     ],
     description:
-      "Rent a boat in Thassos from New Port of Limenaria. Speedboats and day cruisers with safety gear & GPS routes. No licence up to 30HP. Contact us for rates.",
+      "Rent a boat in Thassos from New Port of Limenaria. Speedboats and day cruisers with safety gear & GPS routes. No licence up to 30HP. Request pricing.",
     slogan: "Rent a boat in Thassos — New Port of Limenaria",
     url: SITE_URL,
     telephone: [SITE_CONTACT.phoneSchema, SITE_CONTACT.phone2Schema],
@@ -301,7 +301,7 @@ export function rentBoatThassosServiceSchema(offerCount = 5) {
     name: "Rent a Boat in Thassos — Rent A Boat Villy",
     alternateName: ["Boat Rental Thassos", "Thassos Boat Hire"],
     description:
-      "Rent a boat in Thassos from New Port of Limenaria. Hourly speedboat and day-cruiser boat rentals. No licence up to 30HP. Contact us for rates.",
+      "Rent a boat in Thassos from New Port of Limenaria. Hourly speedboat and day-cruiser boat rentals. No licence up to 30HP. Request pricing.",
     provider: businessRef(),
     areaServed: { "@type": "Place", name: "Thassos Island, Greece" },
     serviceType: "Boat Rental",
