@@ -1,4 +1,3 @@
-<!-- deploy check -->
 # Rent A Boat Villy
 
 Luxury boat rental website for Thassos, Greece — SEO-optimized for **“rent a boat Thassos”**, multilingual (6 languages), AI concierge chat, and an admin panel for bookings, blog, GDPR, and content.
