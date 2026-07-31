@@ -2,13 +2,13 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useI18n } from "@/providers/LanguageProvider";
+import { LOCALE_SNAPSHOT_CACHE_VERSION } from "@/lib/i18n/types";
 import type { TextBudgetSlot } from "@/lib/i18n/text-budgets";
 
 const sessionCache = new Map<string, Record<string, string>>();
 
 function cacheKey(
   locale: string,
-  sourceHash: string,
   slot: string,
   fields: Record<string, string>,
 ): string {
@@ -16,14 +16,14 @@ function cacheKey(
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([k, v]) => `${k}:${v}`)
     .join("|");
-  return `tbc-t-${locale}-${slot}-${sourceHash}-${fieldKey}`;
+  return `tbc-t-${locale}-${slot}-v${LOCALE_SNAPSHOT_CACHE_VERSION}-${fieldKey}`;
 }
 
 export function useTranslatedContent<T extends Record<string, string>>(
   fields: T,
   slot: TextBudgetSlot,
 ): T {
-  const { locale, sourceHash } = useI18n();
+  const { locale } = useI18n();
   const stableKey = useMemo(
     () =>
       Object.entries(fields)
@@ -40,7 +40,7 @@ export function useTranslatedContent<T extends Record<string, string>>(
       return;
     }
 
-    const key = cacheKey(locale, sourceHash, slot, fields);
+    const key = cacheKey(locale, slot, fields);
     const mem = sessionCache.get(key);
     if (mem) {
       setTranslated(mem as T);
@@ -84,7 +84,7 @@ export function useTranslatedContent<T extends Record<string, string>>(
     return () => {
       cancelled = true;
     };
-  }, [locale, sourceHash, slot, stableKey]);
+  }, [locale, slot, stableKey, fields]);
 
   return translated;
 }

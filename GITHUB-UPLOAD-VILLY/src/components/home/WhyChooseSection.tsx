@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion, useScroll, useTransform, type Variants } from "framer-motion";
 import {
   Anchor,
@@ -71,6 +72,30 @@ const FALLBACK = {
     },
   },
 } as const;
+
+const SHOWCASE = [
+  {
+    src: "/images/boats/kima.jpg",
+    alt: "Kima boat on calm turquoise water near Thassos",
+    label: "Kima",
+    note: "9 seats",
+    layout: "hero",
+  },
+  {
+    src: "/images/boats/nikos-1.jpg",
+    alt: "Nikos speedboat ready for a day trip from Limenaria",
+    label: "Nikos",
+    note: "8 seats",
+    layout: "stack",
+  },
+  {
+    src: "/images/boats/limenaria-palataki.jpg",
+    alt: "Limenaria coast and boat-friendly waters in Thassos",
+    label: "Limenaria",
+    note: "New Port",
+    layout: "stack",
+  },
+] as const;
 
 const accentLineVariants: Variants = {
   hidden: { scaleX: 0, opacity: 0 },
@@ -207,38 +232,89 @@ export function WhyChooseSection() {
       {enableAmbientScroll ? <WhyChooseAmbientGlow panelRef={panelRef} /> : null}
 
       <div className="why-choose__panel">
-        {reduceMotion ? (
-          <header className="why-choose__head">
-            <h2 id="why-choose-title" className="why-choose__title text-balance">
-              {title}
-            </h2>
-            <p className="why-choose__subtitle text-pretty">{subtitle}</p>
-          </header>
-        ) : (
-          <motion.header
-            className="why-choose__head"
-            initial="hidden"
-            whileInView="visible"
-            viewport={homeScrollViewport}
-            variants={staggerContainer}
-          >
-            <motion.span
-              className="why-choose__accent-line"
-              variants={accentLineVariants}
-              aria-hidden
-            />
-            <motion.h2
-              id="why-choose-title"
-              className="why-choose__title text-balance"
-              variants={headItemVariants}
+        <div className="why-choose__lead">
+          <div className="why-choose__showcase" aria-hidden>
+            <div className="why-choose__showcase-rail">
+              {SHOWCASE.map((item, index) => (
+                <motion.figure
+                  key={item.src}
+                  className={`why-choose__showcase-cell why-choose__showcase-cell--${item.layout}`}
+                  initial={reduceMotion ? false : { opacity: 0, y: 16, scale: 0.98 }}
+                  whileInView={reduceMotion ? undefined : { opacity: 1, y: 0, scale: 1 }}
+                  viewport={homeScrollViewport}
+                  transition={{ ...appleSpringSoft, delay: index * 0.05 }}
+                >
+                  <div className="why-choose__showcase-media">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      sizes={item.layout === "hero" ? "(max-width: 767px) 100vw, 52vw" : "(max-width: 767px) 50vw, 18vw"}
+                      className="why-choose__showcase-image"
+                    />
+                    <div className="why-choose__showcase-scrim" />
+                  </div>
+                  <figcaption className="why-choose__showcase-caption">
+                    <span className="why-choose__showcase-name">{item.label}</span>
+                    <span className="why-choose__showcase-note">{item.note}</span>
+                  </figcaption>
+                </motion.figure>
+              ))}
+            </div>
+            <div className="why-choose__showcase-ribbon">
+              <Sparkles className="size-4" aria-hidden />
+              <span>Brand-new boats, real equipment, local guidance</span>
+            </div>
+          </div>
+
+          {reduceMotion ? (
+            <header className="why-choose__head">
+              <h2 id="why-choose-title" className="why-choose__title text-balance">
+                {title}
+              </h2>
+              <p className="why-choose__subtitle text-pretty">{subtitle}</p>
+            </header>
+          ) : (
+            <motion.header
+              className="why-choose__head"
+              initial="hidden"
+              whileInView="visible"
+              viewport={homeScrollViewport}
+              variants={staggerContainer}
             >
-              {title}
-            </motion.h2>
-            <motion.p className="why-choose__subtitle text-pretty" variants={headItemVariants}>
-              {subtitle}
-            </motion.p>
-          </motion.header>
-        )}
+              <motion.span
+                className="why-choose__accent-line"
+                variants={accentLineVariants}
+                aria-hidden
+              />
+              <motion.h2
+                id="why-choose-title"
+                className="why-choose__title text-balance"
+                variants={headItemVariants}
+              >
+                {title}
+              </motion.h2>
+              <motion.p className="why-choose__subtitle text-pretty" variants={headItemVariants}>
+                {subtitle}
+              </motion.p>
+            </motion.header>
+          )}
+
+          <div className="why-choose__stats" aria-label="Key boat rental highlights">
+            <div className="why-choose__stat">
+              <span className="why-choose__stat-kicker">Fleet</span>
+              <strong className="why-choose__stat-value">8 boats</strong>
+            </div>
+            <div className="why-choose__stat">
+              <span className="why-choose__stat-kicker">Licence</span>
+              <strong className="why-choose__stat-value">No licence up to 30HP</strong>
+            </div>
+            <div className="why-choose__stat">
+              <span className="why-choose__stat-kicker">Base</span>
+              <strong className="why-choose__stat-value">New Port of Limenaria</strong>
+            </div>
+          </div>
+        </div>
 
         <div className="why-choose__grid">
           {PILLARS.map((pillar, index) => {

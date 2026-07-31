@@ -46,23 +46,17 @@ function clearPageLocks() {
   body.style.width = "";
 }
 
-function reinitializeHome() {
+function scrollHomeToTop() {
   clearPageLocks();
   const target = homeHref();
-  const current = `${window.location.pathname}${window.location.search}`;
 
-  if (current === target) {
-    if (window.location.hash) {
-      window.history.replaceState(window.history.state, "", target);
-    }
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-    window.location.reload();
-    return;
+  if (window.location.hash || `${window.location.pathname}${window.location.search}` !== target) {
+    window.history.replaceState(window.history.state, "", target);
   }
 
-  window.location.assign(target);
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
 }
 
 export function Logo({
@@ -71,8 +65,13 @@ export function Logo({
   size = "md",
 }: LogoProps) {
   const handleLogoClick = useCallback((event: MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault();
-    reinitializeHome();
+    const target = homeHref();
+    const current = `${window.location.pathname}${window.location.search}`;
+
+    if (current === target || current === `${target}#` || window.location.hash) {
+      event.preventDefault();
+      scrollHomeToTop();
+    }
   }, []);
 
   const image = (

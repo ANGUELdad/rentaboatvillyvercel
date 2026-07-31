@@ -177,6 +177,7 @@ export function SeoHomeContent() {
 }
 
 const LINK_ORDER = ["/booking", "/fleet", "/map", "/guide", "/faq", "/reviews"] as const;
+const FEATURED_LINKS = ["/booking", "/fleet", "/guide"] as const;
 
 function sortExploreLinks(links: { href: string; label: string }[]) {
   const order = new Map(LINK_ORDER.map((href, index) => [href, index]));
@@ -187,12 +188,19 @@ function sortExploreLinks(links: { href: string; label: string }[]) {
   });
 }
 
+function pickFeaturedLinks(links: { href: string; label: string }[]) {
+  const featured = new Map(FEATURED_LINKS.map((href) => [href, true]));
+  return links.filter((link) => featured.has(link.href as (typeof FEATURED_LINKS)[number]));
+}
+
 /** Compact explore links — pinned to the bottom of the home page. */
 export function SeoHomeLinksNav() {
   const { t } = useI18n();
   const content = t.seo.homeContent ?? getEnglishDictionary().seo.homeContent;
   const reduceMotion = useReducedMotion();
   const links = sortExploreLinks(content.links ?? []);
+  const featuredLinks = pickFeaturedLinks(links);
+  const remainingLinks = links.filter((link) => !FEATURED_LINKS.includes(link.href as (typeof FEATURED_LINKS)[number]));
   const eyebrow = content.linksEyebrow ?? content.eyebrow ?? "Explore";
 
   const Header = reduceMotion ? "div" : motion.div;
@@ -222,8 +230,35 @@ export function SeoHomeLinksNav() {
           ) : null}
         </Header>
 
-        <ul className="seo-home__links seo-home__links--unified">
-          {links.map((link) => {
+        <div className="seo-home__featured" aria-label={content.linksAria}>
+          {featuredLinks.map((link, index) => {
+            const icon = seoLinkIcons[link.href] ?? "explore";
+            const isBooking = link.href === "/booking";
+            const featuredClass = cn(
+              "seo-home__featured-card",
+              isBooking && "seo-home__featured-card--primary",
+            );
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={featuredClass}
+                aria-label={link.label}
+                data-featured={index === 0 ? "primary" : "secondary"}
+              >
+                <span className="seo-home__featured-icon" aria-hidden>
+                  <SiteIcon name={icon} size={17} />
+                </span>
+                <span className="seo-home__featured-label">{link.label}</span>
+                <ArrowRight className="seo-home__featured-arrow size-4 shrink-0" aria-hidden />
+              </Link>
+            );
+          })}
+        </div>
+
+        <ul className="seo-home__links seo-home__links--unified" aria-label={content.linksAria}>
+          {remainingLinks.map((link) => {
             const icon = seoLinkIcons[link.href] ?? "explore";
             const isBooking = link.href === "/booking";
 
@@ -240,10 +275,7 @@ export function SeoHomeLinksNav() {
                     <SiteIcon name={icon} size={15} />
                   </span>
                   <span className="seo-home__link-label">{link.label}</span>
-                  <ArrowRight
-                    className="seo-home__link-arrow size-3.5 shrink-0"
-                    aria-hidden
-                  />
+                  <ArrowRight className="seo-home__link-arrow size-3.5 shrink-0" aria-hidden />
                 </Link>
               </li>
             );

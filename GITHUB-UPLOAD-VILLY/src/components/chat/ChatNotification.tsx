@@ -102,21 +102,17 @@ export function ChatNotification({
         className,
       )}
     >
-      <div
-        role="button"
-        tabIndex={0}
-        onClick={handleOpen}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            handleOpen();
-          }
-        }}
-        className="ai-chat-notification ai-notification-ios ai-notification-ios--quiet relative w-full max-w-full min-w-0 cursor-pointer overflow-hidden rounded-xl text-left"
-      >
+      <div className="ai-chat-notification ai-notification-ios ai-notification-ios--quiet relative w-full max-w-full min-w-0 overflow-hidden rounded-xl text-left">
+        <button
+          type="button"
+          data-sfx-skip
+          onClick={handleOpen}
+          className="absolute inset-0 z-0 cursor-pointer rounded-xl border-0 bg-transparent p-0"
+          aria-label={`${title}. ${preview}`}
+        />
         <div className="flex min-w-0 items-center gap-2.5 p-3">
           <VillyAvatar size="sm" showOnline className="shrink-0" />
-          <div className="min-w-0 flex-1">
+          <div className="relative z-[1] min-w-0 flex-1">
             <div className="flex min-w-0 items-baseline justify-between gap-2">
               <p className="min-w-0 truncate text-[13px] font-semibold text-ds-text">
                 {title}
@@ -138,7 +134,7 @@ export function ChatNotification({
               playFeedback("dismiss", "light");
               handleDismiss();
             }}
-            className="tap-target flex size-8 shrink-0 items-center justify-center rounded-lg text-ds-text-muted hover:bg-ds-surface/60 hover:text-ds-text"
+            className="tap-target relative z-[1] flex size-8 shrink-0 items-center justify-center rounded-lg text-ds-text-muted hover:bg-ds-surface/60 hover:text-ds-text"
             aria-label={dismissLabel}
           >
             <X className="size-3.5" />

@@ -6,13 +6,13 @@ const isProd = process.env.NODE_ENV === "production";
 const csp = [
   "default-src 'self'",
   isDev
-    ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'"
-    : "script-src 'self' 'unsafe-inline'",
+    ? "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com"
+    : "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob: https://images.unsplash.com https://*.basemaps.cartocdn.com https://*.tile.openstreetmap.org https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org",
+  "img-src 'self' data: blob: https://images.unsplash.com https://*.basemaps.cartocdn.com https://*.tile.openstreetmap.org https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org https://www.google.com https://www.googletagmanager.com",
   "media-src 'self' blob: https://videos.pexels.com",
   "font-src 'self'",
-  "connect-src 'self' https://*.basemaps.cartocdn.com https://*.tile.openstreetmap.org https://videos.pexels.com",
+  "connect-src 'self' https://*.basemaps.cartocdn.com https://*.tile.openstreetmap.org https://videos.pexels.com https://www.googletagmanager.com https://www.google.com https://www.google-analytics.com https://*.analytics.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net",
   "frame-src 'self'",
   "frame-ancestors 'self'",
   "object-src 'none'",

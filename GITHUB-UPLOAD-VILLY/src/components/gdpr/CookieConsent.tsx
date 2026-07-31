@@ -10,7 +10,7 @@ import { Z } from "@/lib/z-index";
 import { useI18n } from "@/providers/LanguageProvider";
 import { CookieSettings } from "./CookieSettings";
 
-const COOKIE_PROMPT_DELAY_MS = 2_400;
+const COOKIE_PROMPT_DELAY_MS = 5_200;
 
 export function CookieConsent() {
   const { t } = useI18n();
@@ -27,8 +27,32 @@ export function CookieConsent() {
       return;
     }
 
-    const timer = window.setTimeout(() => setVisible(true), COOKIE_PROMPT_DELAY_MS);
-    return () => window.clearTimeout(timer);
+    let cancelled = false;
+    let timer = 0;
+
+    const showPrompt = () => {
+      if (!cancelled) setVisible(true);
+    };
+
+    const schedulePrompt = () => {
+      const requestIdle =
+        "requestIdleCallback" in window
+          ? window.requestIdleCallback.bind(window)
+          : null;
+
+      if (!requestIdle) {
+        showPrompt();
+        return;
+      }
+
+      requestIdle(() => showPrompt(), { timeout: 1200 });
+    };
+
+    timer = window.setTimeout(schedulePrompt, COOKIE_PROMPT_DELAY_MS);
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
   }, []);
 
   useEffect(() => {

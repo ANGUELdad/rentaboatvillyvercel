@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { getSourceHash, getTranslatedDictionary } from "@/lib/i18n/server";
+import { getSourceHash } from "@/lib/i18n/server";
+import { getLocaleDictionary } from "@/lib/i18n/static-locales";
 import { stripAdminDictionaryKeys } from "@/lib/i18n/public-dictionary";
 import { LOCALES, type Locale } from "@/lib/i18n/types";
 
@@ -19,9 +20,7 @@ export async function GET(
   }
 
   try {
-    const dictionary = stripAdminDictionaryKeys(
-      await getTranslatedDictionary(locale),
-    );
+    const dictionary = stripAdminDictionaryKeys(getLocaleDictionary(locale));
     return NextResponse.json({
       locale,
       sourceHash: getSourceHash(),

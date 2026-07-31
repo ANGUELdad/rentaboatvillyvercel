@@ -213,6 +213,7 @@ export function BookingSection({
     "idle",
   );
   const [errorMsg, setErrorMsg] = useState("");
+  const [successNotice, setSuccessNotice] = useState("");
   const [fieldErrors, setFieldErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [confirmedEmail, setConfirmedEmail] = useState("");
@@ -225,6 +226,33 @@ export function BookingSection({
   );
   const maxGuests = selectedBoat?.pax ?? 10;
   const guestCount = Math.max(1, Number(form.guests) || 1);
+  const bookingErrorMessages = useMemo(
+    () => ({
+      invalid_json: cv.errorInvalidRequest ?? t.common.errorGeneric,
+      invalid_request: cv.errorInvalidRequest ?? t.common.errorGeneric,
+      empty_body: cv.errorInvalidRequest ?? t.common.errorGeneric,
+      unsupported_content_type: cv.errorUnsupportedRequest ?? t.common.errorGeneric,
+      request_too_large: cv.errorRequestTooLarge ?? t.common.errorGeneric,
+      invalid_email: cv.validationEmail ?? "Please enter a valid email.",
+      invalid_phone: cv.validationPhone ?? "Please enter a phone number.",
+      invalid_date: cv.validationDate ?? "Please choose a rental date.",
+      invalid_time: cv.validationTime ?? "Please choose a valid time between 08:00 and 20:00.",
+      invalid_boat_selection: cv.validationBoat ?? "Please select a boat.",
+      invalid_boat: cv.validationBoat ?? "Please select a boat.",
+      invalid_guests: cv.validationGuests ?? "Please choose a valid guest count.",
+      invalid_guest_range: cv.validationGuests ?? "Please choose a valid guest count.",
+      guests_exceed_capacity: cv.validationGuests ?? "Please choose a valid guest count.",
+      missing_required_fields: cv.errorInvalidRequest ?? t.common.errorGeneric,
+      duplicate_booking: cv.errorDuplicate ?? t.common.errorGeneric,
+      rate_limited: cv.errorRateLimited ?? t.common.errorGeneric,
+      guest_email_failed: cv.errorEmailFailed ?? t.common.errorGeneric,
+      server_error: cv.errorServer ?? t.common.errorGeneric,
+      notification_failed: cv.errorNotificationFailed ?? t.common.errorGeneric,
+      successWarningGuestEmail:
+        cv.successWarningGuestEmail ?? cv.errorEmailFailed ?? t.common.errorGeneric,
+    }),
+    [cv, t.common.errorGeneric],
+  );
 
   useEffect(() => {
     const key = bookingSearchParamsKey(searchParams);
@@ -234,6 +262,7 @@ export function BookingSection({
     setStep(1);
     setStatus("idle");
     setErrorMsg("");
+    setSuccessNotice("");
     setFieldErrors({});
   }, [searchParams, boats]);
 
@@ -251,6 +280,21 @@ export function BookingSection({
     const errors: Partial<Record<keyof FormState, string>> = {};
     if (s === 1) {
       if (!form.date) errors.date = cv.validationDate ?? "Please choose a rental date.";
+      if (!isValidTime(form.time)) {
+        errors.time = cv.validationTime ?? "Please choose a valid time between 08:00 and 20:00.";
+      }
+      if (!selectedBoat && form.boatId) {
+        errors.boatId = cv.validationBoat ?? "Please select a boat.";
+      }
+      if (Number.isNaN(Number(form.guests)) || Number(form.guests) < 1) {
+        errors.guests = cv.validationGuests ?? "Please choose a valid guest count.";
+      }
+      if (!selectedBoat && Number(form.guests) > 10) {
+        errors.guests = cv.validationGuests ?? "Please choose a valid guest count.";
+      }
+      if (selectedBoat && Number(form.guests) > selectedBoat.pax) {
+        errors.guests = cv.validationGuests ?? "Please choose a valid guest count.";
+      }
     }
     if (s === 2) {
       if (!form.fullName.trim()) errors.fullName = cv.validationName ?? "Please enter your full name.";
@@ -280,6 +324,7 @@ export function BookingSection({
   const goBack = () => {
     setErrorMsg("");
     setStatus("idle");
+    setSuccessNotice("");
     playFeedback("step", "light");
     setStep(1);
   };
@@ -287,27 +332,27 @@ export function BookingSection({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (submittingRef.current) return;
-    if (!validateStep(1)) {
-      playFeedback("error", "light");
-      setStep(1);
-      return;
-    }
-    if (!validateStep(2)) {
-      playFeedback("error", "light");
-      return;
-    }
-    if (!acceptedTerms) {
-      setErrorMsg(t.booking.consentCheckboxError ?? "Please accept the terms to continue.");
-      setStatus("error");
-      return;
-    }
-
-    submittingRef.current = true;
-    setStatus("loading");
-    setErrorMsg("");
-
     try {
-      const result = await postJson<{ success: boolean }>("/api/bookings", {
+      if (!validateStep(1)) {
+        playFeedback("error", "light");
+        setStep(1);
+        return;
+      }
+      if (!validateStep(2)) {
+        playFeedback("error", "light");
+        return;
+      }
+      if (!acceptedTerms) {
+        setErrorMsg(t.booking.consentCheckboxError ?? "Please accept the terms to continue.");
+        setStatus("error");
+        return;
+      }
+
+      submittingRef.current = true;
+      setStatus("loading");
+      setErrorMsg("");
+
+      const result = await postJson<{ success: boolean; code?: string }>("/api/bookings", {
         ...form,
         guests: Number(form.guests),
         locale,
@@ -315,6 +360,13 @@ export function BookingSection({
 
       if (result.ok) {
         setConfirmedEmail(form.email);
+        setSuccessNotice(
+          result.data.code === "guest_email_failed"
+            ? bookingErrorMessages.successWarningGuestEmail ??
+                cv.errorEmailFailed ??
+                "Your request was received, but the confirmation email could not be sent."
+            : "",
+        );
         setStatus("success");
         trackBookingConversion();
         playFeedback("success", "success");
@@ -322,12 +374,49 @@ export function BookingSection({
         setAcceptedTerms(false);
         setStep(1);
       } else {
+        const code = result.code ?? "";
+        if (code === "invalid_date") {
+          setFieldErrors({ date: bookingErrorMessages.invalid_date });
+          setStep(1);
+        } else if (code === "invalid_time") {
+          setFieldErrors({ time: bookingErrorMessages.invalid_time });
+          setStep(1);
+        } else if (code === "invalid_boat" || code === "invalid_boat_selection") {
+          setFieldErrors({ boatId: bookingErrorMessages.invalid_boat });
+          setStep(1);
+        } else if (
+          code === "invalid_guests" ||
+          code === "invalid_guest_range" ||
+          code === "guests_exceed_capacity"
+        ) {
+          setFieldErrors({ guests: bookingErrorMessages.invalid_guests });
+          setStep(1);
+        } else if (code === "invalid_email") {
+          setFieldErrors({ email: bookingErrorMessages.invalid_email });
+          setStep(2);
+        } else if (code === "invalid_phone") {
+          setFieldErrors({ phone: bookingErrorMessages.invalid_phone });
+          setStep(2);
+        } else if (code === "missing_required_fields") {
+          setStep(1);
+        }
         setStatus("error");
-        setErrorMsg(result.error ?? t.common.errorGeneric);
+        setErrorMsg(
+          bookingErrorMessages[code as keyof typeof bookingErrorMessages] ??
+            (result.status === 0
+              ? bookingErrorMessages.server_error
+              : result.status === 409
+                ? bookingErrorMessages.duplicate_booking
+                : result.status === 413
+                  ? bookingErrorMessages.request_too_large
+                  : result.status === 415
+                    ? bookingErrorMessages.unsupported_content_type
+                    : result.error || bookingErrorMessages.server_error),
+        );
       }
     } catch {
       setStatus("error");
-      setErrorMsg(t.common.errorGeneric);
+      setErrorMsg(bookingErrorMessages.server_error);
     } finally {
       submittingRef.current = false;
     }
@@ -418,12 +507,18 @@ export function BookingSection({
                     ).replace("{email}", confirmedEmail)}
                   </p>
                 )}
+                {successNotice && (
+                  <p className="booking-success__warning" role="status">
+                    {successNotice}
+                  </p>
+                )}
                 <Button
                   type="button"
                   className="btn-app-primary ui-btn-label"
                   onClick={() => {
                     setStatus("idle");
                     setConfirmedEmail("");
+                    setSuccessNotice("");
                   }}
                 >
                   {t.booking.successAgain}
@@ -472,15 +567,20 @@ export function BookingSection({
                           <Clock className="size-3.5 text-summer-gold" aria-hidden />
                           {f.time ?? "Time"}
                         </Label>
-                        <Input
-                          id="booking-time"
-                          type="time"
-                          value={form.time}
-                          onChange={(e) => update("time", e.target.value)}
-                          className="booking-input"
-                        />
-                      </div>
+                      <Input
+                        id="booking-time"
+                        type="time"
+                        value={form.time}
+                        onChange={(e) => update("time", e.target.value)}
+                        className="booking-input"
+                      />
+                      {fieldErrors.time && (
+                        <p role="alert" className="booking-error booking-field--full">
+                          {fieldErrors.time}
+                        </p>
+                      )}
                     </div>
+                  </div>
 
                     <div className="booking-field space-y-2">
                       <Label className="booking-label">
@@ -584,6 +684,16 @@ export function BookingSection({
                           );
                         })}
                       </div>
+                      {fieldErrors.boatId && (
+                        <p role="alert" className="booking-error booking-field--full">
+                          {fieldErrors.boatId}
+                        </p>
+                      )}
+                      {fieldErrors.guests && (
+                        <p role="alert" className="booking-error booking-field--full">
+                          {fieldErrors.guests}
+                        </p>
+                      )}
                     </div>
                   </div>
                 )}

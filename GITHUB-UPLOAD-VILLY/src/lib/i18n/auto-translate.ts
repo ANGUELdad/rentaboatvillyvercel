@@ -102,11 +102,16 @@ async function translateTree(
   return source;
 }
 
-/** Server-only: full dictionary with SQLite snapshot cache. */
+/** Server-only: full dictionary — uses bundled locale JSON (reliable on Vercel). */
 export async function getTranslatedDictionary(
   locale: Locale,
 ): Promise<LocaleStrings> {
-  if (locale === "en") return getEnglishDictionary();
+  const { getLocaleDictionary, hasStaticLocaleDictionary } = await import(
+    "./static-locales"
+  );
+  if (hasStaticLocaleDictionary(locale)) {
+    return getLocaleDictionary(locale);
+  }
 
   const sourceHash = getSourceHash();
   const snapshotKey = `${LOCALE_SNAPSHOT_CACHE_VERSION}:${sourceHash}`;

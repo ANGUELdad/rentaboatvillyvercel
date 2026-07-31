@@ -62,7 +62,7 @@ export async function parseJsonBody<T extends Record<string, unknown>>(
     return {
       ok: false,
       response: NextResponse.json(
-        { error: "Content-Type must be application/json" },
+        { error: "Content-Type must be application/json", code: "unsupported_content_type" },
         { status: 415 },
       ),
     };
@@ -72,14 +72,14 @@ export async function parseJsonBody<T extends Record<string, unknown>>(
   if (raw.length === 0) {
     return {
       ok: false,
-      response: NextResponse.json({ error: "Empty body" }, { status: 400 }),
+      response: NextResponse.json({ error: "Empty body", code: "empty_body" }, { status: 400 }),
     };
   }
 
   if (raw.length > maxBytes) {
     return {
       ok: false,
-      response: NextResponse.json({ error: "Request too large" }, { status: 413 }),
+      response: NextResponse.json({ error: "Request too large", code: "request_too_large" }, { status: 413 }),
     };
   }
 
@@ -88,20 +88,20 @@ export async function parseJsonBody<T extends Record<string, unknown>>(
     if (!body || typeof body !== "object" || Array.isArray(body)) {
       return {
         ok: false,
-        response: NextResponse.json({ error: "Invalid request" }, { status: 400 }),
+        response: NextResponse.json({ error: "Invalid request", code: "invalid_request" }, { status: 400 }),
       };
     }
     if (hasPoisonKeys(body as Record<string, unknown>)) {
       return {
         ok: false,
-        response: NextResponse.json({ error: "Invalid request" }, { status: 400 }),
+        response: NextResponse.json({ error: "Invalid request", code: "invalid_request" }, { status: 400 }),
       };
     }
     return { ok: true, body };
   } catch {
     return {
       ok: false,
-      response: NextResponse.json({ error: "Invalid JSON" }, { status: 400 }),
+      response: NextResponse.json({ error: "Invalid JSON", code: "invalid_json" }, { status: 400 }),
     };
   }
 }

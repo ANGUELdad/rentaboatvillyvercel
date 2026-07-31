@@ -704,7 +704,19 @@
       "validationEmail": "Please enter a valid email.",
       "validationPhone": "Please enter a phone number.",
       "validationBoat": "Please select a boat.",
-      "validationDate": "Please choose a rental date."
+      "validationDate": "Please choose a rental date.",
+      "validationTime": "Please choose a valid time between 08:00 and 20:00.",
+      "validationGuests": "Please choose a guest count that fits the selected boat.",
+      "errorInvalidRequest": "We couldn't read your request. Please refresh and try again.",
+      "errorNetwork": "We couldn't send your request. Check your connection and try again.",
+      "errorRateLimited": "Too many requests in a short time. Please wait a moment and try again.",
+      "errorRequestTooLarge": "Your request is too long. Please shorten the notes and try again.",
+      "errorUnsupportedRequest": "Your browser sent an unsupported request. Please refresh and try again.",
+      "errorDuplicate": "We already received a similar request. Please check your email or call us.",
+      "errorEmailFailed": "Your request was saved, but the confirmation email could not be sent. Please call us.",
+      "errorServer": "Something went wrong on our side. Please try again or call us.",
+      "errorNotificationFailed": "We couldn't save or notify your request. Please call us directly.",
+      "successWarningGuestEmail": "Your request was received, but the confirmation email could not be sent. Please keep an eye on your inbox or call us."
     },
     "boatDetail": {
       "faqTitle": "Good to know",
@@ -849,6 +861,14 @@
       {
         "q": "Can I rent a speedboat in Thassos without experience?",
         "a": "Yes, our 30HP speedboats are ideal for beginners. Every rental includes a safety briefing covering local hazards, anchoring, and VHF basics before you cast off."
+      },
+      {
+        "q": "What is included in a boat rental in Thassos?",
+        "a": "Every rental includes life jackets, a 15–20 minute safety briefing and practical navigation advice for your Thassos route. If you want, we also suggest the best stops based on the time you have."
+      },
+      {
+        "q": "Which routes do you recommend from New Port of Limenaria?",
+        "a": "From Limenaria, you can easily reach Tripiti, Metalia, Marble Beach, Aliki and quiet coves on the south and east side of Thassos. Our team will help you choose a route that fits your time and experience."
       }
     ]
   },

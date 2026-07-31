@@ -48,4 +48,4 @@ export const FAQ_DEFAULT_SLIDES = [
   },
 ] as const;
 
-export const HOME_FAQ_LIMIT = 6;
+export const HOME_FAQ_LIMIT = 8;

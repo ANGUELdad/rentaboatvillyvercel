@@ -333,7 +333,6 @@ export function SocialProofCarousel({
                       fill
                       sizes="(max-width: 768px) 100vw, 480px"
                       className="object-cover"
-                      priority={variant === "home" && index === 0}
                     />
                   </motion.div>
                   {current.trip && (

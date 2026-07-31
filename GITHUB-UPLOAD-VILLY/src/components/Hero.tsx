@@ -344,7 +344,7 @@ export function Hero({
     }
   };
 
-  const showPoster = !videoPlaying || videoFailed;
+  const showPoster = !videoReady || videoFailed;
 
   useEffect(() => {
     if (posterReady) onContentReady?.();
@@ -369,7 +369,6 @@ export function Hero({
             priority
             fetchPriority="high"
             sizes="100vw"
-            unoptimized
             onLoad={markPosterReady}
             onError={markPosterReady}
             className={cn(
@@ -403,12 +402,10 @@ export function Hero({
               }}
               onPause={handleVideoPause}
               onError={handleVideoError}
-              data-playing={videoPlaying && !videoFailed ? "" : undefined}
+              data-playing={videoReady && !videoFailed ? "" : undefined}
               className={cn(
                 "hero-bg-video absolute inset-0 z-[1] h-full w-full object-cover object-center transition-opacity duration-700 ease-out",
-                videoPlaying && !videoFailed
-                  ? "opacity-100"
-                  : "opacity-0",
+                videoReady && !videoFailed ? "opacity-100" : "opacity-0",
               )}
             />
           )}

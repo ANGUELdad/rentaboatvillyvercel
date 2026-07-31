@@ -1,4 +1,4 @@
-type ApiFail = { ok: false; error: string; status: number };
+type ApiFail = { ok: false; error: string; status: number; code?: string };
 type ApiOk<T> = { ok: true; data: T };
 
 async function parseResponse(res: Response): Promise<Record<string, unknown>> {
@@ -19,6 +19,7 @@ function fail(res: Response, body: Record<string, unknown>): ApiFail {
     ok: false,
     error: String(body.error ?? "Request failed"),
     status: res.status,
+    code: typeof body.code === "string" ? body.code : undefined,
   };
 }
 

@@ -11,7 +11,7 @@ import { Logo } from "./Logo";
 import { appleSpring, staggerStep } from "@/lib/motion";
 import type { SiteIconName } from "@/lib/site-icons";
 import { useI18n } from "@/providers/LanguageProvider";
-import { SITE_CONTACT, MARINA_LOCATION, GOOGLE_REVIEWS } from "@/lib/site";
+import { SITE_CONTACT, MARINA_LOCATION } from "@/lib/site";
 
 export function Footer() {
   const { t } = useI18n();
@@ -50,18 +50,6 @@ export function Footer() {
             <p className="mt-4 text-sm leading-relaxed text-ds-text-secondary">
               {f.tagline}
             </p>
-            <Link
-              href="/reviews"
-              className="mt-4 inline-flex items-center gap-2 rounded-lg px-2 py-1 text-sm text-ds-text-secondary transition-colors hover:text-ds-text"
-              aria-label={`${GOOGLE_REVIEWS.rating.toFixed(1)} out of 5 from ${GOOGLE_REVIEWS.count}+ ${t.reviews?.googleRated ?? "Confirmed reviews"}`}
-            >
-              <span className="font-semibold text-ds-text" aria-hidden>
-                ★ {GOOGLE_REVIEWS.rating.toFixed(1)}
-              </span>
-              <span aria-hidden>
-                {GOOGLE_REVIEWS.count}+ {t.reviews?.googleRated ?? "Confirmed reviews"}
-              </span>
-            </Link>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <a

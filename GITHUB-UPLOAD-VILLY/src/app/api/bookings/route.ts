@@ -27,6 +27,10 @@ import {
 import { isLocale } from "@/lib/i18n/routing";
 import type { BookingRequest } from "@/types";
 
+function errorResponse(status: number, error: string, code: string) {
+  return NextResponse.json({ error, code }, { status });
+}
+
 export async function POST(request: Request) {
   const originBlock = requireSameOrigin(request);
   if (originBlock) return originBlock;
@@ -66,63 +70,55 @@ export async function POST(request: Request) {
       !date ||
       !time
     ) {
-      return NextResponse.json(
-        { error: "Please complete all required fields" },
-        { status: 400 },
-      );
+      return errorResponse(400, "Please complete all required fields", "missing_required_fields");
     }
 
     const email = normalizeEmail(emailRaw);
 
     if (!isValidEmail(email)) {
-      return NextResponse.json({ error: "Invalid email address" }, { status: 400 });
+      return errorResponse(400, "Invalid email address", "invalid_email");
     }
 
     if (!isValidPhone(phone)) {
-      return NextResponse.json({ error: "Invalid phone number" }, { status: 400 });
+      return errorResponse(400, "Invalid phone number", "invalid_phone");
     }
 
     if (idNumberRaw && !isValidIdNumber(idNumberRaw)) {
-      return NextResponse.json({ error: "Invalid ID / passport format" }, { status: 400 });
+      return errorResponse(400, "Invalid ID / passport format", "invalid_id_number");
     }
 
     if (!isBookingDateInRange(date)) {
-      return NextResponse.json(
-        { error: "Date must be within the allowed booking window" },
-        { status: 400 },
-      );
+      return errorResponse(400, "Date must be within the allowed booking window", "invalid_date");
     }
 
     if (!isValidTime(time)) {
-      return NextResponse.json(
-        { error: "Time must be between 08:00 and 20:00" },
-        { status: 400 },
-      );
+      return errorResponse(400, "Time must be between 08:00 and 20:00", "invalid_time");
     }
 
     if (boatId && !isValidEntityId(boatId)) {
-      return NextResponse.json({ error: "Invalid selection" }, { status: 400 });
+      return errorResponse(400, "Invalid selection", "invalid_boat_selection");
     }
 
     const boat = boatId ? getBoatById(boatId) : null;
     if (boatId && !boat) {
-      return NextResponse.json({ error: "Invalid boat" }, { status: 400 });
+      return errorResponse(400, "Invalid boat", "invalid_boat");
     }
 
     const guests = Number(parsed.body.guests);
     if (!Number.isInteger(guests) || guests < 1) {
-      return NextResponse.json({ error: "Guests must be at least 1" }, { status: 400 });
+      return errorResponse(400, "Guests must be at least 1", "invalid_guests");
     }
 
     if (boat && guests > boat.pax) {
-      return NextResponse.json(
-        { error: `Guests must be 1–${boat.pax} for this boat` },
-        { status: 400 },
+      return errorResponse(
+        400,
+        `Guests must be 1–${boat.pax} for this boat`,
+        "guests_exceed_capacity",
       );
     }
 
     if (!boat && guests > 10) {
-      return NextResponse.json({ error: "Guests must be 1–10" }, { status: 400 });
+      return errorResponse(400, "Guests must be 1–10", "invalid_guest_range");
     }
 
     const booking: BookingRequest = {
@@ -143,10 +139,7 @@ export async function POST(request: Request) {
     let persisted = false;
     try {
       if (hasRecentDuplicate(email, date, boatId || "any")) {
-        return NextResponse.json(
-          { error: "A similar booking was recently submitted" },
-          { status: 409 },
-        );
+        return errorResponse(409, "A similar booking was recently submitted", "duplicate_booking");
       }
 
       createBooking(booking);
@@ -158,14 +151,11 @@ export async function POST(request: Request) {
     const ownerEmail = await sendBookingNotificationEmail(booking);
     const guestEmail = await sendBookingConfirmationEmail(booking, locale);
 
-    if (!guestEmail.ok) {
-      return NextResponse.json(
-        {
-          error:
-            guestEmail.error ||
-            "Failed to send confirmation email. Please try again or call us.",
-        },
-        { status: 500 },
+    if (!persisted && !ownerEmail.ok && !guestEmail.ok) {
+      return errorResponse(
+        500,
+        "Failed to save booking and send notification",
+        "notification_failed",
       );
     }
 
@@ -182,9 +172,14 @@ export async function POST(request: Request) {
       console.warn("[bookings] owner notification failed:", ownerEmail.error);
     }
 
-    return NextResponse.json({ success: true, id: booking.id });
+    const warningCode = !guestEmail.ok ? "guest_email_failed" : undefined;
+    if (!guestEmail.ok) {
+      console.warn("[bookings] guest confirmation failed:", guestEmail.error);
+    }
+
+    return NextResponse.json({ success: true, id: booking.id, code: warningCode });
   } catch (error) {
     console.error("[bookings] unexpected failure:", error);
-    return NextResponse.json({ error: "Failed to save booking" }, { status: 500 });
+    return errorResponse(500, "Failed to save booking", "server_error");
   }
 }

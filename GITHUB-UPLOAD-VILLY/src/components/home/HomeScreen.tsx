@@ -1,15 +1,31 @@
 "use client";
 
-import { WhyChooseSection } from "@/components/home/WhyChooseSection";
-import { HomeMomentsMarquee } from "@/components/home/HomeMomentsMarquee";
-import { FleetShowcase } from "@/components/fleet/FleetShowcase";
-import { ImmersiveSection } from "@/components/home/ImmersiveSection";
-import { FAQSection } from "@/components/FAQSection";
-import { SeoHomeContent, SeoHomeLinksNav } from "@/components/seo/SeoHomeContent";
+import dynamic from "next/dynamic";
 import { Hero } from "@/components/Hero";
-import { ChatPromoBanner } from "@/components/chat/ChatPromoBanner";
-import { SocialProofCarousel } from "@/components/SocialProofCarousel";
+import { ImmersiveSection } from "@/components/home/ImmersiveSection";
 import type { PublicBoat, BoatRoute, GalleryItem, MatchmakerData, Testimonial } from "@/types";
+
+const SocialProofCarousel = dynamic(
+  () => import("@/components/SocialProofCarousel").then((mod) => mod.SocialProofCarousel),
+);
+const ChatPromoBanner = dynamic(
+  () => import("@/components/chat/ChatPromoBanner").then((mod) => mod.ChatPromoBanner),
+);
+const WhyChooseSection = dynamic(
+  () => import("@/components/home/WhyChooseSection").then((mod) => mod.WhyChooseSection),
+);
+const HomeMomentsMarquee = dynamic(
+  () => import("@/components/home/HomeMomentsMarquee").then((mod) => mod.HomeMomentsMarquee),
+);
+const FleetShowcase = dynamic(
+  () => import("@/components/fleet/FleetShowcase").then((mod) => mod.FleetShowcase),
+);
+const FAQSection = dynamic(
+  () => import("@/components/FAQSection").then((mod) => mod.FAQSection),
+);
+const SeoHomeLinksNav = dynamic(
+  () => import("@/components/seo/SeoHomeContent").then((mod) => mod.SeoHomeLinksNav),
+);
 
 export function HomeScreen({
   boats,
@@ -47,12 +63,15 @@ export function HomeScreen({
         </ImmersiveSection>
 
         <ImmersiveSection
-          variant="scale"
-          delay={0.02}
-          className="home-2026__section home-2026__section--chat-promo"
+          variant="up"
+          delay={0.01}
+          className="home-2026__section home-2026__section--fleet"
         >
-          <div className="home-section-inset">
-            <ChatPromoBanner />
+          <div
+            id="home-start"
+            className="home-section-inset home-fleet-jump scroll-mt-14"
+          >
+            <FleetShowcase boats={boats} variant="home" />
           </div>
         </ImmersiveSection>
 
@@ -73,19 +92,6 @@ export function HomeScreen({
         ) : null}
 
         <ImmersiveSection
-          variant="up"
-          delay={0.03}
-          className="home-2026__section home-2026__section--fleet"
-        >
-          <div
-            id="home-start"
-            className="home-section-inset home-fleet-jump scroll-mt-14"
-          >
-            <FleetShowcase boats={boats} variant="home" />
-          </div>
-        </ImmersiveSection>
-
-        <ImmersiveSection
           variant="scale"
           delay={0.04}
           className="home-2026__section home-2026__section--faq"
@@ -95,9 +101,13 @@ export function HomeScreen({
           </div>
         </ImmersiveSection>
 
-        <ImmersiveSection variant="up" delay={0.035} className="home-2026__section home-2026__section--seo">
+        <ImmersiveSection
+          variant="scale"
+          delay={0.05}
+          className="home-2026__section home-2026__section--chat-promo"
+        >
           <div className="home-section-inset">
-            <SeoHomeContent />
+            <ChatPromoBanner />
           </div>
         </ImmersiveSection>
 

@@ -15,11 +15,10 @@ import {
   getEnglishDictionary,
   LANG_COOKIE,
   LOCALES,
-  LOCALE_SNAPSHOT_CACHE_VERSION,
   type Locale,
   type LocaleStrings,
 } from "@/lib/i18n";
-import { deepMerge } from "@/lib/i18n/merge";
+import { getLocaleDictionary } from "@/lib/i18n/static-locales";
 import type { ChatTree } from "@/types";
 
 type ScrollSnapshot = { x: number; y: number; ratio: number };
@@ -32,7 +31,6 @@ interface LanguageContextValue {
   t: LocaleStrings;
   chatTree: ChatTree;
   locales: typeof LOCALES;
-  sourceHash: string;
   translating: boolean;
 }
 
@@ -113,6 +111,14 @@ const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 const english = getEnglishDictionary();
 
+function dictionaryFor(locale: Locale): LocaleStrings {
+  return getLocaleDictionary(locale);
+}
+
+function chatFor(locale: Locale): ChatTree {
+  return getChatTreeFromDictionary(dictionaryFor(locale));
+}
+
 function readStoredLocale(): Locale {
   if (typeof document === "undefined") return "en";
   const match = document.cookie
@@ -123,46 +129,11 @@ function readStoredLocale(): Locale {
   return "en";
 }
 
-function readSessionDictionary(
-  locale: Locale,
-  sourceHash: string,
-): LocaleStrings | null {
-  if (typeof window === "undefined") return null;
-  try {
-    const raw = sessionStorage.getItem(
-      `tbc-i18n-v${LOCALE_SNAPSHOT_CACHE_VERSION}-${locale}-${sourceHash}`,
-    );
-    return raw ? (JSON.parse(raw) as LocaleStrings) : null;
-  } catch {
-    return null;
-  }
-}
-
-function readAnySessionDictionary(locale: Locale): LocaleStrings | null {
-  if (typeof window === "undefined") return null;
-  const prefix = `tbc-i18n-v${LOCALE_SNAPSHOT_CACHE_VERSION}-${locale}-`;
-  try {
-    for (let i = 0; i < sessionStorage.length; i++) {
-      const key = sessionStorage.key(i);
-      if (!key?.startsWith(prefix)) continue;
-      const raw = sessionStorage.getItem(key);
-      if (raw) return JSON.parse(raw) as LocaleStrings;
-    }
-  } catch {
-    return null;
-  }
-  return null;
-}
-
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("en");
   const [ready, setReady] = useState(false);
   const [t, setT] = useState<LocaleStrings>(() => english);
-  const [chatTree, setChatTree] = useState<ChatTree>(() =>
-    getChatTreeFromDictionary(english),
-  );
-  const [sourceHash, setSourceHash] = useState("");
-  const [translating, setTranslating] = useState(false);
+  const [chatTree, setChatTree] = useState<ChatTree>(() => chatFor("en"));
   const wasTranslating = useRef(false);
 
   useEffect(() => {
@@ -174,14 +145,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     if (urlValid) {
       document.cookie = `${LANG_COOKIE}=${urlValid};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
     }
-    if (stored !== "en") {
-      const cached = readAnySessionDictionary(stored);
-      if (cached) {
-        const merged = deepMerge(english, cached);
-        setT(merged);
-        setChatTree(getChatTreeFromDictionary(merged));
-      }
-    }
+    setT(dictionaryFor(stored));
+    setChatTree(chatFor(stored));
     setLocaleState(stored);
     document.documentElement.lang = stored;
     setReady(true);
@@ -189,72 +154,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!ready) return;
-
-    const activeLocale = locale;
-
-    if (activeLocale === "en") {
-      setT(english);
-      setChatTree(getChatTreeFromDictionary(english));
-      setTranslating(false);
-      return;
-    }
-
-    let cancelled = false;
-
-    async function loadTranslations() {
-      setTranslating(true);
-
-      const cached = sourceHash
-        ? readSessionDictionary(activeLocale, sourceHash)
-        : readAnySessionDictionary(activeLocale);
-      if (cached) {
-        const merged = deepMerge(english, cached);
-        setT(merged);
-        setChatTree(getChatTreeFromDictionary(merged));
-      }
-
-      try {
-        const res = await fetch(`/api/i18n/${activeLocale}`);
-        const data = (await res.json()) as {
-          dictionary: LocaleStrings;
-          sourceHash: string;
-          fallback?: boolean;
-        };
-        if (cancelled) return;
-
-        const merged = deepMerge(english, data.dictionary);
-        setSourceHash(data.sourceHash);
-        setT(merged);
-        setChatTree(getChatTreeFromDictionary(merged));
-
-        if (typeof window !== "undefined" && !data.fallback) {
-          sessionStorage.setItem(
-            `tbc-i18n-v${LOCALE_SNAPSHOT_CACHE_VERSION}-${activeLocale}-${data.sourceHash}`,
-            JSON.stringify(merged),
-          );
-        }
-      } catch {
-        if (!cancelled) {
-          setT(english);
-          setChatTree(getChatTreeFromDictionary(english));
-        }
-      } finally {
-        if (!cancelled) setTranslating(false);
-      }
-    }
-
-    void loadTranslations();
-    return () => {
-      cancelled = true;
-    };
+    setT(dictionaryFor(locale));
+    setChatTree(chatFor(locale));
   }, [locale, ready]);
 
   useEffect(() => {
-    if (wasTranslating.current && !translating && pendingScrollRestore) {
+    if (wasTranslating.current && pendingScrollRestore) {
       beginScrollPreservation(pendingScrollRestore);
     }
-    wasTranslating.current = translating;
-  }, [translating]);
+    wasTranslating.current = false;
+  }, [locale]);
 
   const setLocale = useCallback(
     (next: Locale, scrollSnapshot?: ScrollSnapshot) => {
@@ -263,25 +172,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
         syncLangSearchParam(next);
       }
 
-      if (next === "en") {
-        setT(english);
-        setChatTree(getChatTreeFromDictionary(english));
-        setTranslating(false);
-      } else {
-        const cached =
-          (sourceHash
-            ? readSessionDictionary(next, sourceHash)
-            : null) ?? readAnySessionDictionary(next);
-        const merged = cached ? deepMerge(english, cached) : english;
-        setT(merged);
-        setChatTree(getChatTreeFromDictionary(merged));
-      }
-
+      setT(dictionaryFor(next));
+      setChatTree(chatFor(next));
       document.cookie = `${LANG_COOKIE}=${next};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
       document.documentElement.lang = next;
       startTransition(() => setLocaleState(next));
     },
-    [sourceHash],
+    [],
   );
 
   const value = useMemo(
@@ -291,10 +188,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       t,
       chatTree,
       locales: LOCALES,
-      sourceHash,
-      translating,
+      translating: false,
     }),
-    [locale, setLocale, ready, t, chatTree, sourceHash, translating],
+    [locale, setLocale, ready, t, chatTree],
   );
 
   return (

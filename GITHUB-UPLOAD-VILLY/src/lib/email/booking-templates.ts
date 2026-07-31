@@ -76,16 +76,90 @@ function emailShell(params: {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light" />
-  <meta name="supported-color-schemes" content="light" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="supported-color-schemes" content="light dark" />
   <title>Rent A Boat Villy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      supported-color-schemes: light;
+    }
+    body,
+    .email-body,
+    .email-shell,
+    .email-card,
+    .email-footer {
+      background-color: ${BRAND.cream} !important;
+      color: ${BRAND.text} !important;
+    }
+    .email-surface {
+      background-color: #ffffff !important;
+      color: ${BRAND.text} !important;
+    }
+    .email-footer {
+      color: ${BRAND.muted} !important;
+    }
+    .email-footer a,
+    .email-link {
+      color: ${BRAND.greenDark} !important;
+    }
+    .email-muted {
+      color: ${BRAND.muted} !important;
+    }
+    .email-strong {
+      color: ${BRAND.text} !important;
+    }
+    @media (prefers-color-scheme: dark) {
+      html, body {
+        background: ${BRAND.cream} !important;
+        background-color: ${BRAND.cream} !important;
+      }
+      body,
+      .email-body,
+      .email-shell,
+      .email-card,
+      .email-footer,
+      .email-surface {
+        color: ${BRAND.text} !important;
+        -webkit-text-fill-color: ${BRAND.text} !important;
+      }
+      .email-surface,
+      .email-footer {
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+      }
+      .email-muted {
+        color: ${BRAND.muted} !important;
+        -webkit-text-fill-color: ${BRAND.muted} !important;
+      }
+      .email-link {
+        color: ${BRAND.greenDark} !important;
+        -webkit-text-fill-color: ${BRAND.greenDark} !important;
+      }
+    }
+    [data-ogsc] body,
+    [data-ogsc] .email-body,
+    [data-ogsc] .email-shell,
+    [data-ogsc] .email-card,
+    [data-ogsc] .email-footer,
+    [data-ogsc] .email-surface {
+      background-color: #ffffff !important;
+      color: ${BRAND.text} !important;
+    }
+    [data-ogsc] .email-muted {
+      color: ${BRAND.muted} !important;
+    }
+    [data-ogsc] .email-link {
+      color: ${BRAND.greenDark} !important;
+    }
+  </style>
 </head>
-<body style="margin:0;padding:0;background-color:${BRAND.cream};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:${BRAND.text};-webkit-text-size-adjust:100%;">
+<body class="email-body" style="margin:0;padding:0;background-color:${BRAND.cream};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:${BRAND.text};-webkit-text-size-adjust:100%;">
   <div style="display:none;max-height:0;overflow:hidden;opacity:0;mso-hide:all;">${escapeHtml(params.preheader)}</div>
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:${BRAND.cream};">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="email-shell" bgcolor="${BRAND.cream}" style="background-color:${BRAND.cream};">
     <tr>
       <td align="center" style="padding:24px 12px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="email-card" style="max-width:600px;background-color:${BRAND.cream};">
           <tr>
             <td style="background:linear-gradient(135deg,${BRAND.navy} 0%,${BRAND.navyLight} 100%);border-radius:16px 16px 0 0;padding:28px 32px 24px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
@@ -102,25 +176,25 @@ function emailShell(params: {
             </td>
           </tr>
           <tr>
-            <td style="background-color:#ffffff;border-left:1px solid ${BRAND.border};border-right:1px solid ${BRAND.border};padding:32px;">
+            <td class="email-surface" bgcolor="#ffffff" style="background-color:#ffffff;border-left:1px solid ${BRAND.border};border-right:1px solid ${BRAND.border};padding:32px;">
               ${params.body}
             </td>
           </tr>
           <tr>
-            <td style="background-color:#ffffff;border:1px solid ${BRAND.border};border-top:none;border-radius:0 0 16px 16px;padding:0 32px 28px;">
+            <td class="email-surface email-footer" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid ${BRAND.border};border-top:none;border-radius:0 0 16px 16px;padding:0 32px 28px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr><td style="border-top:1px solid ${BRAND.border};padding-top:20px;">
-                  <p style="margin:0 0 8px;font-size:13px;line-height:1.5;color:${BRAND.muted};">
-                    <strong style="color:${BRAND.text};">${escapeHtml(SITE_CONTACT.marina)}</strong><br />
+                  <p class="email-muted" style="margin:0 0 8px;font-size:13px;line-height:1.5;color:${BRAND.muted};">
+                    <strong class="email-strong" style="color:${BRAND.text};">${escapeHtml(SITE_CONTACT.marina)}</strong><br />
                     ${escapeHtml(SITE_CONTACT.hours)}
                   </p>
                   <p style="margin:0 0 4px;font-size:13px;line-height:1.5;">
-                    <a href="tel:${SITE_CONTACT.phone.replace(/\s/g, "")}" style="color:${BRAND.greenDark};text-decoration:none;font-weight:600;">${escapeHtml(SITE_CONTACT.phone)}</a>
+                    <a class="email-link" href="tel:${SITE_CONTACT.phone.replace(/\s/g, "")}" style="color:${BRAND.greenDark};text-decoration:none;font-weight:600;">${escapeHtml(SITE_CONTACT.phone)}</a>
                     &nbsp;·&nbsp;
-                    <a href="mailto:${SITE_CONTACT.email}" style="color:${BRAND.greenDark};text-decoration:none;font-weight:600;">${escapeHtml(SITE_CONTACT.email)}</a>
+                    <a class="email-link" href="mailto:${SITE_CONTACT.email}" style="color:${BRAND.greenDark};text-decoration:none;font-weight:600;">${escapeHtml(SITE_CONTACT.email)}</a>
                   </p>
-                  <p style="margin:12px 0 0;font-size:12px;color:${BRAND.muted};">
-                    <a href="${siteUrl}" style="color:${BRAND.muted};text-decoration:underline;">rentaboatvilly.com</a>
+                  <p class="email-muted" style="margin:12px 0 0;font-size:12px;color:${BRAND.muted};">
+                    <a class="email-muted" href="${siteUrl}" style="color:${BRAND.muted};text-decoration:underline;">rentaboatvilly.com</a>
                     &nbsp;·&nbsp;© ${year} Rent A Boat Villy
                   </p>
                 </td></tr>

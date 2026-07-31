@@ -118,11 +118,11 @@ export const scrollRevealScaleTouch = {
   visible: { opacity: 1, scale: 1, transition: appleSpringSoft },
 };
 
-/** Default viewport for home scroll reveals — re-triggers as you scroll. */
+/** Default viewport for home scroll reveals — reveal once to avoid scroll flicker. */
 export const homeScrollViewport = {
-  once: false,
-  amount: 0.18,
-  margin: "0px 0px -8% 0px",
+  once: true,
+  amount: 0.12,
+  margin: "0px 0px -14% 0px",
 } as const;
 
 /** Slide-in from the right for horizontal carousels / cards. */
