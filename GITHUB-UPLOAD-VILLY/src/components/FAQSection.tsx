@@ -10,7 +10,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaqAnswerText } from "@/components/faq/FaqAnswerText";
 import {
-  FAQ_HIGHLIGHT_ICONS,
   FAQ_IMAGES,
   FAQ_QUESTION_ICONS,
   HOME_FAQ_LIMIT,
@@ -64,30 +63,11 @@ type FaqPageCopy = {
   slides?: { src: string; caption: string }[];
 };
 
-const DEFAULT_HIGHLIGHTS = [
-  {
-    title: "No licence ≤30HP",
-    desc: "Safety briefing before every departure",
-    image: FAQ_IMAGES[1],
-  },
-  {
-    title: "All details at our office",
-    desc: "Visit us at New Port of Limenaria for full information",
-    image: FAQ_IMAGES[3],
-  },
-  {
-    title: "New Port of Limenaria",
-    desc: "South-coast Thassos · Daily 08:00–20:00, May–October",
-    image: FAQ_IMAGES[0],
-  },
-];
-
 export function FAQSection({ hideHeader }: { hideHeader?: boolean }) {
   const { t } = useI18n();
   const page = (t.faq as { page?: FaqPageCopy }).page ?? {};
   const items = t.faq.items ?? [];
   const topItems = items.slice(0, HOME_FAQ_LIMIT);
-  const highlights = page.highlights?.length ? page.highlights : DEFAULT_HIGHLIGHTS;
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const reduceMotion = useReducedMotion();
 
@@ -130,32 +110,10 @@ export function FAQSection({ hideHeader }: { hideHeader?: boolean }) {
       </motion.div>
 
       <div className="home-faq__layout">
-        <aside className="home-faq__aside">
-          <ul className="home-faq__facts" aria-label={page.highlightsTitle ?? "Good to know"}>
-            {highlights.map((card, i) => {
-              const Icon = FAQ_HIGHLIGHT_ICONS[i] ?? FAQ_HIGHLIGHT_ICONS[0];
-              return (
-                <motion.li
-                  key={card.title}
-                  initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={homeScrollViewport}
-                  transition={{ ...appleSpringSoft, delay: i * staggerStep }}
-                  className="home-faq__fact"
-                >
-                  <span className="home-faq__fact-icon" aria-hidden>
-                    <Icon className="size-4" />
-                  </span>
-                  <div className="min-w-0">
-                    <p className="home-faq__fact-title">{card.title}</p>
-                    <p className="home-faq__fact-desc">{card.desc}</p>
-                  </div>
-                </motion.li>
-              );
-            })}
-          </ul>
-        </aside>
-
+        {/* The "good to know" cards that used to sit here repeated the hero
+            subheading (no licence / safety briefing) and the booking card's
+            location, and the questions below answer the same points again.
+            Dropped so the FAQ states each fact once. */}
         <div className="home-faq__questions">
           <h3 className="home-faq__block-title">
             {page.mostAskedTitle ?? "Most asked questions"}
@@ -204,7 +162,11 @@ function FaqAccordionList({
     <motion.div
       className="home-faq__list space-y-2.5"
       initial="hidden"
-      animate="visible"
+      /* Was animate="visible", so the stagger fired on mount — it had already
+         finished long before anyone scrolled this far down the page. Firing it
+         in view means the questions actually cascade in as you arrive. */
+      whileInView="visible"
+      viewport={homeScrollViewport}
       variants={reduceMotion ? listVariantsReduced : listVariants}
     >
       {items.map((item, index) => {

@@ -23,10 +23,6 @@ const FleetShowcase = dynamic(
 const FAQSection = dynamic(
   () => import("@/components/FAQSection").then((mod) => mod.FAQSection),
 );
-const SeoHomeLinksNav = dynamic(
-  () => import("@/components/seo/SeoHomeContent").then((mod) => mod.SeoHomeLinksNav),
-);
-
 export function HomeScreen({
   boats,
   routes: _routes,
@@ -111,15 +107,12 @@ export function HomeScreen({
           </div>
         </ImmersiveSection>
 
-        <ImmersiveSection
-          variant="up"
-          delay={0.04}
-          className="home-2026__section home-2026__section--explore"
-        >
-          <div className="home-section-inset pb-2">
-            <SeoHomeLinksNav />
-          </div>
-        </ImmersiveSection>
+        {/* The "Boat rental guide" link block that closed the page is gone.
+            It was an internal-link list landing straight after eight FAQ
+            answers, and every destination it offered is still reachable from
+            the footer and the nav — /guide, /map and /rent-a-boat-thassos each
+            keep two to three other links on this page, so nothing is orphaned
+            and no crawl path is lost. Just less to read. */}
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion, useScroll, useTransform, type Variants } from "framer-motion";
 import {
   Anchor,
@@ -73,30 +72,6 @@ const FALLBACK = {
   },
 } as const;
 
-const SHOWCASE = [
-  {
-    src: "/images/boats/kima.jpg",
-    alt: "Kima boat on calm turquoise water near Thassos",
-    label: "Kima",
-    note: "9 seats",
-    layout: "hero",
-  },
-  {
-    src: "/images/boats/nikos-1.jpg",
-    alt: "Nikos speedboat ready for a day trip from Limenaria",
-    label: "Nikos",
-    note: "8 seats",
-    layout: "stack",
-  },
-  {
-    src: "/images/boats/limenaria-palataki.jpg",
-    alt: "Limenaria coast and boat-friendly waters in Thassos",
-    label: "Limenaria",
-    note: "New Port",
-    layout: "stack",
-  },
-] as const;
-
 const accentLineVariants: Variants = {
   hidden: { scaleX: 0, opacity: 0 },
   visible: {
@@ -143,11 +118,13 @@ function resolveWhyCardVariants(coarsePointer: boolean, reduceMotion: boolean | 
 
 function WhyChooseCard({
   index,
+  total,
   icon: Icon,
   title,
   desc,
 }: {
   index: number;
+  total: number;
   icon: LucideIcon;
   title: string;
   desc: string;
@@ -158,13 +135,25 @@ function WhyChooseCard({
 
   if (reduceMotion) {
     return (
-      <article className="why-choose__card">
-        <span className="why-choose__icon" aria-hidden>
-          <Icon className="size-5" strokeWidth={1.35} />
+      <article className="why-choose__card !flex-col !items-start !gap-2 !p-3.5 snap-center shrink-0 w-[76vw] max-w-[19rem] lg:w-auto lg:max-w-none">
+        <span className="flex w-full items-center gap-2">
+          <span className="why-choose__icon !size-9" aria-hidden>
+            <Icon className="size-[18px]" strokeWidth={1.5} />
+          </span>
+          <span
+            aria-hidden
+            className="ml-auto shrink-0 text-[11px] font-semibold tabular-nums text-ds-text-muted lg:hidden"
+          >
+            {index + 1}/{total}
+          </span>
         </span>
         <div className="why-choose__card-body">
-          <h3 className="why-choose__card-title">{title}</h3>
-          <p className="why-choose__card-desc">{desc}</p>
+          <h3 className="why-choose__card-title !text-[14px] !leading-snug sm:!text-[15px]">
+            {title}
+          </h3>
+          <p className="why-choose__card-desc !text-[12px] !leading-snug sm:!text-[12.5px]">
+            {desc}
+          </p>
         </div>
       </article>
     );
@@ -173,7 +162,7 @@ function WhyChooseCard({
   return (
     <motion.article
       custom={index}
-      className="why-choose__card"
+      className="why-choose__card !flex-col !items-start !gap-2 !p-3.5 snap-center shrink-0 w-[76vw] max-w-[19rem] lg:w-auto lg:max-w-none"
       initial="hidden"
       whileInView="visible"
       viewport={homeScrollViewport}
@@ -181,12 +170,24 @@ function WhyChooseCard({
       whileHover={{ y: coarsePointer ? -2 : -5 }}
       transition={appleSpringSoft}
     >
-      <motion.span className="why-choose__icon" variants={whyIconVariants} aria-hidden>
-        <Icon className="size-5" strokeWidth={1.35} />
-      </motion.span>
+      <span className="flex w-full items-center gap-2">
+        <motion.span className="why-choose__icon !size-9" variants={whyIconVariants} aria-hidden>
+          <Icon className="size-[18px]" strokeWidth={1.5} />
+        </motion.span>
+        <span
+          aria-hidden
+          className="ml-auto shrink-0 text-[11px] font-semibold tabular-nums text-ds-text-muted lg:hidden"
+        >
+          {index + 1}/{total}
+        </span>
+      </span>
       <motion.div className="why-choose__card-body" variants={whyCardChildVariants}>
-        <h3 className="why-choose__card-title">{title}</h3>
-        <p className="why-choose__card-desc">{desc}</p>
+        <h3 className="why-choose__card-title !text-[14px] !leading-snug sm:!text-[15px]">
+          {title}
+        </h3>
+        <p className="why-choose__card-desc !text-[12px] !leading-snug sm:!text-[12.5px]">
+          {desc}
+        </p>
       </motion.div>
     </motion.article>
   );
@@ -233,34 +234,13 @@ export function WhyChooseSection() {
 
       <div className="why-choose__panel">
         <div className="why-choose__lead">
+          {/* The decorative photo rail that sat here is gone. It was
+              aria-hidden, so it carried no information, and it showed the same
+              boats already presented twice on this page — in the fleet showcase
+              directly above and in the gallery below. Its caption pills also
+              overflowed their cards at every phone width. The trust line is
+              real copy, so it stays. */}
           <div className="why-choose__showcase" aria-hidden>
-            <div className="why-choose__showcase-rail">
-              {SHOWCASE.map((item, index) => (
-                <motion.figure
-                  key={item.src}
-                  className={`why-choose__showcase-cell why-choose__showcase-cell--${item.layout}`}
-                  initial={reduceMotion ? false : { opacity: 0, y: 16, scale: 0.98 }}
-                  whileInView={reduceMotion ? undefined : { opacity: 1, y: 0, scale: 1 }}
-                  viewport={homeScrollViewport}
-                  transition={{ ...appleSpringSoft, delay: index * 0.05 }}
-                >
-                  <div className="why-choose__showcase-media">
-                    <Image
-                      src={item.src}
-                      alt={item.alt}
-                      fill
-                      sizes={item.layout === "hero" ? "(max-width: 767px) 100vw, 52vw" : "(max-width: 767px) 50vw, 18vw"}
-                      className="why-choose__showcase-image"
-                    />
-                    <div className="why-choose__showcase-scrim" />
-                  </div>
-                  <figcaption className="why-choose__showcase-caption">
-                    <span className="why-choose__showcase-name">{item.label}</span>
-                    <span className="why-choose__showcase-note">{item.note}</span>
-                  </figcaption>
-                </motion.figure>
-              ))}
-            </div>
             <div className="why-choose__showcase-ribbon">
               <Sparkles className="size-4" aria-hidden />
               <span>Brand-new boats, real equipment, local guidance</span>
@@ -316,7 +296,15 @@ export function WhyChooseSection() {
           </div>
         </div>
 
-        <div className="why-choose__grid">
+        {/* A scroll journey on phones: the six points become a snapping rail
+            you swipe through one at a time, each numbered so you know where you
+            are in the sequence, rather than a static block of cards you skim
+            past. Desktop keeps the grid — there is room to see them at once.
+            Set here rather than globals.css because fifteen competing
+            .why-choose__grid rules make that cascade unpredictable, and rules
+            appended to the end of that file are dropped by the build. */}
+        <div
+          className="why-choose__grid !flex snap-x snap-mandatory !gap-3 overflow-x-auto overscroll-x-contain scroll-pl-4 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:!grid lg:!grid-cols-3 lg:snap-none lg:overflow-visible lg:pb-0">
           {PILLARS.map((pillar, index) => {
             const copy = w?.items?.[pillar.key] ?? FALLBACK.items[pillar.key];
 
@@ -324,6 +312,7 @@ export function WhyChooseSection() {
               <WhyChooseCard
                 key={pillar.key}
                 index={index}
+                total={PILLARS.length}
                 icon={pillar.icon}
                 title={copy.title}
                 desc={copy.desc}

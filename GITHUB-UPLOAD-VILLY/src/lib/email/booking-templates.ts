@@ -64,11 +64,24 @@ export type ContactBlock = {
   idNumber?: string;
 };
 
+/** Emails outlive deploys and get forwarded, so they carry the canonical
+ *  public host. Respects NEXT_PUBLIC_SITE_URL but guarantees the www form —
+ *  the bare domain was going out in every booking mail. */
+function publicSiteUrl(): string {
+  const raw = getSiteUrl().trim().replace(/\/+$/, "");
+  return raw.replace(/^(https?:\/\/)(?!www\.)/i, "$1www.");
+}
+
+/** Same URL without the protocol, for display. */
+function publicSiteLabel(): string {
+  return publicSiteUrl().replace(/^https?:\/\//i, "");
+}
+
 function emailShell(params: {
   preheader: string;
   body: string;
 }): string {
-  const siteUrl = getSiteUrl();
+  const siteUrl = publicSiteUrl();
   const year = new Date().getFullYear();
 
   return `<!DOCTYPE html>
@@ -76,13 +89,18 @@ function emailShell(params: {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="supported-color-schemes" content="light dark" />
+  <!-- These said "light dark" while the stylesheet asked for light only.
+       Apple Mail and Gmail read the meta first, decided the email handled dark
+       mode itself, and applied their own colour transforms on top — which is
+       how dark text ended up on dark backgrounds on phones. Declaring light
+       only means no client repaints anything. -->
+  <meta name="color-scheme" content="light only" />
+  <meta name="supported-color-schemes" content="light only" />
   <title>Rent A Boat Villy</title>
   <style>
     :root {
-      color-scheme: light;
-      supported-color-schemes: light;
+      color-scheme: light only;
+      supported-color-schemes: light only;
     }
     body,
     .email-body,
@@ -136,6 +154,24 @@ function emailShell(params: {
         color: ${BRAND.greenDark} !important;
         -webkit-text-fill-color: ${BRAND.greenDark} !important;
       }
+      /* Bold copy — the guest name, dates, boat — was the one class missing
+         here, so on iOS it inverted to near-white on white and vanished. */
+      .email-strong,
+      strong,
+      b {
+        color: ${BRAND.text} !important;
+        -webkit-text-fill-color: ${BRAND.text} !important;
+      }
+      /* Outlook.com wraps dark mode on a [data-ogsc] scope; anything without an
+         explicit fill can still flip. Pin the common text elements too. */
+      td,
+      p,
+      span,
+      h1,
+      h2,
+      h3 {
+        -webkit-text-fill-color: inherit;
+      }
     }
     [data-ogsc] body,
     [data-ogsc] .email-body,
@@ -151,6 +187,13 @@ function emailShell(params: {
     }
     [data-ogsc] .email-link {
       color: ${BRAND.greenDark} !important;
+    }
+    /* Same gap as the media query had: bold copy was left to Outlook's own
+       inversion, which is what made names and dates disappear. */
+    [data-ogsc] .email-strong,
+    [data-ogsc] strong,
+    [data-ogsc] b {
+      color: ${BRAND.text} !important;
     }
   </style>
 </head>
@@ -194,7 +237,7 @@ function emailShell(params: {
                     <a class="email-link" href="mailto:${SITE_CONTACT.email}" style="color:${BRAND.greenDark};text-decoration:none;font-weight:600;">${escapeHtml(SITE_CONTACT.email)}</a>
                   </p>
                   <p class="email-muted" style="margin:12px 0 0;font-size:12px;color:${BRAND.muted};">
-                    <a class="email-muted" href="${siteUrl}" style="color:${BRAND.muted};text-decoration:underline;">rentaboatvilly.com</a>
+                    <a class="email-muted" href="${siteUrl}" style="color:${BRAND.muted};text-decoration:underline;">${publicSiteLabel()}</a>
                     &nbsp;·&nbsp;© ${year} Rent A Boat Villy
                   </p>
                 </td></tr>
@@ -465,7 +508,7 @@ export function buildGuestBookingEmailHtml(params: {
           ${sectionTitle("Marina & hours")}
           <p style="margin:0 0 6px;font-size:14px;line-height:1.5;color:${BRAND.text};font-weight:600;">${escapeHtml(SITE_CONTACT.marina)}</p>
           <p style="margin:0 0 10px;font-size:14px;line-height:1.5;color:${BRAND.muted};">${escapeHtml(SITE_CONTACT.hours)}</p>
-          <p style="margin:0;">${ctaButton(`tel:${SITE_CONTACT.phone.replace(/\s/g, "")}`, SITE_CONTACT.phone, false)}${ctaButton(getSiteUrl(), "View our fleet", false)}</p>
+          <p style="margin:0;">${ctaButton(`tel:${SITE_CONTACT.phone.replace(/\s/g, "")}`, SITE_CONTACT.phone, false)}${ctaButton(publicSiteUrl(), "View our fleet", false)}</p>
         </td>
       </tr>
     </table>

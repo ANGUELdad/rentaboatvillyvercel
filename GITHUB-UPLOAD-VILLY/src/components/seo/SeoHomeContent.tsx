@@ -198,7 +198,15 @@ export function SeoHomeLinksNav() {
   const { t } = useI18n();
   const content = t.seo.homeContent ?? getEnglishDictionary().seo.homeContent;
   const reduceMotion = useReducedMotion();
-  const links = sortExploreLinks(content.links ?? []);
+  /* Four of the seven links here pointed at content the visitor has already
+     scrolled past on this same page — the fleet, the reviews, the booking CTA,
+     and the FAQ, whose own "See all answers" link sits a few pixels above.
+     What was left read as a wall of near-identical sentences. Only routes that
+     actually lead somewhere new stay. */
+  const ON_PAGE_ALREADY = ["/fleet", "/booking", "/faq", "/reviews"];
+  const links = sortExploreLinks(content.links ?? []).filter(
+    (link) => !ON_PAGE_ALREADY.includes(link.href),
+  );
   const featuredLinks = pickFeaturedLinks(links);
   const remainingLinks = links.filter((link) => !FEATURED_LINKS.includes(link.href as (typeof FEATURED_LINKS)[number]));
   const eyebrow = content.linksEyebrow ?? content.eyebrow ?? "Explore";

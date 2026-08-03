@@ -17926,12 +17926,14 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
     width: max-content;
     gap: 0.65rem;
     padding-block: 0.15rem;
-    animation: home-moments-marquee 38s linear infinite;
+    /* 38s for one pass read as barely moving — a visitor scrolling by saw two
+       or three tiles and never learned the fleet was worth looking at. */
+    animation: home-moments-marquee 26s linear infinite;
   }
 
   .home-moments-marquee__track--reverse {
     animation-name: home-moments-marquee-reverse;
-    animation-duration: 44s;
+    animation-duration: 30s;
   }
 
   @keyframes home-moments-marquee {
@@ -17955,7 +17957,9 @@ section[data-home-hero] .hero-booking-mini--refined .hero-booking-mini__cta {
   .home-moments-marquee__tile {
     flex: 0 0 auto;
     margin: 0;
-    width: min(42vw, 17rem);
+    /* One row now instead of two, so each tile gets the width the videos
+       actually need — 42vw was a thumbnail you had to squint at. */
+    width: min(62vw, 20rem);
   }
 
   .home-moments-marquee__tile--tall {
@@ -22811,5 +22815,164 @@ section[data-home-hero] .hero-video-grid {
     max-width: 100% !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
+  }
+}
+
+/* ── Hero above-the-fold: keep the booking CTA clear of bottom overlays ─────
+   On phones the hero column is 100dvh and bottom-aligned, so the booking card
+   lands in the same strip as the consent bar (z 120) and the chat FAB (z 56).
+   Both cover the primary CTA on first paint — the one action paid traffic is
+   sent here to take.
+
+   --cookie-bar-h is published by CookieConsent while the bar is on screen.
+   Reserving it as padding shrinks the flex content box, so the CTA cannot
+   render underneath the bar at any text length or font size. The fallback
+   covers the frame before the measurement lands. */
+
+@media (max-width: 1023px) {
+  html[data-cookie-bar-visible="true"] section[data-home-hero] .hero-video-grid {
+    padding-bottom: calc(
+      var(--cookie-bar-h, 8rem) + 0.75rem + env(safe-area-inset-bottom, 0px)
+    ) !important;
+  }
+}
+
+/* Portrait phones only: centre the hero stack instead of pinning it to the
+   bottom edge. Bottom-alignment left ~60% empty sky above the headline and
+   pushed the copy to roughly two-thirds down the screen. Landscape keeps its
+   own two-column layout, and >=1024px is unaffected. */
+@media (max-width: 1023px) and (orientation: portrait) {
+  section[data-home-hero] .hero-video-grid {
+    justify-content: center !important;
+  }
+}
+
+/* ── Booking card legibility on phones ─────────────────────────────────────
+   Desktop renders this card on near-solid white (rgba(255,255,255,.96)), but
+   mobile used a 28%-white glass. Its labels and inputs are white, so over a
+   bright frame of the hero reel — sunlit water, pale buildings — "DATE",
+   "GUESTS" and the date placeholder dropped to unreadable contrast. That is
+   the form paid traffic has to complete, on the device most of it arrives on.
+
+   Keeping the glass treatment but inverting it to brand navy restores strong
+   contrast for the existing white text without restyling every child. */
+
+@media (max-width: 1023px) {
+  section[data-home-hero] .hero-booking-glass--mobile-strip {
+    background:
+      linear-gradient(
+        148deg,
+        color-mix(in srgb, var(--color-brand-navy) 76%, transparent) 0%,
+        color-mix(in srgb, var(--color-brand-navy) 88%, transparent) 100%
+      ) !important;
+    backdrop-filter: blur(22px) saturate(1.25) !important;
+    -webkit-backdrop-filter: blur(22px) saturate(1.25) !important;
+    border: 1px solid color-mix(in srgb, white 26%, transparent) !important;
+  }
+
+  /* Inner fields sat on the old light glass — lift them off the navy instead. */
+  section[data-home-hero] .hero-booking-glass--mobile-strip .hero-booking-mini__label {
+    color: rgba(255, 255, 255, 0.92) !important;
+  }
+}
+
+/* ── FAQ is single-column now ───────────────────────────────────────────────
+   The "good to know" aside was removed (it restated the hero and the booking
+   card), so the two-column split would strand the questions in the narrow
+   0.38fr track. Give them the full width and cap the measure for reading. */
+
+.home-faq__layout {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.home-faq__questions {
+  max-width: 46rem;
+}
+
+/* The header "Book now" button is styled with Tailwind utilities in
+   Header.tsx rather than here — rules appended this far down this file were
+   not making it into the compiled stylesheet. */
+
+/* ── Why-choose showcase captions ───────────────────────────────────────────
+   The caption is an absolutely positioned pill using space-between, with no
+   overflow rules at all. On the two narrow "stack" cells that meant "8 seats"
+   wrapped onto two lines inside the pill, and "New Port" / "9 seats" were
+   sliced off by the card edge. Give the label room to truncate properly and
+   stack the pair vertically where the cell is too narrow for a row. */
+
+.why-choose__showcase-caption {
+  flex-wrap: nowrap !important;
+  gap: 0.5rem !important;
+  padding: 0.45rem 0.75rem !important;
+}
+
+.why-choose__showcase-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.why-choose__showcase-note {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.why-choose__showcase-cell--stack .why-choose__showcase-caption {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0 !important;
+  border-radius: 0.85rem !important;
+  padding: 0.4rem 0.65rem !important;
+}
+
+.why-choose__showcase-cell--stack .why-choose__showcase-name {
+  font-size: 0.72rem;
+}
+
+.why-choose__showcase-cell--stack .why-choose__showcase-note {
+  font-size: 0.66rem;
+}
+
+/* ── Gallery on touch devices ───────────────────────────────────────────────
+   The section subtitle says "Swipe through rental videos — tap to play", but
+   the belt auto-scrolled and swallowed the gesture: only the reduced-motion
+   path was ever actually swipeable. On phones it now behaves the way the copy
+   promises — a snapping scroller the visitor drives — with tiles large enough
+   to read at arm's length instead of 42vw thumbnails sliding past. */
+
+@media (hover: none) and (pointer: coarse) {
+  .home-moments-marquee__track {
+    animation: none !important;
+    width: 100% !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    padding-inline: max(1rem, env(safe-area-inset-left, 0px));
+  }
+
+  .home-moments-marquee__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-moments-marquee__tile {
+    width: min(68vw, 19rem);
+    scroll-snap-align: center;
+  }
+
+  .home-moments-marquee__tile--tall {
+    width: min(58vw, 16rem);
+  }
+
+  /* Captions are full sentences ("Poseidon departing Limenaria — Palataki in
+     the background"), which wrapped to three lines over the image. One line,
+     always legible, rather than revealed on a hover that cannot happen. */
+  .home-moments-marquee__caption {
+    opacity: 1;
+    transform: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

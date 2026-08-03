@@ -188,7 +188,7 @@ export function Header() {
             <Logo size="header" />
 
             <div
-              className="header-mobile-dock"
+              className="header-mobile-dock ml-auto"
               role="group"
               aria-label={t.common.navMenu ?? "Navigation"}
             >
@@ -223,13 +223,20 @@ export function Header() {
                 }
               />
               <LanguagePicker variant="header" compact inDock />
-              <HeaderIconButton
-                inDock
+
+              {/* Book now and the menu live in the dock with the icons — one
+                  panel, not three floating pieces. Brand green (--color-ds-brand,
+                  the same green as the phone icon beside it) rather than navy,
+                  which belonged to no part of the palette used up here. Kept
+                  small and flat so the hero's full-width CTA still outranks it
+                  by size rather than by colour. */}
+              <a
                 href="/booking"
-                label={t.nav.bookNow}
+                className="ml-0.5 inline-flex min-h-8 shrink-0 items-center whitespace-nowrap rounded-lg bg-[var(--color-ds-brand)] px-3 text-[12.5px] font-semibold leading-none tracking-[-0.005em] text-white transition-[filter] duration-200 hover:brightness-[1.05] active:brightness-95 sm:px-3.5 sm:text-[13px]"
               >
-                <Calendar className="size-[18px] shrink-0" strokeWidth={2.5} />
-              </HeaderIconButton>
+                {t.nav.bookNow}
+              </a>
+
               <HeaderIconButton
                 inDock
                 label={

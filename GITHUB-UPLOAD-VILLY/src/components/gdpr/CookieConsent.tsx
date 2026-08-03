@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { buildConsentCookie } from "@/lib/consent";
 import { logConsentToServer } from "@/lib/consent-log";
 import { readConsentFromDocument, writeConsentToDocument } from "@/lib/cookie-utils";
@@ -18,6 +18,7 @@ export function CookieConsent() {
   const [showSettings, setShowSettings] = useState(false);
   const [consentId, setConsentId] = useState<string | undefined>();
   const [mounted, setMounted] = useState(false);
+  const barRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -57,15 +58,37 @@ export function CookieConsent() {
 
   useEffect(() => {
     const root = document.documentElement;
-    const shouldOffsetFab = mounted && visible && !showSettings;
-    if (shouldOffsetFab) {
-      root.dataset.cookieBarVisible = "true";
-    } else {
+    const barOnScreen = mounted && visible && !showSettings;
+
+    const clear = () => {
       delete root.dataset.cookieBarVisible;
+      root.style.removeProperty("--cookie-bar-h");
+    };
+
+    if (!barOnScreen) {
+      clear();
+      return;
     }
 
+    root.dataset.cookieBarVisible = "true";
+
+    /* Publish the bar's real height so the hero can lift its CTA clear of it.
+       Measured rather than assumed — el/de/ro wrap to taller bars than en. */
+    const bar = barRef.current;
+    if (!bar) return clear;
+
+    const publishHeight = () => {
+      const { height } = bar.getBoundingClientRect();
+      root.style.setProperty("--cookie-bar-h", `${Math.ceil(height)}px`);
+    };
+
+    publishHeight();
+    const observer = new ResizeObserver(publishHeight);
+    observer.observe(bar);
+
     return () => {
-      delete root.dataset.cookieBarVisible;
+      observer.disconnect();
+      clear();
     };
   }, [mounted, visible, showSettings]);
 
@@ -93,6 +116,7 @@ export function CookieConsent() {
     <>
       {visible && !showSettings && (
         <div
+          ref={barRef}
           role="region"
           aria-label={t.cookies.title}
           className="cookie-consent-bar pointer-events-none fixed inset-x-0 bottom-0 layout-safe"
@@ -128,7 +152,12 @@ export function CookieConsent() {
                   e.preventDefault();
                   saveConsent(false, false);
                 }}
-                className="cookie-consent__btn cookie-consent__btn--ghost min-h-[40px] rounded-xl px-3 py-2 text-[12px] font-medium sm:text-[13px]"
+                /* EDPB guidance: refusing must be as easy and as visible as
+                   accepting. This was an outlined button with smaller padding
+                   and a lighter weight than "accept all" — three separate ways
+                   of nudging. Same geometry and weight now, solid fill too, so
+                   only the colour differs. */
+                className="cookie-consent__btn min-h-[40px] rounded-xl bg-[var(--color-brand-navy)] px-4 py-2 text-[12px] font-semibold text-white ring-1 ring-inset ring-white/15 sm:text-[13px]"
                 style={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
               >
                 {t.cookies.reject}

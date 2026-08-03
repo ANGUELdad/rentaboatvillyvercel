@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { SafeImage } from "@/components/SafeImage";
+import { ParallaxLayer } from "@/components/ui/ParallaxLayer";
 import { appleSpringSoft, homeScrollViewport } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 import { useI18n } from "@/providers/LanguageProvider";
@@ -160,16 +161,27 @@ export function FleetShowcase({
               <p className="fleet-showcase__intro">{copy.subtitle}</p>
             </div>
 
-            <div className="fleet-showcase__vessel-wrap" aria-hidden>
-              <Image
-                src={FLEET_HERO_CUTOUT}
-                alt=""
-                fill
-                sizes="(max-width: 768px) 92vw, 42vw"
-                priority={variant === "page"}
-                className="fleet-showcase__vessel-cutout"
-              />
-            </div>
+            {/* The boat now drifts against the scroll. ParallaxLayer and its
+                useScrollParallax hook were already written but wired to
+                nothing — the hook disables itself under prefers-reduced-motion
+                and halves the intensity on touch, so this costs nothing on the
+                devices that should not have it. */}
+            <ParallaxLayer
+              className="fleet-showcase__vessel-wrap"
+              intensity={0.12}
+              style={{ willChange: "transform" }}
+            >
+              <span aria-hidden className="contents">
+                <Image
+                  src={FLEET_HERO_CUTOUT}
+                  alt=""
+                  fill
+                  sizes="(max-width: 768px) 92vw, 42vw"
+                  priority={variant === "page"}
+                  className="fleet-showcase__vessel-cutout"
+                />
+              </span>
+            </ParallaxLayer>
           </div>
         </header>
 
@@ -182,8 +194,19 @@ export function FleetShowcase({
                   {copy.pickerLead}
                 </p>
                 <p className="fleet-showcase__panel-title">
-                  {formatCopy(FALLBACK.seatsShort, { count: selected.pax })}
-                  {selected.tagline ? ` · ${selected.tagline}` : ""}
+                  {(() => {
+                    const seats = formatCopy(FALLBACK.seatsShort, {
+                      count: selected.pax,
+                    });
+                    /* Every boat stores its seat count at the head of its
+                       tagline ("9 seats · Family"), so prepending it here
+                       printed it twice. Drop the repeat, keep the rest. */
+                    const tagline = selected.tagline ?? "";
+                    const rest = tagline.startsWith(seats)
+                      ? tagline.slice(seats.length).replace(/^\s*·\s*/, "")
+                      : tagline;
+                    return rest ? `${seats} · ${rest}` : seats;
+                  })()}
                 </p>
               </div>
               {variant === "page" ? (

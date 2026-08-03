@@ -8,7 +8,9 @@
     "reviews": "Reviews",
     "booking": "Request pricing",
     "blog": "Blog",
-    "bookNow": "Request pricing",
+    "bookNow": "Book now",
+    "bookBannerTitle": "Check your dates",
+    "bookBannerText": "Eight self-drive boats from New Port of Limenaria. No licence needed up to 30HP.",
     "faq": "FAQ"
   },
   "hero": {
@@ -609,6 +611,7 @@
   "reviews": {
     "eyebrow": "Confirmed reviews",
     "title": "What our guests say",
+    "verificationNote": "Reviews are published on Google by guests who booked with us. We do not edit, select or incentivise them.",
     "subtitle": "Honest feedback from guests who rented a boat at New Port of Limenaria.",
     "verified": "verified rentals",
     "verifiedGuests": "Verified guests",
@@ -958,10 +961,10 @@
     }
   },
   "chat": {
-    "title": "Marina assistant",
+    "title": "AI assistant",
     "subtitle": "Rent A Boat Villy",
     "aiName": "Villy",
-    "aiTagline": "Boat rental · New Port of Limenaria",
+    "aiTagline": "AI assistant · New Port of Limenaria",
     "aiStatus": "Available · New Port of Limenaria",
     "sessionRefLabel": "Ref",
     "typingLabel": "Villy is typing…",
@@ -1015,7 +1018,7 @@
     "muteSounds": "Mute sounds",
     "openAssistant": "Chat with Villy",
     "peekAction": "Tap to reply",
-    "notificationTitle": "Villy · Marina assistant",
+    "notificationTitle": "Villy · AI assistant",
     "tapToChat": "Tap to chat",
     "banner": {
       "title": "Not sure which boat to pick?",

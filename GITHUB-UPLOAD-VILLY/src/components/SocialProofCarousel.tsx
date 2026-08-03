@@ -254,8 +254,19 @@ export function SocialProofCarousel({
                 <span className="guest-reviews-sparkle guest-reviews-sparkle--5" />
               </div>
             )}
-            <p className="section-eyebrow mb-2">{r.eyebrow}</p>
+            {/* On home the ratings card directly below repeats this exact
+                string ("Confirmed reviews"), so show it only elsewhere. */}
+            {variant !== "home" && (
+              <p className="section-eyebrow mb-2">{r.eyebrow}</p>
+            )}
             <h2 className="section-title text-balance">{r.title}</h2>
+            {/* Omnibus Directive: displaying consumer reviews obliges the
+                trader to state whether and how they are verified. */}
+            {r.verificationNote && (
+              <p className="mx-auto mt-2 max-w-prose text-[12px] leading-snug text-ds-text-muted lg:mx-0">
+                {r.verificationNote}
+              </p>
+            )}
           </motion.header>
         )}
 

@@ -110,7 +110,7 @@ export default async function OgImage() {
             fontWeight: 600,
           }}
         >
-          thassosboats.gr
+          www.rentaboatvilly.com
         </div>
       </div>
     ),

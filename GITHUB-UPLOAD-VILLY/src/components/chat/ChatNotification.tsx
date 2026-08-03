@@ -15,7 +15,10 @@ import { appleSpring, appleSpringSnappy } from "@/lib/motion";
 import { Z } from "@/lib/z-index";
 import { cn } from "@/lib/utils";
 
-const AUTO_DISMISS_MS = 14_000;
+/* The toast is fixed above the chat FAB, so while it is on screen it sits on
+   top of whatever the reader has scrolled to — on phones it lands squarely
+   over the FAQ answers. 14s was long enough to obscure a whole question. */
+const AUTO_DISMISS_MS = 6_000;
 
 interface ChatNotificationProps {
   visible: boolean;

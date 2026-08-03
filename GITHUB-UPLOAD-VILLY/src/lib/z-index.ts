@@ -19,6 +19,9 @@ export const Z = {
   chatPanel: 106,
   dropdown: 60,
   pageTransition: 90,
+  /** Timed "book now" bar — above the header, below the consent bar so
+      consent always wins if both are on screen. */
+  bookBanner: 110,
   cookie: 120,
   offerBackdrop: 130,
   offer: 131,

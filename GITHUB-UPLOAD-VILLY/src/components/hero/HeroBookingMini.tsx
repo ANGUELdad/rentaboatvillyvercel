@@ -3,14 +3,15 @@
 import { ArrowRight, Calendar, MapPin, Minus, Plus, Users } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { useCoarsePointer } from "@/hooks/useCoarsePointer";
 import { cn } from "@/lib/utils";
 import { playFeedback } from "@/lib/feedback";
 import { maxBookingDateInSiteTz, todayInSiteTz } from "@/lib/security/timezone";
-import { MARINA_LOCATION } from "@/lib/site";
+import { FLEET_MAX_PAX, MARINA_LOCATION } from "@/lib/site";
 import { useI18n } from "@/providers/LanguageProvider";
 
 const MIN_GUESTS = 1;
-const MAX_GUESTS = 10;
+const MAX_GUESTS = FLEET_MAX_PAX;
 
 export function HeroBookingMini({
   onDateChange,
@@ -34,6 +35,13 @@ export function HeroBookingMini({
 
   const [date, setDate] = useState("");
   const [guests, setGuests] = useState(2);
+  const coarsePointer = useCoarsePointer();
+
+  /* Desktop browsers paint their own "dd/mm/yyyy" into an empty date input;
+     iOS Safari paints nothing at all, so the field read as a blank grey box
+     with no hint that it opens a picker. Show the hint only where the browser
+     supplies none, or the two would sit on top of each other. */
+  const showDateHint = coarsePointer && !date;
 
   const bookHref = useMemo(() => {
     const qs = new URLSearchParams();
@@ -85,23 +93,36 @@ export function HeroBookingMini({
         >
           <label className="hero-booking-mini__field">
             <span className="hero-booking-mini__label">
+              {/* Icon stays desktop-only: the "Pick a date" placeholder below
+                  already signals the picker on phones, and adding an icon here
+                  left DATE decorated while GUESTS beside it was not. */}
               {!isMobile ? <Calendar className="size-3.5 shrink-0" aria-hidden /> : null}
               {f.date ?? "Date"}
             </span>
-            <input
-              type="date"
-              value={date}
-              min={minDate}
-              max={maxDate}
-              onChange={(e) => {
-                const nextDate = e.target.value;
-                setDate(nextDate);
-                onDateChange?.(nextDate);
-                if (nextDate) playFeedback("select", "light");
-              }}
-              className="hero-booking-mini__input tap-target w-full"
-              aria-label={f.date ?? "Date"}
-            />
+            <span className="relative block">
+              <input
+                type="date"
+                value={date}
+                min={minDate}
+                max={maxDate}
+                onChange={(e) => {
+                  const nextDate = e.target.value;
+                  setDate(nextDate);
+                  onDateChange?.(nextDate);
+                  if (nextDate) playFeedback("select", "light");
+                }}
+                className="hero-booking-mini__input tap-target w-full"
+                aria-label={f.date ?? "Date"}
+              />
+              {showDateHint ? (
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] font-medium text-white/55"
+                >
+                  {hb.bookingPreviewDateHint ?? "Pick a date"}
+                </span>
+              ) : null}
+            </span>
           </label>
 
           <div className="hero-booking-mini__field">

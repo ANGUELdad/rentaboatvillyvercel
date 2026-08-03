@@ -607,8 +607,31 @@ export function ConciergeChat({
     };
 
     const baseDelay = isHome ? NOTIFICATION_DELAY_HOME_MS : NOTIFICATION_DELAY_OTHER_MS;
-    const timer = window.setTimeout(showNotification, baseDelay + NOTIFICATION_DELAY_AFTER_CONSENT_MS);
-    return () => window.clearTimeout(timer);
+    const delay = baseDelay + NOTIFICATION_DELAY_AFTER_CONSENT_MS;
+
+    if (!isHome) {
+      const timer = window.setTimeout(showNotification, delay);
+      return () => window.clearTimeout(timer);
+    }
+
+    /* The toast is fixed just above the chat FAB — on the home page that is
+       exactly where the hero's booking CTA sits, so firing it on a timer alone
+       dropped it on top of the one button the page exists for. Require the
+       reader to have scrolled past the hero as well. */
+    let elapsed = false;
+    const tryShow = () => {
+      if (elapsed && window.scrollY > window.innerHeight * 0.6) showNotification();
+    };
+    const timer = window.setTimeout(() => {
+      elapsed = true;
+      tryShow();
+    }, delay);
+    window.addEventListener("scroll", tryShow, { passive: true });
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("scroll", tryShow);
+    };
   }, [enabled, storageReady, isHome, introSeen, consentResolved, isMobileSheet]);
 
   useEffect(() => {
@@ -664,8 +687,22 @@ export function ConciergeChat({
     return () => window.removeEventListener("keydown", onKey);
   }, [mode, closeChat]);
 
-  const showFab = mode === "fab" || mode === "notification";
-  const showFabBadge = showFab && !hasOpened;
+  /* The timed "book now" bar occupies the same bottom strip as the FAB, so it
+     takes precedence while it is on screen. */
+  const [bookBannerUp, setBookBannerUp] = useState(false);
+  useEffect(() => {
+    const onBanner = (e: Event) => {
+      setBookBannerUp(!!(e as CustomEvent<{ visible: boolean }>).detail?.visible);
+    };
+    window.addEventListener("tbc-book-banner", onBanner);
+    return () => window.removeEventListener("tbc-book-banner", onBanner);
+  }, []);
+
+  const showFab = (mode === "fab" || mode === "notification") && !bookBannerUp;
+  /* While the notification card is up it already shows the same "tap to reply"
+     prompt, so the FAB's hint pill duplicated it — two identical prompts
+     stacked over the page. Keep the pill for the bare-FAB state only. */
+  const showFabBadge = showFab && !hasOpened && mode !== "notification";
   const handleGreetingTypewriterComplete = useCallback(() => {
     setGreetingTypingDone(true);
   }, []);

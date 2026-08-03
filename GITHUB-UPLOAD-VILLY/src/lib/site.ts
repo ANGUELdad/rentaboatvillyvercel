@@ -1,3 +1,9 @@
+/** Largest capacity in the fleet, mirroring the highest `pax` in
+ *  data/boats.json (Kima, 9). The hero guest picker allowed 10, which no boat
+ *  can take — a visitor could send a request nothing could fulfil. Update this
+ *  alongside boats.json if a larger boat is ever added. */
+export const FLEET_MAX_PAX = 9;
+
 /** Google Business Profile — Rent a boat / Villy at New Port of Limenaria. */
 export const MARINA_LOCATION = {
   name: "Rent a boat / Villy",

@@ -11,6 +11,7 @@ import {
   type SmartVideoHandle,
 } from "@/components/showcase/SmartVideo";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { ParallaxLayer } from "@/components/ui/ParallaxLayer";
 import { playFeedback } from "@/lib/feedback";
 import { appleSpringSoft, homeScrollViewport, scrollReveal, scrollRevealReduced } from "@/lib/motion";
 import { Z } from "@/lib/z-index";
@@ -48,25 +49,32 @@ function MomentTile({
             }}
             aria-label={`Play video: ${item.alt}`}
           >
-            <SafeImage
-              src={posterFor(item)}
-              alt=""
-              fill
-              sizes="(max-width: 768px) 42vw, 280px"
-              className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-            />
+            <ParallaxLayer className="absolute inset-0 scale-110" intensity={0.09}>
+              <SafeImage
+                src={posterFor(item)}
+                alt=""
+                fill
+                sizes="(max-width: 768px) 42vw, 280px"
+                className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+              />
+            </ParallaxLayer>
             <span className="home-moments-marquee__play" aria-hidden>
               <Play className="home-moments-marquee__play-icon" />
             </span>
           </button>
         ) : (
-          <SafeImage
-            src={posterFor(item)}
-            alt={item.alt}
-            fill
-            sizes="(max-width: 768px) 42vw, 280px"
-            className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-          />
+          /* Image scroll: the photo drifts vertically inside its fixed frame as
+             the page moves. Scaled slightly past the frame so the drift never
+             exposes an edge. */
+          <ParallaxLayer className="absolute inset-0 scale-110" intensity={0.09}>
+            <SafeImage
+              src={posterFor(item)}
+              alt={item.alt}
+              fill
+              sizes="(max-width: 768px) 42vw, 280px"
+              className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+            />
+          </ParallaxLayer>
         )}
         <div className="home-moments-marquee__shine" aria-hidden />
         {item.caption && (
@@ -93,11 +101,14 @@ function MarqueeRow({
       <div
         className={`home-moments-marquee__track ${reverse ? "home-moments-marquee__track--reverse" : ""}`}
       >
+        {/* Every third tile used to switch to a 3:4 portrait frame at a
+            different width. Mixed with landscape neighbours in a moving belt
+            that read as a ragged pile rather than an editorial layout — the
+            eye had no baseline to settle on. One shape for every tile. */}
         {loop.map((item, i) => (
           <MomentTile
             key={`${item.id}-${i}`}
             item={item}
-            tall={i % 3 === 1}
             onPlayVideo={onPlayVideo}
           />
         ))}
@@ -266,7 +277,11 @@ export function HomeMomentsMarquee({ items }: { items: GalleryItem[] }) {
   const g = t.gallery ?? t.showcase;
   const visuals = items.filter((item) => item.type === "video" || item.poster || item.src);
   const videoItems = visuals.filter((item) => item.type === "video");
-  const marqueeItems = videoItems.length >= 4 ? videoItems : visuals;
+  /* Was videos-only, which showed 7 tiles and left the 8 photos unused — half
+     the gallery never reached the visitor. Everything goes in the belt; the
+     video tiles still carry the play affordance and open the lightbox, the
+     photos are just scenery. */
+  const marqueeItems = visuals;
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const marqueeInView = useInView(sectionRef, { margin: "120px 0px" });
@@ -299,8 +314,6 @@ export function HomeMomentsMarquee({ items }: { items: GalleryItem[] }) {
 
   const pauseMarquee = lightboxIndex !== null || !marqueeInView;
 
-  const rowA = marqueeItems.filter((_, i) => i % 2 === 0);
-  const rowB = marqueeItems.filter((_, i) => i % 2 === 1);
 
   return (
     <section
@@ -332,15 +345,11 @@ export function HomeMomentsMarquee({ items }: { items: GalleryItem[] }) {
         viewport={homeScrollViewport}
         transition={{ ...appleSpringSoft, delay: 0.08 }}
       >
-        <MarqueeRow
-          items={rowA.length >= 3 ? rowA : marqueeItems}
-          onPlayVideo={openVideo}
-        />
-        <MarqueeRow
-          items={rowB.length >= 3 ? rowB : marqueeItems}
-          reverse
-          onPlayVideo={openVideo}
-        />
+        {/* Was two belts sliding in opposite directions with the items split
+            between them. Nothing could hold your eye — whichever tile you
+            looked at, the row underneath was moving the other way, and each
+            video only got half the width. One row, every item, one direction. */}
+        <MarqueeRow items={marqueeItems} onPlayVideo={openVideo} />
       </motion.div>
 
       <motion.p
