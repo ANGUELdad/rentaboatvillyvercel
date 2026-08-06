@@ -1,4 +1,5 @@
 import { BookNowBanner } from "@/components/conversion/BookNowBanner";
+import { LanguageNotice } from "@/components/conversion/LanguageNotice";
 import { CookieConsent } from "@/components/gdpr/CookieConsent";
 import { ConsentGatedScripts } from "@/components/gdpr/ConsentGatedScripts";
 import { SkipLink } from "@/components/layout/SkipLink";
@@ -39,6 +40,7 @@ export default function SiteLayout({
       </main>
       <Footer />
       <CookieConsent />
+      <LanguageNotice />
       <BookNowBanner />
       <ConsentGatedScripts />
       <SfxProvider />

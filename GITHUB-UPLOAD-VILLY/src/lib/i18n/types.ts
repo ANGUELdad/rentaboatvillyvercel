@@ -2,9 +2,18 @@ import type { ChatTree } from "@/types";
 
 export type Locale = "en" | "ro" | "el" | "de" | "sr" | "bg";
 
+/* All six ship. The four beyond en/el had been dropped from this array even
+   though their locale files and legal translations were complete and still in
+   the repo — so the translations existed but no visitor could reach them.
+   Each label is written in its own language, which is what someone scanning
+   for their own reads first. */
 export const LOCALES: { code: Locale; label: string; flag: string }[] = [
   { code: "en", label: "English", flag: "🇬🇧" },
   { code: "el", label: "Ελληνικά", flag: "🇬🇷" },
+  { code: "ro", label: "Română", flag: "🇷🇴" },
+  { code: "bg", label: "Български", flag: "🇧🇬" },
+  { code: "sr", label: "Српски", flag: "🇷🇸" },
+  { code: "de", label: "Deutsch", flag: "🇩🇪" },
 ];
 
 export const LANG_COOKIE = "tbc-lang";
